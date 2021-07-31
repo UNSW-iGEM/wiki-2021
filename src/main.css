@@ -1,9 +1,13 @@
 html,
 body {
     margin: 0;
-    background-color: #b3dad9;
     height: 100vh;
     width: 100vw;
+}
+
+#igem-unsw-content {
+    background-color: #b3dad9;
+    height: 100%;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
