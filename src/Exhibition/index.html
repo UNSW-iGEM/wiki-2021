@@ -5,62 +5,97 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iGEM UNSW - Virtual Exhibition</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Exhibition.css">
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
 </head>
 <body>
 <div id="igem-unsw-content">
     <div id="header">
-        <a href="../">
-            <img src="../img/UNSW_IGEM_logo.png" alt="UNSW iGEM Logo" height="50%">
-        </a>
+        <div style="max-width: 5em;">
+            <a href="../">
+                <img src="../img/UNSW_IGEM_logo_white.png" alt="UNSW iGEM Logo" width="100%">
+            </a>
+        </div>
         <div id="artist_dot_row">
             <div>
                 <a href="../">
-                    <img src="./Artists/Betty Skyes/Karrangkal - Coral Reef.JPG" alt="" class="artist-dot">
+                    <img src="../img/Exhibition/Betty Skyes/Karrangkal - Coral Reef.JPG" alt="" class="artist-dot">
                 </a>
                 <div class="artist-dot-name">Betty Skyes</div>
             </div>
             <div>
                 <a href="../">
-                    <img src="./Artists/James Unsworth/gasso-2-Enhanced.JPG" alt="" class="artist-dot">
+                    <img src="../img/Exhibition/James Unsworth/icon.png" alt="" class="artist-dot">
                 </a>
                 <div class="artist-dot-name">James Unsworth</div>
             </div>
             <div>
                 <a href="../">
-                    <img src="./Artists/Josie Olbar/Mili, stinging jellyfish.jpg" alt="" class="artist-dot">
+                    <img src="../img/Exhibition/Josie Olbar/Mili, stinging jellyfish.jpg" alt="" class="artist-dot">
                 </a>
                 <div class="artist-dot-name">Josie Olbar</div>
             </div>
             <div>
                 <a href="../">
-                    <img src="./Artists/Kris Casey/Kris.Casey.Turtle.wave.jpg" alt="" class="artist-dot">
+                    <img src="../img/Exhibition/Kris Casey/Kris.Casey.Turtle.wave.jpg" alt="" class="artist-dot">
                 </a>
                 <div class="artist-dot-name">Kris Casey</div>
             </div> 
             <div>
                 <a href="../">
-                    <img src="./Artists/Simon Norman/Ghost Net_1.jpg" alt="" class="artist-dot">
+                    <img src="../img/Exhibition/Simon Norman/Ghost Net_1.jpg" alt="" class="artist-dot">
                 </a>
                 <div class="artist-dot-name">Simon Norman</div>
             </div>
             <div>
                 <a href="../">
-                    <img src="./Artists/Petra Meikle de Vlas/Barrier Reef Lagoons.jpg" alt="" class="artist-dot">
+                    <img src="../img/Exhibition/Petra Meikle de Vlas/icon.png" alt="" class="artist-dot">
                 </a>
                 <div class="artist-dot-name">Petra Meikle de Vlas</div>
             </div>
             <div>
                 <a href="../">
-                    <img src="./Artists/Wayne Quilliam/waynequilliam2021REEF (6).jpeg" alt="" class="artist-dot">
+                    <img src="../img/Exhibition/Wayne Quilliam/waynequilliam2021REEF (6).jpeg" alt="" class="artist-dot">
                 </a>
                 <div class="artist-dot-name">Wayne Quilliam</div>
             </div>
         </div>
-        <div></div> 
+        <div style="min-width: 5em;"></div> 
     </div>
 
     <div id="main">
+        <div></div>
+
+        <div id="carousel-container">
+        <div id="carousel" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/Exhibition/Simon Norman/Ghost Net_1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Exhibition/Simon Norman/Ghost Net_2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Exhibition/Simon Norman/Ghost Net_3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+
     </div>
 
     <div>
