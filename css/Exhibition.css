@@ -3,7 +3,7 @@ body {
     margin: 0;
     height: 100vh;
     width: 100vw;
-    background-color: #2e2e2e;
+    background-color: black;
     font-family: Roboto;
 }
 
@@ -59,6 +59,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 1em 2em;
+    background-color: #2e2e2e;
 }
 
 #carousel-container {
@@ -68,7 +69,7 @@ body {
 }
 
 .carousel-item {
-    height: 75vh;
+    height: 76vh;
     padding: 0em 2em;
 }
 
@@ -77,6 +78,7 @@ body {
     height: 100%;
     object-fit: contain;
     align-self: center;
+    /* background-color: lightgrey; */
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -130,6 +132,25 @@ a {
 
 a:hover {
     color: rgb(199, 199, 199);
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    /* height: 5vh; */
+    padding: 2vh;
+    align-items: center;
+    color: white;
+}
+
+.sponsor-logo-container {
+    height: 5vh;
+    margin: 0vh 2vh;
+}
+
+.sponsor-logo-container img {
+    object-fit: contain;
+    height: 100%;
 }
 
 @font-face {
