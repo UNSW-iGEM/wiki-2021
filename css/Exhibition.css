@@ -103,6 +103,15 @@ body {
     font-size: 15px;
 }
 
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact a {
+    padding-left: 0.4em; 
+}
+
 .image-with-caption {
     display: flex;
     flex-direction: row;
@@ -113,14 +122,14 @@ body {
     max-width: 100%;
     width: 100%;
     background-color: lightgrey;
-    /* object-fit: contain; */
+    box-shadow: 0 0 0.5em #7a7a7a;
 }
 
 .caption {
     /* min-width: 40%; */
-    padding: 2em;
+    padding: 3em;
     font-size: 12px;
-    color: grey;
+    color: rgb(82, 82, 82);
 }
 
 .exh-img-container {
