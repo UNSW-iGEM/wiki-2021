@@ -86,6 +86,11 @@ body {
     width: auto;
 }
 
+.carousel-caption a {
+    text-decoration: none;
+    color: inherit;
+}
+
 #artist_bio {
     color: white;
     width: 30vw;
