@@ -97,7 +97,8 @@ h4, h5, h6 {
     height: 100%;
     object-fit: contain;
     align-self: center; 
-    box-shadow: 0 0 1.3em #7a7a7a;
+    /* box-shadow: 0 0 1.3em #7a7a7a; */
+    filter: drop-shadow(0 0 1.3em #7a7a7a);
 }
 
 .carousel-control-prev, .carousel-control-next {
