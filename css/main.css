@@ -62,15 +62,3 @@ body {
     display: flex;
     width: 100vw;
 }
-
-@font-face {
-    font-family: Roboto;
-    src: url(fonts/Roboto-Regular.ttf);
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: Roboto;
-    src: url(fonts/Roboto-Bold.ttf);
-    font-weight: 700;
-}

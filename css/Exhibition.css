@@ -4,6 +4,20 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: black;
+    font-family: OpenSans;
+}
+
+h1 {
+    font-family: MPLUSRounded1c;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+}
+
+h2, h3  {
+    font-family: MPLUSRounded1c;
+}
+
+h4, h5, h6 {
     font-family: Roboto;
 }
 
@@ -52,6 +66,7 @@ body {
     justify-content: center;
     text-align: center;
     font-size: 12px;
+    font-family: Roboto;
 }
 
 #main {
@@ -175,22 +190,4 @@ a:hover {
 .sponsor-logo-container img {
     object-fit: contain;
     height: 100%;
-}
-
-@font-face {
-    font-family: Roboto;
-    src: url(fonts/Roboto-Regular.ttf);
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: Roboto;
-    src: url(fonts/Roboto-Bold.ttf);
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: Roboto;
-    src: url(fonts/Roboto-Italic.ttf);
-    font-style: italic;
 }
