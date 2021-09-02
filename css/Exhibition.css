@@ -76,7 +76,7 @@ h4, h5, h6 {
     /* max-width: 100%; */
     width: 100vw;
     padding: 1em 2em;
-    background-color: #2e2e2e;
+    background-color: #252525;
 }
 
 #carousel-container {
@@ -108,6 +108,10 @@ h4, h5, h6 {
 .carousel-caption a {
     text-decoration: none;
     color: inherit;
+}
+
+.dark {
+    color: rgb(82, 82, 82);
 }
 
 #artist_bio {
