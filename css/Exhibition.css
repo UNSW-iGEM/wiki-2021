@@ -1,31 +1,5 @@
-html,
-body {
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
+html, body, #igem-unsw-content {
     background-color: black;
-    font-family: OpenSans;
-}
-
-h1 {
-    font-family: MPLUSRounded1c;
-    font-weight: bold;
-    /* text-transform: uppercase; */
-}
-
-h2, h3  {
-    font-family: MPLUSRounded1c;
-}
-
-h4, h5, h6 {
-    font-family: Roboto;
-}
-
-#igem-unsw-content {
-    height: 100%;
-    /* display: flex; */
-    /* flex-flow: column; */
-    /* justify-content: space-between; */
 }
 
 #header {
@@ -135,15 +109,6 @@ h4, h5, h6 {
     text-align: center;
 }
 
-.contact {
-    display: flex;
-    align-items: center;
-}
-
-.contact a {
-    padding-left: 0.4em; 
-}
-
 .image-with-caption {
     display: flex;
     justify-content: space-between;
@@ -171,12 +136,4 @@ h4, h5, h6 {
 .exh-img-container img {
     height: 100% !important;
     width: auto !important;
-}
-
-a {
-    color: white;
-}
-
-a:hover {
-    color: rgb(199, 199, 199);
 }
