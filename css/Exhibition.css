@@ -111,7 +111,7 @@ h4, h5, h6 {
 }
 
 .dark {
-    color: rgb(82, 82, 82);
+    color: rgb(53, 53, 53);
 }
 
 #artist_bio {
@@ -179,24 +179,4 @@ a {
 
 a:hover {
     color: rgb(199, 199, 199);
-}
-
-#footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* height: 5vh; */
-    padding: 2vh;
-    align-items: center;
-    color: white;
-}
-
-.sponsor-logo-container {
-    height: 5vh;
-    margin: 0vh 2vh;
-}
-
-.sponsor-logo-container img {
-    object-fit: contain;
-    height: 100%;
 }
