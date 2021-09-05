@@ -3,7 +3,7 @@ html, body, #igem-unsw-content {
 }
 
 #header {
-    height: fit-content;
+    height: auto;
     /* width: 100%; */
     padding: 1vh;
     background-color: #000000;
@@ -16,17 +16,17 @@ html, body, #igem-unsw-content {
 #artist_dot_row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 80%;
     flex-wrap: wrap;
 }
 
 .artist-dot {
     transition: box-shadow .3s;
-    height: 5vw;
-    width: 5vw;
+    height: 66px;
+    width: 66px;
     border-radius: 50%;
-    margin: 0.5vw;
+    margin: 6px;
     object-fit: cover;
 }
 
@@ -35,7 +35,7 @@ html, body, #igem-unsw-content {
 }
 
 .artist-dot-name {
-    width: 6vw;
+    width: 78px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -44,11 +44,7 @@ html, body, #igem-unsw-content {
 }
 
 #main {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    /* max-width: 100%; */
-    width: 100vw;
     padding: 1em 2em;
     background-color: #252525;
 }
@@ -56,15 +52,17 @@ html, body, #igem-unsw-content {
 #carousel-container {
     max-height: 100%;
     height: 100%;
-    width: 60%;
+    /* width: 60%; */
     background-color: lightgrey;
 }
 
 .carousel-item {
     height: 77vh;
+    /* max-height: 77vh; */
     max-width: 100%;
     padding: 0em 2em;
 }
+
 
 .carousel-item img {
     width: 100%;
@@ -90,8 +88,9 @@ html, body, #igem-unsw-content {
 
 #artist_bio {
     color: white;
-    width: 30vw;
-    margin-right: 3em;
+    /* width: 30vw; */
+    margin-right: 2em;
+    /* padding-bottom: 2em; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,19 +120,102 @@ html, body, #igem-unsw-content {
 
 .caption {
     /* min-width: 40%; */
-    padding: 3em;
+    padding: 2em;
     font-size: 12px;
     color: rgb(82, 82, 82);
+    align-self: center;
 }
 
 .exh-img-container {
     max-height: 100%;
-    height: 100%;
-    max-width: 100%;
+    /* height: 100%; */
+    /* max-width: 100%; */
     width: auto;
+    align-items: center;
 }
 
-.exh-img-container img {
+/* .exh-img-container img {
     height: 100% !important;
     width: auto !important;
+} */
+
+
+
+@media (max-width: 992px) {
+    .carousel-item {
+        height: 70vh;
+        width: 100%;
+    }
+    .carousel-item-caption {
+        height: auto;
+        width: 100%;
+    }
+
+    .carousel-caption {
+        display: block !important;
+    }
+
+    .caption h3 {
+        font-size: 20px;
+    }
+
+    .caption h4 {
+        font-size: 16px;
+    }
+
+    .caption h6 {
+        font-size: 14px;
+    }
+
+    .quote {
+        font-size: 13px;
+    }
+    
+}
+
+@media (max-width: 720px) {
+    .carousel-item {
+        height: 40vh;
+        width: 100%;
+    }
+
+    .carousel-item-caption {
+        height: auto;
+        width: 100%;
+    }
+
+    .exh-img-container {
+        max-height: 75vh;
+        width: auto;
+    }
+
+    .caption {
+        display: block;
+        overflow: scroll;
+        font-size: 11px;
+    }
+
+    .carousel-caption h4 {
+        font-size: 14px;
+    }
+    .carousel-caption h5 {
+        font-size: 12px;
+    }
+
+    .caption h3 {
+        font-size: 16px;
+    }
+
+    .caption h4 {
+        font-size: 14px;
+    }
+
+    .caption h6 {
+        font-size: 12px;
+    }
+
+    .quote {
+        font-size: 11px;
+    }
+
 }

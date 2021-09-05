@@ -2,7 +2,7 @@
 layout: exhibition.liquid
 ---
 
-<div id="artist_bio" style="width: 20vw;">
+<div id="artist_bio" class="col-lg">
     <h1>Betty Sykes</h1>
     <br /><br />
     <div class="quote">
@@ -33,7 +33,7 @@ layout: exhibition.liquid
     </div>
 </div>
 
-<div id="carousel-container" style="width: 72vw;">
+<div id="carousel-container" class="col-lg-9">
 <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-keyboard="true">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -41,9 +41,12 @@ layout: exhibition.liquid
         <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="image-with-caption">
-                <div class="caption">
+        <div class="carousel-item carousel-item-caption active">
+            <div class="image-with-caption row g-0">
+                <div class="exh-img-container col-md">
+                    <img src="/img/Exhibition/Betty Sykes/Karrangkal.JPG" class="d-block">
+                </div>
+                <div class="caption col-md-3">
                     <h3><em>Karrangkal (1)</em> <br /></h3>
                     <h6>
                         Acrylic on canvas <br />
@@ -56,16 +59,16 @@ layout: exhibition.liquid
                         back home."
                     </div>
                 </div>
-                <div class="exh-img-container">
-                    <img src="/img/Exhibition/Betty Sykes/Karrangkal.JPG" class="d-block w-100">
-                </div>
             </div>
         </div>
 
 
-        <div class="carousel-item">
-            <div class="image-with-caption">
-                <div class="caption">
+        <div class="carousel-item carousel-item-caption">
+            <div class="image-with-caption row g-0">
+                <div class="exh-img-container col-md">
+                    <img src="/img/Exhibition/Betty Sykes/Karrangkal - Coral Reef.JPG" class="d-block w-100">
+                </div>
+                <div class="caption col-md-3">
                     <h3><em>Karrangkal (2)</em> <br /></h3>
                     <h6>
                         Acrylic on canvas <br />
@@ -78,18 +81,15 @@ layout: exhibition.liquid
                         back home."
                     </div>
                 </div>
-                <div class="exh-img-container">
-                    <img src="/img/Exhibition/Betty Sykes/Karrangkal - Coral Reef.JPG" class="d-block w-100">
-                </div>
             </div>
         </div>
 
-        <div class="carousel-item">
-            <div class="image-with-caption">
-                <div class="exh-img-container" style="width: 90%;">
+        <div class="carousel-item carousel-item-caption">
+            <div class="image-with-caption row g-0">
+                <div class="exh-img-container col-md">
                     <img src="/img/Exhibition/Betty Sykes/Kirrbaji, Dugong feeding with her young.jpg" class="d-block w-100" style="width: 100% !important;">
                 </div>
-                <div class="caption" style="width: 20vw;">
+                <div class="caption col-md-3">
                     <h4><em>Kirrbaji, Dugong feeding with her young.</em><br /></h4>
                     <h6>
                         Acrylic on linen <br />
@@ -97,7 +97,7 @@ layout: exhibition.liquid
                     </h6>
                     <br />
                     
-                    <br /><br />
+                    <br />
                     <div class="quote">
                         "This painting represents the Kirrbaji feeding on the sea grass with her young calves."
                     </div>
@@ -105,32 +105,6 @@ layout: exhibition.liquid
             </div>
         </div>
     </div>
-
-    <!-- this was photo on top of caption -->
-
-    <!-- <div class="carousel-item active">
-        <div class="image-with-caption" style="flex-direction: column;">
-            <div class="exh-img-container" style="height: 75%; width: 100%;">
-                <img src="/img/Exhibition/Betty Skyes/Kirrbaji, Dugong feeding with her young.jpg" class="d-block w-100"
-                        style="width: 100% !important;">
-            </div>
-            <div class="caption" style="display: flex; flex-direction: row; 
-                                        justify-content: space-between; 
-                                        padding-top: 1em;">
-                <div>
-                    <h5><em>Kirrbaji, Dugong feeding with her young.</em> <br /></h5>
-                    <h6>
-                        Acrylic on linen <br />
-                        76.2cm x 152.4cm <br />
-                    </h6>
-                    Photo ©Courtesy of Bana Yirriji Art Centre <br />
-                </div>
-                <div style="display: flex; align-items: flex-end; width: 40%; text-align: right;">
-                    This painting represents the Kirrbaji feeding on the sea grass with her young calves.
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
