@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="/css/fonts.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <div id="igem-unsw-content">
     <div id="full-page">
 
-        <div id="header">
+        <div class="navbar sticky-top" id="header">
             <a href="/">
                 <img src="/assets/img/UNSW_iGEM_logo.png" alt="UNSW iGEM Logo" height="100%">
             </a>
@@ -31,21 +32,6 @@
 
     {% include footer.html %}
 </div>
-
-<script>
-    window.onscroll = function() {stickHeader()};
-    
-    var header = document.getElementById("header");
-    var sticky = header.offsetTop;
-    
-    function stickHeader() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
-</script>
 
 </body>
 </html>

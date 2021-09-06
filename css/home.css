@@ -22,20 +22,6 @@ html, body,#igem-unsw-content {
     font-size: 14px;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.content {
-    padding: 0px;
-}
-
-.sticky + .content {
-    padding-top: 200px;
-}
-
 #navbar_pages {
     display: flex;
     flex-direction: row;
