@@ -15,18 +15,37 @@
     <div id="full-page">
 
         <div id="header">
-            <div style="height: 100%;">
-                <a href="/">
-                    <img src="/assets/img/UNSW_iGEM_logo.png" alt="UNSW iGEM Logo" height="100%">
-                </a>
+            <a href="/">
+                <img src="/assets/img/UNSW_iGEM_logo.png" alt="UNSW iGEM Logo" height="100%">
+            </a>
+            <div id="navbar_pages">
+                <a class="core_page" href="/Model/">Dry Lab</a>
             </div>
             <a id="exhibition_link" href="/Exhibition/">Virtual Exhibition</a>
         </div>
 
-        {{ content }}
+        <div class="content">
+            {{ content }}
+        </div>
     </div>
 
     {% include footer.html %}
 </div>
+
+<script>
+    window.onscroll = function() {stickHeader()};
+    
+    var header = document.getElementById("header");
+    var sticky = header.offsetTop;
+    
+    function stickHeader() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+</script>
+
 </body>
 </html>

@@ -22,6 +22,34 @@ html, body,#igem-unsw-content {
     font-size: 14px;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.content {
+    padding: 0px;
+}
+
+.sticky + .content {
+    padding-top: 200px;
+}
+
+#navbar_pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+#core_page {
+    text-decoration: none; 
+    font-size: 15px;
+    letter-spacing: 0.07em;
+    font-weight: bold;
+}
 #exhibition_link:link {
     text-decoration: none; 
     font-size: 15px;
