@@ -22,10 +22,13 @@ body {
 
 #igem-unsw-content a {
     color: white;
+    opacity: 100%;
+    transition: opacity .3s;
 }
 
 #igem-unsw-content a:hover {
-    color: rgb(199, 199, 199);
+    /* color: rgb(199, 199, 199); */
+    opacity: 75%;
 }
 
 .contact {

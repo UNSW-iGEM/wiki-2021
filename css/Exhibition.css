@@ -83,6 +83,19 @@ html, body, #igem-unsw-content {
     color: inherit;
 }
 
+.carousel-caption a > * {
+    opacity: 100%;
+    transition: opacity .3s;
+}
+
+.carousel-caption a:hover > *{
+    opacity: 75%;
+}
+
+.dark a:hover > *{
+    opacity: 65%;
+}
+
 #igem-unsw-content .dark > * {
     color: rgb(53, 53, 53);
 }
