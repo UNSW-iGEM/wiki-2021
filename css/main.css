@@ -6,25 +6,25 @@ body {
     font-family: OpenSans;
 }
 
-h1 {
+#igem-unsw-content h1 {
     font-family: MPLUSRounded1c;
     font-weight: bold;
     /* text-transform: uppercase; */
 }
 
-h2, h3  {
+#igem-unsw-content h2, h3  {
     font-family: MPLUSRounded1c;
 }
 
-h4, h5, h6 {
+#igem-unsw-content h4, h5, h6 {
     font-family: Roboto;
 }
 
-a {
+#igem-unsw-content a {
     color: white;
 }
 
-a:hover {
+#igem-unsw-content a:hover {
     color: rgb(199, 199, 199);
 }
 

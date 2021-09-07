@@ -424,65 +424,65 @@ assets:
 css:
   css/Exhibition.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/ExhibitionCSS?action=raw&ctype=text/css
-    md5: 99316dcac6518f1c1c3b32489f1addb7
+    md5: f46f61f829a58c9e560850f203aca6f7
   css/bootstrap/bootstrap.min.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/bootstrap/bootstrap-minCSS?action=raw&ctype=text/css
     md5: e451b87914db6243b6afa3c5e484ec16
   css/fonts.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/fontsCSS?action=raw&ctype=text/css
-    md5: 7920db7670418ed8b95e501e245832f0
+    md5: 1f345559fa87ef9b9c64e5aad0fc1cd4
   css/footer.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/footerCSS?action=raw&ctype=text/css
-    md5: 0cdc99923591114ad9b340e0f2b1d0a3
+    md5: 24dd31ac3f63cb5870ac1eda960f8f51
   css/home.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/homeCSS?action=raw&ctype=text/css
-    md5: f5d03d03102ef6a4c8cda58a375cc9d0
+    md5: 3a5293abfa742641b674272ba1fa27d6
   css/igem_reset.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/igem_resetCSS?action=raw&ctype=text/css
-    md5: 6b113c0ccdbd32785db73a10b78c1361
+    md5: da379b31b9f1993631d8f37e8f8fde8d
   css/main.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/mainCSS?action=raw&ctype=text/css
-    md5: 01eaf0a9163d2c15b6e293d79b4372d9
+    md5: 02bc3a6f5da1c2b14f6780a647f9a491
 html:
   Exhibition/Betty_Sykes/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Betty_Sykes
-    md5: 7d2fc1320f4f76fa5e87c5ff909d2d50
+    md5: fc69dba9048a2a47b71f469d196fd8d2
   Exhibition/Erub_Arts_Collaboration/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Erub_Arts_Collaboration
-    md5: 8192a8ff71eb6b1152000ae83cdeefac
+    md5: d3748395c038dc030a7eb46dc81c09ba
   Exhibition/Erub_Ladies_Collaboration/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Erub_Ladies_Collaboration
-    md5: a50c88b7e31aa4da27fc72871f85681d
+    md5: 9b55c21c0068dd8a90013d8174f1c2a6
   Exhibition/Giveaway/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Giveaway
-    md5: 9a789ce604ede647eac335ec9cc463a5
+    md5: 00638daa8ce8ae1ce3183f393845716e
   Exhibition/James_Unsworth/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/James_Unsworth
-    md5: 14ab2a27363d5056a82665ae550533ef
+    md5: 44edcfb2950f8149c5482c5643df9784
   Exhibition/Josie_Olbar/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Josie_Olbar
-    md5: 5d910398f81bcc418e5a00ff6e3387a5
+    md5: 842d934a41f029515e2d47da20fbabec
   Exhibition/Kris_Casey/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Kris_Casey
-    md5: 5a94afb9cf12b45233811581029b7f7b
+    md5: 8822d7a35877a3b7cdb3f7c547348814
   Exhibition/Kurun_Warun/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Kurun_Warun
-    md5: 4d5f694768fc2e376f2f881dc206c6d2
+    md5: 0e4929235a9b07a45f5e2279eeaa99f6
   Exhibition/Petra_Meikle_de_Vlas/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Petra_Meikle_de_Vlas
-    md5: 382c9a6ee85d68216d0be183726f9fde
+    md5: dd5b778f2636196f9cde6d12d3f8110b
   Exhibition/Pormpuraaw_Art_Centre/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Pormpuraaw_Art_Centre
-    md5: 897b012b07625c00855515a233b2e942
+    md5: 0aa2ec2db85f0af9704c0735c4b702b9
   Exhibition/Wayne_Quilliam/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Wayne_Quilliam
-    md5: 80a3e108c0d41c0db0954973cb6391b0
+    md5: d3cfaffde4c30a9dd2fdee1f6dbbe7d9
   Exhibition/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition
-    md5: 971bc0b91b45c191c517d7599510ee46
+    md5: 49da20be61ae9638e2d7835a024ed3ed
   index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia
-    md5: b0c872d5de3689d5f7164fbf668abe21
+    md5: 6b2652871a65bd065536c6d31cf040c5
 js:
   js/bootstrap/bootstrap.bundle.min.js:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/js/bootstrap/bootstrap-bundle-minJS?action=raw&ctype=text/javascript
