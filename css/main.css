@@ -3,21 +3,21 @@ body {
     margin: 0;
     height: 100vh;
     width: 100vw;
-    font-family: OpenSans;
+    font-family: 'OpenSans', sans-serif;
 }
 
 #igem-unsw-content h1 {
-    font-family: MPLUSRounded1c;
+    font-family: 'MPLUSRounded1c', 'Roboto', sans-serif;
     font-weight: bold;
     /* text-transform: uppercase; */
 }
 
 #igem-unsw-content h2, h3  {
-    font-family: MPLUSRounded1c;
+    font-family: MPLUSRounded1c, Roboto, sans-serif;
 }
 
 #igem-unsw-content h4, h5, h6 {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
 }
 
 #igem-unsw-content a {

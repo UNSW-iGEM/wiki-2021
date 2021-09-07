@@ -6,13 +6,13 @@
 
 @font-face {
     font-family: MPLUSRounded1c;
-    src: url(../assets/fonts/MPLUSRounded1c-Regular.ttf);
+    src: url(../assets/fonts/MPLUSRounded1c-Bold.ttf);
+    font-weight: 700;
 }
 
 @font-face {
     font-family: MPLUSRounded1c;
-    src: url(../assets/fonts/MPLUSRounded1c-Bold.ttf);
-    font-weight: 700;
+    src: url(../assets/fonts/MPLUSRounded1c-Regular.ttf);
 }
 
 @font-face {

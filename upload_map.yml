@@ -11,6 +11,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/4/46/T--UNSW_Australia--fonts--MPLUSRounded1c-Bold.ttf
     md5: ae5e1c513fcec11e457a3d2682c60d8a
     upload_filename: T--UNSW_Australia--fonts--MPLUSRounded1c-Bold.ttf
+  assets/fonts/MPLUSRounded1c-Bold.txt:
+    link_URL: https://2021.igem.org/wiki/images/9/9a/T--UNSW_Australia--fonts--MPLUSRounded1c-Bold.txt
+    md5: daa662718f6a350fc237fee2ddf399d4
+    upload_filename: T--UNSW_Australia--fonts--MPLUSRounded1c-Bold.txt
   assets/fonts/MPLUSRounded1c-Regular.ttf:
     link_URL: https://2021.igem.org/wiki/images/b/bf/T--UNSW_Australia--fonts--MPLUSRounded1c-Regular.ttf
     md5: 7008cb588c09cab81cca8470815dffcc
@@ -57,6 +61,14 @@ assets:
     md5: 2fde3e500e31d7ace1fe170a15cb6dc8
     upload_filename: T--UNSW_Australia--img--Exhibition--Betty Sykes--Kirrbaji, Dugong
       feeding with her young.jpg
+  assets/img/Exhibition/Betty Sykes/icon.png:
+    link_URL: https://2021.igem.org/wiki/images/d/de/T--UNSW_Australia--img--Exhibition--Betty_Sykes--icon.png
+    md5: b405bb46fc8368a5888d2b9af6ca84a1
+    upload_filename: T--UNSW_Australia--img--Exhibition--Betty Sykes--icon.png
+  assets/img/Exhibition/Erub Arts Collaboration/icon.png:
+    link_URL: https://2021.igem.org/wiki/images/7/73/T--UNSW_Australia--img--Exhibition--Erub_Arts_Collaboration--icon.png
+    md5: 7cae732c875bbdb1992f74e5df13bb9b
+    upload_filename: T--UNSW_Australia--img--Exhibition--Erub Arts Collaboration--icon.png
   assets/img/Exhibition/Erub Arts Collaboration/unnamed (5).jpg:
     link_URL: https://2021.igem.org/wiki/images/6/6e/T--UNSW_Australia--img--Exhibition--Erub_Arts_Collaboration--unnamed_%285%29.jpg
     md5: 46362a0dd0a493955d279257119fe00d
@@ -77,6 +89,10 @@ assets:
     md5: 2d73db1bd3a0de5a742d8a14602efe1f
     upload_filename: T--UNSW_Australia--img--Exhibition--Erub Arts Collaboration--unnamed
       (8).jpg
+  assets/img/Exhibition/Erub Ladies Collaboration/icon.png:
+    link_URL: https://2021.igem.org/wiki/images/8/85/T--UNSW_Australia--img--Exhibition--Erub_Ladies_Collaboration--icon.png
+    md5: 6445abe11f60e4f34396c02034f99b05
+    upload_filename: T--UNSW_Australia--img--Exhibition--Erub Ladies Collaboration--icon.png
   assets/img/Exhibition/Erub Ladies Collaboration/unnamed (1).jpg:
     link_URL: https://2021.igem.org/wiki/images/4/42/T--UNSW_Australia--img--Exhibition--Erub_Ladies_Collaboration--unnamed_%281%29.jpg
     md5: 99e2eb41addc0ba9bc821406ae06d7da
@@ -152,7 +168,7 @@ assets:
     upload_filename: T--UNSW_Australia--img--Exhibition--James Unsworth--gasso-2-Enhanced.JPG
   assets/img/Exhibition/James Unsworth/icon.png:
     link_URL: https://2021.igem.org/wiki/images/a/a4/T--UNSW_Australia--img--Exhibition--James_Unsworth--icon.png
-    md5: c8c900427795a358e7e1f90eb908d946
+    md5: 15527c1dd38ff93690c222ed63234ed9
     upload_filename: T--UNSW_Australia--img--Exhibition--James Unsworth--icon.png
   assets/img/Exhibition/James Unsworth/plate-2-Enhanced.JPG:
     link_URL: https://2021.igem.org/wiki/images/4/4b/T--UNSW_Australia--img--Exhibition--James_Unsworth--plate-2-Enhanced.JPG
@@ -173,6 +189,10 @@ assets:
     md5: a446a3042e241ea9744ffe34f92842e3
     upload_filename: T--UNSW_Australia--img--Exhibition--Josie Olbar--Mili, stinging
       jellyfish_2.JPG
+  assets/img/Exhibition/Josie Olbar/icon.png:
+    link_URL: https://2021.igem.org/wiki/images/2/27/T--UNSW_Australia--img--Exhibition--Josie_Olbar--icon.png
+    md5: d7a34937f3d1ee3ae20b02caaa00d1ad
+    upload_filename: T--UNSW_Australia--img--Exhibition--Josie Olbar--icon.png
   assets/img/Exhibition/Kris Casey/Kris.Casey.Clown.Fish.jpg:
     link_URL: https://2021.igem.org/wiki/images/7/73/T--UNSW_Australia--img--Exhibition--Kris_Casey--Kris.Casey.Clown.Fish.jpg
     md5: 29245480b9d4c92630ddd09fc9b46c12
@@ -217,6 +237,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/a/a7/T--UNSW_Australia--img--Exhibition--Kris_Casey--Kris.casey_sweet.lips.jpg
     md5: ca6354593c06a92573862b2ca79bfb43
     upload_filename: T--UNSW_Australia--img--Exhibition--Kris Casey--Kris.casey_sweet.lips.jpg
+  assets/img/Exhibition/Kris Casey/icon.png:
+    link_URL: https://2021.igem.org/wiki/images/f/fe/T--UNSW_Australia--img--Exhibition--Kris_Casey--icon.png
+    md5: 98b82b302f291480d1d2d786c46cd343
+    upload_filename: T--UNSW_Australia--img--Exhibition--Kris Casey--icon.png
   assets/img/Exhibition/Kris Casey/kris.casey_yongala.soft.coral.jpg:
     link_URL: https://2021.igem.org/wiki/images/8/89/T--UNSW_Australia--img--Exhibition--Kris_Casey--kris.casey_yongala.soft.coral.jpg
     md5: 5f4316fae31d5e2bdb88bd217f5c7002
@@ -225,6 +249,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/3/34/T--UNSW_Australia--img--Exhibition--Kurun_Warun--Kurun_1.jpg
     md5: 4f750cc6d7db8f5a1d877c11f02cdbb5
     upload_filename: T--UNSW_Australia--img--Exhibition--Kurun Warun--Kurun_1.jpg
+  assets/img/Exhibition/Kurun Warun/icon.png:
+    link_URL: https://2021.igem.org/wiki/images/9/90/T--UNSW_Australia--img--Exhibition--Kurun_Warun--icon.png
+    md5: 0dd3f16b3cd9751fc81c9d6cbc864ab1
+    upload_filename: T--UNSW_Australia--img--Exhibition--Kurun Warun--icon.png
   assets/img/Exhibition/Petra Meikle de Vlas/Among the Shallows.png:
     link_URL: https://2021.igem.org/wiki/images/6/62/T--UNSW_Australia--img--Exhibition--Petra_Meikle_de_Vlas--Among_the_Shallows.png
     md5: bfb32d76775d52d60744c40fe3b52050
@@ -311,7 +339,7 @@ assets:
       Shoals copy.png
   assets/img/Exhibition/Petra Meikle de Vlas/icon.png:
     link_URL: https://2021.igem.org/wiki/images/a/ae/T--UNSW_Australia--img--Exhibition--Petra_Meikle_de_Vlas--icon.png
-    md5: 6701c36bd4019ffca2a509afa99c3706
+    md5: 805b27bcd1abacb0431e2f00ff7c42cf
     upload_filename: T--UNSW_Australia--img--Exhibition--Petra Meikle de Vlas--icon.png
   assets/img/Exhibition/Simon Norman/Ghost Net_1.jpg:
     link_URL: https://2021.igem.org/wiki/images/7/7e/T--UNSW_Australia--img--Exhibition--Simon_Norman--Ghost_Net_1.jpg
@@ -325,6 +353,14 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/f/f7/T--UNSW_Australia--img--Exhibition--Simon_Norman--Ghost_Net_3.jpg
     md5: 4aa2b48b3434fa7d3761f0f70be90be7
     upload_filename: T--UNSW_Australia--img--Exhibition--Simon Norman--Ghost Net_3.jpg
+  assets/img/Exhibition/Simon Norman/icon.png:
+    link_URL: https://2021.igem.org/wiki/images/a/a0/T--UNSW_Australia--img--Exhibition--Simon_Norman--icon.png
+    md5: 039901982362e814c02655b06acac603
+    upload_filename: T--UNSW_Australia--img--Exhibition--Simon Norman--icon.png
+  assets/img/Exhibition/Wayne Quilliam/icon.png:
+    link_URL: https://2021.igem.org/wiki/images/e/eb/T--UNSW_Australia--img--Exhibition--Wayne_Quilliam--icon.png
+    md5: 8c44c4fafe772713dd64abbfc80e3c52
+    upload_filename: T--UNSW_Australia--img--Exhibition--Wayne Quilliam--icon.png
   assets/img/Exhibition/Wayne Quilliam/waynequilliam2021NikonLand (2).jpeg:
     link_URL: https://2021.igem.org/wiki/images/f/f9/T--UNSW_Australia--img--Exhibition--Wayne_Quilliam--waynequilliam2021NikonLand_%282%29.jpeg
     md5: f3ec79fe2cf15cc831e8bddc6275d9c4
@@ -424,13 +460,13 @@ assets:
 css:
   css/Exhibition.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/ExhibitionCSS?action=raw&ctype=text/css
-    md5: f46f61f829a58c9e560850f203aca6f7
+    md5: c3f7eb635a5437296e9b701b28e7270b
   css/bootstrap/bootstrap.min.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/bootstrap/bootstrap-minCSS?action=raw&ctype=text/css
     md5: e451b87914db6243b6afa3c5e484ec16
   css/fonts.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/fontsCSS?action=raw&ctype=text/css
-    md5: 1f345559fa87ef9b9c64e5aad0fc1cd4
+    md5: 530ece22a551277e139c5ff8fda8368e
   css/footer.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/footerCSS?action=raw&ctype=text/css
     md5: 24dd31ac3f63cb5870ac1eda960f8f51
@@ -439,47 +475,47 @@ css:
     md5: 3a5293abfa742641b674272ba1fa27d6
   css/igem_reset.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/igem_resetCSS?action=raw&ctype=text/css
-    md5: da379b31b9f1993631d8f37e8f8fde8d
+    md5: 46f33488b8eede1ce171ac404ce1780e
   css/main.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/mainCSS?action=raw&ctype=text/css
-    md5: 02bc3a6f5da1c2b14f6780a647f9a491
+    md5: d7eae53b760a7c58ef947b8c1cdfe2fb
 html:
   Exhibition/Betty_Sykes/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Betty_Sykes
-    md5: fc69dba9048a2a47b71f469d196fd8d2
+    md5: b5e6b6806d3a078d8aebb7e696ce0757
   Exhibition/Erub_Arts_Collaboration/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Erub_Arts_Collaboration
-    md5: d3748395c038dc030a7eb46dc81c09ba
+    md5: 44fce4a505f177b199e3bb28cd9b903d
   Exhibition/Erub_Ladies_Collaboration/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Erub_Ladies_Collaboration
-    md5: 9b55c21c0068dd8a90013d8174f1c2a6
+    md5: df94bc90bd6abcee859a9ee79b93f02e
   Exhibition/Giveaway/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Giveaway
-    md5: 00638daa8ce8ae1ce3183f393845716e
+    md5: f8ab19435cdf8af4d5f7ced070f731f4
   Exhibition/James_Unsworth/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/James_Unsworth
-    md5: 44edcfb2950f8149c5482c5643df9784
+    md5: 0a50a8fc892ddad771ef87c6ed6b1e75
   Exhibition/Josie_Olbar/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Josie_Olbar
-    md5: 842d934a41f029515e2d47da20fbabec
+    md5: 243ac6fe096d6b43786befa54104e4bd
   Exhibition/Kris_Casey/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Kris_Casey
-    md5: 8822d7a35877a3b7cdb3f7c547348814
+    md5: d067351fc93caf19cae0efeff8165455
   Exhibition/Kurun_Warun/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Kurun_Warun
-    md5: 0e4929235a9b07a45f5e2279eeaa99f6
+    md5: 0b2f11cd8e311ace704adfd7348ef263
   Exhibition/Petra_Meikle_de_Vlas/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Petra_Meikle_de_Vlas
-    md5: dd5b778f2636196f9cde6d12d3f8110b
+    md5: 9ae5e50145b396f6ded3c42fe006d67e
   Exhibition/Pormpuraaw_Art_Centre/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Pormpuraaw_Art_Centre
-    md5: 0aa2ec2db85f0af9704c0735c4b702b9
+    md5: 5684179eff141a6f2ad17d99954df3b0
   Exhibition/Wayne_Quilliam/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Wayne_Quilliam
-    md5: d3cfaffde4c30a9dd2fdee1f6dbbe7d9
+    md5: 6b6d97c190fa3c62cf8764bda3d066dd
   Exhibition/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition
-    md5: 49da20be61ae9638e2d7835a024ed3ed
+    md5: 21456e07680485f7be4a29df425a7390
   index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia
     md5: 6b2652871a65bd065536c6d31cf040c5
