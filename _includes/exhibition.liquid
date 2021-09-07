@@ -6,9 +6,14 @@
 <link rel="stylesheet" href="/css/fonts.css" type="text/css">
 <link rel="stylesheet" href="/css/main.css" type="text/css">
 <link rel="stylesheet" href="/css/Exhibition.css" type="text/css">
+<link rel="preload" as="image" href="/assets/img/Exhibition/loader static.png">
 <link rel="preload" as="font" href="/assets/fonts/MPLUSRounded1c-Bold.ttf" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" as="font" href="/assets/fonts/MPLUSRounded1c-Regular.ttf" type="font/ttf" crossorigin="anonymous">
 <script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+<div id="loader">
+    <img src="/assets/img/Exhibition/loader static.png" height="70%">
+</div>
 
 <div id="igem-unsw-content">
     <div id="header">
@@ -100,3 +105,12 @@
 
     {% include footer.html %}
 </div>
+
+<script>
+    document.onreadystatechange = () => {
+        var state = document.readyState;
+        if (state == 'complete') {
+            document.getElementById('loader').style.display="none";
+        }
+    }
+</script>

@@ -2,6 +2,12 @@ html, body, #igem-unsw-content {
     background-color: black;
 }
 
+#loader {
+    background-color: black; 
+    opacity: 90%;
+    padding-top: 15vh;
+}
+
 #header {
     height: auto;
     /* width: 100%; */
