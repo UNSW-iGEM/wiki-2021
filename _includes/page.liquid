@@ -13,21 +13,12 @@
 </head>
 <body>
 <div id="igem-unsw-content">
+    
     <div id="full-page">
-
-        <div class="navbar sticky-top" id="header">
-            <a href="/">
-                <img src="/assets/img/UNSW_iGEM_logo.png" alt="UNSW iGEM Logo" height="100%">
-            </a>
-            <div id="navbar_pages">
-                <a class="core_page" href="/Model/">Dry Lab</a>
-            </div>
-            <a id="exhibition_link" href="/Exhibition/">Virtual Exhibition</a>
-        </div>
-
-        <div class="content">
+        {% include header.html %}
+        <!-- <div class="content"> -->
             {{ content }}
-        </div>
+        <!-- </div> -->
     </div>
 
     {% include footer.html %}
