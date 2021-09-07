@@ -1,3 +1,7 @@
+.centre {
+    text-align: center;
+}
+
 #full-page {
     background-color: #70b7b3;
     height: auto;
@@ -11,8 +15,11 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr), 2fr, 1fr;
     grid-row-gap: 1em;
-    column-gap: 1em;
-    padding: 1em;
+    column-gap: 2em;
+    padding-right: 10em;
+    padding-left: 10em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .topic_box {
@@ -26,3 +33,14 @@
 .secnd_col .topic_box {
     grid-area: 2 / 2 / 5 / 3;
 }
+
+.blurb {
+    /* need a better way to ensure both same height, but dynamic to fit content */
+    height: 5cm;
+}
+
+.graphic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
