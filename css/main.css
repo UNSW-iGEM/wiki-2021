@@ -10,6 +10,7 @@ h1 {
     font-family: MPLUSRounded1c;
     font-weight: bold;
     /* text-transform: uppercase; */
+    text-align: center;
 }
 
 h2, h3  {
