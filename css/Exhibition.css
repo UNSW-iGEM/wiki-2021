@@ -132,6 +132,12 @@ html, body, #igem-unsw-content {
     text-align: center;
 }
 
+.bio-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 .image-with-caption {
     display: flex;
     justify-content: space-between;
