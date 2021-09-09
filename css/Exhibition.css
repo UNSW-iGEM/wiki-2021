@@ -40,6 +40,10 @@ html, body, #igem-unsw-content {
     box-shadow: 0 0 1.3em #e5e4da; 
 }
 
+#artist_dot_row a:hover {
+    opacity: 100%;
+}
+
 .artist-dot-name {
     width: 78px;
     display: flex;
