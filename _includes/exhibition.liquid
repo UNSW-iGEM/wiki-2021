@@ -11,7 +11,7 @@
 <link rel="preload" as="font" href="/assets/fonts/MPLUSRounded1c-Regular.ttf" type="font/ttf" crossorigin="anonymous"> -->
 <script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
 
-<div id="loader">
+<div id="loader" class="active">
     <img src="/assets/img/Exhibition/loader.gif" height="60%">
 </div>
 
@@ -108,7 +108,7 @@
 
 <script>
     document.onreadystatechange = () => {
-        var state = document.readyState;
+        let state = document.readyState;
         if (state == 'complete') {
             document.getElementById('loader').style.display="none";
         }

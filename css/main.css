@@ -47,3 +47,8 @@ body {
     z-index: 999;
     text-align: center;
 }
+
+#loader img {
+    max-width: 70%;
+    object-fit: contain;
+}
