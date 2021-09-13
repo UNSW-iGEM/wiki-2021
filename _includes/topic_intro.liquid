@@ -1,0 +1,38 @@
+---
+title: Main Topic
+sub-title: Snazzy quote
+---
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/igem_reset.css">
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/topic_intro.css">
+    <script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    {% include header.html %}
+
+    <div id="top_banner">
+
+        <div id="heading">
+            <h1> {{ title }} </h1>
+            <h2> {{ sub-title }} </h2>
+        </div>
+    
+        <div id="coral">
+            <img src="/assets/img/coral_bed.png" alt="Coral Bed" width="100%">
+        </div>
+    </div>
+
+    <div id="content">
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
+</body>
+
+
+

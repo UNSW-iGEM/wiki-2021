@@ -2,12 +2,22 @@
     text-align: center;
 }
 
-#full-page {
-    background-color: #70b7b3;
-    height: auto;
+#top_banner {
+    background-color: #b3dad9;
+    height: 92vh;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+}
+
+#heading {
+    margin: auto;
+    text-transform: uppercase;
+}
+
+#content {
+    background-color: #70b7b3;
+    padding: 2vh;
 }
 
 #sub_topics {
@@ -27,20 +37,27 @@
 }
 
 .first_col .topic_box {
-    grid-area: 2 / 1 / 5 / 2;
+    grid-area: 1 / 1 / 5 / 2;
 }
 
 .secnd_col .topic_box {
-    grid-area: 2 / 2 / 5 / 3;
+    grid-area: 1 / 2 / 5 / 3;
 }
 
 .blurb {
     /* need a better way to ensure both same height, but dynamic to fit content */
     height: 5cm;
+    padding: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .graphic {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+}
+
+.graphic:hover {
+    box-shadow: 0 0 1.3em #001313; 
+}
