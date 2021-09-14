@@ -5,18 +5,15 @@
 <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="/css/fonts.css" type="text/css">
 <link rel="stylesheet" href="/css/main.css" type="text/css">
-<link rel="stylesheet" href="/css/home.css" type="text/css">
 
 <div id="igem-unsw-content">
+    {% include header.html %}
     
-    <div id="full-page">
-        {% include header.html %}
-        <!-- <div class="content"> -->
-            {{ content }}
-        <!-- </div> -->
-    </div>
+    {{ content }}
 
-    {% include footer.html %}
+    <div style="background-color: #002d30;">
+        {% include footer.html %}
+    </div>
 </div>
 
 </body>
