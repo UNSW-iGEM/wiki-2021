@@ -7,6 +7,10 @@ html, body, #igem-unsw-content {
     padding-top: 25vh;
 }
 
+#igem-unsw-content h1 {
+    text-align: left;
+}
+
 #header {
     height: auto;
     /* width: 100%; */
