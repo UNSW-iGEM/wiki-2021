@@ -1,16 +1,32 @@
 #header {
     background-color: #b3dad9;
-    height: 9vh;
+    top: 16px;
+    height: 7vh;
     padding: 1vh;
     display: flex;
     color: #002d30;
-    justify-content: space-between;
     align-items: center;
     padding-right: 2em;
     font-size: 14px;
 }
 
-#navbar_pages {
+#header a:link {
+    text-decoration: none; 
+    font-size: 15px;
+    letter-spacing: 0.07em;
+    font-weight: bold;
+}
+
+#header a:hover {
+    color: #002d30;
+    text-shadow: 0px 3px 3px #44969cad;
+}
+
+#header a:visited {
+    color: #002d30;
+}
+
+/* #navbar_pages {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -23,22 +39,31 @@
     font-size: 15px;
     letter-spacing: 0.07em;
     font-weight: bold;
+} */
+
+.nav-item {
+    padding: 0em 0.5em;
 }
 
-#exhibition_link:link {
-    text-decoration: none; 
-    font-size: 15px;
-    letter-spacing: 0.07em;
-    font-weight: bold;
+.dropdown:hover {
+    background-color: inherit;
 }
 
-#exhibition_link:hover {
-    /* color: #38a1a5 !important; */
-    text-shadow: 0px 3px 3px #44969cad;
+.dropdown-menu {
+    background-color: #dae5e4;
 }
 
-#exhibition_link:visited {
-    color: #002d30;
+.dropdown-menu *, ::after, ::before {
+    box-sizing: border-box;
+}
+
+#header .dropdown-menu a {
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 .banner {
@@ -57,4 +82,10 @@
 
 .banner_title {
     grid-area: 2 / 1 / 3 / 2;
+}
+
+
+
+*, ::after, ::before {
+    box-sizing: initial;
 }

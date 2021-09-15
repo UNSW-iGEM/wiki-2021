@@ -7,6 +7,11 @@ html, body, #igem-unsw-content {
     padding-top: 25vh;
 }
 
+/* overriding from main.css*/
+#igem-unsw-content {
+    margin-top: 0;
+}
+
 #igem-unsw-content h1 {
     text-align: left;
 }

@@ -6,6 +6,10 @@ body {
     font-family: 'OpenSans', sans-serif;
 }
 
+#igem-unsw-content {
+    margin-top: 16px;
+}
+
 #igem-unsw-content h1 {
     font-family: 'MPLUSRounded1c', 'Roboto', sans-serif;
     font-weight: bold;
