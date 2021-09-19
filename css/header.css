@@ -6,51 +6,71 @@
     display: flex;
     color: #002d30;
     align-items: center;
-    padding-right: 2em;
     font-size: 14px;
 }
 
-#header a:link {
+/* Navbar button styling */
+#header a {
+    color: #003031;
     text-decoration: none; 
     font-size: 15px;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.05em;
     font-weight: bold;
+    border: 1px solid transparent;
 }
 
 #header a:hover {
-    color: #002d30;
-    text-shadow: 0px 3px 3px #44969cad;
+    background-color: #91bcbb;
+    opacity: initial;
+    border-radius: 2em;
+    border: 1px solid #003031;
 }
 
-#header a:visited {
-    color: #002d30;
+#header a:active {
+    background-color: #003031;
+    border-radius: 2em;
+    border: 1px solid #003031;
+    color: #dae5e4;
 }
 
-/* #navbar_pages {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 80%;
-    flex-wrap: wrap;
+.nav-item > a {
+    margin: 0.3em 0.2em;
 }
 
-#core_page {
-    text-decoration: none; 
-    font-size: 15px;
-    letter-spacing: 0.07em;
-    font-weight: bold;
-} */
-
-.nav-item {
-    padding: 0em 0.5em;
+/* override link styling for home button (igem unsw logo) */
+#header #home_button, #header #home_button:active, #header #home_button:hover {
+    background-color: inherit;
+    border: none;
+    border-radius: 0;
 }
 
+#header #home_button {
+    opacity: 100%;
+    transition: opacity .3s;
+}
+
+#header #home_button:hover {
+    opacity: 75%;
+}
+
+/* Dropdown and dropdown link styles */
 .dropdown:hover {
     background-color: inherit;
 }
 
+.dropdown:hover .nav-link {
+    border-bottom: 1px solid #002d30;
+}
+
 .dropdown-menu {
-    background-color: #dae5e4;
+    background-color: #91bcbb;
+    border: none;
+    border-radius: 0;
+    margin-left: 0.2em;
+}
+
+.dropdown-divider {
+    color: #0a7c80;
 }
 
 .dropdown-menu *, ::after, ::before {
@@ -58,13 +78,32 @@
 }
 
 #header .dropdown-menu a {
-    font-weight: normal;
-    letter-spacing: normal;
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    border-radius: 0;
+}
+
+#header .dropdown-menu a:focus {
+    background-color: inherit;
+    color: inherit;
+}
+
+#header .dropdown-menu a:hover {
+    background-color: #b3dad9;
+    color: inherit;
+}
+
+#header .dropdown-menu a:active {
+    background-color: #002d30;
+    color:#b2d9d8;
 }
 
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+
 
 .banner {
     background-color: #70b7b3;
