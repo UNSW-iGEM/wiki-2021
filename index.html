@@ -3,10 +3,15 @@ layout: page.liquid
 ---
 <head>
     <link rel="stylesheet" href="/css/home.css" type="text/css">
+    <script src="/js/lottie-player.js"></script>
 </head>
 
 <div class="full-height section" style="background-color: #b3dad9;">
-    <div>
+
+    <div style="width: 100%;">
+        <lottie-player autoplay loop mode="normal" src="/js/Home Page Section 1 part1.json" />
+    </div>
+    <!-- <div>
         <div class="container" id="logo">
             <img src="assets/img/logo.png" alt="PROTECC Coral" height="100%">
         </div>
@@ -14,22 +19,24 @@ layout: page.liquid
         <div class="container" id="name">
             <img src="assets/img/protecc_coral.png" alt="PROTECC Coral" height="100%">
         </div>
-    </div>
+    </div> -->
 
-    <div class="container">
-        <div class="text" id="subtitle">
-            <span class="emphasis">P</span><span>revent </span>
-            <span class="emphasis">R</span><span>eactive </span>
-            <span class="emphasis">O</span><span>xygen & </span>
-            <span class="emphasis">T</span><span>hermal </span>
-            <span class="emphasis">E</span><span>xtreme </span>
-            <span class="emphasis">C</span><span>ausing </span>
-            <span class="emphasis">C</span><span>arking </span>
+    <div style="position: absolute; bottom: 0;">
+        <div class="container" style="z-index: 999;">
+            <div class="text" id="name_full">
+                <span class="emphasis">P</span><span>revent </span>
+                <span class="emphasis">R</span><span>eactive </span>
+                <span class="emphasis">O</span><span>xygen & </span>
+                <span class="emphasis">T</span><span>hermal </span>
+                <span class="emphasis">E</span><span>xtreme </span>
+                <span class="emphasis">C</span><span>ausing </span>
+                <span class="emphasis">C</span><span>arking </span>
+            </div>
         </div>
-    </div>
 
-    <div class="coral-img">
-        <img src="assets/img/coral_bed.png" alt="Coral Bed" width="100%">
+        <div class="coral-img">
+            <img src="assets/img/coral_bed.png" alt="Coral Bed" width="100%">
+        </div>
     </div>
 </div>
 

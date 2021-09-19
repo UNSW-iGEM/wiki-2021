@@ -2,6 +2,10 @@ html, body, #igem-unsw-content {
     background-color: #002d30;
 }
 
+#igem-unsw-content {
+    margin-top: -32px;
+}
+
 .section {
     display: flex;
     flex-flow: column;
@@ -27,16 +31,18 @@ html, body, #igem-unsw-content {
 }
 
 .text {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     color: #0a7c80;
     font-size: larger;
-    font-weight: bold;
-    font-family: Roboto;
+    font-weight: 700;
 }
 
-#subtitle {
-    font-size: 1.4em;
-    padding-left: 5vh;
+#name_full {
+    font-size: 1.6em;
+    font-weight: 700;
+    /* padding-left: 5vh; */
+    font-family: MPLUSRounded1c;
+    text-align: center;
 }
 
 .emphasis {
