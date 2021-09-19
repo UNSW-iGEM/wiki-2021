@@ -28,7 +28,7 @@ body {
 #igem-unsw-content a {
     color: white;
     opacity: 100%;
-    transition: opacity .3s;
+    transition: opacity .2s;
 }
 
 #igem-unsw-content a:hover {
