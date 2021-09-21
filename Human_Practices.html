@@ -14,43 +14,40 @@ title: Human Practices
 </div>
 
 <div class="row" style="padding: 2em;">
-    <div class="col-2 sidenav">
-        <nav id="nav-example" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
-            <a class="navbar-brand" href="#">Human Practices</a>
-            <a class="nav-link" href="#overview">Overview</a>
-            <a class="nav-link" href="#framework">Framework</a>
-
-            <a class="nav-link" href="#people">People</a>
-
-            <a class="nav-link" href="#list-item-1">Item 1</a>
-
-            <a class="nav-link" href="#list-item-2">Item 1</a>
-
-            <a class="nav-link" href="#list-item-3">Item 1</a>
-            
-          </nav>
-    </div>
+    {% include HP_sidenav.html %}
 
     
     <div class="col content">
 
             <div class="section full-height" id="overview">
-                <h2>Overview</h2>
+                <div class="make-sticky">
+                    <h2>Overview</h2>
+                </div>         
             </div>
 
-            <div class="section full-height">
-                <h2 id="framework">Framework</h2>
+            <div class="section full-height" id="framework">
+                <div class="make-sticky">
+                    <h2>Framework</h2>
+                </div> 
             </div>
 
             <div class="section full-height" id="people">
-                <h2>People</h2>
+                <div class="make-sticky">
+                    <h2>People</h2>
+                </div>   
             </div>
-            
-            <h4 id="list-item-1">Item 1</h4>
+
+            <div class="make-sticky">
+                <h4 id="list-item-1">Item 1</h4>
+            </div>
             <p>...</p>
-            <h4 id="list-item-2">Item 2</h4>
+            <div class="make-sticky">
+                <h4 id="list-item-2">Item 2</h4>
+            </div>
             <p>...</p>
-            <h4 id="list-item-3">Item 3</h4>
+            <div class="make-sticky">
+                <h4 id="list-item-3">Item 3</h4>
+            </div> 
             <p>...</p>
           </div>
 

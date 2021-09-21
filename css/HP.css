@@ -28,11 +28,16 @@ html, body, #igem-unsw-content {
     color: #f4511e;           
 }
 
+.make-sticky {
+    position: sticky;
+    top: calc(9vh + 16px);
+}
 
 .section {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+    scroll-margin-top: calc(9vh + 16px);
 }
 
 .full-height {
