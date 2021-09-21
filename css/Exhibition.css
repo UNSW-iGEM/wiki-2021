@@ -1,19 +1,57 @@
 html, body, #igem-unsw-content {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'OpenSans', sans-serif;
     background-color: black;
 }
 
+#igem-unsw-content h1 {
+    font-family: 'MPLUSRounded1c', 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#igem-unsw-content h2, h3  {
+    font-family: MPLUSRounded1c, Roboto, sans-serif;
+}
+
+#igem-unsw-content h4, h5, h6 {
+    font-family: Roboto, sans-serif;
+}
+
+#igem-unsw-content a {
+    color: white;
+    opacity: 100%;
+    transition: opacity .2s;
+}
+
+#igem-unsw-content a:hover {
+    /* color: rgb(199, 199, 199); */
+    opacity: 75%;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact a {
+    padding-left: 0.4em; 
+}
+
 #loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
     background-color: black; 
     padding-top: 25vh;
 }
 
-/* overriding from main.css*/
-#igem-unsw-content {
-    margin-top: 0;
-}
-
-#igem-unsw-content h1 {
-    text-align: left;
+#loader img {
+    max-width: 70%;
+    object-fit: contain;
 }
 
 #header {
