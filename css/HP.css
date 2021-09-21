@@ -1,0 +1,69 @@
+html, body, #igem-unsw-content {
+    background-color: #b3dad9;
+}
+
+.banner {
+    background-color: #b3dad9;
+    position: static;
+    top: calc(9vh + 16px);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 90px;
+}
+
+.sidenav {
+    position: sticky;
+    top: calc(15vh + 16px);
+    height: 25vh;
+    bottom: 50vh;
+    display: block;
+}
+
+#igem-unsw-content .sidenav a {
+    color: #002d30;
+}
+#igem-unsw-content .sidenav a.active {
+    background-color: white; 
+    color: #f4511e;           
+}
+
+
+.section {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.full-height {
+    height: calc(91vh - 16px); /* 100vh - (header height = 9vh) - (igem bar height = 16px) */
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text {
+    letter-spacing: 0.05em;
+    color: #0a7c80;
+    font-size: larger;
+    font-weight: 700;
+}
+
+#name_full {
+    font-size: 1.6em;
+    font-weight: 700;
+    /* padding-left: 5vh; */
+    font-family: MPLUSRounded1c;
+    text-align: center;
+}
+
+.emphasis {
+    color: #002d30;
+}
+
+.coral-img {
+    display: flex;
+    width: 100vw;
+}
