@@ -3,48 +3,32 @@ layout: page.liquid
 ---
 <head>
     <link rel="stylesheet" href="/css/home.css" type="text/css">
-    <script src="/js/lottie-player.js"></script>
 </head>
 
-<div class="full-height section" style="background-color: #b3dad9;">
+<div id="home_title" style="width: 100vw; min-height: 112vh;  background-color: #70b7b3; height: fit-content;"></div>
 
-    <div style="width: 100%;">
-        <lottie-player autoplay loop mode="normal" src="/js/Home Page Section 1 part1.json" />
-    </div>
-    <!-- <div>
-        <div class="container" id="logo">
-            <img src="assets/img/logo.png" alt="PROTECC Coral" height="100%">
-        </div>
+<div style="background-color: #70b7b3; padding: 3em 0em; display: flex; justify-content: center;">
 
-        <div class="container" id="name">
-            <img src="assets/img/protecc_coral.png" alt="PROTECC Coral" height="100%">
-        </div>
-    </div> -->
+    <div style="display: flex; justify-content: space-between; width: 80%; align-items: center;">
+        <lottie-player
+            id="australia_reef_50"
+            src="/js/australia-reef-50-gone.json"
+            style="width: 40vw; height: 50vh;"
+        >
+        </lottie-player>
 
-    <div style="position: absolute; bottom: 0;">
-        <div class="container" style="z-index: 999;">
-            <div class="text" id="name_full">
-                <span class="emphasis">P</span><span>revent </span>
-                <span class="emphasis">R</span><span>eactive </span>
-                <span class="emphasis">O</span><span>xygen & </span>
-                <span class="emphasis">T</span><span>hermal </span>
-                <span class="emphasis">E</span><span>xtreme </span>
-                <span class="emphasis">C</span><span>ausing </span>
-                <span class="emphasis">C</span><span>arking </span>
-            </div>
-        </div>
-
-        <div class="coral-img">
-            <img src="assets/img/coral_bed.png" alt="Coral Bed" width="100%">
+        <div class="main-text dark-green" style="width: 50%; padding-left: 2vw;">
+            Australia has lost <span class="red">50%</span> of the <br />Great Barrier Reef since 1985, <br/>
+            with <span class="white">five mass bleaching events</span> occurring in the last <span class="white">two decades.</span>
+            <br /><br />
         </div>
     </div>
 </div>
 
-<div class="full-height section" style="background-color: #70b7b3;">
+<div class="section" style="background-color: #70b7b3; height: 40vh;">
 
-    <div class="text" style="height: 60%; display: flex; justify-content: center; align-items: center; color: #b3dad9;">
-        Section 2 - Australia map
-
+    <div class="main-text dark-green" style="font-size: 2em; text-align: center;">
+        WITH NO SIGN OF CORAL BLEACHING STOPPING
     </div>
 
     <div class="coral-img">
@@ -108,3 +92,41 @@ layout: page.liquid
         </div>
     </div>
 </div>
+
+<script src="/js/lottie/lottie.min.js" type="text/javascript"></script>
+<script src="/js/lottie/lottie-player.js" type="text/javascript"></script>
+<script src="/js/lottie/lottie-interactivity.min.js" text="text/javascript"></script>
+<script>
+    lottie.loadAnimation({
+        container: document.getElementById("home_title"), 
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/js/full-home-ani.json',
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMin slice',
+        }
+    });
+
+    LottieInteractivity.create({
+    mode: 'scroll',
+    player: '#australia_reef_50',
+    actions: [
+        {
+            visibility: [0, 0.25],
+            type: 'stop',
+            frames: [0],
+        },
+        {
+            visibility: [0.25, 0.55],
+            type: 'seek',
+            frames: [0, 98],
+        },
+        {
+            visibility: [0.55, 1],
+            type: 'stop',
+            frames: [98],
+        },
+    ],
+    });
+</script>

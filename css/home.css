@@ -3,7 +3,7 @@ html, body, #igem-unsw-content {
 }
 
 #igem-unsw-content {
-    margin-top: -32px;
+    margin-top: -5vw;
 }
 
 .section {
@@ -21,13 +21,22 @@ html, body, #igem-unsw-content {
     justify-content: space-around;
 }
 
-#logo {
-    height: 25vh;
-    padding-bottom: 1vh;
+.main-text {
+    font-family: MPLUSRounded1c;
+    font-weight: 800;
+    font-size: 1.7em;
 }
 
-#name {
-    height: 13vh;
+.dark-green {
+    color: #003031;
+}
+
+.red {
+    color: #BF574E;
+}
+
+.white {
+    color: #D9E5E3;
 }
 
 .text {
@@ -64,6 +73,7 @@ html, body, #igem-unsw-content {
     height: fit-content;
     width: fit-content;
     margin: 1em;
+    color: #002d30;
 }
 
 #nav_circle_row a:link {

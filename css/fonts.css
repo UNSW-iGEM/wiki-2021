@@ -16,6 +16,12 @@
 }
 
 @font-face {
+    font-family: MPLUSRounded1c;
+    src: url(../assets/fonts/RoundedMplus1c-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
     font-family: OpenSans;
     src: url(../assets/fonts/OpenSans-Regular.ttf);
 }
