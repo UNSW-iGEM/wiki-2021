@@ -5,17 +5,12 @@ layout: page.liquid
     <link rel="stylesheet" href="/css/home.css" type="text/css">
 </head>
 
-<div id="home_title" style="width: 100vw; min-height: 112vh;  background-color: #70b7b3; height: fit-content;"></div>
+<div id="home_protecc"></div>
 
-<div style="background-color: #70b7b3; padding: 3em 0em; display: flex; justify-content: center;">
+<div style="background-color: #70b7b3; display: flex; justify-content: center;">
 
     <div style="display: flex; justify-content: space-between; width: 80%; align-items: center;">
-        <lottie-player
-            id="australia_reef_50"
-            src="/js/australia-reef-50-gone.json"
-            style="width: 40vw; height: 50vh;"
-        >
-        </lottie-player>
+        <div id="australia_reef_50" style="width: 35em; height: 35em;"></div>
 
         <div class="main-text dark-green" style="width: 50%; padding-left: 2vw;">
             Australia has lost <span class="red">50%</span> of the <br />Great Barrier Reef since 1985, <br/>
@@ -94,39 +89,47 @@ layout: page.liquid
 </div>
 
 <script src="/js/lottie/lottie.min.js" type="text/javascript"></script>
-<script src="/js/lottie/lottie-player.js" type="text/javascript"></script>
 <script src="/js/lottie/lottie-interactivity.min.js" text="text/javascript"></script>
 <script>
     lottie.loadAnimation({
-        container: document.getElementById("home_title"), 
+        container: document.getElementById("home_protecc"), 
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '/js/full-home-ani.json',
+        path: '/js/home-protecc.json',
         rendererSettings: {
             preserveAspectRatio: 'xMidYMin slice',
         }
     });
 
+    const aus_reef_50 = lottie.loadAnimation({
+        container: document.getElementById("australia_reef_50"), 
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        path: '/js/australia-reef-50-gone.json',
+    })
+
     LottieInteractivity.create({
-    mode: 'scroll',
-    player: '#australia_reef_50',
-    actions: [
-        {
-            visibility: [0, 0.25],
-            type: 'stop',
-            frames: [0],
-        },
-        {
-            visibility: [0.25, 0.55],
-            type: 'seek',
-            frames: [0, 98],
-        },
-        {
-            visibility: [0.55, 1],
-            type: 'stop',
-            frames: [98],
-        },
-    ],
+        mode: 'scroll',
+        player: aus_reef_50,
+        actions: [
+            {
+                visibility: [0, 0.25],
+                type: 'stop',
+                frames: [0],
+            },
+            {
+                visibility: [0.25, 0.55],
+                type: 'seek',
+                frames: [0, 98],
+            },
+            {
+                visibility: [0.55, 1],
+                type: 'stop',
+                frames: [98],
+            },
+        ],
     });
+
 </script>

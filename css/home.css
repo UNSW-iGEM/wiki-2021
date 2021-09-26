@@ -21,10 +21,22 @@ html, body, #igem-unsw-content {
     justify-content: space-around;
 }
 
+#home_protecc {
+    width: 100vw; 
+    min-width: 100vw; 
+    background-color: #b3dad9; 
+    height: auto;
+    height: fit-content;
+}
+
+#home_protecc svg {
+    overflow: visible;
+}
+
 .main-text {
     font-family: MPLUSRounded1c;
     font-weight: 800;
-    font-size: 1.7em;
+    font-size: 1.8em;
 }
 
 .dark-green {
@@ -72,6 +84,7 @@ html, body, #igem-unsw-content {
 #nav_circle_row a {
     height: fit-content;
     width: fit-content;
+    width: -moz-fit-content;
     margin: 1em;
     color: #002d30;
 }
