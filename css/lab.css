@@ -1,7 +1,3 @@
-.centre {
-    text-align: center;
-}
-
 #top_banner {
     background-color: #b3dad9;
     height: 92vh;
@@ -13,17 +9,17 @@
 #heading {
     margin: auto;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 #content {
     background-color: #70b7b3;
-    padding: 2vh;
 }
+
 
 #sub_topics {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr), 2fr, 1fr;
     grid-row-gap: 1em;
     column-gap: 2em;
     padding-right: 10em;
@@ -32,32 +28,51 @@
     padding-bottom: 1em;
 }
 
+.free_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    font-family: MPLUSRounded1c;
+}
+
 .topic_box {
     background-color: #b3dad9;
-}
-
-.first_col .topic_box {
-    grid-area: 1 / 1 / 5 / 2;
-}
-
-.secnd_col .topic_box {
-    grid-area: 1 / 2 / 5 / 3;
+    display: grid;
+    grid-template-rows: 3;
+    padding: 25px;
 }
 
 .blurb {
     /* need a better way to ensure both same height, but dynamic to fit content */
-    height: 5cm;
+    height: 30%;
     padding: 5px;
     padding-right: 5px;
     padding-left: 5px;
 }
 
-.graphic {
-    display: block;
+.icon {
     margin-left: auto;
     margin-right: auto;
+
+    border-radius: 50%;
+    border: solid #001313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
 }
 
-.graphic:hover {
+.icon .large {
+    height: 15em;
+    width: 15em;
+}
+
+.icon .mini {
+    height: 5em;
+    width: 5em;
+}
+
+.icon:hover {
     box-shadow: 0 0 1.3em #001313; 
 }
