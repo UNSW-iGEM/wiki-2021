@@ -52,7 +52,7 @@
 
 #header #home_button {
     opacity: 100%;
-    transition: opacity .3s;
+    transition: opacity .2s;
 }
 
 #header #home_button:hover {
@@ -62,10 +62,6 @@
 /* Dropdown and dropdown link styles */
 .dropdown:hover {
     background-color: inherit;
-}
-
-.dropdown:hover .nav-link {
-    border-bottom: 1px solid #002d30;
 }
 
 .dropdown-menu {
@@ -107,8 +103,16 @@
 
 .dropdown:hover .dropdown-menu {
     display: block;
+
+    animation-name: fadeIn;
+    animation-duration: 0.2s;
 }
 
+@keyframes fadeIn {
+    0% { display: none; opacity: 0; }
+    1% { display: block; opacity: 0; }
+    100% { display: block; opacity: 1; }
+}
 
 
 .banner {
