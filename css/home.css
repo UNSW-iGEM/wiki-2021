@@ -2,10 +2,6 @@ html, body, #igem-unsw-content {
     background-color: #002d30;
 }
 
-#igem-unsw-content {
-    margin-top: -5vw;
-}
-
 .section {
     display: flex;
     flex-flow: column;
@@ -22,16 +18,19 @@ html, body, #igem-unsw-content {
 }
 
 #home_protecc {
-    width: 100vw; 
-    min-width: 100vw; 
+    margin-top: -6vw;
+    width: 100%; 
     background-color: #b3dad9; 
-    height: auto;
-    height: fit-content;
+    display: flex;
 }
 
-#home_protecc svg {
-    overflow: visible;
+.width100 {
+    width: 100%;
 }
+
+/* #home_protecc svg {
+    overflow: auto;
+} */
 
 .main-text {
     font-family: MPLUSRounded1c;

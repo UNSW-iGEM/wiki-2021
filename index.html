@@ -89,16 +89,17 @@ layout: page.liquid
 </div>
 
 <script src="/js/lottie/lottie.min.js" type="text/javascript"></script>
-<script src="/js/lottie/lottie-interactivity.min.js" text="text/javascript"></script>
+<script src="/js/lottie/lottie-interactivity.min.js" type="text/javascript"></script>
+<script src="/js/home_anims.js" type="text/javascript"></script>
 <script>
     lottie.loadAnimation({
         container: document.getElementById("home_protecc"), 
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '/js/home-protecc.json',
+        animationData: home_protecc,
         rendererSettings: {
-            preserveAspectRatio: 'xMidYMin slice',
+            preserveAspectRatio: 'xMidYMin slice'
         }
     });
 
@@ -107,7 +108,8 @@ layout: page.liquid
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        path: '/js/australia-reef-50-gone.json',
+        animationData: aus_reef_50_gone
+        // path: '/js/australia-reef-50-gone.json',
     })
 
     LottieInteractivity.create({
