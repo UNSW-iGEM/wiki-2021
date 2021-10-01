@@ -12,22 +12,6 @@ html, body, #igem-unsw-content {
     row-gap: 90px;
 }
 
-.sidenav {
-    position: sticky;
-    top: calc(15vh + 16px);
-    height: 25vh;
-    bottom: 50vh;
-    display: block;
-}
-
-#igem-unsw-content .sidenav a {
-    color: #002d30;
-}
-#igem-unsw-content .sidenav a.active {
-    background-color: white; 
-    color: #f4511e;           
-}
-
 .make-sticky {
     position: sticky;
     top: calc(9vh + 16px);
