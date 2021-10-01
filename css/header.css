@@ -7,6 +7,7 @@
     color: #002d30;
     align-items: center;
     font-size: 14px;
+    text-align: center;
 }
 
 /* Navbar button styling */
@@ -17,12 +18,13 @@
     letter-spacing: 0.05em;
     font-weight: bold;
     border: 1px solid transparent;
+    border-radius: 2em;
+    transition: background-color 0.2s, border 0.2s;
 }
 
 #header a:hover {
     background-color: #91bcbb;
     opacity: initial;
-    border-radius: 2em;
     border: 1px solid #003031;
 }
 
@@ -37,6 +39,10 @@
     margin: 0.3em 0.2em;
 }
 
+#home_button {
+    height: 7vh;
+}
+
 /* override link styling for home button (igem unsw logo) */
 #header #home_button, #header #home_button:active, #header #home_button:hover {
     background-color: inherit;
@@ -46,7 +52,7 @@
 
 #header #home_button {
     opacity: 100%;
-    transition: opacity .3s;
+    transition: opacity .2s;
 }
 
 #header #home_button:hover {
@@ -56,10 +62,6 @@
 /* Dropdown and dropdown link styles */
 .dropdown:hover {
     background-color: inherit;
-}
-
-.dropdown:hover .nav-link {
-    border-bottom: 1px solid #002d30;
 }
 
 .dropdown-menu {
@@ -101,8 +103,16 @@
 
 .dropdown:hover .dropdown-menu {
     display: block;
+
+    animation-name: fadeIn;
+    animation-duration: 0.2s;
 }
 
+@keyframes fadeIn {
+    0% { display: none; opacity: 0; }
+    1% { display: block; opacity: 0; }
+    100% { display: block; opacity: 1; }
+}
 
 
 .banner {

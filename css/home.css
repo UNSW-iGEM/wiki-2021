@@ -2,10 +2,6 @@ html, body, #igem-unsw-content {
     background-color: #002d30;
 }
 
-#igem-unsw-content {
-    margin-top: -32px;
-}
-
 .section {
     display: flex;
     flex-flow: column;
@@ -21,13 +17,37 @@ html, body, #igem-unsw-content {
     justify-content: space-around;
 }
 
-#logo {
-    height: 25vh;
-    padding-bottom: 1vh;
+#home_protecc {
+    margin-top: -6vw;
+    width: 100%; 
+    background-color: #b3dad9; 
+    display: flex;
 }
 
-#name {
-    height: 13vh;
+.width100 {
+    width: 100%;
+}
+
+/* #home_protecc svg {
+    overflow: auto;
+} */
+
+.main-text {
+    font-family: MPLUSRounded1c;
+    font-weight: 800;
+    font-size: 1.8em;
+}
+
+.dark-green {
+    color: #003031;
+}
+
+.red {
+    color: #BF574E;
+}
+
+.white {
+    color: #D9E5E3;
 }
 
 .text {
@@ -63,7 +83,9 @@ html, body, #igem-unsw-content {
 #nav_circle_row a {
     height: fit-content;
     width: fit-content;
+    width: -moz-fit-content;
     margin: 1em;
+    color: #002d30;
 }
 
 #nav_circle_row a:link {

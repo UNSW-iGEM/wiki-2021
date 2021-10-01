@@ -1,0 +1,78 @@
+#top_banner {
+    background-color: #b3dad9;
+    height: 92vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+#heading {
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#content {
+    background-color: #70b7b3;
+}
+
+
+#sub_topics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1em;
+    column-gap: 2em;
+    padding-right: 10em;
+    padding-left: 10em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.free_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    font-family: MPLUSRounded1c;
+}
+
+.topic_box {
+    background-color: #b3dad9;
+    display: grid;
+    grid-template-rows: 3;
+    padding: 25px;
+}
+
+.blurb {
+    /* need a better way to ensure both same height, but dynamic to fit content */
+    height: 30%;
+    padding: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.icon {
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 50%;
+    border: solid #001313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.icon .large {
+    height: 15em;
+    width: 15em;
+}
+
+.icon .mini {
+    height: 5em;
+    width: 5em;
+}
+
+.icon:hover {
+    box-shadow: 0 0 1.3em #001313; 
+}

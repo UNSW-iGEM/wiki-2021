@@ -1,0 +1,47 @@
+---
+title: Main Topic
+sub-title: Snazzy quote
+---
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/igem_reset.css">
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main_wiki.css">
+    <link rel="stylesheet" href="/css/lab.css">
+    <script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- placeholder for 4px igem navbar -->
+    <div style="position: fixed; top: 0; height: 16px; width: 100%; background-color: rgb(65, 65, 65); z-index: 9999;"></div>
+    <div id="igem-unsw-content">
+        {% include header.html %}
+        
+        <div id="top_banner">
+
+            <div id="heading">
+                <h1> {{ title }} </h1>
+                <h2> {{ sub-title }} </h2>
+            </div>
+        
+            <div id="coral">
+                <img src="/assets/img/coral_bed.png" alt="Coral Bed" width="100%">
+            </div>
+        </div>
+    
+        <div id="content">
+            {{ content }}
+        </div>
+
+        <div style="background-color: #002d30;">
+            {% include footer.html %}
+        </div>
+    </div>
+
+</body>
+
+
+

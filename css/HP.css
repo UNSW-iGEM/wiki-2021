@@ -49,26 +49,97 @@ html, body, #igem-unsw-content {
     justify-content: space-around;
 }
 
-.text {
-    letter-spacing: 0.05em;
-    color: #0a7c80;
-    font-size: larger;
-    font-weight: 700;
-}
-
-#name_full {
-    font-size: 1.6em;
-    font-weight: 700;
-    /* padding-left: 5vh; */
-    font-family: MPLUSRounded1c;
-    text-align: center;
-}
-
-.emphasis {
-    color: #002d30;
-}
-
-.coral-img {
+.timeline-wrapper {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: 15em;
     display: flex;
-    width: 100vw;
+    justify-content: space-evenly;
+    overflow-x: scroll;
 }
+
+.timeline-wrapper .middle-line {
+    position: absolute;
+    width: 100%;
+    height: 0.3em;
+    border-radius: 0.2em;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #002d30;
+}
+
+.box {
+    width: 15%;
+    position: relative;
+    min-height: 15em;
+    display: flex;
+    justify-content: center;
+}
+
+.box .circle-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.box .circle {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #dae5e4;
+    border: 0.2em solid #002d30;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.box .circle:hover {
+    background-color: #002d30;
+}
+
+.box .box-content {
+    border-radius: 0.5em;
+    background-color: #00b0bd;
+    /* width: 180px; */
+    position: absolute;
+    /* left: calc(-50% + 1em); */
+    padding: 0.5em;
+    text-align: center;
+    top: initial;
+    bottom: 65%;
+}
+
+.box-bottom .box-content {
+    top: 65%;
+    bottom: initial;
+}
+
+.box-content p {
+    margin: 0;
+    color: white;
+}
+
+.box-content::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+}
+
+.box-top .box-content::before {
+    border-top-color: #00b0bd;
+    bottom: -20px;
+}
+
+.box-bottom .box-content::before {
+    border-bottom-color: #00b0bd;
+    top: -20px;
+}
+
+
+  
