@@ -71,31 +71,3 @@
         <h3>First3 Last3</h3>
     </div>
 </div>
-
-<script>
-    function showDescription(event, div_id) {
-
-        // remove current active circle styling
-        let currActiveCircle = document.getElementsByClassName("circle active")[0];
-        if (currActiveCircle) {
-            currActiveCircle.classList.remove("active");
-        }
-
-        let currActive = document.getElementsByClassName("description active")[0];
-        if (currActive) {
-            currActive.classList.remove("active");
-            if (currActive.id === div_id) return;
-        } 
-        
-        // active circle styling
-        if (event.currentTarget) {
-            event.currentTarget.classList.add("active");
-        }
-
-        // show content
-        let newActive = document.getElementById(div_id);
-        if (newActive) {
-            newActive.classList.add("active");
-        }
-    }
-</script>

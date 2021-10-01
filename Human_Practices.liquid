@@ -56,7 +56,7 @@ title: Human Practices
             <br /><br />
         </div>
 
-        <div class="section full-height" id="ihp">
+        <div id="ihp">
             <h2>Integrated Human Practices</h2>
             <br />
             <nav>
@@ -124,3 +124,31 @@ title: Human Practices
 </body>
 
 <script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+<script>
+    function showDescription(event, div_id) {
+
+        // remove current active circle styling
+        let currActiveCircle = document.getElementsByClassName("circle active")[0];
+        if (currActiveCircle) {
+            currActiveCircle.classList.remove("active");
+        }
+
+        let currActive = document.getElementsByClassName("description active")[0];
+        if (currActive) {
+            currActive.classList.remove("active");
+            if (currActive.id === div_id) return;
+        } 
+        
+        // active circle styling
+        if (event.currentTarget) {
+            event.currentTarget.classList.add("active");
+        }
+
+        // show content
+        let newActive = document.getElementById(div_id);
+        if (newActive) {
+            newActive.classList.add("active");
+        }
+    }
+</script>
