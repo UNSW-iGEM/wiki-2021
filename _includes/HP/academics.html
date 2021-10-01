@@ -1,0 +1,101 @@
+<div class="timeline-wrapper blue-green">
+    <div class="middle-line"></div>
+
+    <div class="box box-top">
+        <div class="circle-container">
+            <div class="circle" onclick="showDescription(event, 'ac_first1_last1')"></div>
+        </div>
+        <div class="box-content">
+            <p>First1 Last1</p>
+            <p><em>Role Organisation</em></p>
+        </div>
+    </div>
+
+    <div class="box box-bottom">
+        <div class="circle-container">
+            <div class="circle" onclick="showDescription(event, 'ac_first2_last2')"></div>
+        </div>
+        <div class="box-content">
+            <p>First2 Last2</p>
+            <p><em>Role</em></p>
+        </div>
+    </div>
+    <div class="box box-top">
+        <div class="circle-container">
+            <div class="circle" onclick="showDescription(event, 'ac_first3_last3')"></div>
+        </div>
+        <div class="box-content">
+            <p>First3 Last3</p>
+            <p><em>Role</em></p>
+        </div>
+    </div>
+    <div class="box box-bottom">
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="box-content">
+            <p>First Last</p>
+            <p><em>Role</em></p>
+        </div>
+    </div>
+    <div class="box box-top">
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="box-content">
+            <p>First Last</p>
+            <p><em>Role</em></p>
+        </div>
+    </div>
+    <div class="box box-bottom">
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="box-content">
+            <p>First Last</p>
+            <p><em>Role</em></p>
+        </div>
+    </div>
+</div>
+
+<div class="description-container">
+    <div class="description" id="ac_first1_last1">
+        <h3>First1 Last1</h3>
+    </div>
+
+    <div class="description" id="ac_first2_last2">
+        <h3>First2 Last2</h3>
+    </div>
+
+    <div class="description" id="ac_first3_last3">
+        <h3>First3 Last3</h3>
+    </div>
+</div>
+
+<script>
+    function showDescription(event, div_id) {
+
+        // remove current active circle styling
+        let currActiveCircle = document.getElementsByClassName("circle active")[0];
+        if (currActiveCircle) {
+            currActiveCircle.classList.remove("active");
+        }
+
+        let currActive = document.getElementsByClassName("description active")[0];
+        if (currActive) {
+            currActive.classList.remove("active");
+            if (currActive.id === div_id) return;
+        } 
+        
+        // active circle styling
+        if (event.currentTarget) {
+            event.currentTarget.classList.add("active");
+        }
+
+        // show content
+        let newActive = document.getElementById(div_id);
+        if (newActive) {
+            newActive.classList.add("active");
+        }
+    }
+</script>

@@ -45,10 +45,48 @@ html, body, #igem-unsw-content {
     justify-content: space-around;
 }
 
+/* TABS */
+
+#nav-tab-ihp {
+    border-color: #dae5e4;
+}
+
+#nav-tab-ihp .nav-link {
+    color: #002d30;
+    font-family: Roboto;
+}
+
+#nav-tab-ihp .nav-link:hover {
+    border-color: #dae5e4;
+}
+
+#nav-tab-ihp .nav-link.active {
+    background-color: #dae5e4;
+    border-color: #dae5e4;
+}
+
+#nav-tab-ihp .nav-link.red.active {
+    background-color: #b0554b;
+    border-color: #b0554b;
+    color: #dae5e4;
+}
+
+#nav-tab-ihp .nav-link.dark-green.active {
+    background-color: #002d30;
+    border-color: #002d30;
+    color: #dae5e4;
+}
+
+#nav-tab-ihp .nav-link.blue-green.active {
+    background-color: #0a7c80;
+    border-color: #0a7c80;
+    color: #dae5e4;
+}
+
+/* TIMELINE */
+
 .timeline-wrapper {
     position: relative;
-    width: 100%;
-    margin: auto;
     height: 15em;
     display: flex;
     justify-content: space-evenly;
@@ -58,17 +96,16 @@ html, body, #igem-unsw-content {
 .timeline-wrapper .middle-line {
     position: absolute;
     width: 100%;
-    height: 0.3em;
+    height: 0.25em;
     border-radius: 0.2em;
     top: 50%;
     transform: translateY(-50%);
-    background: #002d30;
+    background-color: #002d30;
 }
 
 .box {
-    width: 15%;
+    width: 20%;
     position: relative;
-    min-height: 15em;
     display: flex;
     justify-content: center;
 }
@@ -78,7 +115,6 @@ html, body, #igem-unsw-content {
     justify-content: center;
     position: absolute;
     top: 50%;
-    left: 0px;
     transform: translateY(-50%);
     width: 100%;
 }
@@ -99,14 +135,19 @@ html, body, #igem-unsw-content {
 
 .box .box-content {
     border-radius: 0.5em;
-    background-color: #00b0bd;
-    /* width: 180px; */
+    background-color: #002d30;
     position: absolute;
-    /* left: calc(-50% + 1em); */
     padding: 0.5em;
     text-align: center;
     top: initial;
     bottom: 65%;
+
+    font-size: 0.9em;
+    font-family: Roboto;
+}
+
+.box-content :last-child {
+    font-size: 0.95em;
 }
 
 .box-bottom .box-content {
@@ -116,7 +157,7 @@ html, body, #igem-unsw-content {
 
 .box-content p {
     margin: 0;
-    color: white;
+    color: #dae5e4;
 }
 
 .box-content::before {
@@ -128,14 +169,107 @@ html, body, #igem-unsw-content {
 }
 
 .box-top .box-content::before {
-    border-top-color: #00b0bd;
+    border-top-color: #002d30;
     bottom: -20px;
 }
 
 .box-bottom .box-content::before {
-    border-bottom-color: #00b0bd;
+    border-bottom-color: #002d30;
     top: -20px;
 }
 
 
-  
+/* COLOR SCHEMES */
+
+/* red */
+.timeline-wrapper.red .middle-line {
+    background-color: #b0554b;
+}
+
+.red .box .circle {
+    border-color: #b0554b;
+}
+
+.red .box .circle:hover, .red .box .circle.active {
+    background-color: #b0554b;
+}
+
+.red .box-top .box-content::before {
+    border-top-color: #b0554b;
+}
+
+.red .box-bottom .box-content::before {
+    border-bottom-color: #b0554b;
+}
+
+.red .box-content {
+    background-color: #b0554b;
+}
+
+/* dark-green */
+.timeline-wrapper.dark-green .middle-line {
+    background-color: #002d30;
+}
+
+.dark-green .box .circle {
+    border-color: #002d30;
+}
+
+.dark-green .box .circle:hover, .dark-green .box .circle.active {
+    background-color: #002d30;
+}
+
+.dark-green .box-top .box-content::before {
+    border-top-color: #002d30;
+}
+
+.dark-green .box-bottom .box-content::before {
+    border-bottom-color: #002d30;
+}
+
+.dark-green .box-content {
+    background-color: #002d30;
+}
+
+/* blue-green */
+.timeline-wrapper.blue-green .middle-line {
+    background-color: #0a7c80;
+}
+
+.blue-green .box .circle {
+    border-color: #0a7c80;
+}
+
+.blue-green .box .circle:hover, .blue-green .box .circle.active {
+    background-color: #0a7c80;
+}
+
+.blue-green .box-top .box-content::before {
+    border-top-color: #0a7c80;
+}
+
+.blue-green .box-bottom .box-content::before {
+    border-bottom-color: #0a7c80;
+}
+
+.blue-green .box-content {
+    background-color: #0a7c80;
+}
+
+/* DESCRIPTION */
+.description {
+    display: none;
+}
+
+.description.active {
+    display: block;
+
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+}
+
+@keyframes fadeIn {
+    0% { display: none; opacity: 0; }
+    1% { display: block; opacity: 0; }
+    100% { display: block; opacity: 1; }
+}
