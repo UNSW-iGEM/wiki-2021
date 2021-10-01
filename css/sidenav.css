@@ -1,0 +1,29 @@
+.sidenav {
+    position: sticky;
+    top: calc(37.5vh);
+    /* top: calc(15vh + 16px); */
+    height: 25vh;
+    bottom: 50vh;
+    display: block;
+}
+
+.icon {
+    height: 1.5em ;
+    width: 1.5em;
+    border-radius: 50%;
+}
+
+#igem-unsw-content .sidenav a {
+    color: #002d30;
+}
+#igem-unsw-content .sidenav a.active {
+    color: #b0554b;
+    transform: scale(1.3);           
+}
+
+#igem-unsw-content .sidenav a:hover {
+    color:#b58888;
+    transform: scale(1.1);
+}
+
+/* orange: #f4511e */

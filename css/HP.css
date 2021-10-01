@@ -12,27 +12,15 @@ html, body, #igem-unsw-content {
     row-gap: 90px;
 }
 
-.sidenav {
+.make-sticky {
     position: sticky;
-    top: calc(15vh + 16px);
-    height: 25vh;
-    bottom: 50vh;
-    display: block;
+    top: calc(9vh + 16px);
 }
-
-#igem-unsw-content .sidenav a {
-    color: #002d30;
-}
-#igem-unsw-content .sidenav a.active {
-    background-color: white; 
-    color: #f4511e;           
-}
-
 
 .section {
     display: flex;
     flex-flow: column;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     scroll-margin-top: calc(9vh + 16px);
 }
 
