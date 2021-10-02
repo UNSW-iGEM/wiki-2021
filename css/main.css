@@ -4,8 +4,10 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: 'OpenSans', sans-serif;
+    background-color: #b3dad9;
 }
 
+/* adjust for igem top bar */
 #igem-unsw-content {
     margin-top: 16px;
 }
@@ -25,6 +27,7 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+/* needed to override wiki default link stylings */
 #igem-unsw-content a {
     color: white;
     opacity: 100%;
@@ -32,17 +35,7 @@ body {
 }
 
 #igem-unsw-content a:hover {
-    /* color: rgb(199, 199, 199); */
     opacity: 75%;
-}
-
-.contact {
-    display: flex;
-    align-items: center;
-}
-
-.contact a {
-    padding-left: 0.4em; 
 }
 
 #loader {
@@ -56,4 +49,28 @@ body {
 #loader img {
     max-width: 70%;
     object-fit: contain;
+}
+
+
+
+.section {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.full-height {
+    height: calc(91vh - 16px); /* 100vh - (header height = 9vh) - (igem bar height = 16px) */
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text {
+    letter-spacing: 0.05em;
+    color: #0a7c80;
+    font-size: larger;
+    font-weight: 700;
 }

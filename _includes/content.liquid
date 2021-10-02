@@ -1,22 +1,32 @@
 ---
-layout: page.liquid
+layout: content_no_sidenav.liquid
 ---
 
 <head>
-    <link rel="stylesheet" href="/css/main_wiki.css">
-    <!-- <link rel="stylesheet" href="/css/lab.css"> -->
-    <!-- <link rel="stylesheet" href="/css/sidenav.css"> -->
+    <link rel="stylesheet" href="/css/sidenav.css">
 </head>
-<body>
+<body  data-bs-spy="scroll" data-bs-target="#sidenav" data-bs-offset="100" tabindex="0">
 
-    <div class="banner">
-        <img src="/assets/img/working_header.png" class="banner_pic" alt="Decorative Coral" width="100%">
-        <h1 class="banner_title">{{ title }}</h1>
-    </div>
+    <div class="row" style="padding: 2em; width: calc(100% - 4em);">
+        <div class="col-3 sidenav" style="width: 23%;">
+            <nav id="sidenav" class="navbar navbar-light flex-column align-items-stretch">
+                <a class="nav-link" href="#"><h5>{{ title }}</h5></a>
 
-    <div class="content">
-        {{ content }}
+                {% for heading in headings %}
+                    <a class="nav-link" href={{ "#" | append: heading.id }}>
+                        <img src={{ heading.icon }} class="icon">
+                        {{ heading.title }}
+                    </a>
+                {% endfor %}
+            </nav>
+        </div>
+
+        
+        <div class="col content">
+            {{ content }}
+        </div>
+
     </div>
     
 </body>
-</html>
+<script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
