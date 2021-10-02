@@ -1,5 +1,5 @@
 ---
-layout: page.liquid
+layout: content.liquid
 title: Human Practices
 ---
 <head>
@@ -8,15 +8,11 @@ title: Human Practices
 
 </head>
 <body  data-bs-spy="scroll" data-bs-target="#nav-example" data-bs-offset="100" tabindex="0">
-<div class="banner">
-    <img src="/assets/img/working_header.png" class="banner_pic" alt="Decorative Coral" width="100%">
-    <h1 class="banner_title">{{ title }}</h1>
-</div>
 
 <div class="row" style="padding: 2em; width: calc(100% - 4em);">
-    <div class="col-lg-2 sidenav">
-        <nav id="nav-example" class="navbar navbar-light flex-column align-items-stretch p-3">
-            <a class="navbar-brand" href="#">Human Practices</a>
+    <div class="col-3 sidenav" style="width: 23%;">
+        <nav id="nav-example" class="navbar navbar-light flex-column align-items-stretch">
+            <a class="nav-link" href="#"><h5>Human Practices</h5></a>
             <a class="nav-link" href="#introduction">
                 <img src="/assets/img/icon.png" class="icon">
                 Introduction
@@ -35,7 +31,7 @@ title: Human Practices
     
     <div class="col content">
 
-        <div class="section" id="introduction">
+        <div id="introduction">
             <h2>Introduction</h2>
 
             <br />
@@ -45,7 +41,7 @@ title: Human Practices
             <br /><br />
         </div>
 
-        <div class="section" id="framework">
+        <div id="framework">
             <h2>Framework</h2>
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia hendrerit nisl vitae aliquam. Nulla risus ligula, tempus id mauris quis, porttitor laoreet elit. Quisque convallis lobortis orci a aliquam. Sed vitae mauris scelerisque metus lacinia feugiat sit amet nec quam. Quisque quis lectus non massa maximus ornare ac non leo. Nulla turpis eros, porta vulputate tempor at, consectetur ut lectus. Aliquam eleifend ante ante, mollis gravida ante ullamcorper et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum, purus in accumsan egestas, turpis magna tristique risus, id euismod erat elit eu ante. Duis lobortis gravida velit, vel molestie nunc rhoncus at. Nullam tempus tincidunt turpis, ac eleifend ante pharetra vel. Vestibulum ullamcorper tortor nec ornare vehicula. Integer hendrerit risus non nisi sagittis gravida. Nulla nibh augue, dictum non consequat at, elementum eget nulla.
@@ -65,7 +61,7 @@ title: Human Practices
                     <button class="nav-link blue-green" id="nav-academics-tab" data-bs-toggle="tab" data-bs-target="#academics" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Academics</button>
                     <button class="nav-link red" id="nav-TO-tab" data-bs-toggle="tab" data-bs-target="#traditional_custodians" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Traditional Custodians</button>
                     <button class="nav-link dark-green" id="nav-government-tab" data-bs-toggle="tab" data-bs-target="#government" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Government</button>
-                    <button class="nav-link blue-green" id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#business" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Business</button>
+                    <button class="nav-link yellow" id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#business" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Business</button>
                     <button class="nav-link" id="nav-survey-tab" data-bs-toggle="tab" data-bs-target="#public_survey" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Public Survey</button>
                 </div>
             </nav>
