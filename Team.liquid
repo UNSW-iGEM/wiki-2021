@@ -1,0 +1,41 @@
+---
+layout: content_no_sidenav.liquid
+title: Team
+---
+<head>
+    <link rel="stylesheet" href="/css/team.css" type="text/css">
+</head>
+<br /><br />
+<div class="row row-cols-6">
+    {% for person in collections.team %}
+      <div class="col">
+          <div class="card">
+              <img src={{ person.data.photo }} class="card-img-top" alt="Name"
+              data-bs-toggle="modal" data-bs-target={{"#" | append: person.data.name }}>
+              <div class="card-body">
+                <div class="card-text">{{ person.data.name }}</div>
+                <div class="card-text" style="font-size: 0.8em;">{{ person.data.role }}</div>
+              </div>
+          </div>
+      </div>
+    {% endfor %}
+</div>
+
+{% for person in collections.team %}
+  <div class="modal fade" id={{person.data.name}} tabindex="-1" aria-labelledby={{person.data.name | append: " modal"}} aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">{{ person.data.name }}</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              {{ person.templateContent }}
+            </div>
+          </div>
+      </div>
+  </div>
+{% endfor %}
+
+
+<script src="/js/bootstrap/bootstrap.bundle.min.js"></script>

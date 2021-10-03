@@ -1,0 +1,23 @@
+.row {
+    justify-content: space-evenly;
+    margin: 0 5%;
+}
+
+.card {
+    width: calc(100% - 2em);
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    background-color: transparent;
+    border: none;
+}
+
+.card img {
+    background-color: white;
+    cursor: pointer;
+}
+
+.card-body {
+    text-align: center;
+    font-family: Roboto;
+}
