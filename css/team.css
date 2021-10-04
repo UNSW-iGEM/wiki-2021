@@ -3,21 +3,61 @@
     margin: 0 5%;
 }
 
+.col {
+    display: flex;
+}
+
 .card {
     width: calc(100% - 2em);
     display: flex;
     justify-content: center;
     margin: 1em;
-    background-color: transparent;
+    background-color: #dae5e4;
     border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.card:hover {
+    opacity: 0.8;
 }
 
 .card img {
     background-color: white;
-    cursor: pointer;
 }
 
 .card-body {
     text-align: center;
     font-family: Roboto;
+    color: #003031;
+}
+
+.card-text.name {
+    font-family: MPLUSRounded1c;
+}
+
+.modal-backdrop {
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        max-width: 625px;
+        margin: 1.75rem auto;
+    }
+}
+
+.modal-content {
+    background-color: #dae5e4;
+    border: none;
+    font-family: Roboto;
+    color: #003031;
+}
+
+.modal-title {
+    font-family: MPLUSRounded1c;
+}
+
+h3.modal-title {
+    font-weight: 700;
 }

@@ -1,7 +1,7 @@
 ---
 tags: team
 name: Preethika Subash
-photo: /assets/img/placeholder-person-square.png
+photo: /assets/img/Team/preethika.jpeg
 role: Human Practices Lead
 ---
 Currently in the third year of her Bachelor of Science (Biotechnology) degree, Preethika was

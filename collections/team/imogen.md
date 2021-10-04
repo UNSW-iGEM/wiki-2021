@@ -4,7 +4,7 @@ name: Imogen Kelly
 photo: /assets/img/placeholder-person-square.png
 role: Wet Lab Lead
 ---
-Imogen is in her third year of a Bachelor of Science, majoring in microbiology. Imogen was
+Imogen is in her third year of a Bachelor of Science, majoring in Microbiology. Imogen was
 excited to participate in her first taste of real science, outside of class and running a project with
 a very cool group of people. The highlight of the project for her was time in the lab and getting to
 know the ins and outs of all the project’s technical aspects. She definitely lived out her mad
