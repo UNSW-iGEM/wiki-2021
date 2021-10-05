@@ -5,6 +5,7 @@ title: Team
 <head>
     <link rel="stylesheet" href="/css/team.css" type="text/css">
 </head>
+
 <br />
 <div style="display: flex; justify-content: center; width: 100%; height: 22em;">
     <img src="/assets/img/Team/team.jpeg">
@@ -30,7 +31,8 @@ title: Team
 </div>
 
 {% for person in collections.team %}
-  <div class="modal fade" id={{person.data.name}} tabindex="-1" aria-labelledby={{person.data.name | append: " modal"}} aria-hidden="true">
+  <div class="modal fade" id={{person.data.name}} tabindex="-1" data-bs-backdrop="true"
+  aria-labelledby={{person.data.name | append: " modal"}} aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
               <div class="modal-header">
@@ -56,6 +58,22 @@ title: Team
       </div>
   </div>
 {% endfor %}
-
+<div id="teamModalBackdrop" class="modal-backdrop fade show"></div>
 
 <script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script>
+  let modalBackdrop = document.getElementById("teamModalBackdrop")
+
+  let modals = document.getElementsByClassName('modal');
+  for (let m of modals) {
+    m.addEventListener('show.bs.modal', function (event) {
+      modalBackdrop.style.visibility = "visible";
+      modalBackdrop.style.opacity = "1";
+    })
+    m.addEventListener('hide.bs.modal', function (event) {
+      modalBackdrop.style.opacity = "0";
+      modalBackdrop.style.visibility = "hidden"
+    })
+  }
+
+</script>

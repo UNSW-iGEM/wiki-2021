@@ -2,7 +2,7 @@ html, body, #igem-unsw-content {
     background-color: #002d30;
 }
 
-.section {
+#igem-unsw-content .section {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -81,9 +81,6 @@ html, body, #igem-unsw-content {
 }
 
 #nav_circle_row a {
-    height: fit-content;
-    width: fit-content;
-    width: -moz-fit-content;
     margin: 1em;
     color: #002d30;
 }

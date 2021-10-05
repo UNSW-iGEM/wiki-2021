@@ -1,12 +1,12 @@
 #sideMenu, #top_title, .patrollink, #firstHeading, #home_logo, #sideMenu { display:none; }
-#content { padding:0px; width:100%; margin-top:-7px; margin-left:0px; border:none; line-height: 1em; font-size: initial;}
+#content { padding:0px; width:100%; margin-top:-7px; margin-left:0px; border:none; font-size: initial;}
 body, html {background-color:white; width: 100%; height: 100%;}
 #bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { 
     margin-bottom: 0px; 
     padding: 0;
     color: inherit;
 }
-#bodyContent a[href ^="https://"], .link-https { padding-right:0px;}
+#bodyContent a[href ^="https://"], .link-https { padding-right: initial;}
 
 #globalWrapper { padding: 0; }
 #mw-content-text > p {
@@ -17,4 +17,10 @@ ul {
     line-height: inherit;
     list-style-type: initial;
     list-style-image: none;
+    margin: 0;
+}
+
+.mw-content-ltr ul, .mw-content-rtl .mw-content-ltr ul {
+    margin: unset;
+    padding: unset;
 }

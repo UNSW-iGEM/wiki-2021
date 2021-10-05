@@ -10,6 +10,32 @@
     text-align: center;
 }
 
+/* override igem server css */
+#igem-unsw-content .navbar-expand .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+#header li {
+    margin-bottom: 0em;
+}
+
+#header a[href ^="https://"] {
+    padding-right: 0.25rem;
+}
+
+#header a[href ^="https://"].nav-link {
+    padding-right: 1rem;
+}
+
+#header a[href ^="https://"].dropdown-item {
+    padding-right: 1rem;
+}
+
+#header .dropdown-menu {
+    padding: .5rem 0;
+}
+
 /* Navbar button styling */
 #igem-unsw-content #header a {
     color: #003031;

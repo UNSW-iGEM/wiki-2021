@@ -218,6 +218,11 @@ html, body, #igem-unsw-content {
     align-items: center;
 }
 
+#artist_bio ul {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
 /* .exh-img-container img {
     height: 100% !important;
     width: auto !important;

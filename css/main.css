@@ -7,9 +7,31 @@ body {
     background-color: #b3dad9;
 }
 
-/* adjust for igem top bar */
 #igem-unsw-content {
+    background-color: #b3dad9;
+    font-family: 'OpenSans', sans-serif;
+    line-height: initial;
+}
+
+/* adjust for igem top bar */
+/* comment out for release */
+/* #igem-unsw-content {
     margin-top: 16px;
+} */
+
+#igem-unsw-content .h1, 
+#igem-unsw-content .h2, 
+#igem-unsw-content .h3, 
+#igem-unsw-content .h4, 
+#igem-unsw-content .h5, 
+#igem-unsw-content .h6, 
+#igem-unsw-content h1, 
+#igem-unsw-content h2, 
+#igem-unsw-content h3, 
+#igem-unsw-content h4, 
+#igem-unsw-content h5, 
+#igem-unsw-content h6 {
+    margin-bottom: 0.5rem;
 }
 
 #igem-unsw-content h1 {
@@ -25,6 +47,10 @@ body {
 
 #igem-unsw-content h4, h5, h6 {
     font-family: Roboto, sans-serif;
+}
+
+#igem-unsw-content * {
+    font-family: 'OpenSans', sans-serif;
 }
 
 /* needed to override wiki default link stylings */
@@ -53,7 +79,7 @@ body {
 
 
 
-.section {
+#igem-unsw-content .section {
     display: flex;
     flex-flow: column;
     justify-content: space-between;

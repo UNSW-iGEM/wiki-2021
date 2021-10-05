@@ -94,6 +94,13 @@
     background-color: #002d30;
 }
 
+#igem-unsw-content .box-content p {
+    font-size: 0.9em;
+    font-family: Roboto;
+    text-align: center;
+    line-height: initial;
+}
+
 .box .box-content {
     border-radius: 0.5em;
     background-color: #002d30;

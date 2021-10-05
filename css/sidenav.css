@@ -30,12 +30,15 @@ body {
     color: #002d30;
     font-size: 1em;
     transition: font-size 0.2s, color 0.1s;
+    text-decoration: none;
 }
 #igem-unsw-content .sidenav a.active {
     font-size: 1.25em;
+    text-decoration: none;
 }
 
 #igem-unsw-content .sidenav a:hover {
     color:#1f8c8c;
     opacity: 1;
+    text-decoration: none;
 }
