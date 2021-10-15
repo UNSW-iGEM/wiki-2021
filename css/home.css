@@ -32,7 +32,7 @@ html, body, #igem-unsw-content {
     overflow: auto;
 } */
 
-.main-text {
+#igem-unsw-content .main-text {
     font-family: MPLUSRounded1c;
     font-weight: 800;
     font-size: 1.8em;

@@ -6,33 +6,44 @@ layout: page.liquid
     <link rel="stylesheet" href="/css/home.css" type="text/css">
 </head>
 
+<!-- Title page -->
 <div id="home_protecc"></div>
 
-<div style="background-color: #70b7b3; display: flex; justify-content: center;">
+<!-- Australia map + coral bleaching -->
+<div style="background-color: #70b7b3;">
 
-    <div style="display: flex; justify-content: space-between; width: 80%; align-items: center;">
-        <div id="australia_reef_50" style="width: 35em; height: 35em;"></div>
+    <div style="display: flex; justify-content: space-around; width: 100%; ">
+        <div style="display: flex; justify-content: space-around; align-items: center; width: 90%;">
+            <div id="australia_reef_50" style="width: 60em; height: 35em;"></div>
 
-        <div class="main-text dark-green" style="width: 50%; padding-left: 2vw;">
-            Australia has lost <span class="red">50%</span> of the <br />Great Barrier Reef since 1985, <br/>
-            with <span class="white">five mass bleaching events</span> occurring in the last <span class="white">two decades.</span>
-            <br /><br />
+            <div class="main-text dark-green" style="width: 55%; padding-left: 2em; margin-right: 3em;">
+                Australia has lost <span class="red">50%</span> of the Great Barrier Reef since 1985, 
+                with <span class="white">five mass bleaching events</span> occurring in the last <span class="white">two decades</span>
+                <br /><br />
+            </div>
         </div>
     </div>
-</div>
 
-<div class="section" style="background-color: #70b7b3; height: 40vh;">
 
-    <div class="main-text dark-green" style="font-size: 2em; text-align: center;">
-        WITH NO SIGN OF CORAL BLEACHING STOPPING
+    <div style="display: flex; position: relative;">
+        <div class="main-text dark-green" 
+        style="
+            font-size: 3vw; text-align: center; 
+            z-index: 2; 
+            position: absolute; 
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);"
+        >
+            WITH NO SIGN OF CORAL BLEACHING STOPPING
+        </div>
+        
+        <div id="bubbles_coral_bleaching" style="width: 100%; display: flex;"></div>
     </div>
 
-    <div class="coral-img">
-        <img src="assets/img/coral_bed.png" alt="Coral Bed" width="100%">
-    </div>
 </div>
 
-<div class="full-height section" style="background-color: #b3dad9;">
+<div style="background-color: #b3dad9;">
 
     <div class="text" style="height: 60%; display: flex; justify-content: center; align-items: center;">
         Section 3 - Symbiotic relationship
@@ -81,13 +92,15 @@ layout: page.liquid
 
 <script src="/js/lottie/lottie.min.js" type="text/javascript"></script>
 <script src="/js/lottie/lottie-interactivity.min.js" type="text/javascript"></script>
-<script src="/js/home_anims.js" type="text/javascript"></script>
+<script src="/js/anims/protecc_coral.js" type="text/javascript"></script>
+<script src="/js/anims/aus_reef_50_gone.js" type="text/javascript"></script>
+<script src="/js/anims/bubbles.js" type="text/javascript"></script>
 <script>
     lottie.loadAnimation({
         container: document.getElementById("home_protecc"), 
         renderer: 'svg',
         loop: true,
-        autoplay: true,
+        autoplay: false,
         animationData: home_protecc,
         rendererSettings: {
             preserveAspectRatio: 'xMidYMin slice'
@@ -121,6 +134,39 @@ layout: page.liquid
                 visibility: [0.55, 1],
                 type: 'stop',
                 frames: [98],
+            },
+        ],
+    });
+
+    const bubbles_coral_bleaching = lottie.loadAnimation({
+        container: document.getElementById("bubbles_coral_bleaching"), 
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        animationData: bubbles,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMax meet'
+        }
+    })
+
+    LottieInteractivity.create({
+        mode: 'scroll',
+        player: bubbles_coral_bleaching,
+        actions: [
+            // {
+            //     visibility: [0, 0.15],
+            //     type: 'stop',
+            //     frames: [0],
+            // },
+            {
+                visibility: [0, 0.55],
+                type: 'seek',
+                frames: [0, 132],
+            },
+            {
+                visibility: [0.55, 1],
+                type: 'stop',
+                frames: [132],
             },
         ],
     });
