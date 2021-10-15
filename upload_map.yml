@@ -497,18 +497,74 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/8/83/T--UNSW_Australia--img--Exhibition--loader.gif
     md5: 2a38a62f4f6633ca8dfd3c2cac050575
     upload_filename: T--UNSW_Australia--img--Exhibition--loader.gif
+  assets/img/Team/ana.JPG:
+    link_URL: https://2021.igem.org/wiki/images/9/92/T--UNSW_Australia--img--Team--ana.JPG
+    md5: 613c110316f1b33203368d371f0f1ca9
+    upload_filename: T--UNSW_Australia--img--Team--ana.JPG
+  assets/img/Team/imogen.jpg:
+    link_URL: https://2021.igem.org/wiki/images/0/0a/T--UNSW_Australia--img--Team--imogen.jpg
+    md5: 1d49fea3288945c7a2bd7f4b6a293a5e
+    upload_filename: T--UNSW_Australia--img--Team--imogen.jpg
   assets/img/Team/karina.jpeg:
     link_URL: https://2021.igem.org/wiki/images/8/84/T--UNSW_Australia--img--Team--karina.jpeg
     md5: b33f80e5a9fbca44f0ed8985f387886d
     upload_filename: T--UNSW_Australia--img--Team--karina.jpeg
+  assets/img/Team/konstantina.jpg:
+    link_URL: https://2021.igem.org/wiki/images/d/d7/T--UNSW_Australia--img--Team--konstantina.jpg
+    md5: d1b53d907614d2789364558d80943ab0
+    upload_filename: T--UNSW_Australia--img--Team--konstantina.jpg
+  assets/img/Team/larae.jpg:
+    link_URL: https://2021.igem.org/wiki/images/3/3b/T--UNSW_Australia--img--Team--larae.jpg
+    md5: 62f6b2f81f925c8d3ce13a9a124df191
+    upload_filename: T--UNSW_Australia--img--Team--larae.jpg
+  assets/img/Team/leonie.jpg:
+    link_URL: https://2021.igem.org/wiki/images/d/d0/T--UNSW_Australia--img--Team--leonie.jpg
+    md5: 741770b0c1d547fd764a43b24da805aa
+    upload_filename: T--UNSW_Australia--img--Team--leonie.jpg
+  assets/img/Team/monika.jpeg:
+    link_URL: https://2021.igem.org/wiki/images/7/70/T--UNSW_Australia--img--Team--monika.jpeg
+    md5: 6187f62987113f6aa4c15fac62b35e21
+    upload_filename: T--UNSW_Australia--img--Team--monika.jpeg
+  assets/img/Team/naomi.jpeg:
+    link_URL: https://2021.igem.org/wiki/images/f/f1/T--UNSW_Australia--img--Team--naomi.jpeg
+    md5: 5024d76f2b1c6d96844ae6fa5b41c8de
+    upload_filename: T--UNSW_Australia--img--Team--naomi.jpeg
+  assets/img/Team/nikola.jpg:
+    link_URL: https://2021.igem.org/wiki/images/2/23/T--UNSW_Australia--img--Team--nikola.jpg
+    md5: 038c61c323b039e19aab5bb94aafe23f
+    upload_filename: T--UNSW_Australia--img--Team--nikola.jpg
   assets/img/Team/preethika.jpeg:
     link_URL: https://2021.igem.org/wiki/images/3/37/T--UNSW_Australia--img--Team--preethika.jpeg
     md5: 11878aa3d157477e57f0cf077a859b49
     upload_filename: T--UNSW_Australia--img--Team--preethika.jpeg
+  assets/img/Team/rick.jpg:
+    link_URL: https://2021.igem.org/wiki/images/1/1e/T--UNSW_Australia--img--Team--rick.jpg
+    md5: aef2a1b085ef915a04af598179a9737b
+    upload_filename: T--UNSW_Australia--img--Team--rick.jpg
+  assets/img/Team/ryan.jpg:
+    link_URL: https://2021.igem.org/wiki/images/f/f6/T--UNSW_Australia--img--Team--ryan.jpg
+    md5: efa3da4d949180eabc7a434f1ad7fd97
+    upload_filename: T--UNSW_Australia--img--Team--ryan.jpg
+  assets/img/Team/sarah.jpg:
+    link_URL: https://2021.igem.org/wiki/images/e/e3/T--UNSW_Australia--img--Team--sarah.jpg
+    md5: 71547562266ecac0f052da9b4042c6c8
+    upload_filename: T--UNSW_Australia--img--Team--sarah.jpg
   assets/img/Team/team.jpeg:
     link_URL: https://2021.igem.org/wiki/images/c/c8/T--UNSW_Australia--img--Team--team.jpeg
     md5: f1b545aad52b2ba0d41217ad8d8d2eb8
     upload_filename: T--UNSW_Australia--img--Team--team.jpeg
+  assets/img/Team/team.jpg:
+    link_URL: https://2021.igem.org/wiki/images/6/6a/T--UNSW_Australia--img--Team--team.jpg
+    md5: 4a9e5b4feabf934d527597eb4dca1eaf
+    upload_filename: T--UNSW_Australia--img--Team--team.jpg
+  assets/img/Team/vivian.jpg:
+    link_URL: https://2021.igem.org/wiki/images/2/29/T--UNSW_Australia--img--Team--vivian.jpg
+    md5: 47e2713832f7a4f8efb1b131e020e19f
+    upload_filename: T--UNSW_Australia--img--Team--vivian.jpg
+  assets/img/Team/ying_fei.jpg:
+    link_URL: https://2021.igem.org/wiki/images/0/04/T--UNSW_Australia--img--Team--ying_fei.jpg
+    md5: 388ffca5ecca404f7e7e040e9cf1a750
+    upload_filename: T--UNSW_Australia--img--Team--ying_fei.jpg
   assets/img/UNSW_iGEM_logo.png:
     link_URL: https://2021.igem.org/wiki/images/2/20/T--UNSW_Australia--img--UNSW_iGEM_logo.png
     md5: 030b32a63ad90f3b0ba57324c7191be3
@@ -595,7 +651,7 @@ css:
     md5: ee71c1c29657e0039bcb52f5a81025cc
   css/igem_reset.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/igem_resetCSS?action=raw&ctype=text/css
-    md5: 21cc140b1f4ba680c888651dd2b51e60
+    md5: b058247caeafba4fc17d8edbacba938e
   css/lab.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/labCSS?action=raw&ctype=text/css
     md5: 97a4733d8f81d6b1ef44c5de0a689e09
@@ -607,7 +663,7 @@ css:
     md5: b43b96bf6e06b62a787b93def83fd5d1
   css/team.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/teamCSS?action=raw&ctype=text/css
-    md5: be414c8bc11e65d16ec8b83905b29ce4
+    md5: 94fd1bc374ad488958b53ca196febae3
 html:
   Attributions/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Attributions
@@ -710,25 +766,55 @@ html:
     md5: 3184ad89ab7ed9f5bf757f8e7068dd9e
   Team/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Team
-    md5: 4a2237fa0fa3be07ec0491aa3f9300f9
+    md5: 144109ebc0cee7d4b9c0bcc7c7e8d7f7
   animations/README/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/animations/README
     md5: 9c9a9eca84042d64cf196165b7f680fd
+  collections/team/ana/index.html:
+    link_URL: https://2021.igem.org/Team:UNSW_Australia/collections/team/ana
+    md5: 24362866dc134d10f89058a7bfa6f924
   collections/team/imogen/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/collections/team/imogen
     md5: a3e3cfc01bb68120a9e5efaaa8d46452
   collections/team/karina/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/collections/team/karina
     md5: ff0d97c76cede2353535bd6bc60d21f6
+  collections/team/konstantina/index.html:
+    link_URL: https://2021.igem.org/Team:UNSW_Australia/collections/team/konstantina
+    md5: 4ef345d4bc99ac605a2b0cfce73b8dcd
+  collections/team/larae/index.html:
+    link_URL: https://2021.igem.org/Team:UNSW_Australia/collections/team/larae
+    md5: 9dbe3da5564aaf47dda88f23bda34fd3
+  collections/team/leonie/index.html:
+    link_URL: https://2021.igem.org/Team:UNSW_Australia/collections/team/leonie
+    md5: e03bc8e46b7ad620516e55f9c471c0b3
+  collections/team/monika/index.html:
+    link_URL: https://2021.igem.org/Team:UNSW_Australia/collections/team/monika
+    md5: f530ee359be414ca8cac10bca005d4db
   collections/team/naomi/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/collections/team/naomi
     md5: f93f1477214f4a17d179025d5b1ff808
+  collections/team/nikola/index.html:
+    link_URL: https://2021.igem.org/Team:UNSW_Australia/collections/team/nikola
+    md5: 541d481ff82cac26d4e4b79fb115b9b8
   collections/team/preethika/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/collections/team/preethika
     md5: ce33989d4761c12926e87332ecdd259b
+  collections/team/rick/index.html:
+    link_URL: https://2021.igem.org/Team:UNSW_Australia/collections/team/rick
+    md5: 74664da2dc89469ca44f46d08ddca28d
   collections/team/ryan/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/collections/team/ryan
-    md5: 086707e4369f60afedcafb16050a7618
+    md5: 0c6e750493dc6055bf17aadb0799cab0
+  collections/team/sarah/index.html:
+    link_URL: https://2021.igem.org/Team:UNSW_Australia/collections/team/sarah
+    md5: fe4586535443d8271ed81cf92c427732
+  collections/team/vivian/index.html:
+    link_URL: https://2021.igem.org/Team:UNSW_Australia/collections/team/vivian
+    md5: 65caa38e75d9102b5c818445d443beb4
+  collections/team/ying_fei/index.html:
+    link_URL: https://2021.igem.org/Team:UNSW_Australia/collections/team/ying_fei
+    md5: e396add6039b707ee46cc552392a1b47
   index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia
     md5: 7d8da0ad437f7b18d4ba1d7095cf9dbe
