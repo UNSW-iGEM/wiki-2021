@@ -6,23 +6,25 @@ body {
     scroll-margin-top: calc(9vh + 16px);
 }
 
-.sidenav {
+#igem-unsw-content .sidenav {
     position: sticky;
     top: calc(37.5vh);
     height: 25vh;
     bottom: 50vh;
     display: block;
-    font-family: Roboto;
 }
 
-.sidenav h5 {
+#igem-unsw-content .sidenav h5 {
     font-family: MPLUSRounded1c;
     font-weight: 700;
 }
 
 .icon {
-    height: 1.5em ;
+    height: 1.5em;
     width: 1.5em;
+}
+
+.icon.rounded-icon {
     border-radius: 50%;
 }
 
@@ -31,6 +33,7 @@ body {
     font-size: 1em;
     transition: font-size 0.2s, color 0.1s;
     text-decoration: none;
+    font-family: Roboto;
 }
 #igem-unsw-content .sidenav a.active {
     font-size: 1.25em;

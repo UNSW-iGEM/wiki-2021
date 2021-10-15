@@ -8,14 +8,23 @@ layout: content_no_sidenav.liquid
 <body  data-bs-spy="scroll" data-bs-target="#sidenav" data-bs-offset="100" tabindex="0">
 
     <div class="row" style="padding: 2em; width: calc(100% - 4em);">
-        <div class="col-3 sidenav" style="width: 23%;">
+        <div class="col-3 sidenav" style="width: 20%;">
             <nav id="sidenav" class="navbar navbar-light flex-column align-items-stretch">
                 <a class="nav-link" href="#"><h5>{{ title }}</h5></a>
 
                 {% for heading in headings %}
-                    <a class="nav-link" href={{ "#" | append: heading.id }}>
-                        <img src={{ heading.icon }} class="icon">
-                        {{ heading.title }}
+                    <a class="nav-link" href={{ "#" | append: heading.id }} style="display: flex; align-items: center;">
+
+                        {% assign type = heading.icon | slice: -3, 2 %}
+                        <!-- {{ type }} -->
+                        {% if type == 'sv' %}
+                            <img src={{ heading.icon }} class="icon">
+                        {% else %}
+                            <img src={{ heading.icon }} class="icon rounded-icon">
+                        {% endif %}
+                        <span style="padding-left: 0.4vw;">
+                            {{ heading.title }}
+                        </span>
                     </a>
                 {% endfor %}
             </nav>

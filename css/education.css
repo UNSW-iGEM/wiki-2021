@@ -1,0 +1,47 @@
+#book_carousel_container {
+    /* background-color: #dae5e4; */
+    float: right;
+    padding-left: 1em;
+}
+
+#book_carousel {
+    width: 39vw;
+}
+
+.carousel-item {
+    height: 65vh;
+    width: calc(100% - 4em);
+    /* width: 70vh; */
+    /* max-width: 100%; */
+    padding: 0em 2em 3em;
+}
+
+.carousel-item img {
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+    align-self: center; 
+    /* box-shadow: 0 0 1.3em #7a7a7a; */
+    filter: drop-shadow(0 0 1em #7a7a7a);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: auto;
+}
+
+.carousel-control-prev-con, .carousel-control-next-icon {
+    color: #dae5e4;
+}
+
+#book_download_link {
+    color: #003031;
+    text-decoration: none;
+}
+
+#book_download_link:hover {
+    color: #003031;
+    text-decoration: underline;
+}
+#book_download_link * {
+    color: #003031;
+}
