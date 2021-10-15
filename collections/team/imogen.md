@@ -1,7 +1,7 @@
 ---
 tags: team
 name: Imogen Kelly
-photo: /assets/img/placeholder-person-square.png
+photo: /assets/img/Team/imogen.jpg
 role: Wet Lab Lead
 ---
 Imogen is in her third year of a Bachelor of Science, majoring in Microbiology. Imogen was

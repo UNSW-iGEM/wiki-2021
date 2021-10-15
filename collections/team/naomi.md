@@ -1,7 +1,7 @@
 ---
 tags: team
 name: Naomi Warren
-photo: /assets/img/placeholder-person-square.png
+photo: /assets/img/Team/naomi.jpeg
 role: Dry Lab Co-Lead and Wiki Team Member
 ---
 Naomi is finishing up her penultimate year of a degree in Bioinformatics Engineering (Honours),

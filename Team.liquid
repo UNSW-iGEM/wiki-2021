@@ -6,28 +6,35 @@ title: Team
     <link rel="stylesheet" href="/css/team.css" type="text/css">
 </head>
 
-<br />
-<div style="display: flex; justify-content: center; width: 100%; height: 22em;">
-    <img src="/assets/img/Team/team.jpeg">
+<div style="padding: 1em;">
+<div style="text-align: center;">
+  The 2021 UNSW iGEM Team is composed of 15 undergraduate students studying a range of disciplines across science, engineering, business and design.
+  <br />
+  The team is supported by Dr. Dominic Glover (PI), and mentors Joshua McCluskey, Gustave Severin and Sakthirupini Ramamurthy.
 </div>
-<div style="text-align: center;"><em>(most of) Team UNSW Australia 2021!</em></div>
-<br />
+<div style="display: flex; justify-content: center; height: 23em; align-items: center; padding-top: 1em;">
+    <img src="/assets/img/Team/team.jpg" height="100%">
+</div>
+
+
+<br /><br />
 <h2 style="text-align: center;">Members</h2>
 <div class="row row-cols-6">
-    <!-- {% assign sortedMembers = collections.team | sortByName %}
-    {% for person in sortedMembers %} {% endfor %}-->
-    {% for person in collections.team %}
+    {% assign sortedMembers = collections.team | sortByName %}
+    {% for person in sortedMembers %}
       <div class="col">
           <div class="card"
           data-bs-toggle="modal" data-bs-target={{"#" | append: person.data.name }}>
               <img src={{ person.data.photo }} class="card-img-top" alt="Name">
               <div class="card-body">
                 <div class="card-text name"><b>{{ person.data.name }}</b></div>
-                <div class="card-text" style="font-size: 0.8em;">{{ person.data.role }}</div>
+                <div class="card-text">{{ person.data.role }}</div>
               </div>
           </div>
       </div>
     {% endfor %}
+</div>
+
 </div>
 
 {% for person in collections.team %}
@@ -37,7 +44,7 @@ title: Team
           <div class="modal-content">
               <div class="modal-header">
                 <div style="display: flex; flex-direction: row;">
-                  <div style="width: 50%; ">
+                  <div class="modal-img-container">
                     <img src={{ person.data.photo }} height="100%" width="100%" style="border-radius: 0.2em;">
                   </div>
                   <div style="padding: 2em;">
@@ -58,6 +65,7 @@ title: Team
       </div>
   </div>
 {% endfor %}
+<br />
 <div id="teamModalBackdrop" class="modal-backdrop fade show"></div>
 
 <script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
