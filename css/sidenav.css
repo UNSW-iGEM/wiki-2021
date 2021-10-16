@@ -38,6 +38,7 @@ body {
     font-size: 1em;
     transition: font-size 0.2s, color 0.1s;
     text-decoration: none;
+    font-weight: normal;
 }
 
 #igem-unsw-content .sidenav a.active {

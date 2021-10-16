@@ -1,0 +1,81 @@
+.symposium .col{
+    display: flex;
+    justify-content: center;
+}
+
+.sym-logo {
+    height: 12vw;
+    width: 12vw;
+}
+
+.sym-logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    opacity: 1;
+    border: 0.3vw solid transparent;
+    transition: 0.2s border;
+}
+
+.sym-logo img:hover {
+    /* opacity: 0.7; */
+    border: 0.3vw solid #003031;
+}
+
+.sym-logo, .modal-sym-logo {
+    height: 12vw;
+    width: 12vw;
+    min-width: 12vw;
+}
+
+.modal-sym-logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 0.3vw solid transparent;
+}
+
+#igem-unsw-content .modal-title {
+    font-family: MPLUSRounded1c, sans-serif;
+}
+
+h3.modal-title {
+    font-weight: bold;
+}
+
+#igem-unsw-content .sym-caption {
+    padding-top: 1em;
+    text-align: center;
+    font-size: 0.9em;
+    font-family: Roboto;
+}
+
+.modal-content {
+    background-color: #dae5e4;
+    border: none;
+    color: #003031;
+}
+
+.modal-backdrop {
+    background-color: rgb(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+#collaborationsModalBackdrop {
+    z-index: 1050;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        max-width: 630px;
+        margin: 1.75rem auto;
+    }
+}

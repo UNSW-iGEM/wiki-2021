@@ -58,6 +58,7 @@ body {
 
 #igem-unsw-content * {
     font-family: 'OpenSans', sans-serif;
+    /* color: #003031; */
 }
 
 /* needed to override wiki default link stylings */
