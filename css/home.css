@@ -33,9 +33,14 @@ html, body, #igem-unsw-content {
 } */
 
 #igem-unsw-content .main-text {
-    font-family: MPLUSRounded1c;
+    font-family: MPLUSRounded1c, sans-serif;
     font-weight: 800;
     font-size: 1.8em;
+}
+
+#igem-unsw-content .caption-text {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
 }
 
 .dark-green {
@@ -67,6 +72,19 @@ html, body, #igem-unsw-content {
 
 .emphasis {
     color: #002d30;
+}
+
+.problem-icon {
+    width: 20%;
+}
+
+.problem-icon img {
+    width: 100%;
+}
+
+.problem-icon .caption-text {
+    padding-top: 1em;
+    text-align: center;
 }
 
 .coral-img {
