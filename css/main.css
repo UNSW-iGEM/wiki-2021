@@ -10,7 +10,14 @@ body {
 #igem-unsw-content {
     background-color: #b3dad9;
     font-family: 'OpenSans', sans-serif;
-    line-height: initial;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+#igem-unsw-content p {
+    font-family: 'OpenSans', sans-serif;
+    line-height: 1.5;
+    font-size: 0.95rem;
 }
 
 /* adjust for igem top bar */

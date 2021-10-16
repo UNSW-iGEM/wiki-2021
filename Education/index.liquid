@@ -1,0 +1,123 @@
+---
+layout: content.liquid
+title: Educational Package
+headings: 
+    - 
+        id: merchandise
+        title: Merchandise
+        icon: /assets/icon/Education/shopping-bag-solid.svg
+    - 
+        id: book
+        title: Children's Book
+        icon: /assets/icon/Education/book-open-solid.svg
+    - 
+        id: lecture
+        title: Lecture
+        icon: /assets/icon/Education/chalkboard-teacher-solid.svg
+---
+<head>
+    <link rel="stylesheet" href="/css/education.css">
+</head>
+<div>
+    We developed an educational package that was designed to be delivered as a whole package to families in our team’s local Sydney Aquarium. It includes a variety of different items each targeted at individuals of different age groups; young primary children (13 and below), young adults (ages 10-18), and adults (ages 18+). Our goal was to create a fun and relevant method to educate the public on what our topic was about, and basics on scientific concepts involving synthetic biology and ecology. These items were designed to be interacted with and physically distributed. 
+    <br /><br />
+    Due to the COVID-19 pandemic in our region, we could not distribute these packages as had been initially planned at the beginning of the year. Therefore this last-minute change has led us to  additionally strive to make an electronic version that enables individuals to access the material remotely.
+    <br /><br />
+</div>
+
+<!-- MERCHANDISE -->
+<div id="merchandise">
+    <h2>Merchandise</h2>
+
+    <br />
+    The purpose of our merchandise is to allow our younger audiences to have a physical connection to the reef. A relationship between the natural world has been shown in studies to support the health of the environment through increasing conservation desires. As such we aim to build this emotional connection to allow further conservation efforts through appreciation of our reefs.
+    <br /><br />
+    As mentioned prior, due to the COVID-19 pandemic, we had also created felt-patterns that caregivers can work with their younger individuals to create plushies of their own.
+    <br /><br />
+</div>
+
+<!-- CHILDREN'S BOOK -->
+<div id="book">
+    <h2>Children’s Book: Mama Duck and the Brilliant Scientist</h2>
+    <br />
+
+
+    <div id="book_carousel_container">
+        <div id="book_carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#book_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
+
+                {% for i in (1..22) %}
+                    <button type="button" data-bs-target="#book_carousel" data-bs-slide-to={{i}} aria-label={{"Slide " | append: i }}></button>
+                {% endfor %}
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- <div class="carousel-img-container"> -->
+                        <img src="/assets/img/Education/Book/Front Cover.jpg" class="d-block w-100">
+                    <!-- </div> -->
+                </div>
+
+                {% for i in (1..20) %}
+                    {% assign path = "/assets/img/Education/Book/Page " | append: i | append: ".jpg" %}
+                    <div class="carousel-item">
+                        <!-- <div class="carousel-img-container"> -->
+                            <img src="{{path}}" class="d-block w-100">
+                        <!-- </div> -->
+                    </div>
+                {% endfor %}
+
+                <div class="carousel-item">
+                    <!-- <div class="carousel-img-container"> -->
+                        <img src="/assets/img/Education/Book/Glossary.jpg" class="d-block w-100">
+                    <!-- </div> -->
+                </div>
+                <div class="carousel-item">
+                    <!-- <div class="carousel-img-container"> -->
+                        <img src="/assets/img/Education/Book/Back Cover (Blurb).jpg" class="d-block w-100">
+                    <!-- </div> -->
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#book_carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#book_carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div style="text-align: center; font-size: 0.9em;">
+            Download: <a href="/assets/Mama Duck the Brilliant Scientist.pdf" download id="book_download_link"><em>Mama Duck and the Brilliant Scientist.pdf</em></a>
+            <br />
+        </div>
+    </div>
+
+
+
+    Children are generally curious about nature surrounding them from a young age, constantly raising questions and searching for answers within the world (1). However, accessibility to scientific resources is lacking due to the difficulty of translating scientific terms to a level that children can thoroughly understand (2). Our team is very passionate about introducing more scientific concepts to younger children, hoping to educate children and their parents about concepts surrounding synthetic biology in a fun and entertaining way. Hence, we wrote and illustrated a children’s book titled ‘Mama Duck the Brilliant Scientist’ 
+    <br /><br />
+    ‘Mama Duck the Brilliant Scientist’ is a children’s book targeted at late-primary school-aged children from 9-12. It aims to educate the younger audience on typical lab techniques and procedures that scientists use to conduct planned experiments within the field of synthetic biology whilst relating it to the issue of coral bleaching on our reefs. The book’s storyline involves Mama Duck, who works in a science lab and Captain Coral (featured from last year’s book) to find solutions to solve the coral bleaching issue and save the coral reef. Baby Duckling follows Mama Duck in the day of work, learning about the life of a scientist and how to conduct a scientific method. Together, they learn how to culture algae in the lab. 
+    <br /><br />
+    We printed physical copies of the children book, featuring a 6 x 6” softcover book with 20 coloured pages. By providing colourful, child-friendly visuals, we generated interest and motivation to connect children with the basic concepts of scientific thinking and experimentation. We also encourage children to be curious about the environment they live in, searching for answers on how we can overcome problems in nature. 
+    <br /><br />
+    Our original intentions were to include this picture book in our physical educational package to be distributed through primary and high schools and events held at the local aquarium. Whilst we were able to print physical copies of the book for distribution, we were unable to visit due to COVID-19 restrictions across NSW and the unexpected move from in-person teaching back to online learning across many schools. We have contacted a couple of local primary and high schools for future visits once the COVID situation allows us. As an alternative, the book is available online for download and free printing to cater for anyone looking to obtain a copy for their personal or educational uses. We are also working in collaboration to translate the books into various languages to increase accessibility across the world. 
+    <br /><br />
+</div>
+
+<!-- LECTURE -->
+<div id="lecture">
+    <h2>Lecture</h2>
+    <br />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia hendrerit nisl vitae aliquam. Nulla risus ligula, tempus id mauris quis, porttitor laoreet elit. Quisque convallis lobortis orci a aliquam. Sed vitae mauris scelerisque metus lacinia feugiat sit amet nec quam. Quisque quis lectus non massa maximus ornare ac non leo. Nulla turpis eros, porta vulputate tempor at, consectetur ut lectus. Aliquam eleifend ante ante, mollis gravida ante ullamcorper et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum, purus in accumsan egestas, turpis magna tristique risus, id euismod erat elit eu ante. Duis lobortis gravida velit, vel molestie nunc rhoncus at. Nullam tempus tincidunt turpis, ac eleifend ante pharetra vel. Vestibulum ullamcorper tortor nec ornare vehicula. Integer hendrerit risus non nisi sagittis gravida. Nulla nibh augue, dictum non consequat at, elementum eget nulla.
+    <br /><br />
+    Aliquam erat volutpat. Sed dapibus, enim sit amet posuere facilisis, lectus ipsum sollicitudin mauris, ut tempus nulla ex vitae mauris. Aenean accumsan malesuada ultricies. Quisque mattis enim in nisi lobortis, rutrum viverra ligula sodales. Maecenas elementum, dui et cursus gravida, dui tellus consequat purus, eget dapibus odio eros vitae ipsum. Integer mollis faucibus nibh. Quisque vel ipsum eget leo molestie sollicitudin. Duis dignissim vel magna non cursus. Pellentesque porttitor elementum scelerisque. Maecenas varius in est eu condimentum. Aliquam erat volutpat. Ut vitae pulvinar mauris.
+    <br /><br />
+    Pellentesque vel risus odio. Phasellus blandit massa iaculis dolor porttitor mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin vel felis cursus, eleifend augue vitae, ullamcorper mi. Proin quis leo luctus, iaculis turpis vitae, posuere nunc. Sed in arcu consequat, venenatis erat ac, consectetur enim. Aliquam finibus malesuada interdum. Sed et semper lorem, eu tempor diam. Duis facilisis finibus dapibus. Vestibulum nisi ex, tincidunt a dapibus in, facilisis ac quam. Phasellus a leo risus. Sed eu egestas leo, eget porta leo. Fusce at tincidunt quam.
+    <br /><br />
+</div>
+
+
+<script src="/js/bootstrap/bootstrap.bundle.min.js"></script>

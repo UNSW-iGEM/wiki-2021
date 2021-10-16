@@ -12,6 +12,7 @@ body {
     height: 25vh;
     bottom: 50vh;
     display: block;
+    padding: 2em 0em;
 }
 
 #igem-unsw-content .sidenav h5 {
@@ -28,13 +29,17 @@ body {
     border-radius: 50%;
 }
 
+#igem-unsw-content .sidenav span {
+    font-family: Roboto;
+}
+
 #igem-unsw-content .sidenav a {
     color: #002d30;
     font-size: 1em;
     transition: font-size 0.2s, color 0.1s;
     text-decoration: none;
-    font-family: Roboto;
 }
+
 #igem-unsw-content .sidenav a.active {
     font-size: 1.25em;
     text-decoration: none;
