@@ -21,6 +21,18 @@ body {
     font-size: 0.95rem;
 }
 
+#igem-unsw-content * {
+    font-family: 'OpenSans', sans-serif;
+    /* color: #003031; */
+}
+
+#igem-unsw-content p {
+    font-family: 'OpenSans', sans-serif;
+    /* font-size: 1em; */
+    text-align: initial;
+    /* color: #003031; */
+}
+
 /* adjust for igem top bar */
 /* comment out for release */
 /* #igem-unsw-content {
@@ -49,24 +61,15 @@ body {
     text-align: center;
 }
 
-#igem-unsw-content h2, h3  {
+#igem-unsw-content h2, 
+#igem-unsw-content h3  {
     font-family: MPLUSRounded1c, Roboto, sans-serif;
 }
 
-#igem-unsw-content h4, h5, h6 {
+#igem-unsw-content h4, 
+#igem-unsw-content h5, 
+#igem-unsw-content h6 {
     font-family: Roboto, sans-serif;
-}
-
-#igem-unsw-content * {
-    font-family: 'OpenSans', sans-serif;
-    /* color: #003031; */
-}
-
-#igem-unsw-content p {
-    font-family: 'OpenSans', sans-serif;
-    font-size: 1em;
-    text-align: initial;
-    /* color: #003031; */
 }
 
 /* needed to override wiki default link stylings */
@@ -108,11 +111,4 @@ body {
 .container {
     display: flex;
     justify-content: space-around;
-}
-
-.text {
-    letter-spacing: 0.05em;
-    color: #0a7c80;
-    font-size: larger;
-    font-weight: 700;
 }

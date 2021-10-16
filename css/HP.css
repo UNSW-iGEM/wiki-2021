@@ -5,7 +5,8 @@
 
 #nav-tab-ihp .nav-link {
     color: #002d30;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
 }
 
 #nav-tab-ihp .nav-link:hover {
@@ -44,6 +45,72 @@
 }
 
 
+/* MODAL */
+.modal-backdrop {
+    background-color: rgb(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+#hpModalBackdrop {
+    z-index: 1050;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.modal-photo {
+    height: 12vw;
+    width: 12vw;
+    min-width: 12vw;
+}
+
+.modal-photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    /* border-radius: 50%; */
+    border-radius: 0.2em;
+    background-color: #ffffff;
+    border: 0.3vw solid transparent;
+}
+
+#igem-unsw-content .modal-title {
+    font-family: MPLUSRounded1c, sans-serif;
+}
+
+h3.modal-title {
+    font-weight: bold;
+}
+
+#igem-unsw-content .modal-caption {
+    /* padding-top: 1em; */
+    font-size: 1em;
+    font-family: Roboto;
+}
+
+.modal-content {
+    background-color: #dae5e4;
+    border: none;
+    color: #003031;
+}
+
+#igem-unsw-content .modal-body p,
+#igem-unsw-content .modal-body li {
+    font-size: 0.9em;
+}
+
+#igem-unsw-content .modal-body h5 {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        max-width: 710px;
+        margin: 1.75rem auto;
+    }
+}
 
 /* TIMELINE */
 .timeline-wrapper {
@@ -65,7 +132,7 @@
 }
 
 .box {
-    width: 20%;
+    width: 25%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -94,13 +161,6 @@
     background-color: #002d30;
 }
 
-#igem-unsw-content .box-content p {
-    font-size: 0.9em;
-    font-family: Roboto;
-    text-align: center;
-    line-height: initial;
-}
-
 .box .box-content {
     border-radius: 0.5em;
     background-color: #002d30;
@@ -110,13 +170,19 @@
     top: initial;
     bottom: 65%;
 
-    font-size: 0.9em;
-    font-family: Roboto;
 }
 
-.box-content :last-child {
-    font-size: 0.95em;
+#igem-unsw-content .box .box-content p {
+    font-size: 0.9em;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    line-height: initial;
+    /* font-weight: 700; */
 }
+
+/* .box-content :last-child {
+    font-size: 0.95em;
+} */
 
 .box-bottom .box-content {
     top: 65%;
