@@ -12,6 +12,7 @@ body {
     font-family: 'OpenSans', sans-serif;
     line-height: 1.5;
     font-size: 0.95rem;
+    color: #003031;
 }
 
 #igem-unsw-content p {
@@ -58,6 +59,13 @@ body {
 
 #igem-unsw-content * {
     font-family: 'OpenSans', sans-serif;
+    /* color: #003031; */
+}
+
+#igem-unsw-content p {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 1em;
+    text-align: initial;
     /* color: #003031; */
 }
 

@@ -32,16 +32,3 @@
 .carousel-control-prev-con, .carousel-control-next-icon {
     color: #dae5e4;
 }
-
-#book_download_link {
-    color: #003031;
-    text-decoration: none;
-}
-
-#book_download_link:hover {
-    color: #003031;
-    text-decoration: underline;
-}
-#book_download_link * {
-    color: #003031;
-}
