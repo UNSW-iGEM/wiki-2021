@@ -1,6 +1,6 @@
 #footer {
     font-size: 12px;
-    color: white;
+    color: #dae5e4;
     /* padding: 2vh;
     margin: 0vw 1vw; */
     text-align: initial;
@@ -17,32 +17,36 @@
     height: 100%;
 }
 
-.sitemap {
+#footer .sitemap {
     padding-right: 4em;
     font-size: 1.1em;
     font-family: MPLUSRounded1c;
     line-height: 1.7;
 }
 
-.sitemap h3 {
-    font-weight: bold;
-    font-size: 1.4em;
-    color: #70b7b3;
-}
-
-#footer .sitemap h3 {
-    color: #70b7b3;
-}
-
 #footer a {
     color: inherit;
     text-decoration: none;
     opacity: 100%;
-    transition: opacity .2s;
+    /* font-weight: normal; */
+    transition: opacity .1s;
+    font-weight: normal;
 }
 
 #footer a:hover {
     opacity: 75%;
+    text-decoration: none;
+    color: inherit;
+}
+
+#footer .sitemap h3 {
+    font-size: 1.4em;
+    color: #70b7b3;
+    font-weight: bold;
+}
+
+#footer .sitemap h3 a {
+    font-weight: bold;
 }
 
 #footer hr {
