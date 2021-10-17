@@ -8,6 +8,13 @@
 
 <!-- placeholder for 4px igem navbar -->
 <div style="position: fixed; top: 0; height: 16px; width: 100%; background-color: rgb(65, 65, 65); z-index: 9999;"></div>
+
+<div id="loader">
+    <div style="height: 100%; display: flex; justify-content: center; align-items: center;">
+        <div id="loader_logo" style="height: 60%;"></div>
+    </div>
+</div>
+
 <div id="igem-unsw-content">
     {% include header.html %}
     
@@ -19,4 +26,31 @@
 </div>
 
 </body>
+
+<script src="/js/lottie/lottie.min.js" type="text/javascript"></script>
+<script src="/js/anims/loader_logo.js" type="text/javascript"></script>
+<script>
+    lottie.loadAnimation({
+        container: document.getElementById("loader_logo"), 
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        animationData: loader_logo,
+        rendererSettings: {
+            // preserveAspectRatio: 'xMidYMin slice'
+        }
+    });
+
+
+
+    let content = document.getElementById("igem-unsw-content");
+    content.style.display = "none";
+    window.addEventListener("load", function() {
+        let loader = document.getElementById('loader');
+        setTimeout(() => {
+            loader.classList.add("loaded");
+            content.style.display = "block";
+        }, 200);
+    });
+</script>
 </html>
