@@ -1,3 +1,13 @@
+#igem-unsw-content .sidenav {
+    top: 27vh;
+    height: 50vh;
+}
+
+/* text */
+#igem-unsw-content h5 {
+    font-weight: bold;
+}
+
 /* TABS */
 #nav-tab-ihp {
     border-color: #dae5e4;

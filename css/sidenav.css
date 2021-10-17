@@ -8,11 +8,12 @@ body {
 
 #igem-unsw-content .sidenav {
     position: sticky;
-    top: calc(37.5vh);
+    top: 35vh;
     height: 25vh;
     bottom: 50vh;
     display: block;
-    padding: 2em 0em;
+    padding: 3em 0em;
+    padding-top: 0em;
 }
 
 #igem-unsw-content .sidenav h5 {

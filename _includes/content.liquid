@@ -13,19 +13,28 @@ layout: content_no_sidenav.liquid
                 <a class="nav-link" href="#"><h5>{{ title }}</h5></a>
 
                 {% for heading in headings %}
-                    <a class="nav-link" href={{ "#" | append: heading.id }} style="display: flex; align-items: center;">
 
-                        {% assign type = heading.icon | slice: -3, 2 %}
-                        <!-- {{ type }} -->
-                        {% if type == 'sv' %}
-                            <img src={{ heading.icon }} class="icon">
-                        {% else %}
-                            <img src={{ heading.icon }} class="icon rounded-icon">
-                        {% endif %}
-                        <span style="padding-left: 0.4vw;">
-                            {{ heading.title }}
-                        </span>
-                    </a>
+                    {% if heading.icon %}
+                        <a class="nav-link" href={{ "#" | append: heading.id }} style="display: flex; align-items: center;">
+
+
+                            {% assign type = heading.icon | slice: -3, 2 %}
+                            <!-- {{ type }} -->
+                            {% if type == 'sv' %}
+                                <img src={{ heading.icon }} class="icon">
+                            {% else %}
+                                <img src={{ heading.icon }} class="icon rounded-icon">
+                            {% endif %}
+
+                            <span style="padding-left: 0.4vw;">
+                                {{ heading.title }}
+                            </span>
+                        </a>
+                        
+                    {% else %}
+                        <a class="nav-link"  href={{ "#" | append: heading.id }}><h5>{{ heading.title }}</h5></a>
+                    {% endif %}
+
                 {% endfor %}
             </nav>
         </div>
