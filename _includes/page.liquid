@@ -6,6 +6,9 @@
 <link rel="stylesheet" href="/css/fonts.css" type="text/css">
 <link rel="stylesheet" href="/css/main.css" type="text/css">
 
+<link rel="preload" href="/js/lottie/lottie.min.js" as="script">
+<link rel="preload" href="/js/anims/loader_logo.js" as="script">
+
 <!-- placeholder for 4px igem navbar -->
 <div style="position: fixed; top: 0; height: 16px; width: 100%; background-color: rgb(65, 65, 65); z-index: 9999;"></div>
 
@@ -35,10 +38,7 @@
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        animationData: loader_logo,
-        rendererSettings: {
-            // preserveAspectRatio: 'xMidYMin slice'
-        }
+        animationData: loader_logo
     });
 
 
