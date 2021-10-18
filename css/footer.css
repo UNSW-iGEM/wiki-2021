@@ -8,8 +8,8 @@
 }
 
 .sponsor-logo-container {
-    height: 3.5em;
-    margin: 0em 0.5em;
+    height: 3vw;
+    margin: 0 0.5vw;
 }
 
 .sponsor-logo-container img {
@@ -19,7 +19,7 @@
 
 #footer .sitemap {
     padding-right: 4em;
-    font-size: 1.1em;
+    font-size: 0.9vw;
     font-family: MPLUSRounded1c;
     line-height: 1.7;
 }
@@ -40,7 +40,7 @@
 }
 
 #footer .sitemap h3 {
-    font-size: 1.4em;
+    font-size: 1.3vw;
     color: #70b7b3;
     font-weight: bold;
 }
