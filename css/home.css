@@ -2,6 +2,10 @@ html, body, #igem-unsw-content {
     background-color: #b3dad9;
 }
 
+#header {
+    background-color: #b3dad9;
+}
+
 #igem-unsw-content .section {
     display: flex;
     flex-flow: column;
