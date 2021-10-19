@@ -124,7 +124,18 @@ body {
 
 /* tables */
 #igem-unsw-content .table {
-    border-color: #b3dad9;
+    border-width: 0px;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+#igem-unsw-content .table>:not(caption)>*>* {
+    border-width: 0px;
+    padding: 0.5rem 0.5rem;
+}
+
+#igem-unsw-content .table th {
+    background-color: inherit;
 }
 
 #igem-unsw-content .table :not(a) {
