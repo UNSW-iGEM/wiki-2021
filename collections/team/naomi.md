@@ -3,6 +3,12 @@ tags: team
 name: Naomi Warren
 photo: /assets/img/Team/naomi.jpeg
 role: Dry Lab Co-Lead and Wiki Team Member
+attributions:
+    - Brought her bioinformatics and biochemistry knowledge to the group when joining PROTECC Coral partway through the project in June
+    - Performed extensive structural modelling on HSP22E and contributed to kinetic modelling for the proposed glutathione system
+    - Reached out to experts Prof. Marc Wilkins (UNSW), Prof. Lars Nielsen (UQ) and Prof. Ian Dawes (UNSW) for information and advice
+    - Contributed to wiki writing and participated in the team's presentations
+    - Helped code up the wiki pages with the Wiki and Design team, and contributed design ideas for the wiki and presentation video
 ---
 Naomi is finishing up her penultimate year of a degree in Bioinformatics Engineering (Honours),
 and was keen as a bean to use the skills she’d learnt (and a bunch she had to discover) to solve

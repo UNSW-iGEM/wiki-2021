@@ -1,0 +1,129 @@
+---
+layout: content.liquid
+title: Attributions
+headings:
+- 
+    id: mentors
+    title: Mentors
+    icon: /assets/icon/Attributions/hands-helping-solid.svg
+- 
+    id: unsw_igem_2020
+    title: 2020 UNSW iGEM Team
+    icon: /assets/icon/Attributions/backward-solid.svg
+- 
+    id: labwork
+    title: Labwork
+    icon: /assets/icon/Attributions/vial-solid.svg
+- 
+    id: hp
+    title: Human Practices
+    icon: /assets/icon/Attributions/comments-solid.svg
+- 
+    id: members
+    title: Members
+    icon: /assets/icon/Attributions/users-solid.svg
+---
+<head>
+    <link rel="stylesheet" href="/css/attributions.css">
+</head>
+<div>
+    <h4><b>Dr. Dominic Glover</b></h4>
+    <p>
+        Dr. Dominic Glover (PI) has provided the 2021 Team an immense amount of support over the course of the year especially with our Wet and Dry Lab team. With this being his fourth year leading an iGEM Team as well as his background in synthetic biology, Dr. Glover’s guidance and advice have become integral parts of the team. We would like to thank him endlessly for his input and for the opportunity of being part of the iGEM experience. 
+    </p>
+    <br />
+</div>
+
+<div id="mentors">
+
+    <h2>Mentors</h2>
+    <br />
+
+    <h5>Joshua McCluskey</h5>
+    <p>
+        Joshua supervised the wet lab team and helped with heat shock protein experimental design. He also provided guidance and advice on glutathione plasmid design. 
+    </p>
+    <br />
+
+    <h5>Sakthirupini Ramamurthy</h5>
+    <p>
+        Sakthirupini had helped our iGEM team in various aspects. With Science Communication, she inspired us; showing us an image to aim for at the start of the year, when things when in disarray. 
+    </p>
+    <br />
+
+    <h5>Gustave Severin</h5>
+    <p>
+        Gustave trained and supervised the wet lab team. He helped us with lab techniques and experiments involving DNA and protein extraction, running DNA and protein gels, media preparation and plating, and general wet lab work. He also provided guidance and advice on heat shock protein experimental design.
+    </p>
+    <br />
+</div>
+<div id="unsw_igem_2020">
+
+    <h2>2020 UNSW iGEM Team</h2>
+    <br />
+
+    <p>
+        We thank the 2020 UNSW iGEM Team for setting up a strong foundation for us to build on as a Stage 2 team. They have helped us lead the way to using science to better the world around us; letting us learn from their mistakes and ensuring our team strives with their best abilities to succeed. 
+    </p>
+    <br />
+
+    <h5>Chelsea Liang</h5>
+    <p>
+        As part of the 2020 UNSW iGEM Team, Chelsea assisted the 2021 Dry Lab Team as a mentor with her experience as Dry Lab Lead. She walked the current members through the progress that last year’s team had made in regards to both structural and mathematical modelling, and informed us of the project goal that they had in mind. With her instructions and outgoing personality, the 2021 team could develop a strong foundational understanding of our project and the necessary tasks that needed to be accomplished. 
+    </p>
+    <br />
+
+    <h5>Deborah Chandra</h5>
+    <p>
+        Deborah was part of the 2020 UNSW IGEM Team as a Wiki and Design Lead. Having only a small team dedicated to Wiki and Design at the start of 2021, Deborah was a reliable and supportive mentor that helped the team get on their feet. She taught members with her knowledge in designing websites and shared her experiences with iGEM. Meetings with her were always productive which set the basis of our work ethic for the year.
+    </p>
+    <br />
+
+    <h5>Kelly Varianne</h5>
+    <p>
+        Kelly, as part of the previous iGEM team supported the team as a whole, along with Science Communication in each goal they had achieved. She was encouraging and assisting, bringing light to aspects that we have had forgotten, celebrated with us for each success, and also shared our grief over the loss of opportunities due to the current pandemic environment. She narrated to us her experiences in 2020, letting us know her regrets but also her achievements. This allowed the team to shine and improve with each succeeding year.
+    </p>
+    <br />
+</div>
+<div id="labwork">
+
+    <h2>Labwork</h2>
+    <br />
+
+    <h5>Brian Ee</h5>
+    <p>
+        Brian provided us with advice on structural modelling, and in particular, provided invaluable guidance on running molecular dynamics simulations. He introduced us to molecular dynamics concepts, such as the difference between all-atom and coarse-grained simulations, referred us to tutorials, and provided us with scripts to run molecular dynamics simulations in GROMACS. We are incredibly grateful to Brian for providing us with his expertise and time!
+    </p>
+    <br />
+</div>
+<div id="hp">
+
+    <h2>Human Practices</h2>
+    <br />
+</div>
+<div id="members">
+
+    <h2>Members</h2>
+    <br />
+    <table class="table table-striped members">
+        {% assign sortedMembers = collections.team | sortByNameAttributions %}
+        {% for person in sortedMembers %}
+
+        <tr>
+            <td style="font-size: 1.2em; line-height: 1.7;">
+                <b>{{ person.data.name }}</b>
+                <br />
+                <div style="font-size: 0.8em;">{{ person.data.role }}</div>
+            </td>
+            <td>
+                <ul>
+                    {% for a in person.data.attributions %}
+                        <li>{{ a }}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+
+        {% endfor %}
+    </table>
+</div>

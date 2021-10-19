@@ -1,0 +1,21 @@
+#igem-unsw-content .members tr td:first-child {
+    width: 30%;
+    font-family: Roboto, sans-serif;
+    vertical-align: middle;
+}
+
+#igem-unsw-content .members tr td:first-child * {
+    font-family: Roboto, sans-serif;
+}
+
+#igem-unsw-content .members ul {
+    margin-top: 1rem;
+}
+
+#igem-unsw-content .members tr td:nth-child(2) {
+    font-size: 0.9em;
+}
+
+#igem-unsw-content h5 {
+    font-weight: bold;
+}
