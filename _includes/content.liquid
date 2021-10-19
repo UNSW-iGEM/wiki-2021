@@ -18,21 +18,25 @@ layout: content_no_sidenav.liquid
 
                 {% for heading in headings %}
 
-                    {% if heading.icon %}
+                    {% if heading.icon or heading.no_icon_subheading %}
                         <a class="nav-link" href={{ "#" | append: heading.id }} style="display: flex; align-items: center;">
 
-
-                            {% assign type = heading.icon | slice: -3, 2 %}
-                            <!-- {{ type }} -->
-                            {% if type == 'sv' %}
-                                <img src={{ heading.icon }} class="icon">
+                            {% if heading.icon %}
+                                {% assign type = heading.icon | slice: -3, 2 %}
+                                <!-- {{ type }} -->
+                                {% if type == 'sv' %}
+                                    <img src={{ heading.icon }} class="icon">
+                                {% else %}
+                                    <img src={{ heading.icon }} class="icon rounded-icon">
+                                {% endif %}
+                                <span style="padding-left: 0.4vw;">
+                                    {{ heading.title }}
+                                </span>
                             {% else %}
-                                <img src={{ heading.icon }} class="icon rounded-icon">
+                                <span>
+                                    {{ heading.title }}
+                                </span>
                             {% endif %}
-
-                            <span style="padding-left: 0.4vw;">
-                                {{ heading.title }}
-                            </span>
                         </a>
                         
                     {% else %}

@@ -151,6 +151,14 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/d/d1/T--UNSW_Australia--icon--Engineering--lightbulb-regular.svg
     md5: bf77a701ecee7d60eb161e158f7bdaca
     upload_filename: T--UNSW_Australia--icon--Engineering--lightbulb-regular.svg
+  assets/icon/Engineering/pencil-alt-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/5/56/T--UNSW_Australia--icon--Engineering--pencil-alt-solid.svg
+    md5: f115003be3928d406b817e3b132a868b
+    upload_filename: T--UNSW_Australia--icon--Engineering--pencil-alt-solid.svg
+  assets/icon/Engineering/tools-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/9/91/T--UNSW_Australia--icon--Engineering--tools-solid.svg
+    md5: ed47f796e0c679b4144b380ea1421009
+    upload_filename: T--UNSW_Australia--icon--Engineering--tools-solid.svg
   assets/icon/Engineering/vial-solid.svg:
     link_URL: https://2021.igem.org/wiki/images/0/0c/T--UNSW_Australia--icon--Engineering--vial-solid.svg
     md5: ebfcefe2f6fb084f73547ff9d71a0624
@@ -315,6 +323,14 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/f/fa/T--UNSW_Australia--img--Education--Book--Page_9.jpg
     md5: 51b5a07d39247fd682ef31c62243741d
     upload_filename: T--UNSW_Australia--img--Education--Book--Page 9.jpg
+  assets/img/Engineering/Flow-Chart2.jpg:
+    link_URL: https://2021.igem.org/wiki/images/b/b0/T--UNSW_Australia--img--Engineering--Flow-Chart2.jpg
+    md5: 3e6d576f82bdbbcca39c6ab752c548e9
+    upload_filename: T--UNSW_Australia--img--Engineering--Flow-Chart2.jpg
+  assets/img/Engineering/gsh_pathway.png:
+    link_URL: https://2021.igem.org/wiki/images/a/ae/T--UNSW_Australia--img--Engineering--gsh_pathway.png
+    md5: fc7e0578753786f0922bb8e7b5054887
+    upload_filename: T--UNSW_Australia--img--Engineering--gsh_pathway.png
   assets/img/Exhibition/Betty Sykes/Karrangkal - Coral Reef.jpg:
     link_URL: https://2021.igem.org/wiki/images/a/a3/T--UNSW_Australia--img--Exhibition--Betty_Sykes--Karrangkal_-_Coral_Reef.jpg
     md5: 719a0a58c70c61b39247d7e0e3150856
@@ -960,6 +976,9 @@ css:
   css/education.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/educationCSS?action=raw&ctype=text/css
     md5: 6e41e0465177de1ad974b2d997a5ad8b
+  css/engineering.css:
+    link_URL: https://2021.igem.org/Template:UNSW_Australia/css/engineeringCSS?action=raw&ctype=text/css
+    md5: 5bf896cd2512f6fd8d3358b5db805b92
   css/fonts.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/fontsCSS?action=raw&ctype=text/css
     md5: 93131ea37062450cfe925783295c32ba
@@ -1017,7 +1036,7 @@ html:
     md5: 34186822de3f97d84cd25f574a25e15f
   Engineering/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Engineering
-    md5: fb890416e10de6ad620c26bd135a2f93
+    md5: 2fe7ea943cd33002063b09ccf3def32f
   Exhibition/Betty_Sykes/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Betty_Sykes
     md5: d0e6c4cb22920fa55494fc2c545c2cd7
