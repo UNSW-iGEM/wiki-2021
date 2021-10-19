@@ -43,6 +43,8 @@ layout: page.liquid
 
 </div>
 
+
+<!-- SYMBIOTIC RELATIONSHIP -->
 <div style="background-color: #b3dad9;">
 
     <div class="text" style="height: 60%; display: flex; justify-content: center; align-items: center;">
@@ -55,11 +57,9 @@ layout: page.liquid
     </div>
 </div>
 
-<div style="background-color: #b5dede;">
 
-    <!-- <div class="text" style="height: 60%; display: flex; justify-content: center; align-items: center;">
-        Section 4 - The problem - causes
-    </div> -->
+<!-- PROBLEM + CAUSES -->
+<div style="background-color: #b5dede;">
 
     <br />
     <div class="main-text red" style="text-align: center; font-size: 2em; letter-spacing: 1.2;">
@@ -93,11 +93,8 @@ layout: page.liquid
 
 <div style="background-color: #087b84; position: relative;">
 
-
     <img src="/assets/img/Home/bubble-background.png" width="100%">
-    <!-- <div class="text" style="height: 60%; display: flex; justify-content: center; align-items: center; color: #b3dad9;">
-        
-    </div> -->
+
     <div style="position: absolute;
     top: 15%;
     left: 50%;
@@ -131,10 +128,37 @@ layout: page.liquid
 
 </div>
 
-<div class="section" style="background-color: #b3dad9; height: 60vh;">
 
-    <div class="text" style="height: 60%; display: flex; justify-content: center; align-items: center;">
-        Section 6 - Our solution
+<!-- SOLUTION -->
+<div class="solution-section" style="background-color: #b3dad9; text-align: center; padding: 2em;">
+
+    <div class="main-text dark-green" style="font-size: 2.5em;">
+        OUR SOLUTION
+    </div>
+    <br />
+
+    <div style="width: 100%; display: flex; justify-content: center;">
+        <div class="caption-text dark-green" style="width: 50%; font-size: 1.1em;">
+            Engineer <em>Symbiodinium</em> (in particular, <em>Symbiodinium goreaui</em>) to express a glutathione recycling enzyme system and small heat shock proteins (sHSP)
+        </div>
+    </div>
+    <br />
+
+    <div style="display: flex; justify-content: center; width: 100%;">
+        <div style="display: flex; justify-content: space-around; vertical-align: flex-start; width: 80%; height: 15em;">
+            <div style="width: 50%;">
+                <img src="/assets/img/Home/Solution1.png" width="60%">
+                <div style="display: flex; width: 100%; justify-content: center;">
+                    <div class="solution-text">Introduce enzymes that produce and recycle glutathione, a molecule that neutralises ROS</div>
+                </div>
+            </div>
+            <div style="width: 50%;">
+                <img src="/assets/img/Home/Solution2.png" width="60%">
+                <div style="display: flex; width: 100%; justify-content: center;">
+                    <div class="solution-text">Introduce small heat shock proteins originally found in a different heat-loving algae to mitigate protein unfolding</div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -178,7 +202,7 @@ layout: page.liquid
         container: document.getElementById("home_protecc"), 
         renderer: 'svg',
         loop: true,
-        autoplay: true,
+        autoplay: false,
         animationData: home_protecc,
         rendererSettings: {
             preserveAspectRatio: 'xMidYMin slice'
