@@ -120,3 +120,13 @@ body {
     display: flex;
     justify-content: space-around;
 }
+
+
+/* tables */
+#igem-unsw-content .table {
+    border-color: #b3dad9;
+}
+
+#igem-unsw-content .table :not(a) {
+    color: #003031;
+}
