@@ -79,6 +79,26 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/3/3c/T--UNSW_Australia--iGEMxSAMS_Episode_2.mp3
     md5: 68f8a9630b1870b66713de9bab83d68a
     upload_filename: T--UNSW_Australia--iGEMxSAMS_Episode 2.mp3
+  assets/icon/Attributions/backward-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/f/f0/T--UNSW_Australia--icon--Attributions--backward-solid.svg
+    md5: b6fe5103dcf5f1493e8bb06f1a5fe9f5
+    upload_filename: T--UNSW_Australia--icon--Attributions--backward-solid.svg
+  assets/icon/Attributions/comments-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/5/5a/T--UNSW_Australia--icon--Attributions--comments-solid.svg
+    md5: 92b26566d5a808d8ce9c8d8d7a32b154
+    upload_filename: T--UNSW_Australia--icon--Attributions--comments-solid.svg
+  assets/icon/Attributions/hands-helping-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/d/d6/T--UNSW_Australia--icon--Attributions--hands-helping-solid.svg
+    md5: 7877e6c8ad708c4e4e9c7c05d568e7d9
+    upload_filename: T--UNSW_Australia--icon--Attributions--hands-helping-solid.svg
+  assets/icon/Attributions/users-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/a/a8/T--UNSW_Australia--icon--Attributions--users-solid.svg
+    md5: dac0505791d98fde55a2719bb85b7640
+    upload_filename: T--UNSW_Australia--icon--Attributions--users-solid.svg
+  assets/icon/Attributions/vial-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/f/fb/T--UNSW_Australia--icon--Attributions--vial-solid.svg
+    md5: ebfcefe2f6fb084f73547ff9d71a0624
+    upload_filename: T--UNSW_Australia--icon--Attributions--vial-solid.svg
   assets/icon/Collaborations/users-solid.svg:
     link_URL: https://2021.igem.org/wiki/images/2/2c/T--UNSW_Australia--icon--Collaborations--users-solid.svg
     md5: dac0505791d98fde55a2719bb85b7640
@@ -904,6 +924,9 @@ css:
   css/HP.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/HPCSS?action=raw&ctype=text/css
     md5: 20d05fad6640ee1af327a145a70158b3
+  css/attributions.css:
+    link_URL: https://2021.igem.org/Template:UNSW_Australia/css/attributionsCSS?action=raw&ctype=text/css
+    md5: 5ffa4139792931836b8fe7d7aa8d6c75
   css/bootstrap/bootstrap.min.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/bootstrap/bootstrap-minCSS?action=raw&ctype=text/css
     md5: 9bb887442a6fcd9bbd0f319da6eeba68
@@ -939,7 +962,7 @@ css:
     md5: 97a4733d8f81d6b1ef44c5de0a689e09
   css/main.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/mainCSS?action=raw&ctype=text/css
-    md5: b7d4f646acd29eb48d417445bdf97115
+    md5: 746ca2ac0e587bf4d8f68bf7d8e47324
   css/sidenav.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/sidenavCSS?action=raw&ctype=text/css
     md5: f14327cd93adadd58b5961509dce5469
@@ -949,7 +972,7 @@ css:
 html:
   Attributions/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Attributions
-    md5: 894dd6f0d1f66887a16c562f2c756af1
+    md5: 0a4a6e562a9fe5691641dc6be6aec195
   Collaborations/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Collaborations
     md5: ae3c54fbd81916ae362202f7a9db9010
@@ -1045,13 +1068,13 @@ html:
     md5: 9ab53b8de1369c8d26b4552b13916276
   Parts/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Parts
-    md5: dcb46b7ff449101f7e2c48120ad1c970
+    md5: 11ad1464486d4cc66e09ded60be6e8b6
   Protocols_Safety/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Protocols_Safety
     md5: e9417556405690b7e4b15484c13e739d
   Team/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Team
-    md5: 7e1e406162c17c03b336d03a496f114b
+    md5: 26b1fa6ec2eb4baec406243b4c92a906
   animations/README/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/animations/README
     md5: 9c9a9eca84042d64cf196165b7f680fd

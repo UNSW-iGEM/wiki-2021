@@ -127,6 +127,7 @@ body {
     border-width: 0px;
     margin: 0;
     margin-bottom: 1rem;
+    background-color: inherit;
 }
 
 #igem-unsw-content .table>:not(caption)>*>* {
