@@ -80,7 +80,7 @@
     object-fit: contain;
     /* border-radius: 50%; */
     border-radius: 0.2em;
-    background-color: #ffffff;
+    background-color: transparent;
     border: 0.3vw solid transparent;
 }
 
