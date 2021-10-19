@@ -38,7 +38,17 @@ html, body, #igem-unsw-content {
     font-size: 1.8em;
 }
 
+#igem-unsw-content .main-text *{
+    font-family: MPLUSRounded1c, sans-serif;
+    font-weight: 800;
+}
+
 #igem-unsw-content .caption-text {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+}
+
+#igem-unsw-content .caption-text *{
     font-family: Roboto, sans-serif;
     font-weight: 700;
 }
@@ -53,6 +63,14 @@ html, body, #igem-unsw-content {
 
 .white {
     color: #D9E5E3;
+}
+
+.med-green {
+    color: #70b7b3;
+}
+
+.light-green {
+    color: #b3dad9;
 }
 
 .text {
@@ -90,6 +108,28 @@ html, body, #igem-unsw-content {
 .coral-img {
     display: flex;
     width: 100vw;
+}
+
+.cause-icon-row {
+    display: flex; 
+    justify-content: space-evenly;
+    height: 14vw;
+}
+
+.cause-icon-row > div {
+    width: 14vw;
+}
+
+.cause-icon-row img {
+    height: 100%;
+    width: 100%;
+}
+
+#igem-unsw-content .cause-icon-row .caption-text {
+    padding-top: 1vw;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 1.1vw;
 }
 
 
