@@ -13,7 +13,7 @@
 }
 
 #page_content {
-    background-color: #70b7b3;
+    background-color: #b3dad9;
 }
 
 
@@ -37,7 +37,7 @@
 }
 
 .topic_box {
-    background-color: #b3dad9;
+    background-color: #dae5e4;
     display: grid;
     grid-template-rows: 3;
     padding: 25px;
