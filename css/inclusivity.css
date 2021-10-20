@@ -1,0 +1,19 @@
+#igem-unsw-content .quote {
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+    padding: 0.5em;
+    font-style: italic;
+    /* display: flex; */
+    width: 55%;
+    align-self: flex-start;
+    font-size: 1.1em;
+}
+
+#igem-unsw-content .quote * {
+    font-family: Roboto, sans-serif;
+}
+
+#igem-unsw-content .quote.right {
+    align-self: flex-end;
+    text-align: right;
+}
