@@ -11,7 +11,8 @@
 }
 
 /* override igem server css */
-#igem-unsw-content .navbar-expand .navbar-nav .nav-link {
+#igem-unsw-content .navbar-expand .navbar-nav .nav-link, 
+#igem-unsw-content .navbar-expand .navbar-nav .nav-header {
     padding-right: .5rem;
     padding-left: .5rem;
 }
@@ -45,12 +46,19 @@
 }
 
 #igem-unsw-content #header a:hover {
+    opacity: 1;
+}
+#igem-unsw-content #header a:active {
+    opacity: 1;
+}
+
+#igem-unsw-content #header a.nav-link:hover:not(.nav-header) {
     background-color: #91bcbb;
-    opacity: initial;
+    opacity: 1;
     border: 1px solid #003031;
 }
 
-#igem-unsw-content #header a:active {
+#igem-unsw-content #header a.nav-link:active:not(.nav-header) {
     background-color: #003031;
     border-radius: 2em;
     border: 1px solid #003031;
