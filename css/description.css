@@ -1,0 +1,54 @@
+#igem-unsw-content h5 {
+    font-weight: 700;
+}
+
+#igem-unsw-content .sidenav {
+    /* top: 20vh; */
+    height: 37vh;
+}
+
+.project-goal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.project-goal > p {
+    padding: 0em 2em;
+}
+
+#igem-unsw-content .project-goal > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-family: MPLUSRounded1c;
+    font-weight: 800;
+    color: #003031;
+    font-size: 1.2vw;
+    padding: 1em 2em;
+
+}
+
+#igem-unsw-content .project-goal a {
+    transition: transform .2s;
+    padding-bottom: 1em;
+}
+
+#igem-unsw-content .project-goal a:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.project-icon {
+    height: 10em;
+    width: 10em;
+}
+
+.project-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
