@@ -195,10 +195,18 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/4/4d/T--UNSW_Australia--icon--Human_Practices--user-friends-solid.svg
     md5: 250bc1adef10e4e189673c6ba51c668d
     upload_filename: T--UNSW_Australia--icon--Human_Practices--user-friends-solid.svg
+  assets/icon/Inclusivity/palette-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/f/f5/T--UNSW_Australia--icon--Inclusivity--palette-solid.svg
+    md5: dba9f9f860dff12c75f5b8ca97a373ec
+    upload_filename: T--UNSW_Australia--icon--Inclusivity--palette-solid.svg
   assets/icon/align-justify-solid.svg:
     link_URL: https://2021.igem.org/wiki/images/6/66/T--UNSW_Australia--icon--align-justify-solid.svg
     md5: ddbcef696b6faca570621d8ea5cf11f9
     upload_filename: T--UNSW_Australia--icon--align-justify-solid.svg
+  assets/icon/bars-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/8/8a/T--UNSW_Australia--icon--bars-solid.svg
+    md5: 1e2090b37a6f429946b9c38c34c0af08
+    upload_filename: T--UNSW_Australia--icon--bars-solid.svg
   assets/igemxsams_podcast.mp3:
     link_URL: https://2021.igem.org/wiki/images/2/28/T--UNSW_Australia--igemxsams_podcast.mp3
     md5: 2688ed914ed6315229fb89e1e916cdee
@@ -838,6 +846,22 @@ assets:
     md5: cca80d26e8ad4728b0340084d004be01
     upload_filename: T--UNSW_Australia--img--Human_Practices--Stakeholders--Traceylee
       Manuwuri.jpeg
+  assets/img/Inclusivity/New Canvas.png:
+    link_URL: https://2021.igem.org/wiki/images/c/cf/T--UNSW_Australia--img--Inclusivity--New_Canvas.png
+    md5: c14b3a8c1e6a03e44a1dd293c8ec0d6b
+    upload_filename: T--UNSW_Australia--img--Inclusivity--New Canvas.png
+  assets/img/Inclusivity/Virtual Exhibition Impact_2.jpg:
+    link_URL: https://2021.igem.org/wiki/images/7/74/T--UNSW_Australia--img--Inclusivity--Virtual_Exhibition_Impact_2.jpg
+    md5: 0e37258a3bbaa662bd1ddd53f45690b9
+    upload_filename: T--UNSW_Australia--img--Inclusivity--Virtual Exhibition Impact_2.jpg
+  assets/img/Inclusivity/Virtual exhibition cultural.jpg:
+    link_URL: https://2021.igem.org/wiki/images/8/8b/T--UNSW_Australia--img--Inclusivity--Virtual_exhibition_cultural.jpg
+    md5: 75d7a3a10a5af499654cc53c2ad9244d
+    upload_filename: T--UNSW_Australia--img--Inclusivity--Virtual exhibition cultural.jpg
+  assets/img/Inclusivity/exhibition.jpg:
+    link_URL: https://2021.igem.org/wiki/images/8/8b/T--UNSW_Australia--img--Inclusivity--exhibition.jpg
+    md5: 6f666b2a83e52ffef0a1451ac1a1fe7f
+    upload_filename: T--UNSW_Australia--img--Inclusivity--exhibition.jpg
   assets/img/Modelling/12-mer-alignment-annotated.png:
     link_URL: https://2021.igem.org/wiki/images/0/09/T--UNSW_Australia--img--Modelling--12-mer-alignment-annotated.png
     md5: 978b94287cc41c1d24e0116c06a886ba
@@ -1048,6 +1072,9 @@ css:
   css/igem_reset.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/igem_resetCSS?action=raw&ctype=text/css
     md5: 7019451de7f55b609d2845e50bd86574
+  css/inclusivity.css:
+    link_URL: https://2021.igem.org/Template:UNSW_Australia/css/inclusivityCSS?action=raw&ctype=text/css
+    md5: 2e56eef7dd3d54917baab2a0f6886dc2
   css/lab.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/labCSS?action=raw&ctype=text/css
     md5: 2729fc0b5ce9d43363228f21b00d6169
@@ -1066,7 +1093,7 @@ css:
 html:
   Attributions/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Attributions
-    md5: 743dc4a30628c546729174a8f0bb2493
+    md5: e006703e82657e2e0bf802ba9474cc5d
   Collaborations/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Collaborations
     md5: cceb00ebd33525d15cf36584d15a5661
@@ -1144,7 +1171,7 @@ html:
     md5: 4b33cbc6e70db2023bc4902d1bf2dfe1
   Inclusivity/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Inclusivity
-    md5: f5d23aaa6e9fc68da518ef13f7dc8aec
+    md5: 3519c48622c60fb16510f516ffc5c1a6
   Judging/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Judging
     md5: 50f57352499bff24bdce699ea1c5073a
@@ -1159,7 +1186,7 @@ html:
     md5: e267dc6c4e3a18f04e90abdfd997354e
   Notebook/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Notebook
-    md5: bdaa599b0d11b508d55194d9717f30a5
+    md5: d19e7597e2fe120826b956341b7479dd
   Parts/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Parts
     md5: a5290cd9196f6740f7d9c96a7ca0d9db
@@ -1168,7 +1195,7 @@ html:
     md5: 7ff00a4a19edf31902573036bd74fa44
   Team/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Team
-    md5: bfcc7ae89f9a536398081d4ed47a2ed1
+    md5: 0209cbe371ad49a1524d7f4af4c70396
   animations/README/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/animations/README
     md5: 9c9a9eca84042d64cf196165b7f680fd
