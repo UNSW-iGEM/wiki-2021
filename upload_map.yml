@@ -75,6 +75,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/e/e4/T--UNSW_Australia--fonts--RoundedMplus1c-Regular.ttf
     md5: b7c6be288d0c6130b7db1d262bf334ca
     upload_filename: T--UNSW_Australia--fonts--RoundedMplus1c-Regular.ttf
+  assets/glutathione_ensemble_modelling.zip:
+    link_URL: https://2021.igem.org/wiki/images/d/d4/T--UNSW_Australia--glutathione_ensemble_modelling.zip
+    md5: 493063220d9ab7455a478537a17a252e
+    upload_filename: T--UNSW_Australia--glutathione_ensemble_modelling.zip
   assets/iGEMxSAMS_Episode 1.mp3:
     link_URL: https://2021.igem.org/wiki/images/4/47/T--UNSW_Australia--iGEMxSAMS_Episode_1.mp3
     md5: e765ea3c812778b9084cb89070680381
@@ -139,6 +143,30 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/8/82/T--UNSW_Australia--icon--Communication--school-solid.svg
     md5: 3fdcdd5106b0e6710711231d477edad0
     upload_filename: T--UNSW_Australia--icon--Communication--school-solid.svg
+  assets/icon/Description/chart-line-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/3/3f/T--UNSW_Australia--icon--Description--chart-line-solid.svg
+    md5: 566e8e8f314a5965dfb6bd44f4bc2499
+    upload_filename: T--UNSW_Australia--icon--Description--chart-line-solid.svg
+  assets/icon/Description/exclamation-triangle-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/d/d9/T--UNSW_Australia--icon--Description--exclamation-triangle-solid.svg
+    md5: cbc126c9c09c1461a7959f60cf5788b3
+    upload_filename: T--UNSW_Australia--icon--Description--exclamation-triangle-solid.svg
+  assets/icon/Description/globe-asia-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/6/63/T--UNSW_Australia--icon--Description--globe-asia-solid.svg
+    md5: 94c724799479dd84b155c4c23c98313b
+    upload_filename: T--UNSW_Australia--icon--Description--globe-asia-solid.svg
+  assets/icon/Description/lightbulb-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/5/53/T--UNSW_Australia--icon--Description--lightbulb-solid.svg
+    md5: 12cc972a6bd6805ca386dbf88de1b3a9
+    upload_filename: T--UNSW_Australia--icon--Description--lightbulb-solid.svg
+  assets/icon/Description/pencil-ruler-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/d/db/T--UNSW_Australia--icon--Description--pencil-ruler-solid.svg
+    md5: 3a34ee7378295f2c830fec93a3c56730
+    upload_filename: T--UNSW_Australia--icon--Description--pencil-ruler-solid.svg
+  assets/icon/Description/vial-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/8/89/T--UNSW_Australia--icon--Description--vial-solid.svg
+    md5: ebfcefe2f6fb084f73547ff9d71a0624
+    upload_filename: T--UNSW_Australia--icon--Description--vial-solid.svg
   assets/icon/Education/book-open-solid.svg:
     link_URL: https://2021.igem.org/wiki/images/c/c7/T--UNSW_Australia--icon--Education--book-open-solid.svg
     md5: d656b2c8859daa6f1f8ab481028587c8
@@ -247,6 +275,34 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/4/49/T--UNSW_Australia--img--Collaborations--usyd_2.jpg
     md5: 0e8b9a66385891e1503a8ab97a19504d
     upload_filename: T--UNSW_Australia--img--Collaborations--usyd_2.jpg
+  assets/img/Description/800px-Great_Barrier_Reef_snorkeling_14.jpg:
+    link_URL: https://2021.igem.org/wiki/images/2/20/T--UNSW_Australia--img--Description--800px-Great_Barrier_Reef_snorkeling_14.jpg
+    md5: 29af3aace8406078aba99157e0e5195c
+    upload_filename: T--UNSW_Australia--img--Description--800px-Great_Barrier_Reef_snorkeling_14.jpg
+  assets/img/Description/800px-Great_Barrier_Reef_snorkeling_24.jpg:
+    link_URL: https://2021.igem.org/wiki/images/0/02/T--UNSW_Australia--img--Description--800px-Great_Barrier_Reef_snorkeling_24.jpg
+    md5: 97929cf08ceba11484527d8513b392c5
+    upload_filename: T--UNSW_Australia--img--Description--800px-Great_Barrier_Reef_snorkeling_24.jpg
+  ? assets/img/Description/800px-The_dazzling_colours_of_the_Great_Barrier_Reef_near_Airlie_Beach,_Whitsunday_Islands,_Queensland.jpg
+  : link_URL: https://2021.igem.org/wiki/images/1/17/T--UNSW_Australia--img--Description--800px-The_dazzling_colours_of_the_Great_Barrier_Reef_near_Airlie_Beach%2C_Whitsunday_Islands%2C_Queensland.jpg
+    md5: 52cd71ebbe9767a76e46cfbf6a129def
+    upload_filename: T--UNSW_Australia--img--Description--800px-The_dazzling_colours_of_the_Great_Barrier_Reef_near_Airlie_Beach,_Whitsunday_Islands,_Queensland.jpg
+  assets/img/Description/Aerial_View_of_Great_Barrier_Reef_(Ank_Kumar)_08.jpg:
+    link_URL: https://2021.igem.org/wiki/images/6/67/T--UNSW_Australia--img--Description--Aerial_View_of_Great_Barrier_Reef_%28Ank_Kumar%29_08.jpg
+    md5: 6d509f8f6d97c66ada3397c226355126
+    upload_filename: T--UNSW_Australia--img--Description--Aerial_View_of_Great_Barrier_Reef_(Ank_Kumar)_08.jpg
+  assets/img/Description/expression_control.png:
+    link_URL: https://2021.igem.org/wiki/images/d/db/T--UNSW_Australia--img--Description--expression_control.png
+    md5: 2721e46622ab2ddb83164827bedc53c1
+    upload_filename: T--UNSW_Australia--img--Description--expression_control.png
+  assets/img/Description/glutathione_pathway.png:
+    link_URL: https://2021.igem.org/wiki/images/f/f7/T--UNSW_Australia--img--Description--glutathione_pathway.png
+    md5: fc7e0578753786f0922bb8e7b5054887
+    upload_filename: T--UNSW_Australia--img--Description--glutathione_pathway.png
+  assets/img/Description/hsp_mechanism.png:
+    link_URL: https://2021.igem.org/wiki/images/f/f3/T--UNSW_Australia--img--Description--hsp_mechanism.png
+    md5: ffba0711034842261e640439f3c7e53a
+    upload_filename: T--UNSW_Australia--img--Description--hsp_mechanism.png
   assets/img/Education/Book/Back Cover (Blurb).jpg:
     link_URL: https://2021.igem.org/wiki/images/b/b1/T--UNSW_Australia--img--Education--Book--Back_Cover_%28Blurb%29.jpg
     md5: c32bf9812ed101b968f4cb77bc00d2f2
@@ -1057,6 +1113,9 @@ css:
   css/content.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/contentCSS?action=raw&ctype=text/css
     md5: 0f0637414a5153ab9bce9c2c1af0e6e5
+  css/description.css:
+    link_URL: https://2021.igem.org/Template:UNSW_Australia/css/descriptionCSS?action=raw&ctype=text/css
+    md5: 56b590e38c9a8c889b315d4cc5e750d0
   css/education.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/educationCSS?action=raw&ctype=text/css
     md5: 6e41e0465177de1ad974b2d997a5ad8b
@@ -1092,7 +1151,7 @@ css:
     md5: 2729fc0b5ce9d43363228f21b00d6169
   css/main.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/mainCSS?action=raw&ctype=text/css
-    md5: edddb918e521b94bdc7aaa07cc18cc24
+    md5: 8a11d9f6d5ad783f35441d3afc263054
   css/protocols.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/protocolsCSS?action=raw&ctype=text/css
     md5: 632e7a5e3112149176d6694854b29dce
@@ -1120,7 +1179,7 @@ html:
     md5: 021058899073d70a52fa09bbf69e5477
   Description/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Description
-    md5: af5709fe92065c674b3e0426eafe46eb
+    md5: 92ee589b9e9e2ebbc9eb61088cb8ca2e
   Education/Board_Game/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Education/Board_Game
     md5: beae26e7ab9762e1d5aafba2e6c4c2a2
@@ -1201,7 +1260,7 @@ html:
     md5: 1e12cf087c3b496cc6657750cc94bfd8
   Parts/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Parts
-    md5: a5290cd9196f6740f7d9c96a7ca0d9db
+    md5: 27b0fc2a28e04061b7669822f8d98396
   Protocols_Safety/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Protocols_Safety
     md5: 7ff00a4a19edf31902573036bd74fa44
