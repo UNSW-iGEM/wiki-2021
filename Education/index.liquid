@@ -18,30 +18,91 @@ headings:
         id: lecture
         title: Lecture
         icon: /assets/icon/Education/chalkboard-teacher-solid.svg
+    - 
+        id: references
+        title: References
+        icon: /assets/icon/bars-solid.svg
 ---
 <head>
     <link rel="stylesheet" href="/css/education.css">
 </head>
 <div>
-    We developed an educational package that was designed to be delivered as a whole package to families in our team’s local Sydney Aquarium. It includes a variety of different items each targeted at individuals of different age groups; young primary children (13 and below), young adults (ages 10-18), and adults (ages 18+). Our goal was to create a fun and relevant method to educate the public on what our topic was about, and basics on scientific concepts involving synthetic biology and ecology. These items were designed to be interacted with and physically distributed. 
-    <br /><br />
-    Due to the COVID-19 pandemic in our region, we could not distribute these packages as had been initially planned at the beginning of the year. Therefore this last-minute change has led us to  additionally strive to make an electronic version that enables individuals to access the material remotely.
-    <br /><br />
+    <div>
+        <p>
+            This educational package was designed to be delivered as a whole package to families in our team’s local Sydney Aquarium. It includes a variety of different items each targeted at individuals of different age groups; young primary school children, young adults/adolescents (ages 12+), and adults (ages 18+) (Hutchins 2020). Our goal was to create a fun and relevant method to educate the public on what our topic was about, and basics on scientific concepts involving synthetic biology and ecology. These items were designed to be interacted with and physically distributed.
+        </p>
+        <p>
+            Due to the COVID-19 pandemic in our region, we could not distribute these packages as had been initially planned at the beginning of the year. Therefore this last-minute change has led us to  additionally strive to make an electronic version that enables individuals to access the material remotely.
+        </p>
+    </div>
+    <div style="display: flex; width: 100%; justify-content: center;">
+        <div style="width: 50%;">
+            <img width="100%" src="/assets/img/Education/whole_educational_package.jpg">
+            <div style='text-align: center; font-size: 0.9em; font-style: italic;'>The educational package</div>
+        </div>
+    </div>
+    <br />
 </div>
 
 <!-- MERCHANDISE -->
 <div id="merchandise">
     <h2>Merchandise</h2>
 
+
     <br />
+    <div id="felt_carousel_container">
+        <div id="felt_carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#felt_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
+
+                {% for i in (1..5) %}
+                    <button type="button" data-bs-target="#felt_carousel" data-bs-slide-to={{i}} aria-label={{"Slide " | append: i }}></button>
+                {% endfor %}
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active"><img src="/assets/img/Education/Felt/COLOUR ME IN!!.jpg" class="d-block w-100"></div>
+                <div class="carousel-item"><img src="/assets/img/Education/Felt/Dolphin.jpg" class="d-block w-100"></div>
+                <div class="carousel-item"><img src="/assets/img/Education/Felt/Octopus.jpg" class="d-block w-100"></div>
+                <div class="carousel-item"><img src="/assets/img/Education/Felt/Seahorse.jpg" class="d-block w-100"></div>
+                <div class="carousel-item"><img src="/assets/img/Education/Felt/Starfish.jpg" class="d-block w-100"></div>
+                <div class="carousel-item"><img src="/assets/img/Education/Felt/Whale.jpg" class="d-block w-100"></div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#felt_carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#felt_carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div style="text-align: center; font-size: 0.9em;">
+            Felt Patterns
+            <br /><br />
+        </div>
+    </div>
+
+
+    
     <p>
-        The purpose of our merchandise is to allow our younger audiences to have a physical connection to the reef. A relationship between the natural world has been shown in studies to support the health of the environment through increasing conservation desires. As such we aim to build this emotional connection to allow further conservation efforts through appreciation of our reefs.
+        The purpose of our merchandise is to allow our younger audiences to have a physical connection to the reef. By choosing charismatic species, we relate to the human emotions that perceive them as attractive, colourful and iconic - characteristics used to attribute positive emotions such as tenderness (Castillo-Huitron et al. 2020). This physical relationship between the natural world has been shown in studies to support the health of the environment through increasing understanding of wildlife history, and build conservation desires (Raye 2017). And as such in our project, an emotional connection is aimed to facilitate future conservation efforts through a greater appreciation of coral reefs ecosystems and their organisms within. 
     </p>
 
     <p>
-        As mentioned prior, due to the COVID-19 pandemic, we had also created felt-patterns that caregivers can work with their younger individuals to create plushies of their own.
+        As mentioned prior, due to the COVID-19 pandemic, we had also created felt-patterns that caregivers can work with their younger individuals to create plushies of their own. Tactile experiences have been shown to help those with tactual and kinaesthetic learning styles to develop a longer-term retention of its relevant material, in this case the coral reef ecosystem (Raye 2017). 
     </p>
-    <br />
+    <br /><br />
+    <div style="display: flex; width: 100%; justify-content: center;">
+        <div style="width: 50%;">
+            <img width="100%" src="/assets/img/Education/merchandise.jpg">
+            <div style='text-align: center; font-size: 0.9em; font-style: italic;'>Physical copies of the merchandise</div>
+        </div>
+    </div>
+    <br /><br />
 </div>
 
 <!-- CHILDREN'S BOOK -->
@@ -96,42 +157,85 @@ headings:
     </div>
 
 
+    <p>
+        Children are generally curious about nature surrounding them from a young age, constantly raising questions and searching for answers within the world (Jirout, 2020). However, accessibility to scientific resources is lacking due to the difficulty of translating scientific terms to a level that children can thoroughly understand (Bou-Vinals and Prock, 2013). Our team is very passionate about introducing more scientific concepts to younger children, hoping to educate children and their parents about concepts surrounding synthetic biology in a fun and entertaining way. Hence, we wrote and illustrated a children’s book titled ‘Mama Duck the Brilliant Scientist’.
+    </p>
 
-    Children are generally curious about nature surrounding them from a young age, constantly raising questions and searching for answers within the world (1). However, accessibility to scientific resources is lacking due to the difficulty of translating scientific terms to a level that children can thoroughly understand (2). Our team is very passionate about introducing more scientific concepts to younger children, hoping to educate children and their parents about concepts surrounding synthetic biology in a fun and entertaining way. Hence, we wrote and illustrated a children’s book titled ‘Mama Duck the Brilliant Scientist’ 
-    <br /><br />
-    ‘Mama Duck the Brilliant Scientist’ is a children’s book targeted at late-primary school-aged children from 9-12. It aims to educate the younger audience on typical lab techniques and procedures that scientists use to conduct planned experiments within the field of synthetic biology whilst relating it to the issue of coral bleaching on our reefs. The book’s storyline involves Mama Duck, who works in a science lab and Captain Coral (featured from last year’s book) to find solutions to solve the coral bleaching issue and save the coral reef. Baby Duckling follows Mama Duck in the day of work, learning about the life of a scientist and how to conduct a scientific method. Together, they learn how to culture algae in the lab. 
-    <br /><br />
-    We printed physical copies of the children book, featuring a 6 x 6” softcover book with 20 coloured pages. By providing colourful, child-friendly visuals, we generated interest and motivation to connect children with the basic concepts of scientific thinking and experimentation. We also encourage children to be curious about the environment they live in, searching for answers on how we can overcome problems in nature. 
-    <br /><br />
-    Our original intentions were to include this picture book in our physical educational package to be distributed through primary and high schools and events held at the local aquarium. Whilst we were able to print physical copies of the book for distribution, we were unable to visit due to COVID-19 restrictions across NSW and the unexpected move from in-person teaching back to online learning across many schools. We have contacted a couple of local primary and high schools for future visits once the COVID situation allows us. As an alternative, the book is available online for download and free printing to cater for anyone looking to obtain a copy for their personal or educational uses. We are also working in collaboration to translate the books into various languages to increase accessibility across the world. 
-    <br /><br />
+    <p>
+        ‘Mama Duck the Brilliant Scientist’ is a children’s book targeted at late-primary school-aged children from 9-12. It aims to educate the younger audience on typical lab techniques and procedures that scientists use to conduct planned experiments within the field of synthetic biology whilst relating it to the issue of coral bleaching on our reefs. The book’s storyline involves Mama Duck, who works in a science lab and Captain Coral (featured from Stage 1 of PROTECC CORAL, UNSW iGEM 2020) to find solutions to solve the coral bleaching issue and save the coral reef. Baby Duckling follows Mama Duck in the day of work, learning about the life of a scientist and how to conduct a scientific method. Together, they learn how to culture algae in the lab. 
+    </p>
+
+    <p>
+        We printed physical copies of the children's book, featuring a 6 x 6” softcover book with 20 coloured pages. By providing colourful, child-friendly visuals, we generated interest and motivation to connect children with the basic concepts of scientific thinking and experimentation. We also encourage children to be curious about the environment they live in, searching for answers on how we can overcome problems in nature. 
+    </p>
+
+    <p>
+        Our original intentions were to include this picture book in our physical educational package to be distributed through primary and high schools and events held at the local aquarium. Whilst we were able to print physical copies of the book for distribution, we were unable to visit due to COVID-19 restrictions across NSW and the unexpected move from in-person teaching back to online learning across many schools. We have contacted a couple of local primary and high schools for future visits once the COVID situation allows us. As an alternative, the book is available online for download and free printing to cater for anyone looking to obtain a copy for their personal or educational uses. We are also in the progress of working in collaboration to translate the books into various languages, such as Arabic, Chinese, French and Japanese, to increase accessibility across the world, with the first step of this process done by reaching out to immediate family and friends. 
+    </p>
 </div>
 
+<br />
 <!-- BOARD GAME -->
 <div id="board_game">
     <h2>Board Game: Blue Expanse</h2>
     <br />
 
     <p>
-        Blue Expanse is a 2+ player game. With a target audience of young adults to adults, our objective was to illustrate the building of a healthy reef ecosystem despite various environmental challenges. In doing so, the players learn about the foundational role microorganisms have in ensuring higher order organisms' shelter and food. Each player manages their own reef, across three different periods facing worsening ecological challenges culminating in a mass coral bleaching event. Victory is counted by the sum of final victory points (VP) each player has, with the player scoring the most being the winner. 
+        An entertaining game aimed at young adults and adolescents to educate them on the basics of ecology, and how humanitarian and environmental impacts affect the coral reef ecosystem (Welle et al. 2017). These concepts are conveyed through the players building their own coral reef ecosystem in a changing environment reflecting our current reality. This allows a tactile interface in learning about the complex food web of the game, that represents the Great Barrier Reef, and how the various impacts can cause large-scale disruptions across the ecosystem. 
     </p>
 
     <p>
-        The creation of the board game was influenced by various popular games, including Dominion, Monopoly, Twilight Struggle, Pandemic and War of Omens. This enabled the game to be better balanced and have greater clarity of mechanisms.
+        Our main purpose of this board game is to facilitate a deeper comprehension into these complex concepts, that are required to comprehend the severity coral bleaching has on the ecosystem. By engaging with content, the younger generation is indirectly shown the ecological consequences of coral bleaching, and also the potentials of science and cooperation. In turn, we hope that this will encourage the public to take a further look into the issue at hand and build greater individual consumer awareness to do what they can. (Danovaro et al. 2008)
     </p>
+
+
+    <br />
+    <div style="float: right;">
+        <a href="/Education/Board_Game"><h3 style="font-weight: 700; vertical-align: middle;">View the Board Game 
+            <svg style="padding-bottom: 0.1em;" height="1em" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </h3></a>
+    </div>
+    <br /><br /><br />
 </div>
 
 <!-- LECTURE -->
 <div id="lecture">
     <h2>Lecture</h2>
     <br />
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia hendrerit nisl vitae aliquam. Nulla risus ligula, tempus id mauris quis, porttitor laoreet elit. Quisque convallis lobortis orci a aliquam. Sed vitae mauris scelerisque metus lacinia feugiat sit amet nec quam. Quisque quis lectus non massa maximus ornare ac non leo. Nulla turpis eros, porta vulputate tempor at, consectetur ut lectus. Aliquam eleifend ante ante, mollis gravida ante ullamcorper et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum, purus in accumsan egestas, turpis magna tristique risus, id euismod erat elit eu ante. Duis lobortis gravida velit, vel molestie nunc rhoncus at. Nullam tempus tincidunt turpis, ac eleifend ante pharetra vel. Vestibulum ullamcorper tortor nec ornare vehicula. Integer hendrerit risus non nisi sagittis gravida. Nulla nibh augue, dictum non consequat at, elementum eget nulla.
-    <br /><br />
-    Aliquam erat volutpat. Sed dapibus, enim sit amet posuere facilisis, lectus ipsum sollicitudin mauris, ut tempus nulla ex vitae mauris. Aenean accumsan malesuada ultricies. Quisque mattis enim in nisi lobortis, rutrum viverra ligula sodales. Maecenas elementum, dui et cursus gravida, dui tellus consequat purus, eget dapibus odio eros vitae ipsum. Integer mollis faucibus nibh. Quisque vel ipsum eget leo molestie sollicitudin. Duis dignissim vel magna non cursus. Pellentesque porttitor elementum scelerisque. Maecenas varius in est eu condimentum. Aliquam erat volutpat. Ut vitae pulvinar mauris.
-    <br /><br />
-    Pellentesque vel risus odio. Phasellus blandit massa iaculis dolor porttitor mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin vel felis cursus, eleifend augue vitae, ullamcorper mi. Proin quis leo luctus, iaculis turpis vitae, posuere nunc. Sed in arcu consequat, venenatis erat ac, consectetur enim. Aliquam finibus malesuada interdum. Sed et semper lorem, eu tempor diam. Duis facilisis finibus dapibus. Vestibulum nisi ex, tincidunt a dapibus in, facilisis ac quam. Phasellus a leo risus. Sed eu egestas leo, eget porta leo. Fusce at tincidunt quam.
-    <br /><br />
+    <p>As stated by Florea (2014), older individuals are more open to a direct and higher-paced fashion of learning; with a desire to “self-learn”. As such, we have tailored our material to this, and created  a lecture format that allows the older public to be educated about the basics of science, and our project.</p>
+    <p>Within the lecture material, we have included content for the education of general background knowledge of synthetic biology, and how it relates to our project. This is to undermine the wariness individuals have towards science in general, and allows us to build a connection between basics in science and how we use them in our project (Leshner 2003). Furthermore, we also have included a provocative activity where individuals are encouraged to question their doubts on genetic modified organisms (GMO). As our project involves engineering coral in assisted evolution, this activity has been included in hopes to break down potential concepts built by misinformation (Filbee-Dexter 2019).</p>
+    <p>This lecture had been shaped off of our in-person talks that were planned for local highschools. Plans were initially made to help build on the syllabus and introduce the concept of a scientific approach to the younger generation. We wanted to inspire these individuals into taking science further, by showing them how the basics they are currently engaging with is the foundation to the science we currently work on. However, unfortunately, due to the transition from in-person to online learning and back, we have been unable to secure a time with the already overloaded teachers. To amend this, our online rendition of the content has been altered for the general public. This will be made available online to allow students, teachers and those in the public, to engage with the material in their own time and learn at their own pace. We wish the younger scientists the best of health and luck in these trying times, and hope it doesn’t dim their scientific endeavours in the future.</p>
+
+    <br />
+    <div style="display: flex; justify-content: center;">
+        <iframe
+            src="/assets/Lecture Material.pdf"
+            type="application/pdf"
+            frameBorder="0"
+            scrolling="auto"
+            height="520px"
+            width="80%"
+        ></iframe>
+    </div>
 </div>
 
+<br /><br />
+<div id="references">
+    <h2>References</h2>
+    <br />
+
+    <p>Bou-Vinals, A & Prock S. 2013. Children’s Involvement in Science Communication. Journal of Science Communication, 12, 5.</p>
+    <p>Castilla-Huitron, N. M., Naranjo, E. J., Santos-Fita, D. S., Estrand-Lugo, E. (2020). The Importance of Human Emotion in Wildlife Conservation. Frontiers in Psychology 11: 1277</p>
+    <p>Danovaro, R., Bongiorni, L., Corinaldesi, C., Giovannelli, D., Damiana et al., 2008. Sunscreens cause coral bleaching by promoting viral infections. Environmental Health Perspectives 116(4): 441-447</p>
+    <p>Filbee-Dexter, K. & Smajdor, A. (2019). Ethics of Assisted Evolution in Marine Conservation. Frontiers in Marine Science, 6: 20</p>
+    <p>Florea, R. (2014). Teaching methods in adult education. An appraisal of the effectiveness of methods used in training future teachers. Procedia - Social and Behavioral Sciences, 142: 352-358</p>
+    <p>Jirout, J. J. 2020. Supporting Early Scientific Thinking Through Curiosity. Frontiers in Psychology, 11, 1717.</p>
+    <p>Hutchins, J. A. (2020). Tailoring Scientific Communication for Audience and Research Narrative. Current Protocols in Essential Laboratory Techniques, 20(1): 40</p>
+    <p>Leshner, A. I. (2003). Public Engagement with Science. Science, 299(5609): 977</p>
+    <p>Raye, L. (2017). Soft Toys as Instructional Technology in Higher Education: The Case of Llewelyn the Lynx. The Journal of Effective Teaching 17(1): 35-51</p>
+    <p>Welle, P.D., Small, M.J., Doney, S.C., Azvedo, I.L., 2017. Estimating the effect of multiple environmental stressors on coral bleaching and mortality. PLoS ONE 12(5), e0175018</p>
+    
+</div>
+<br />
 
 <script src="/js/bootstrap/bootstrap.bundle.min.js"></script>

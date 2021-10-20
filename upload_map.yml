@@ -3,6 +3,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/8/89/T--UNSW_Australia--1r6a.txt
     md5: 213a6a19ad19f53a30f6e5d36809246e
     upload_filename: T--UNSW_Australia--1r6a.txt
+  assets/Lecture Material.pdf:
+    link_URL: https://2021.igem.org/wiki/images/4/4a/T--UNSW_Australia--Lecture_Material.pdf
+    md5: 881e3e8a350dcd7eb5700595bb9496dc
+    upload_filename: T--UNSW_Australia--Lecture Material.pdf
   assets/Mama Duck the Brilliant Scientist.pdf:
     link_URL: https://2021.igem.org/wiki/images/9/9f/T--UNSW_Australia--Mama_Duck_the_Brilliant_Scientist.pdf
     md5: f1514e3a9b4cf5f5c75ad60b547c7a60
@@ -275,6 +279,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/4/49/T--UNSW_Australia--img--Collaborations--usyd_2.jpg
     md5: 0e8b9a66385891e1503a8ab97a19504d
     upload_filename: T--UNSW_Australia--img--Collaborations--usyd_2.jpg
+  assets/img/Communication/aurecon.jpeg:
+    link_URL: https://2021.igem.org/wiki/images/3/32/T--UNSW_Australia--img--Communication--aurecon.jpeg
+    md5: fcf9a12b3fbe4e0d25b403b9061be37e
+    upload_filename: T--UNSW_Australia--img--Communication--aurecon.jpeg
   assets/img/Description/800px-Great_Barrier_Reef_snorkeling_14.jpg:
     link_URL: https://2021.igem.org/wiki/images/2/20/T--UNSW_Australia--img--Description--800px-Great_Barrier_Reef_snorkeling_14.jpg
     md5: 29af3aace8406078aba99157e0e5195c
@@ -395,6 +403,38 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/f/fa/T--UNSW_Australia--img--Education--Book--Page_9.jpg
     md5: 51b5a07d39247fd682ef31c62243741d
     upload_filename: T--UNSW_Australia--img--Education--Book--Page 9.jpg
+  assets/img/Education/Felt/COLOUR ME IN!!.jpg:
+    link_URL: https://2021.igem.org/wiki/images/f/f8/T--UNSW_Australia--img--Education--Felt--COLOUR_ME_IN%21%21.jpg
+    md5: 3b45a12f6d8e73468b00ee83128b967f
+    upload_filename: T--UNSW_Australia--img--Education--Felt--COLOUR ME IN!!.jpg
+  assets/img/Education/Felt/Dolphin.jpg:
+    link_URL: https://2021.igem.org/wiki/images/e/e0/T--UNSW_Australia--img--Education--Felt--Dolphin.jpg
+    md5: 4f5fa3e54d78849b338e43efa2f8c4ff
+    upload_filename: T--UNSW_Australia--img--Education--Felt--Dolphin.jpg
+  assets/img/Education/Felt/Octopus.jpg:
+    link_URL: https://2021.igem.org/wiki/images/3/31/T--UNSW_Australia--img--Education--Felt--Octopus.jpg
+    md5: ce700be9c38fa498174cc9f499d9ed80
+    upload_filename: T--UNSW_Australia--img--Education--Felt--Octopus.jpg
+  assets/img/Education/Felt/Seahorse.jpg:
+    link_URL: https://2021.igem.org/wiki/images/4/43/T--UNSW_Australia--img--Education--Felt--Seahorse.jpg
+    md5: bb628c0c48842512da98964162c464bf
+    upload_filename: T--UNSW_Australia--img--Education--Felt--Seahorse.jpg
+  assets/img/Education/Felt/Starfish.jpg:
+    link_URL: https://2021.igem.org/wiki/images/3/37/T--UNSW_Australia--img--Education--Felt--Starfish.jpg
+    md5: 91ccd2e78086c0b38824ece92c048fc5
+    upload_filename: T--UNSW_Australia--img--Education--Felt--Starfish.jpg
+  assets/img/Education/Felt/Whale.jpg:
+    link_URL: https://2021.igem.org/wiki/images/7/70/T--UNSW_Australia--img--Education--Felt--Whale.jpg
+    md5: 6498a98ec4af271dd3e43b6c711b4667
+    upload_filename: T--UNSW_Australia--img--Education--Felt--Whale.jpg
+  assets/img/Education/merchandise.jpg:
+    link_URL: https://2021.igem.org/wiki/images/2/2d/T--UNSW_Australia--img--Education--merchandise.jpg
+    md5: 4b35b5eb32964d954ef052f0200d6fe9
+    upload_filename: T--UNSW_Australia--img--Education--merchandise.jpg
+  assets/img/Education/whole_educational_package.jpg:
+    link_URL: https://2021.igem.org/wiki/images/b/b4/T--UNSW_Australia--img--Education--whole_educational_package.jpg
+    md5: a55795ec1049f8f4e1756b45101c2130
+    upload_filename: T--UNSW_Australia--img--Education--whole_educational_package.jpg
   assets/img/Engineering/Flow-Chart2.jpg:
     link_URL: https://2021.igem.org/wiki/images/b/b0/T--UNSW_Australia--img--Engineering--Flow-Chart2.jpg
     md5: 3e6d576f82bdbbcca39c6ab752c548e9
@@ -1109,7 +1149,7 @@ css:
     md5: 0f09aebdcdec746b76360581ae334247
   css/communication.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/communicationCSS?action=raw&ctype=text/css
-    md5: a103fb130bb652384cb3e5f5249f362f
+    md5: eb18066899d1993d24e3113a9856ceb3
   css/content.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/contentCSS?action=raw&ctype=text/css
     md5: 0f0637414a5153ab9bce9c2c1af0e6e5
@@ -1118,7 +1158,7 @@ css:
     md5: 56b590e38c9a8c889b315d4cc5e750d0
   css/education.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/educationCSS?action=raw&ctype=text/css
-    md5: 6e41e0465177de1ad974b2d997a5ad8b
+    md5: 5ac8206ceb4456141269de95177810a3
   css/engineering copy.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/engineering copyCSS?action=raw&ctype=text/css
     md5: 5bf896cd2512f6fd8d3358b5db805b92
@@ -1173,19 +1213,19 @@ html:
     md5: acdb4a48e7903f79a0bbd09fa80aab63
   Communication/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Communication
-    md5: 974997717f15d9b43ae0481af17f588d
+    md5: fc86bffe65223c10342b1a3355276006
   Contribution/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Contribution
     md5: 021058899073d70a52fa09bbf69e5477
   Description/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Description
-    md5: 92ee589b9e9e2ebbc9eb61088cb8ca2e
+    md5: 3ac9a48e4d49a98baa9ee5303efc2f1c
   Education/Board_Game/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Education/Board_Game
     md5: beae26e7ab9762e1d5aafba2e6c4c2a2
   Education/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Education
-    md5: 2292e09a0707a141fd84c5dd4b61acb1
+    md5: 03ca8b9df497cbec4ad17993716aca98
   Engineering/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Engineering
     md5: fc92ec3c54178fe594ad4372b1defe86
@@ -1242,7 +1282,7 @@ html:
     md5: 4b33cbc6e70db2023bc4902d1bf2dfe1
   Inclusivity/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Inclusivity
-    md5: aad053d8b4944a1dea52b0d41f882f0f
+    md5: 8231c06bfa42c78c10408bb5537f054f
   Judging/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Judging
     md5: 50f57352499bff24bdce699ea1c5073a
