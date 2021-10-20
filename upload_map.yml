@@ -123,6 +123,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/d/d9/T--UNSW_Australia--icon--Communication--industry-solid.svg
     md5: 74eb38c658641b50fe1d713e88aa7ac7
     upload_filename: T--UNSW_Australia--icon--Communication--industry-solid.svg
+  assets/icon/Communication/layer-group-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/4/4b/T--UNSW_Australia--icon--Communication--layer-group-solid.svg
+    md5: e872b62e1f04d28b31afe958c03645b1
+    upload_filename: T--UNSW_Australia--icon--Communication--layer-group-solid.svg
   assets/icon/Communication/microphone-alt-solid.svg:
     link_URL: https://2021.igem.org/wiki/images/4/45/T--UNSW_Australia--icon--Communication--microphone-alt-solid.svg
     md5: f8d6f56b2c33f4071f220ad357d04ee4
@@ -846,6 +850,11 @@ assets:
     md5: cca80d26e8ad4728b0340084d004be01
     upload_filename: T--UNSW_Australia--img--Human_Practices--Stakeholders--Traceylee
       Manuwuri.jpeg
+  assets/img/Human_Practices/Stakeholders/Wallace Bridge.jpeg:
+    link_URL: https://2021.igem.org/wiki/images/7/7c/T--UNSW_Australia--img--Human_Practices--Stakeholders--Wallace_Bridge.jpeg
+    md5: 2f2fdc69aac129183f0dca36ef1e0636
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Stakeholders--Wallace
+      Bridge.jpeg
   assets/img/Inclusivity/New Canvas.png:
     link_URL: https://2021.igem.org/wiki/images/c/cf/T--UNSW_Australia--img--Inclusivity--New_Canvas.png
     md5: c14b3a8c1e6a03e44a1dd293c8ec0d6b
@@ -1042,6 +1051,9 @@ css:
   css/collaborations.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/collaborationsCSS?action=raw&ctype=text/css
     md5: 0f09aebdcdec746b76360581ae334247
+  css/communication.css:
+    link_URL: https://2021.igem.org/Template:UNSW_Australia/css/communicationCSS?action=raw&ctype=text/css
+    md5: a103fb130bb652384cb3e5f5249f362f
   css/content.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/contentCSS?action=raw&ctype=text/css
     md5: 0f0637414a5153ab9bce9c2c1af0e6e5
@@ -1102,7 +1114,7 @@ html:
     md5: acdb4a48e7903f79a0bbd09fa80aab63
   Communication/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Communication
-    md5: f1d53c1f8c880532c24516d0ea55e815
+    md5: 974997717f15d9b43ae0481af17f588d
   Contribution/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Contribution
     md5: 021058899073d70a52fa09bbf69e5477
@@ -1165,13 +1177,13 @@ html:
     md5: ff31619ba0cec6132002117e889bd9f8
   Human_Practices/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Human_Practices
-    md5: 94e6a69f13e32ee16eafc36c6e54bcc0
+    md5: 8a43eacaef15dfcc0fa6bcb247745022
   Implementation/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Implementation
     md5: 4b33cbc6e70db2023bc4902d1bf2dfe1
   Inclusivity/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Inclusivity
-    md5: 3519c48622c60fb16510f516ffc5c1a6
+    md5: aad053d8b4944a1dea52b0d41f882f0f
   Judging/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Judging
     md5: 50f57352499bff24bdce699ea1c5073a
@@ -1186,7 +1198,7 @@ html:
     md5: e267dc6c4e3a18f04e90abdfd997354e
   Notebook/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Notebook
-    md5: d19e7597e2fe120826b956341b7479dd
+    md5: 1e12cf087c3b496cc6657750cc94bfd8
   Parts/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Parts
     md5: a5290cd9196f6740f7d9c96a7ca0d9db
