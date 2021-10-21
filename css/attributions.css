@@ -19,3 +19,8 @@
 #igem-unsw-content h5 {
     font-weight: bold;
 }
+
+#igem-unsw-content .sidenav {
+    top: 35vh;
+    height: 40vh;
+}

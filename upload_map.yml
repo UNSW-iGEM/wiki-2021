@@ -3,6 +3,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/8/89/T--UNSW_Australia--1r6a.txt
     md5: 213a6a19ad19f53a30f6e5d36809246e
     upload_filename: T--UNSW_Australia--1r6a.txt
+  assets/HP survey design.pdf:
+    link_URL: https://2021.igem.org/wiki/images/8/8c/T--UNSW_Australia--HP_survey_design.pdf
+    md5: c3ea0479e9a3e400699c72c86ef1f940
+    upload_filename: T--UNSW_Australia--HP survey design.pdf
   assets/Lecture Material.pdf:
     link_URL: https://2021.igem.org/wiki/images/4/4a/T--UNSW_Australia--Lecture_Material.pdf
     md5: 881e3e8a350dcd7eb5700595bb9496dc
@@ -107,6 +111,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/5/5a/T--UNSW_Australia--icon--Attributions--comments-solid.svg
     md5: 92b26566d5a808d8ce9c8d8d7a32b154
     upload_filename: T--UNSW_Australia--icon--Attributions--comments-solid.svg
+  assets/icon/Attributions/desktop-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/3/35/T--UNSW_Australia--icon--Attributions--desktop-solid.svg
+    md5: 3ed5ecaf41aa7241b66d74fd885e456e
+    upload_filename: T--UNSW_Australia--icon--Attributions--desktop-solid.svg
   assets/icon/Attributions/hands-helping-solid.svg:
     link_URL: https://2021.igem.org/wiki/images/d/d6/T--UNSW_Australia--icon--Attributions--hands-helping-solid.svg
     md5: 7877e6c8ad708c4e4e9c7c05d568e7d9
@@ -215,6 +223,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/4/40/T--UNSW_Australia--icon--Human_Practices--balance-scale-solid.svg
     md5: 515b69e4af174b4af9efc1c7b713be62
     upload_filename: T--UNSW_Australia--icon--Human_Practices--balance-scale-solid.svg
+  assets/icon/Human_Practices/exclamation-triangle-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/7/7d/T--UNSW_Australia--icon--Human_Practices--exclamation-triangle-solid.svg
+    md5: cbc126c9c09c1461a7959f60cf5788b3
+    upload_filename: T--UNSW_Australia--icon--Human_Practices--exclamation-triangle-solid.svg
   assets/icon/Human_Practices/layer-group-solid.svg:
     link_URL: https://2021.igem.org/wiki/images/b/bd/T--UNSW_Australia--icon--Human_Practices--layer-group-solid.svg
     md5: e872b62e1f04d28b31afe958c03645b1
@@ -227,6 +239,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/8/84/T--UNSW_Australia--icon--Human_Practices--poll-solid.svg
     md5: d6080bbc08ec9eca2d70482f224b6fa2
     upload_filename: T--UNSW_Australia--icon--Human_Practices--poll-solid.svg
+  assets/icon/Human_Practices/project-diagram-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/8/85/T--UNSW_Australia--icon--Human_Practices--project-diagram-solid.svg
+    md5: f1d12bec86db9094d3b46c9d25120636
+    upload_filename: T--UNSW_Australia--icon--Human_Practices--project-diagram-solid.svg
   assets/icon/Human_Practices/redo-solid.svg:
     link_URL: https://2021.igem.org/wiki/images/a/a0/T--UNSW_Australia--icon--Human_Practices--redo-solid.svg
     md5: eba68c0c74af18f389f7b3bc3022c5ea
@@ -997,6 +1013,34 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/6/6e/T--UNSW_Australia--img--Home--wave-gif.gif
     md5: 6d40c7e788dc38f265d11b7a68f59ae6
     upload_filename: T--UNSW_Australia--img--Home--wave-gif.gif
+  assets/img/Human_Practices/Overview GBR photo.jpeg:
+    link_URL: https://2021.igem.org/wiki/images/7/7a/T--UNSW_Australia--img--Human_Practices--Overview_GBR_photo.jpeg
+    md5: 15845ca7c4fa5a17ae980dc2d2e52314
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Overview GBR photo.jpeg
+  assets/img/Human_Practices/Overview image.png:
+    link_URL: https://2021.igem.org/wiki/images/0/0f/T--UNSW_Australia--img--Human_Practices--Overview_image.png
+    md5: 4d3d6019f045f58668331f7a76ac3016
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Overview image.png
+  assets/img/Human_Practices/Stakeholders/Cairns Tourist Information Centre.png:
+    link_URL: https://2021.igem.org/wiki/images/1/1a/T--UNSW_Australia--img--Human_Practices--Stakeholders--Cairns_Tourist_Information_Centre.png
+    md5: 5de17a6f9103ba7bd737fe00fe85592d
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Stakeholders--Cairns
+      Tourist Information Centre.png
+  assets/img/Human_Practices/Stakeholders/Cairns Visitor Centre.png:
+    link_URL: https://2021.igem.org/wiki/images/8/8a/T--UNSW_Australia--img--Human_Practices--Stakeholders--Cairns_Visitor_Centre.png
+    md5: eb664fe1281ae090d278b45e0ecd63ed
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Stakeholders--Cairns
+      Visitor Centre.png
+  assets/img/Human_Practices/Stakeholders/Kevin Gale.png:
+    link_URL: https://2021.igem.org/wiki/images/f/f7/T--UNSW_Australia--img--Human_Practices--Stakeholders--Kevin_Gale.png
+    md5: 56c634c7a447b05d244e6b97d72107d1
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Stakeholders--Kevin
+      Gale.png
+  assets/img/Human_Practices/Stakeholders/Mike Ball Dive.jpeg:
+    link_URL: https://2021.igem.org/wiki/images/7/76/T--UNSW_Australia--img--Human_Practices--Stakeholders--Mike_Ball_Dive.jpeg
+    md5: 213fd046b449197e9fe730cd031b1f8d
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Stakeholders--Mike Ball
+      Dive.jpeg
   assets/img/Human_Practices/Stakeholders/Traceylee Manuwuri.jpeg:
     link_URL: https://2021.igem.org/wiki/images/b/be/T--UNSW_Australia--img--Human_Practices--Stakeholders--Traceylee_Manuwuri.jpeg
     md5: cca80d26e8ad4728b0340084d004be01
@@ -1007,6 +1051,62 @@ assets:
     md5: 2f2fdc69aac129183f0dca36ef1e0636
     upload_filename: T--UNSW_Australia--img--Human_Practices--Stakeholders--Wallace
       Bridge.jpeg
+  assets/img/Human_Practices/Stakeholders/Will Howard.jpeg:
+    link_URL: https://2021.igem.org/wiki/images/c/ce/T--UNSW_Australia--img--Human_Practices--Stakeholders--Will_Howard.jpeg
+    md5: cb2c6e42f6fa9eb03acfdfce13f22b33
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Stakeholders--Will Howard.jpeg
+  assets/img/Human_Practices/Survey/Demographic 2.png:
+    link_URL: https://2021.igem.org/wiki/images/3/3b/T--UNSW_Australia--img--Human_Practices--Survey--Demographic_2.png
+    md5: a2b3dd933f98d0cbe35b0befa42b6716
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Survey--Demographic
+      2.png
+  assets/img/Human_Practices/Survey/HP survey engagement.png:
+    link_URL: https://2021.igem.org/wiki/images/b/b5/T--UNSW_Australia--img--Human_Practices--Survey--HP_survey_engagement.png
+    md5: d846b1f8e291cff851785ca6830b0eb2
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Survey--HP survey engagement.png
+  assets/img/Human_Practices/Survey/HP survey safety concerns.png:
+    link_URL: https://2021.igem.org/wiki/images/6/6d/T--UNSW_Australia--img--Human_Practices--Survey--HP_survey_safety_concerns.png
+    md5: 3794aabff43fe52c7577ce90eb6fff4b
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Survey--HP survey safety
+      concerns.png
+  assets/img/Human_Practices/Survey/HP survey_Figure 1.png:
+    link_URL: https://2021.igem.org/wiki/images/c/c9/T--UNSW_Australia--img--Human_Practices--Survey--HP_survey_Figure_1.png
+    md5: a1889d400576c182c60cb52fa3ec3580
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Survey--HP survey_Figure
+      1.png
+  assets/img/Human_Practices/Survey/HP survey_Figure 2.png:
+    link_URL: https://2021.igem.org/wiki/images/1/1b/T--UNSW_Australia--img--Human_Practices--Survey--HP_survey_Figure_2.png
+    md5: d7d9dadcb46cbdbf337a8c5d6053501b
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Survey--HP survey_Figure
+      2.png
+  assets/img/Human_Practices/Survey/HP survey_Figure 3.png:
+    link_URL: https://2021.igem.org/wiki/images/7/7f/T--UNSW_Australia--img--Human_Practices--Survey--HP_survey_Figure_3.png
+    md5: 78592b5e9a07bf9a942a4621bcd8366c
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Survey--HP survey_Figure
+      3.png
+  assets/img/Human_Practices/Survey/HP survey_Figure 5.png:
+    link_URL: https://2021.igem.org/wiki/images/7/77/T--UNSW_Australia--img--Human_Practices--Survey--HP_survey_Figure_5.png
+    md5: ccb810d91c0755813287bafa94a7a97b
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Survey--HP survey_Figure
+      5.png
+  assets/img/Human_Practices/Survey/HP survey_Figure 6.png:
+    link_URL: https://2021.igem.org/wiki/images/e/eb/T--UNSW_Australia--img--Human_Practices--Survey--HP_survey_Figure_6.png
+    md5: 45b8882040eef1658702f05d255d11ea
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Survey--HP survey_Figure
+      6.png
+  assets/img/Human_Practices/Survey/HP survey_Figure4.png:
+    link_URL: https://2021.igem.org/wiki/images/2/21/T--UNSW_Australia--img--Human_Practices--Survey--HP_survey_Figure4.png
+    md5: ad2102a0a552fafe344d6abcc2168197
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Survey--HP survey_Figure4.png
+  assets/img/Human_Practices/Survey/demographics 1.png:
+    link_URL: https://2021.igem.org/wiki/images/2/28/T--UNSW_Australia--img--Human_Practices--Survey--demographics_1.png
+    md5: a67b672d0bd392064cdb3f29f33084ec
+    upload_filename: T--UNSW_Australia--img--Human_Practices--Survey--demographics
+      1.png
+  assets/img/Human_Practices/coral tree.png:
+    link_URL: https://2021.igem.org/wiki/images/2/24/T--UNSW_Australia--img--Human_Practices--coral_tree.png
+    md5: 4edb1418bcc779667caf5965671c92d5
+    upload_filename: T--UNSW_Australia--img--Human_Practices--coral tree.png
   assets/img/Inclusivity/New Canvas.png:
     link_URL: https://2021.igem.org/wiki/images/c/cf/T--UNSW_Australia--img--Inclusivity--New_Canvas.png
     md5: c14b3a8c1e6a03e44a1dd293c8ec0d6b
@@ -1100,7 +1200,7 @@ assets:
     upload_filename: T--UNSW_Australia--img--Modelling--flow.png
   assets/img/Modelling/glutathione-redox-half.png:
     link_URL: https://2021.igem.org/wiki/images/7/7a/T--UNSW_Australia--img--Modelling--glutathione-redox-half.png
-    md5: 81af4e19d273cf48afaeb17d927a9552
+    md5: 0b3ddec514baa6ff259c534aa51ae215
     upload_filename: T--UNSW_Australia--img--Modelling--glutathione-redox-half.png
   assets/img/Modelling/monomer.png:
     link_URL: https://2021.igem.org/wiki/images/f/f3/T--UNSW_Australia--img--Modelling--monomer.png
@@ -1256,10 +1356,10 @@ css:
     md5: a8653bf1be6205173000234ea9ec4d3b
   css/HP.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/HPCSS?action=raw&ctype=text/css
-    md5: 04c56b4030e0908abf61f26e8c2e15da
+    md5: df9abe7232c82f11d1c0d5fda972497b
   css/attributions.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/attributionsCSS?action=raw&ctype=text/css
-    md5: 5ffa4139792931836b8fe7d7aa8d6c75
+    md5: 397cee334581f37fbf214e049a55db23
   css/bootstrap/bootstrap.min.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/bootstrap/bootstrap-minCSS?action=raw&ctype=text/css
     md5: 9bb887442a6fcd9bbd0f319da6eeba68
@@ -1319,7 +1419,7 @@ css:
     md5: 63c00f9b96083ec3cb5df7f2f1cb2d6c
   css/protocols.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/protocolsCSS?action=raw&ctype=text/css
-    md5: 632e7a5e3112149176d6694854b29dce
+    md5: 91c505e2fdee95f72248787590f2965f
   css/sidenav.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/sidenavCSS?action=raw&ctype=text/css
     md5: f14327cd93adadd58b5961509dce5469
@@ -1329,7 +1429,7 @@ css:
 html:
   Attributions/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Attributions
-    md5: 9fbfa6fb0fdd743254d15356b4eefa0c
+    md5: 0f4b77f615c718c1150f3441fe3bb0a0
   Collaborations/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Collaborations
     md5: 9dbbfcd1020591299647e9f06fb08602
@@ -1344,7 +1444,7 @@ html:
     md5: 7ede8d7cff28cbc9c6f4a3df1a2a5a56
   Description/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Description
-    md5: 1abed8ea582b25cb24f96a62699f7d5a
+    md5: a6825d8e1d2438b4642f5bad72128bbc
   Education/Board_Game/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Education/Board_Game
     md5: 3fcf231e166bb67f86291643a56b2e0b
@@ -1401,10 +1501,10 @@ html:
     md5: b93b270155492373d10e987174328edb
   Human_Practices/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Human_Practices
-    md5: 433670c1871e0b5a295bd8296570caec
+    md5: 09dcff21f4388b88e6ef51a0fc9419c1
   Implementation/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Implementation
-    md5: ae5a2415fa1591626547ec8d82d70ba4
+    md5: 6a7e04e048a4e37f2635fbe8cabcecdf
   Inclusivity/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Inclusivity
     md5: 545fd70488f87bb85ea8f3f34020c020
@@ -1428,7 +1528,7 @@ html:
     md5: a7920d64d1c9e266ba3303022f2b5d54
   Protocols_Safety/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Protocols_Safety
-    md5: 16ae8cb7b850c9dbb82f6c1fb06dbdea
+    md5: 0362e51087183daf309df48646ad68e7
   Team/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Team
     md5: 3a39f1665c63a751443556830126a715
