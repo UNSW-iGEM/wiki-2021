@@ -3,7 +3,7 @@
 
     <div class="box box-top">
         <div class="circle-container">
-            <div class="circle" onclick="showDescription(event, 'gov_first1_last1')"></div>
+            <div class="circle" data-bs-toggle="modal" data-bs-target="#david_wachenfeld"></div>
         </div>
         <div class="box-content">
             <p>David Wachenfeld</p>
@@ -13,16 +13,17 @@
 
     <div class="box box-bottom">
         <div class="circle-container">
-            <div class="circle" onclick="showDescription(event, 'gov_first2_last2')"></div>
+            <div class="circle" data-bs-toggle="modal" data-bs-target="#will_howard"></div>
         </div>
         <div class="box-content">
             <p>Will Howard</p>
             <p><em>Role</em></p>
         </div>
     </div>
+
     <div class="box box-top">
         <div class="circle-container">
-            <div class="circle"></div>
+            <div class="circle" data-bs-toggle="modal" data-bs-target="#kevin_gale"></div>
         </div>
         <div class="box-content">
             <p>Kevin Gale</p>
@@ -31,16 +32,149 @@
     </div>
 </div>
 
-<div class="description-container">
-    <div class="description" id="gov_first1_last1">
-        <h3>First1 Last1 Gov</h3>
-    </div>
 
-    <div class="description" id="gov_first2_last2">
-        <h3>First2 Last2 Gov</h3>
-    </div>
+<!-- MODALS -->
 
-    <div class="description" id="gov_first3_last3">
-        <h3>First3 Last3</h3>
+<!-- David Wachenfeld -->
+<div class="modal fade" id="david_wachenfeld" tabindex="-1" data-bs-backdrop="true"
+  aria-labelledby="pro dive modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <div class="modal-photo">
+                        <img src="/assets/img/Collaborations/usyd.png" height="100%" width="100%">
+                    </div>
+                    <div style="padding: 2em;">
+                        <h3 class="modal-title">
+                            David Wachenfeld
+                        </h3>
+                        <h5 class="modal-caption">
+                            Chief Scientist for the Great Barrier Reef Marine Park Authority
+                        </h5>
+                    </div>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="align-self: flex-start;"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h5>Summary of role</h5>
+                    <p>
+                        David is the Chief scientist for the Great Barrier Reef Marine Park Authority (GBRMPA), which is the lead management agency for the GBR, responsible food the protection and care of the reef. The GBRMPA works with a variety of partners, supporters and advisors to manage and conserve the reed for future generations
+                    </p>
+                </div>
+
+                <div>
+                    <h5>Significance</h5>
+                    <p>
+                        The GBRMPA works with a variety of partners including the government, traditional owners, community organisations, and industry to protect and manage the reef. From his extensive career working for the GBRMPA as a former director and as the current chief scientist, David Wachenfeld has a unique and significant understanding of reef conservation and management.     
+                    </p>
+                </div>
+                
+                <div>
+                    <h5>Perspective on coral bleaching</h5>
+                    <p>
+                        With reference to the 2019 Barrier Reef Outlook Report, David acknowledged that significant global efforts to address climate change are critical to slowing the deterioration of the Great Barrier Reef’s ecosystem, supporting its recovery. He fears that the current efforts to protect the GBR are only delaying the inevitable if the ocean temperatures continue to rise at its current trajectory. David believes that mitigation is key to protecting the reefs so that there can be room for adaptation. 
+                    </p>
+                </div>
+
+                <div>
+                    <h5>Perspective on synthetic biology</h5>
+                    <p>
+                        In our conversation with David, we spoke about there is already a great resistance against the manipulation of genetics in industrial and agricultural settings, and how proposing to use genetic manipulation in the natural environment posed even greater social and ethical challenges. He explained that in his experience, people who are against manipulating the genetics of the environment hold these moral standpoints because it is seen as meddling with nature and “playing God”, as he described it. However, David also pointed out that each time there is a major coral bleaching event, an enormous slice of genetic information is lost forever. He said “We are already manipulating the genetics of the coral reef, it's just by climate change”. He offered us an alternative perspective that “Climate change is already people playing God” - we can either choose to be passive or do something about it.
+                    </p>
+                </div>
+
+                <div>
+                    <h5>Guidance on project design</h5>
+                    <p>
+                        David pointed out that in order to prove our solution as feasible, we need to consider the complexity of the marine ecosystem in the Great Barrier Reef. David talked about the highly interconnected nature of the marine ecosystem on the GBR and how this complexity would make it a great challenge for us to control the impact of our solution -  We need to consider how the changes we make to the algal species would affect other microorganisms in the coral holobiont, keeping in mind that there is so much complexity in the ocean that is still not fully understood, and how the function of all the microorganisms in the holobiont are not known. He emphasized that the hardest part for us won’t be what we are accomplishing in the lab, but the part that deals with the complexity of live coral. Hence, David directed us to seek out access to a sea simulator that can model the complexities of a living reef. 
+                    </p>
+                    <p>
+                        David also talked to us about the interconnectedness of the coral reefs. He explained it using an analogy that compares reefs to airports: some airports are connected to many other airports, while others may be only connected to one. Thus, certain airports have a higher impact than others to the surrounding ports. David urged us to consider this analogy as we began to consider the implementation of the project; since we cannot implant our solution to all corals in the GBR, we should aim to target the ‘hub of reefs’, in places in which the coral spawns are most likely to end up on other reefs by action of the current, thereby maximising our impact.
+                    </p>
+                </div>
+
+                <div>
+                    <h5>Key takeaways</h5>
+                    <ul>
+                        <li>The marine ecosystem at the GBR is extremely complex and a major challenge to our project will be when we model our solution in a simulated reef.</li>
+                        <li>The interconnectedness of coral reefs must be taken into consideration as we approach the implementation of our project.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Kevin Gale -->
+<div class="modal fade" id="kevin_gale" tabindex="-1" data-bs-backdrop="true"
+  aria-labelledby="pro dive modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <div class="modal-photo">
+                        <img src="/assets/img/Collaborations/usyd.png" height="100%" width="100%">
+                    </div>
+                    <div style="padding: 2em;">
+                        <h3 class="modal-title">
+                            Kevin Gale
+                        </h3>
+                        <h5 class="modal-caption">
+                            Assistant Director of the Reef Branch, in the Department of Agriculture, Water and the Environment.
+                        </h5>
+                    </div>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="align-self: flex-start;"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h5>Summary of role</h5>
+                    <p>
+                        Kevin Gale has had an extensive career working in a Science-centric, government role. Since 2006, he has been involved in designing and managing projects that protect the Great Barrier Reef, most notably, in controlling crowthorne starfish control. 
+                    </p>
+                    <p>
+                        In addition to this, he has been instrumental in fortifying the relationship that exists between research in the Great Barrier Reef and the design implementation of these programmes.
+                    </p>
+                </div>
+
+                <div>
+                    <h5>Significance</h5>
+                    <p>
+                        The duality between Kevin Gale’s highly technical background in Biochemistry and Molecular Biology and his first-hand experience working in the Reef Trust task force flagged him as the ideal candidate to discuss the recent mass coral bleaching events. In addition to this, our team was interested to scope out where the Australian Government ranks coral bleaching as a level of priority, and scoping their attitudes towards introducing a genetically modified product into the natural environment.
+                    </p>
+                </div>
+                
+                <div>
+                    <h5>Perspective on coral bleaching</h5>
+                    <p>
+                        The Great Barrier Reef Outlook report recognises that by far,  climate change is the most significant factor that puts the Great Barrier Reef in jeopardy. 
+                    </p>
+                    <p>
+                        Most entities including the Marine Park Authority and researchers conducting on-ground work are placing a large emphasis on ameliorating the resilience of the reef, so that it can still thrive during thermal duress. There is also a strong focus on recovering those corals affected by thermal stress and preventing phage shifts from coral-dominated to micro-algal dominated system, over preventing the occurrence of coral bleaching.
+                    </p>
+                </div>
+
+                <div>
+                    <h5>Perspective on synthetic biology</h5>
+                    <p>
+                        In terms of low and no-regret options, I don’t think there have been any options that have been implemented as of yet. It is always easier to use a less invasive and controversial option to solve an issue as such, such as natural selection or selective breeding. 
+                    </p>
+                    <p>
+                        However, in our current climate, the temperatures of the water seems to only be escalating and there hasn’t been a viable option that has proven to reverse or halt the effects of the rising temperatures - which is where the use of a genetically modified organism could prove to be beneficial. An introduction of an organism as such would have to undergo thorough testing and check its impact on its neighbouring species, before being released.
+                    </p>
+                </div>
+
+                <div>
+                    <h5>Key takeaways</h5>
+                    <ul>
+                        <li>The overlap between the reefs playing an integral role in supporting Australia’s economy and the threat of being placed on the World Heritage Commitee’s endangered list would be one of the main drivers for the Government to invest in novel technologies that can improve these circumstances.</li>
+                        <li>One of the largest social impediments that could arise is the public’s unwillingness to accept our solution to the coral bleaching events.</li>
+                        <li>In Kevin’s opinion, he thinks that the reliance on a kill switch might be unsettling to the public and it would be better to go through rigorous testing instead of having this backup option.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

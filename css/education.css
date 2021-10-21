@@ -8,6 +8,16 @@
     width: 39vw;
 }
 
+#felt_carousel_container {
+    /* background-color: #dae5e4; */
+    float: right;
+    padding-left: 2em;
+}
+
+#felt_carousel {
+    width: 39vw;
+}
+
 .carousel-item {
     height: 65vh;
     width: calc(100% - 4em);

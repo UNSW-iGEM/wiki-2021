@@ -1,4 +1,220 @@
 ---
 layout: content.liquid
 title: Project Description
+headings: 
+- 
+    id: inspiration
+    title: Inspiration
+    icon: /assets/icon/Description/lightbulb-solid.svg
+- 
+    id: problem
+    title: The Identifiable Problem
+    icon: /assets/icon/Description/exclamation-triangle-solid.svg
+- 
+    id: solution
+    title: Our Solution
+    icon: /assets/icon/Description/vial-solid.svg
+- 
+    id: goals
+    title: Goals and Achievements
+    icon: /assets/icon/Description/chart-line-solid.svg
+- 
+    id: synbio
+    title: Applying Synthetic Biology
+    icon: /assets/icon/Description/globe-asia-solid.svg
+- 
+    id: references
+    title: References
+    icon: /assets/icon/bars-solid.svg
 ---
+<head>
+    <link rel="stylesheet" href="/css/description.css" type="text/css">
+</head>
+
+<div id="inspiration">
+    <h2>Inspiration</h2>
+    <br />
+    <div style="float: right; width: 40%; padding-left: 2em; font-size: 0.9em; text-align: right; font-style: italic;">
+        <img style="width: 100%;" src="/assets/img/Description/800px-The_dazzling_colours_of_the_Great_Barrier_Reef_near_Airlie_Beach,_Whitsunday_Islands,_Queensland.jpg">
+        <div>(Kumar, 2016)</div>
+        <br />
+        <img style="width: 100%;" src="/assets/img/Description/Aerial_View_of_Great_Barrier_Reef_(Ank_Kumar)_08.jpg">
+        <div>(Ayanadak123, 2018)</div>
+    </div>
+
+    <p>
+        Global warming and climate change is having a significant impact on the environment and many ecosystems. Coral reefs are one system under threat due to pressures arising from climate change, including ocean warming and acidification (Wolff et al., 2018). The changing conditions are causing major coral bleaching events to increase in frequency and severity over time.
+    </p>
+
+    <p>
+        The Great Barrier Reef is the largest coral reef and the largest living structure on earth. It is intrinsically linked to the livelihoods and culture of the region’s inhabitants, including the 70 Aboriginal Traditional Owner groups (Authority, 2012, GBRMPA). This complex system stretches approximately 344 468 square kilometers and comprises 3,000 individual reefs (NOAA, 2021). The Great Barrier Reef is one of the systems under threat from climate change. In the last five years, it has experienced two major bleaching events in 2016 and 2017. These back-to-back coral bleaching events affected the central third of the Great Barrier Reef. In 2020 GBR experienced record-high ocean temperatures, which caused a bleaching event that left 60% of the reef bleached (Dietzel et al., 2020).
+    </p>
+
+    <p>
+        We were inspired to continue the 2020 UNSW iGEM team’s efforts that utilized genetically modified systems aimed at preventing coral bleaching. Due to the events of 2020 and lockdowns within Australia, we, the 2021 team, desired to continue the efforts of last year’s team. As a phase two project, we aimed to continue searching for solutions to protect the Great Barrier Reef and vulnerable reefs worldwide. In Australia, we love our beaches and cannot give up on protecting our coastal regions. The 2021 UNSW iGEM team is honored to continue the previous team’s work and contribute to the worldwide effort to persevere the beauty and diversity of reef systems for future generations.
+    </p>
+</div>
+<br />
+
+<div id="problem">
+    <h2>The Identifiable Problem</h2>
+    <br />
+
+    <p>
+        The bleaching events are related to high sea surface temperatures resulting in accumulated heat stress in the coral (Australian Institute of Marine Science). The accumulation of heat stress impacts coral by causing the loss of their microalgae symbionts which provide vital nutrients and protection for the coral. The thermotolerance and antioxidant capacity of the coral holobiont and the microalgae symbiont play a critical role in the host’s stress response during bleaching events. Under these stress conditions, the microalgae symbiont will produce reactive oxygen species (ROS), damaging the coral and forcing it to expel the microalgae; without it, the coral is left vulnerable and starved (Cziesielski et al., 2019).
+    </p>
+</div>
+<br />
+
+<div id="solution">
+    <h2>Our Solution</h2>
+    <br />
+
+    <p>
+        To aid in protecting the Great Barrier reef, the UNSW iGEM team 2021 is developing a two-pronged solution to preserve the reef systems from bleaching into the future by creating genetically modified algae to withstand the external pressures that cause bleaching.
+    </p>
+
+    <p>
+        Our solution targets the microalgae symbiont to offer a more protective system that can hopefully be introduced into existing coral halobionts.
+    </p>
+
+    <p>
+        Our project has two key aspects, focusing on enhancing the thermotolerance and antioxidant capacity of the microalgae symbiote.
+    </p>
+
+    <h5>Enzyme Level: Glutathione Recycling Enzyme System</h5>
+    <!-- <br /> -->
+    <p>
+        Our solution will implement a glutathione system within the microalgae symbiont, <em>Symbiodinium sp</em>. To neutralize the toxic reactive oxygen species produced during heat stress and therefore prevent expulsion from the coral. Our system will include three enzymes that produce, recycle, and facilitate the antioxidant glutathione: bifunctional glutathione synthetase (gshF), glutathione reductase, and glutathione peroxidase.
+    </p>
+    <div style="display: flex; justify-content: center;">
+        <img src="/assets/img/Description/glutathione_pathway.png" width="80%">
+    </div>
+    <div style="text-align: center; font-size: 0.9em;">Fig. 1: Production and recycling pathways of glutathione</div>
+    <br /><br />
+
+
+    <h5>Chaperone Level: Small Heat Shock Proteins</h5>
+    <p>
+        We will introduce the small heat shock protein 22E, isolated from the algal species <em>Chlamydomonas reinhardtii</em>, into <em>Symbiodinium sp</em>. This exogenous protein will increase thermotolerance by preventing protein denaturation and aggregation in an ATP-independent manner within the cell.
+    </p>
+
+    <div style="display: flex; justify-content: center;">
+        <img src="/assets/img/Description/hsp_mechanism.png" style="width: 40%; background-color: #e8e9e9;">
+    </div>
+    <div style="text-align: center; font-size: 0.9em;">Fig. 2: Mechanism of small heat shock proteins</div>
+    <br /><br />
+
+    <h5>Expression Control</h5>
+    <p>
+        An additional aspect of our project is integrating the ROS-inducible transcription factor OxyR and promoter TrxCp into our two-system solution, which activates transcription in response to oxidative stress. This system will activate our enzymes and chaperones in the presence of the reactive oxygen species (i.e. hydrogen peroxide - H<sub>2</sub>O<sub>2</sub>), creating a controlled activation of our introduced systems.
+    </p>
+    <div style="display: flex; justify-content: center;">
+        <img src="/assets/img/Description/expression_control.png" style="width: 45%;">
+    </div>
+    <div style="text-align: center; font-size: 0.9em;">Fig. 3: Expression control of the two-system solution</div>
+    <br /><br />
+</div>
+<br />
+
+<div id="goals">
+    <h2>Project Goals and Achievements</h2>
+    <br />
+
+    <!-- <h5>Human Practices</h5> -->
+    <div class="project-goal">
+        <div>
+            <a href="/Human_Practices" class="project-icon"><img src="/assets/img/Home/humanprac-icon.png"></a>
+            Human Practices
+        </div>
+        <p>
+            One of the product achievements of the Human Practices portfolio was the progress we made from the Phase I of PROTECC Coral, in regard to resolving the communication gap that barricades the general public’s understanding of our solution to coral bleaching. This initiative was used to quantitatively and qualitatively measure each individual’s general understanding of the coral bleaching events at the Great Barrier Reef and the attitude towards the introduction of our solution to solve this recurring phenomenon. Amassing over an overwhelming 260+ responses, the insightful feedback aided in our understanding of what the public primarily wanted us to address - the risks and rewards of its implementation and the different procedures that the product has to go through before it’s available on the market.
+            <br /><br />
+            In hopes of facilitating the audience’s understanding and remaining transparent, we developed a risk management plan that discusses the foreseeable risks and how we will try and mitigate these adverse happenings and a pipeline, which details the phases leading up to the possible commercialisation of this product.
+        </p>
+    </div>
+    <br />
+
+    <!-- <h5>Science Communication</h5> -->
+    <div class="project-goal">
+        <p>
+            Science communication aims to foster key relationships between the broader community and the scientific world across all ages regardless of their scientific knowledge. Our main goal was to raise awareness of the significance of coral bleaching and applications of synthetic biology through shared stories, personal connections and hands-on experiences, evoking individuals to reflect and involve themselves in critical thinking. This was achieved by creating an educational package that could be physically distributed at public events, conferences and school visits. Unfortunately, we could not distribute these packages due to Sydney’s lockdown, leading to the increased necessity to provide an online platform that individuals could easily access remotely to obtain resources for engagement in their own time and learning paces. This was complemented by our team’s involvement in podcasts, which has provided us with an excellent avenue for communication, allowing us to diversify our audiences across all age groups and demographics. 
+        </p>
+        <div>
+            <a href="/Communication" class="project-icon"><img src="/assets/img/Home/science-communication-icon.png"></a>
+            Science Communication
+        </div>
+    </div>
+    <br />
+
+    <!-- <h5>Wet Lab</h5> -->
+    <div class="project-goal">
+        <div>
+            <a href="/Experiments" class="project-icon"><img src="/assets/img/Home/engineerring-icon.png"></a>
+            Wet Lab Experiments
+        </div>
+        <p>
+            Wet Lab had two key goals: testing the small heat shock protein and completing the glutathione system design. Another goal was to conduct interviews with academics regarding our proposed implementation and project design to refine our project. The team designed two assays during the project and performed preliminary testing of the small heat shock proteins effect on thermotolerance in E. coli. The team also completed a plasmid design incorporating the OxyR transcription factor with an advanced glutathione system with the support of the Dry Lab.
+        </p>
+    </div>
+    <br />
+
+    <!-- <h5>Dry Lab</h5> -->
+    <div class="project-goal">
+        <p>
+            ...
+        </p>
+        <div>
+            <a href="/Model" class="project-icon"><img src="/assets/img/Home/model-icon.png"></a>
+            Dry Lab Modelling
+        </div>
+    </div>
+    <br />
+
+</div>
+<br />
+
+<div id="synbio">
+    <h2>Applying Synthetic Biology</h2>
+    <br />
+    <p>
+        Synthetic biology is our future, and it offers innovative approaches to engineer biological systems to create new valuable designs. Synthetic biology is the path to providing unique solutions in healthcare, agriculture, manufacturing, and environmental conservation (El Karoui et al., 2019).
+    </p>
+    <p>
+        Climate change is an urgent issue today and causing significant impacts on almost every ecosystem on the planet. Some of the risks associated with climate change include prolonged and more intense droughts, wildfires, rising sea levels, and increased ocean temperatures, to name a few. Each event and change threaten habitats, cultures, and livelihoods (WWF, 2021). As many biological systems continue to be threatened by climate change, scientists’ role is to search for solutions, some of which may lie in synthetic biology.
+    </p>
+    <p>
+        Our project is a useful application. It utilizes some of the critical principles of synthetic biology, designing and testing modified organisms, to support the global effort of preventing and mediating the impacts of climate change. Our project also demonstrates the potential benefits of applying synthetic biology for conservation and emphasizes how synthetic biology can be diversely used for world issues.
+    </p>
+    <div style="display: flex; justify-content: space-evenly; font-size: 0.9em; font-style: italic;">
+        <div style="width: 45%;">
+            <img src="/assets/img/Description/800px-Great_Barrier_Reef_snorkeling_24.jpg" width="100%">
+            <div>GBR snorkelling (Brant, 2014a)</div>
+        </div>
+        <div style="width: 45%;">
+            <img src="/assets/img/Description/800px-Great_Barrier_Reef_snorkeling_14.jpg" width="100%">
+            <div>GBR snorkelling (Brant, 2014b)</div>
+        </div>
+    </div>
+</div>
+<br /><br />
+
+<div id="references">
+    <h2>References</h2>
+    <br />
+
+    <p>AUSTRALIAN INSTITUTE OF MARINE SCIENCE Coral bleaching events In: SCIENCE, A. I. O. M. (ed.). Australian Government Australian Government</p>
+    <p>AUTHORITY, G. B. R. M. P. 2012. Great Barrier Reef Region Strategic Assessment 2014. Commonwealth of Australia</p>
+    <p>AYANADAK123 2018. The Great Barrier Reef, seen from a scenic flight near Airlie beach, Queensland.</p>
+    <p>BRANT, D. 2014a. Snorkeling in the Great Barrier Reef, Australia.</p>
+    <p>BRANT, D. 2014b. Snorkeling in the Great Barrier Reef, Australia.</p>
+    <p>CZIESIELSKI, M. J., SCHMIDT-ROACH, S. & ARANDA, M. 2019. The past, present, and future of coral heat stress studies. <em>Ecology and evolution</em>, 9, 10055-10066.</p>
+    <p>DIETZEL, A., BODE, M., CONNOLLY, S. & HUGHES, T. 2020. Long-term shifts in the colony size structure of coral populations along the Great Barrier Reef. <em>Proceedings of the Royal Society B: Biological Sciences</em>, 287, 20201432.</p>
+    <p>EL KAROUI, M., HOYOS-FLIGHT, M. & FLETCHER, L. 2019. Future Trends in Synthetic Biology—A Report. <em>Frontiers in Bioengineering and Biotechnology</em>, 7.</p>
+    <p>GBRMPA. <em>Reef</em> facts [Online]. Available: https://www.gbrmpa.gov.au/the-reef/reef-facts [Accessed 10.08 2021].</p>
+    <p>KUMAR, A. 2016. Aerial View of Great Barrier Reef.</p>
+    <p>NOAA. 2021. <em>What is the Great Barrier Reef?</em> [Online]. National Ocean Service: National Oceanic and Atmoshperic Administration Available: https://oceanservice.noaa.gov/facts/gbrlargeststructure.html [Accessed 2021].</p>
+    <p>WOLFF, N. H., MUMBY, P. J., DEVLIN, M. & ANTHONY, K. R. N. 2018. Vulnerability of the Great Barrier Reef to climate change and local pressures. <em>Global Change Biology</em>, 24, 1978-1991.</p>
+    <p>WWF. 2021. <em>Effects of Climate change</em> [Online]. WWF: WWF.  [Accessed 2021].</p>
+</div>
+<br />

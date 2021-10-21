@@ -84,6 +84,15 @@ body {
     opacity: 75%;
 }
 
+#references p {
+    font-size: 0.9em;
+}
+
+#igem-unsw-content .image-caption {
+    font-size: 0.9em;
+    text-align: center;
+}
+
 #loader {
     position: fixed;
     height: 100%;

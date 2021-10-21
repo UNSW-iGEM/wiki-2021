@@ -4,7 +4,7 @@ name: Vivian Lieu
 photo: /assets/img/Team/vivian.jpg
 role: Science Communication and Wet Lab Team Member
 attributions:
-    - Illustated and wrote a children’s book and designed merchandise and puzzles for the educational package aimed at educating the broader community in a fun, simple and effective manner
+    - Illustrated and wrote a children’s book and designed merchandise and puzzles for the educational package aimed at educating the broader community in a fun, simple and effective manner
     - Contacted potential science communication collaborators and merchandise suppliers
     - Organised and facilitated communication for collaborations (podcast and Aurecon industry event)
     - Conducted wet lab research and acted as a wiki writer
