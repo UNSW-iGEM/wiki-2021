@@ -1,4 +1,330 @@
 ---
 layout: content.liquid
 title: Engineering Success
+headings:
+- 
+    id: hsp
+    title: Heat Shock Proteins
+- 
+    id: hsp_design
+    title: Design
+    icon: /assets/icon/Engineering/pencil-alt-solid.svg
+- 
+    id: hsp_build
+    title: Build
+    icon: /assets/icon/Engineering/tools-solid.svg
+- 
+    id: hsp_test
+    title: Test
+    icon: /assets/icon/Engineering/vial-solid.svg
+- 
+    id: hsp_learn
+    title: Learn
+    icon: /assets/icon/Engineering/lightbulb-regular.svg
+-   
+    id: gsh
+    title: Glutathione System
+- 
+    id: gsh_design
+    title: Design
+    icon: /assets/icon/Engineering/pencil-alt-solid.svg
+- 
+    id: gsh_build
+    title: Build
+    icon: /assets/icon/Engineering/tools-solid.svg
+- 
+    id: gsh_test
+    title: Test
+    icon: /assets/icon/Engineering/vial-solid.svg
+- 
+    id: gsh_learn
+    title: Learn
+    icon: /assets/icon/Engineering/lightbulb-regular.svg
+- 
+    id: references
+    title: References
 ---
+<head>
+    <link rel="stylesheet" href="/css/engineering.css" type="text/css">
+</head>
+
+<div>
+    <p>
+        Our team’s approach to this project was heavily influenced by the engineering design cycle. This can be seen on a macro level in our overall project structure, and on a micro level throughout the iterative development process.
+    </p>
+
+    <p>As Protecc Coral’s Phase 2 Team (building on the work of the UNSW 2020 iGEM team conducted in lockdown), we had a strong design foundation before we began. This clear direction helped us to frame some goals and kickstarted the cycle, but was by no means the end of the process! In particular, the experiments conducted by Dry Lab and Wet Lab were designed to inform each other -- so that the results from one team, combined with feedback from experts and stakeholders, would naturally provide valuable information for the design and refinement of experiments conducted by the other, for an efficient, cohesive and successful project!</p>
+
+    <div style="display: flex; justify-content: center;">
+        <img src="/assets/img/Engineering/Flow-Chart2.jpg" width="50%">
+    </div>
+</div>
+<br />
+
+<h1 style="text-align: left;" id="hsp">Heat Shock Proteins</h1>
+<br />
+
+<div id="hsp_design">
+    <h2>Design</h2>
+    <br />
+
+    <p>Our experimental approach for the HSP22E system was to increase the thermotolerance of the algal species 
+        Symbiodinium goreaui, due to its great distribution in the Great Barrier Reef. For this reason, we used heat shock 
+        protein HSP22E to determine whether the protein might improve the thermotolerance of the algae. This is because heat 
+        shock proteins are involved in binding altered proteins and preventing protein aggregation (Haslbeck et al, 205) 
+        which might occur at an elevated temperature. To validate our solution, we decided to use E. coli as our chassis 
+        due to its simplicity before engineering more complex organisms such as Symbiodinium goreaui. As the Phase II PROTECC Coral UNSW team, 
+        we utilised the plasmid with the pET-19b vector that was built and assembled by the Phase I team in 2020. The gene for the HSP22E protein 
+        from <em>Chlamydomonas reinhardtii</em> was introduced in the plasmid to implement the holdase activity of the system. 
+        Small heat shock proteins have been found to possess surface hydrophobic regions that help interactions with misfolded 
+        proteins, thus preventing subsequent denaturation and protein aggregation before other chaperones aid in refolding 
+        processes (Webster et al., 2019).
+    </p>
+
+    <p>
+        We performed growth and survival assays to assess whether introducing HSP22E would confer thermotolerance to the organisms in response to increased temperatures. We firstly characterised the activity of HSP22E in E. coli before moving on to more complex organisms, such as Symbiodinium goreaui. We hypothesised that E. coli expressing HSP22E would display a higher growth rate (growth assay) and form a greater number of colony forming units (survival assay) at elevated temperature compared to control samples.
+    </p>
+
+    <br />
+</div>
+
+<div id="hsp_build">
+    <h2>Build</h2>
+    <br />
+
+    <p>
+        The build phase of our engineering cycle involved the construction and assembly of the biological systems to be introduced into E. coli. To validate and test each component of the system (heat shock protein and glutathione), we started by building each part separately for simultaneous individual testing before assembling them together in one chassis. 
+        Eventually, the two systems will be assembled together in prokaryotic E. coli via co-transformation of plasmids expressing HSP22E and glutathione systems. Since the end-goal is to co-express the glutathione and HSP22E systems together in eukaryotic algae Symbiodinium goreaui, we would need to modify the system. In particular, we need to replace the 
+        prokaryotic plasmid and promoter to a eukaryotic vector, eukaryotic transcription factor and eukaryotic promoter. However, this would only be done in subsequent cycles of our engineering cycle, once we have consolidated the effectiveness of the systems in the simple E. coli model organisms.
+    </p>
+
+    <p>
+        The aim was to use various laboratory techniques to screen for the correct builds of the two systems. Namely, restriction enzyme digest was conducted to create a linear DNA molecule from the circular pET-19b plasmid. This is because the circular plasmid can exist in various conformations, such as nicked and supercoiled, that would otherwise prevent the 
+        correct determination of the molecular weight of nucleic acids in the subsequent gel electrophoresis. After restriction enzyme digest was performed, gel electrophoresis was carried out to identify the correct builds of the plasmid and eliminate the incorrect ones. Furthermore, the DNA in the pET-19b plasmid was extracted and purified using mini-prep. 
+        The extracted DNA was then sequenced to verify whether the builds were correct or not.
+    </p>
+    <br />
+</div>
+
+<div id="hsp_test">
+    <h2>Test</h2>
+    <br />
+
+    <p>
+        The next stage of the engineering cycle we followed was to test the HSP22E system to determine the effectiveness of the system in increasing thermotolerance and to modify the system for the next cycle. In particular, we are characterising E. coli growth and survivability at increasing temperature upon induction with IPTG. To do this, we carried out 
+        growth and survival assays to quantify the growth rate of the chassis E. coli through optical density absorbance values and the number of colony forming units (CFUs) through plate culturing, respectively. The two assays were conducted separately in parallel.
+    </p>
+
+    <p>
+        In an attempt to carry out the experiments successfully, there were several requirements that were needed, including control samples, instruments and standardisation. Firstly, we started by ensuring that the E. coli were at the log phase of the growth curve. Secondly, we employed three types of controls: E. coli with the mCerulean3 gene as a control for 
+        gene expression; E. coli samples without IPTG induction as a negative control for protein expression; and growth at 37°C for comparison against growth at elevated temperature. Thirdly, specific instrumentation was vital to perform the measurements of the survival and growth assays and to prepare the reagents, including a spectrophotometer, incubator, 
+        centrifuge and vortex device. These instruments were provided to us by our supervisors in the laboratory. Fourthly, to determine whether the experiment ran in a correct manner, Bugbuster and SDS-PAGE were done to check protein expression in the different test samples compared to control samples. Furthemore, incubation of E. coli without IPTG induction at 37°C 
+        was done to ensure that the experimental conditions were correct. Lastly, the experiments would need to be done in duplicates to ensure the reproducibility of the results, which was not done in the current experiments due to time constraints.
+    </p>
+
+    <p>
+        Having conducted the experiments, the quantitative data from the growth assay (time course data) and survival assay (end-point data) were analysed for interpretation and visualisation. The physical units of the measurements were Optical Density (OD) and Colony Forming Units (CFUs) for the growth and survival assays, respectively. Due to the arbitrary nature of these units, 
+        it would be necessary to convert them to absolute units via the following methods in future experiments. For the growth assay, it is important that silica microspheres are used to construct a standard curve of the number of silica beads against optical density to standardise the measurements and compare to the results we obtained. Having obtained the data, the data were analysed and 
+        visualised (graphed) using OpenCFU, Microsoft Excel and Graph Prism. The data obtained from the test samples, were compared to the control samples to verify whether the heat shock protein system ran as desired. To be specific, the test samples were compared to E. coli containing the gene for mCerulean3 protein (a similar molecular weight protein to HSP22E), to E. coli samples without IPTG induction and to samples grown at the baseline temperature 37°C. 
+    </p>
+
+    <p>
+        After the analysis and visualisation of the results in a graphical manner, the data were made available for others to repeat using the iGEM UNSW wiki. Unfortunately, due to the arbitrary nature of the units that were employed in the growth assay, the assay would need to be repeated to standardise the experiment via a silica beads-optical density curve before others can re-use the experiment and compare the results.
+    </p>
+    <br />
+</div>
+
+<div id="hsp_learn">
+    <h2>Learn</h2>
+    <br />
+
+        <p>
+            Having completed the test stage of the engineering cycle, we compared the results we obtained with our design specifications to determine the effectiveness of the heat shock protein in increasing thermotolerance and whether we would need to modify the system components. One of the aims of the experiments was to learn whether the test E. coli samples with the gene for HSP22E were growing at a higher rate and replicating at a greater rate than control samples 
+            at increased temperatures after IPTG induction. Unfortunately, no definite conclusion could be drawn from our experimental results as both test samples and control samples were able to grow and survive in the tested temperatures without any general trend. A reason for these results might be explained by the HSP22E peptide sequence. HSP22E contains a chloroplast transit peptide sequence that allows the protein to localise to chloroplasts (Rütgers et al., 2017). 
+            After consulting Prof. Marc Wilkins and the literature, we concluded that the transit peptide of some proteins may be cleaved off (by proteases) during membrane translocation in eukaryotic plastids (Pedrajas et al., 1999). The gene for the HSP22E in our plasmid contained the transit peptide sequence postulated by (Rütgers et al., 2017). Cleaving off the transit peptide sequence may allow the protein HSP22E to function better and result in increased thermotolerance in E. coli. 
+            This can be tested in the next design stage of the engineering cycle. Furthermore, we aim to improve the experimental design by testing the system at greater temperatures, optimising the IPTG induction time and using a metal heat block for better heat transfer. 
+        </p>
+    <br />
+</div>
+
+
+<h1 style="text-align: left;" id="gsh">Glutathione System</h1>
+<br />
+
+<div>
+    <h6>Why have we chosen gshF?</h6>
+    <p>
+        Oxidised glutathione is a radical. It must be recycled by glutathione reductase to avoid its accumulation in the cell to maintain cellular glutathione homeostasis. 
+    </p>
+
+    <h6>How does microalgae manage oxidative stress?</h6>
+    <p>...</p>
+
+    <h6>What is the purpose of glutathione reductase?</h6>
+    <p>
+        Glutathione reductase (GSR), a homodimeric flavoprotein (50-kDa subunits), regulates cellular GSH homeostasis by catalyzing the reduction of GSSG to GSH using NADPH as a reducing cofactor [11]. Evolutionarily, GSR is well conserved in plants, bacteria, fungi, yeast, and mammals, suggesting that it is important for survival in aerobic environments [11].
+    </p>
+
+    <h6>Do we need glutathione peroxidase?</h6>
+    <p>
+        Glutathione peroxidase is ubiquitous in algae. As long as it is in the organism it might not be necessary to include it along with other enzymes such as glutathione synthetase and glutathione reductase.
+    </p>
+
+    <h6>Why do we need to consider homeostasis?</h6>
+    <p>
+        In the human body, ROS is essential for immune responses while glutathione is necessary to remove excess ROS for antioxidative and ageing prevention. Homeostasis of ROS and glutathione levels is essential to keep cellular functions in balance. Similarly in algae, homeostasis of ROS and glutathione would be necessary for similar functions.
+    </p>
+
+    <h6>What is nfr2?</h6>
+    <p>
+        Nuclear factor-erythroid 2 p45-related factor 2 (Nrf2) is a primary transcription factor protecting cells from oxidative stress by regulating cytoprotective genes, including the antioxidant glutathione (GSH) pathway. Previous studies have demonstrated that Nrf2 regulates GSH homeostasis by affecting de novo synthesis. The basic leucine-zipper transcription factor nuclear factor-erythroid 2 p45-related factor 2 (Nrf2) has been shown to play a vital role in protecting cells from oxidative stress [17]. In response to oxidative stress, Nrf2 dissociates from its cytosolic inhibitor Keap1, translocates to the nucleus, and binds to antioxidant-response elements (AREs) in the promoters of target genes. This leads to transcriptional induction of several cellular defense genes, including glutathione biosynthetic enzymes (glutathione cysteine ligase modifier subunit (GCLM) and glutathione cysteine ligase catalytic subunit (GCLC)), GSH-dependent antioxidant enzymes (glutathione peroxidase 2 (GPX2), glutathione S-transferases (GST), and heme oxygenase-1 (HO-1)) [17].
+    </p>
+
+    <h6>What are the complications?</h6>
+    <p>
+        An important thing to note - overexpression of glutathione in microalgae may alter redox homeostasis and cause stress? 
+    </p>
+
+    <h6>What should we test for?</h6>
+    <ul>
+        <li>Cellular responses to ROS</li>
+        <li>Redox homeostasis</li>
+    </ul>
+
+    <h6>COVID restrictions</h6>
+    <p>
+        The following are planned experiments to characterize the glutathione system. However, due to COVID-19 restrictions, we had no access to the laboratory and could not carry out the following experiments.
+    </p>
+<br />
+</div>
+
+<div id="gsh_design">
+    <h2>Design</h2>
+    <br />
+
+    <p>
+        In the event of coral bleaching, rising sea temperatures lead to increased oxidative stress, and reactive oxygen species (ROS) produced by <em>Symbiodinium</em> (coral’s algal endosymbiont) cause its expulsion from coral ​​(Downs et al., 2002). Glutathione (GSH) is a ubiquitous primary antioxidant that neutralises excess ROS by donating electrons while in its reduced thiol form (Wang et. al., 2019). Our plan is to introduce a glutathione system for enhancing the antioxidant capacity of <em>Symbiodinium</em> and to prevent its expulsion when the coral-symbiont is subjected to high levels of oxidative stress.
+    </p>
+
+    <p>
+        We have designed a ROS-inducible system that expresses glutathione synthetase, glutathione reductase and glutathione peroxidase for glutathione synthesis and recycling to neutralise ROS at high H<sub>2</sub>O<sub>2</sub> concentrations. The genes for these enzymes will be inserted into pET-19b vector followed by transformation into an <em>E. coli</em> chassis.
+    </p>
+
+    <img src="/assets/img/Engineering/gsh_pathway.png" width="100%">
+    <p>
+        We have chosen bifunctional glutathione synthetase (gshF) from Streptococcus thermophilus (<a href="http://parts.igem.org/Part:BBa_K2571001">Part:BBa_K2571001</a>) as it catalyses two reactions in the production of glutathione (GSH) at once (Li et al., 2011), hence simplifying our system. In addition, gshF is not susceptible to product inhibition, which allows a higher level of GSH to be produced. Glutathione peroxidase (GPX4) (<a href="http://parts.igem.org/Part:BBa_K3750001">Part:BBa_K3750001</a>) and glutathione reductase (GSHR1)  (<a href="http://parts.igem.org/Part:BBa_K3750000">Part:BBa_K3750000</a>) from <em>Chlamydomonas reinhardtii</em> were selected as these genes code for enzymes that are expressed in the cytosol (as opposed to mitochondria or chloroplast) (Dayer et al., 2008, Merchant et al., 2007).
+    </p>
+
+    <p>
+        Two plasmids will be introduced into our chassis E. coli for the expression of our glutathione system. The first plasmid includes a constitutive promoter (<a href="http://parts.igem.org/Part:BBa_J23102">Part:BBa_J23102</a>) and a ribosome-binding site (<a href="http://parts.igem.org/Part:BBa_B0034">Part:BBa_B0034</a>) to express ROS-inducible transcription factor OxyR (<a href="http://parts.igem.org/Part:BBa_K1104200">Part:BBa_K1104200</a>).  The second plasmid contains ROS-inducible promoter TrxCp (<a href="http://parts.igem.org/Part:BBa_K1104201">Part:BBa_K1104201</a>) for glutathione synthetase, peroxidase and reductase. Once OxyR is activated in the presence of ROS, it would bind to TrxCp and guide RNA polymerase to transcribe the glutathione enzymes.
+    </p>
+
+    <p>
+        For the second plasmid, a multicistronic cloning method will be used to express three enzymes (glutathione synthetase, glutathione reductase, glutathione peroxidase) in one plasmid. Since the second and third downstream enzymes will be expressed at a lower level than the first enzyme, the wet lab team consulted the dry lab team to put these enzymes in an order that allows all enzymes to be expressed optimally. 
+    </p>
+
+    <p>
+        To inform our plasmid design, the dry lab team has <a href="/Model/Glutathione_System/">conducted analysis</a> of available K<sub>m</sub> values. After some extensive research, we came to the conclusion that the order of the three glutathione enzymes should be GPX4 → gshF → GSHR1,  as GPX4 was found to be the least active, and GSHR1 was speculated to have the highest enzymatic activity. 
+    </p>
+    <p>
+        To test the function of our design, survival assay would be conducted to assess whether the glutathione system introduced has enhanced the antioxidant capacity of the organism we are testing at elevated ROS levels. We hypothesised that <em>E. coli</em> expressing glutathione synthetase, reductase and peroxidase would have increased glutathione production and would demonstrate enhanced survival at elevated ROS level compared to control.
+    </p>
+
+    <br />
+</div>
+
+<div id="gsh_build">
+    <h2>Build</h2>
+    <br />
+
+    <p>
+        The build phase of our engineering cycle involved the construction and assembly of the biological systems to be introduced into E. coli. To validate and test each component of the system (heat shock protein and glutathione), we started by building each part separately for simultaneous individual testing before assembling them together in one chassis. 
+        Eventually, the two systems will be assembled together in prokaryotic E. coli via co-transformation of plasmids expressing HSP22E and glutathione systems. Since the end-goal is to co-express the glutathione and HSP22E systems together in eukaryotic algae Symbiodinium goreaui, we would need to modify the system. In particular, we need to replace the 
+        prokaryotic plasmid and promoter to a eukaryotic vector, eukaryotic transcription factor and eukaryotic promoter. However, this would only be done in subsequent cycles of our engineering cycle, once we have consolidated the effectiveness of the systems in the simple E. coli model organisms.
+    </p>
+
+    <p>
+        The aim was to use various laboratory techniques to screen for the correct builds of the two systems. Namely, restriction enzyme digest was conducted to create a linear DNA molecule from the circular pET-19b plasmid. This is because the circular plasmid can exist in various conformations, such as nicked and supercoiled, that would otherwise prevent the 
+        correct determination of the molecular weight of nucleic acids in the subsequent gel electrophoresis. After restriction enzyme digest was performed, gel electrophoresis was carried out to identify the correct builds of the plasmid and eliminate the incorrect ones. Furthermore, the DNA in the pET-19b plasmid was extracted and purified using mini-prep. 
+        The extracted DNA was then sequenced to verify whether the builds were correct or not.
+    </p>
+    <br />
+</div>
+
+<div id="gsh_test">
+    <h2>Test</h2>
+    <br />
+
+    <p>
+        The two plasmids will be built separately followed by co-transformation to introduce both plasmids into our chassis. Transformed colonies will be selected through conferring resistance towards both ampicillin and kanamycin. To verify our build, mini-prep will be performed to extract and purify plasmid DNA. We will screen for the correct digest profiles using agarose gel electrophoresis. This will be done by performing a restriction enzyme digest to create a linear DNA from the circular plasmid. In addition, the plasmid DNA will be sequenced to verify that it consists of all the desired genetic components.     
+    </p>
+
+    <h6>Survival Assay</h6>
+    <br />
+    <p>
+        To perform the survival assay, <em>E. coli</em> will be incubated at 37 ℃ until the concentration reaches an OD600 of 0.6 before subjecting them to H<sub>2</sub>O<sub>2</sub> of varying concentrations. The <em>E. coli</em> will then be spread plated and incubated overnight. The number of colony forming units (CFUs) will be counted and converted to absolute units by calculating the number of cells/mL present in each sample.  
+    </p>
+
+    <p>
+        Transformed <em>E. coli</em> with the first plasmid expressing OxyR and and the second plasmid containing TrxCp and a fluorescent protein will be included as a control to demonstrate the function of the glutathione enzymes introduced. A sample with milli Q water added instead of H<sub>2</sub>O<sub>2</sub> will be included as a negative control. In addition, we will make sure that <em>E. coli</em> are in the log phase of growth curve by taking OD600 measurements before subjecting them to different concentrations of H<sub>2</sub>O<sub>2</sub>. Bugbuster protein extraction and SDS-PAGE will be performed to confirm the expression of the three glutathione enzymes.
+    </p>
+
+    <p>
+        Expected results from the survival assay would be that <em>E. coli</em> expressing the glutathione system having a greater number of colony forming units compared to control that were subjected to the same H<sub>2</sub>O<sub>2</sub> concentration. <em>E. coli</em> expressing the glutathione system and the control <em>E. coli</em> expressing fluorescent protein subjected to milli Q water are expected to have similar number of colony forming units.
+    </p>
+
+    <h6>Promega GSH-GLO Assay</h6>
+    <br />
+
+    <p>
+        The GSH-GLO assay (Promega) is a luminescent-based assay that is used to detect and quantify glutathione in biological samples, such as cells. Our project would use this assay to estimate the concentration of glutathione produced by the glutathione system we designed. This assay would be carried out using an <em>E. coli</em> chassis that expresses our GSH system and controls. Expected results from this assay would be an elevated amount of GSH in the sample expressing our glutathione system, compared to the control and normal GSH levels.
+    </p>
+
+
+    <h6>Kinetics Experiment</h6>
+    <br />
+    <p>...</p>
+
+    <br />
+</div>
+
+<div id="gsh_learn">
+    <h2>Learn</h2>
+    <br />
+
+    <p>
+        Results of SDS-PAGE from our survival assay would give us an indication of how the order of enzymes in the plasmid affect protein expression. This information on protein expression level along with enzymes’ activity determined from kinetics data we collected would help inform our plasmid design in the next engineering cycle to optimise the function of our glutathione system.
+    </p>
+
+    <p>Our survival assay would give us an indication of whether our glutathione system enhanced the survival of <em>E. coli</em> at elevated H<sub>2</sub>O<sub>2</sub> levels. If the <em>E. coli</em> could not produce the expected results, we can look into expressing the glutathione system in a eukaryotic vector (e.g. yeast replicating plasmid in <em>Saccharomyces cerevisiae</em>). </p>
+    
+    <p>Initially, we had planned to first express the glutathione enzymes in an <em>E. coli</em> chassis. However, upon further investigation, we have decided to characterize glutathione activity in a eukaryotic model proceeding experimentation with <em>E. coli</em>. We will characterize glutathione activity in yeast proceeding expression in <em>E. coli</em>. This will be performed by using appropriate yeast vectors, transcription factors and promoters. </p>
+    
+    <p>
+        The <em>Saccharomyces cerevisiae</em> vector will consist of a Yap1 transcription factor and CCP1 promoter (<a href="http://parts.igem.org/Part:BBa_K1907005">Part:BBa_K1907005</a>). The CCP1 promoter consists of binding sites for Yap1 and Skn7 which are transcription factors activated by oxidative stress. Similar to our <em>E. coli</em> chassis, the glutathione system should be expressed when the organism is subjected to high ROS concentration levels. 
+    </p>
+
+    <p>
+        In addition, we must also consider how homeostasis between glutathione and ROS is maintained in the organism. As an example, ROS is essential for higher order mammals to produce immune responses, while glutathione is necessary to remove excess ROS for antioxidative and ageing prevention (reference here). Homeostasis of ROS and glutathione levels is essential to keep cellular functions in balance. Similarly in microalgae, homeostasis of ROS and glutathione may be necessary for similar functions and overall cellular health. 
+    </p>
+
+    <p>...</p>
+    <br />
+</div>
+
+<div id="references">
+    <h1 style="text-align: left;">References</h1>
+    
+    <p>
+        Haslbeck, M., Franzmann, T., Weinfurtner, D. and Buchner, J. (2005) 'Some like it hot: the structure and function of small heat-shock proteins', Nature Structural & Molecular Biology, 12(10), pp. 842-846.
+    </p>
+    <p>
+        Pedrajas, J. R., Kosmidou, E., Miranda-Vizuete, A., Gustafsson, J. A., Wright, A. P. and Spyrou, G. (1999) 'Identification and functional characterization of a novel mitochondrial thioredoxin system in Saccharomyces cerevisiae', J Biol Chem, 274(10), pp. 6366-73.
+    </p>
+    <p>
+        Rütgers, M., Muranaka, L. S., Mühlhaus, T., Sommer, F., Thoms, S., Schurig, J., Willmund, F., Schulz-Raffelt, M. and Schroda, M. (2017) 'Substrates of the chloroplast small heat shock proteins 22E/F point to thermolability as a regulative switch for heat acclimation in Chlamydomonas reinhardtii', Plant Mol Biol, 95(6), pp. 579-591.
+    </p>
+    <p>
+        Webster, J. M., Darling, A. L., Uversky, V. N. and Blair, L. J. (2019) 'Small Heat Shock Proteins, Big Impact on Protein Aggregation in Neurodegenerative Disease', Frontiers in pharmacology, 10, pp. 1047-1047.
+    </p>
+</div>
