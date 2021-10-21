@@ -11,6 +11,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/9/9f/T--UNSW_Australia--Mama_Duck_the_Brilliant_Scientist.pdf
     md5: f1514e3a9b4cf5f5c75ad60b547c7a60
     upload_filename: T--UNSW_Australia--Mama Duck the Brilliant Scientist.pdf
+  assets/Robetta_CM_hsp22e_mature.txt:
+    link_URL: https://2021.igem.org/wiki/images/3/34/T--UNSW_Australia--Robetta_CM_hsp22e_mature.txt
+    md5: 55f23fd64bd3aee31377cbffc8e07c9b
+    upload_filename: T--UNSW_Australia--Robetta_CM_hsp22e_mature.txt
   assets/fonts/LICENSE OpenSans.txt:
     link_URL: https://2021.igem.org/wiki/images/4/4a/T--UNSW_Australia--fonts--LICENSE_OpenSans.txt
     md5: d273d63619c9aeaf15cdaf76422c4f87
@@ -83,6 +87,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/d/d4/T--UNSW_Australia--glutathione_ensemble_modelling.zip
     md5: 493063220d9ab7455a478537a17a252e
     upload_filename: T--UNSW_Australia--glutathione_ensemble_modelling.zip
+  assets/hsp22e cm dimer-2.txt:
+    link_URL: https://2021.igem.org/wiki/images/c/c9/T--UNSW_Australia--hsp22e_cm_dimer-2.txt
+    md5: 3c849c8bab2a55242f10b798182bb0de
+    upload_filename: T--UNSW_Australia--hsp22e cm dimer-2.txt
   assets/iGEMxSAMS_Episode 1.mp3:
     link_URL: https://2021.igem.org/wiki/images/4/47/T--UNSW_Australia--iGEMxSAMS_Episode_1.mp3
     md5: e765ea3c812778b9084cb89070680381
@@ -235,6 +243,30 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/f/f5/T--UNSW_Australia--icon--Inclusivity--palette-solid.svg
     md5: dba9f9f860dff12c75f5b8ca97a373ec
     upload_filename: T--UNSW_Australia--icon--Inclusivity--palette-solid.svg
+  assets/icon/Model/Heat_Shock_Protein/aggregate_pic-min.png:
+    link_URL: https://2021.igem.org/wiki/images/4/44/T--UNSW_Australia--icon--Model--Heat_Shock_Protein--aggregate_pic-min.png
+    md5: 1d2710d28a924d9abb3720fd84a0dd5a
+    upload_filename: T--UNSW_Australia--icon--Model--Heat_Shock_Protein--aggregate_pic-min.png
+  assets/icon/Model/Heat_Shock_Protein/bars-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/f/f1/T--UNSW_Australia--icon--Model--Heat_Shock_Protein--bars-solid.svg
+    md5: 74047380f66d6db0b1a84010acd586f4
+    upload_filename: T--UNSW_Australia--icon--Model--Heat_Shock_Protein--bars-solid.svg
+  assets/icon/Model/Heat_Shock_Protein/map-signs-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/c/c0/T--UNSW_Australia--icon--Model--Heat_Shock_Protein--map-signs-solid.svg
+    md5: 31368d351e98b40ed01a715040e50ad6
+    upload_filename: T--UNSW_Australia--icon--Model--Heat_Shock_Protein--map-signs-solid.svg
+  assets/icon/Model/Heat_Shock_Protein/monomer-min.png:
+    link_URL: https://2021.igem.org/wiki/images/0/07/T--UNSW_Australia--icon--Model--Heat_Shock_Protein--monomer-min.png
+    md5: 1e13a78cf43d4cb304839b49cdb97805
+    upload_filename: T--UNSW_Australia--icon--Model--Heat_Shock_Protein--monomer-min.png
+  assets/icon/Model/Heat_Shock_Protein/oligomer-min.png:
+    link_URL: https://2021.igem.org/wiki/images/0/01/T--UNSW_Australia--icon--Model--Heat_Shock_Protein--oligomer-min.png
+    md5: d137a2229a913062e8da1456baa41b20
+    upload_filename: T--UNSW_Australia--icon--Model--Heat_Shock_Protein--oligomer-min.png
+  assets/icon/Model/Heat_Shock_Protein/sequence-min.png:
+    link_URL: https://2021.igem.org/wiki/images/f/fc/T--UNSW_Australia--icon--Model--Heat_Shock_Protein--sequence-min.png
+    md5: 5bf08d2314e139c9a6fabbaa7de9016f
+    upload_filename: T--UNSW_Australia--icon--Model--Heat_Shock_Protein--sequence-min.png
   assets/icon/align-justify-solid.svg:
     link_URL: https://2021.igem.org/wiki/images/6/66/T--UNSW_Australia--icon--align-justify-solid.svg
     md5: ddbcef696b6faca570621d8ea5cf11f9
@@ -255,6 +287,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/c/c3/T--UNSW_Australia--img--Collaborations--kazakhstan.jpg
     md5: 4b0dd415538a7f6b7622c4ff56ca7a6d
     upload_filename: T--UNSW_Australia--img--Collaborations--kazakhstan.jpg
+  assets/img/Collaborations/st_andrews.png:
+    link_URL: https://2021.igem.org/wiki/images/b/bb/T--UNSW_Australia--img--Collaborations--st_andrews.png
+    md5: 8c7b331568c9f61fe25b675451797291
+    upload_filename: T--UNSW_Australia--img--Collaborations--st_andrews.png
   assets/img/Collaborations/stonybrook.jpg:
     link_URL: https://2021.igem.org/wiki/images/c/cf/T--UNSW_Australia--img--Collaborations--stonybrook.jpg
     md5: db8f16f5cabe2fe98dbe4ab9cea54639
@@ -967,10 +1003,18 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/8/8b/T--UNSW_Australia--img--Inclusivity--exhibition.jpg
     md5: 6f666b2a83e52ffef0a1451ac1a1fe7f
     upload_filename: T--UNSW_Australia--img--Inclusivity--exhibition.jpg
+  assets/img/Modelling/12-mer-alignment-annotated.jpg:
+    link_URL: https://2021.igem.org/wiki/images/4/4d/T--UNSW_Australia--img--Modelling--12-mer-alignment-annotated.jpg
+    md5: e099d05eddc4cb8482b86d42dbf4c215
+    upload_filename: T--UNSW_Australia--img--Modelling--12-mer-alignment-annotated.jpg
   assets/img/Modelling/12-mer-alignment-annotated.png:
     link_URL: https://2021.igem.org/wiki/images/0/09/T--UNSW_Australia--img--Modelling--12-mer-alignment-annotated.png
     md5: 978b94287cc41c1d24e0116c06a886ba
     upload_filename: T--UNSW_Australia--img--Modelling--12-mer-alignment-annotated.png
+  assets/img/Modelling/Phylogram_coral_colours.jpg:
+    link_URL: https://2021.igem.org/wiki/images/d/d6/T--UNSW_Australia--img--Modelling--Phylogram_coral_colours.jpg
+    md5: 1ee26b59ba52ff057ee4adcee805b498
+    upload_filename: T--UNSW_Australia--img--Modelling--Phylogram_coral_colours.jpg
   assets/img/Modelling/Phylogram_coral_colours.png:
     link_URL: https://2021.igem.org/wiki/images/0/0a/T--UNSW_Australia--img--Modelling--Phylogram_coral_colours.png
     md5: 01927e24cf22bdc031bf74b53baf2a71
@@ -979,10 +1023,18 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/a/a1/T--UNSW_Australia--img--Modelling--aggregate_pic.png
     md5: eb5417a2b0bc440d119e46f0b444b1d3
     upload_filename: T--UNSW_Australia--img--Modelling--aggregate_pic.png
+  assets/img/Modelling/big_alignment.jpg:
+    link_URL: https://2021.igem.org/wiki/images/2/2d/T--UNSW_Australia--img--Modelling--big_alignment.jpg
+    md5: 3640e8a3d74e49745aeb49828ba10567
+    upload_filename: T--UNSW_Australia--img--Modelling--big_alignment.jpg
   assets/img/Modelling/big_alignment.png:
     link_URL: https://2021.igem.org/wiki/images/3/31/T--UNSW_Australia--img--Modelling--big_alignment.png
     md5: 285523c7233964b1336fdcdf7710ba72
     upload_filename: T--UNSW_Australia--img--Modelling--big_alignment.png
+  assets/img/Modelling/flow.png:
+    link_URL: https://2021.igem.org/wiki/images/7/7c/T--UNSW_Australia--img--Modelling--flow.png
+    md5: ce5a37e5d86386afcc8094e74fc30b00
+    upload_filename: T--UNSW_Australia--img--Modelling--flow.png
   assets/img/Modelling/glutathione-redox-half.png:
     link_URL: https://2021.igem.org/wiki/images/7/7a/T--UNSW_Australia--img--Modelling--glutathione-redox-half.png
     md5: 81af4e19d273cf48afaeb17d927a9552
@@ -991,6 +1043,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/f/f3/T--UNSW_Australia--img--Modelling--monomer.png
     md5: eb01a0c44c10d7c757c8b860bc950190
     upload_filename: T--UNSW_Australia--img--Modelling--monomer.png
+  assets/img/Modelling/oligo_scores.jpg:
+    link_URL: https://2021.igem.org/wiki/images/3/3f/T--UNSW_Australia--img--Modelling--oligo_scores.jpg
+    md5: ef1849ad33ae251f098027ae43e6da7a
+    upload_filename: T--UNSW_Australia--img--Modelling--oligo_scores.jpg
   assets/img/Modelling/oligo_scores.png:
     link_URL: https://2021.igem.org/wiki/images/e/e6/T--UNSW_Australia--img--Modelling--oligo_scores.png
     md5: b0fd35c5b1079bcf2218df65a8d64511
@@ -1152,7 +1208,7 @@ css:
     md5: eb18066899d1993d24e3113a9856ceb3
   css/content.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/contentCSS?action=raw&ctype=text/css
-    md5: 0f0637414a5153ab9bce9c2c1af0e6e5
+    md5: 038589a4cc1c64adb60b883569c52690
   css/description.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/descriptionCSS?action=raw&ctype=text/css
     md5: 56b590e38c9a8c889b315d4cc5e750d0
@@ -1191,7 +1247,10 @@ css:
     md5: 2729fc0b5ce9d43363228f21b00d6169
   css/main.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/mainCSS?action=raw&ctype=text/css
-    md5: 8a11d9f6d5ad783f35441d3afc263054
+    md5: aa41793023f2cce3f98e005fa81e21d4
+  css/model_hsp.css:
+    link_URL: https://2021.igem.org/Template:UNSW_Australia/css/model_hspCSS?action=raw&ctype=text/css
+    md5: 63c00f9b96083ec3cb5df7f2f1cb2d6c
   css/protocols.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/protocolsCSS?action=raw&ctype=text/css
     md5: 632e7a5e3112149176d6694854b29dce
@@ -1204,31 +1263,31 @@ css:
 html:
   Attributions/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Attributions
-    md5: e006703e82657e2e0bf802ba9474cc5d
+    md5: 9fbfa6fb0fdd743254d15356b4eefa0c
   Collaborations/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Collaborations
-    md5: cceb00ebd33525d15cf36584d15a5661
+    md5: 9dbbfcd1020591299647e9f06fb08602
   Communication/Outreach/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Communication/Outreach
     md5: acdb4a48e7903f79a0bbd09fa80aab63
   Communication/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Communication
-    md5: fc86bffe65223c10342b1a3355276006
+    md5: a16502af6bad42470d0817bf99ff6ef1
   Contribution/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Contribution
-    md5: 021058899073d70a52fa09bbf69e5477
+    md5: 7ede8d7cff28cbc9c6f4a3df1a2a5a56
   Description/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Description
-    md5: 3ac9a48e4d49a98baa9ee5303efc2f1c
+    md5: 1abed8ea582b25cb24f96a62699f7d5a
   Education/Board_Game/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Education/Board_Game
-    md5: beae26e7ab9762e1d5aafba2e6c4c2a2
+    md5: 3fcf231e166bb67f86291643a56b2e0b
   Education/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Education
-    md5: 03ca8b9df497cbec4ad17993716aca98
+    md5: b76840742934e1ed346372547fa11b4e
   Engineering/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Engineering
-    md5: fc92ec3c54178fe594ad4372b1defe86
+    md5: a08f6c38289f2bb13eb72463c37b7854
   Exhibition/Betty_Sykes/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Betty_Sykes
     md5: d0e6c4cb22920fa55494fc2c545c2cd7
@@ -1267,46 +1326,46 @@ html:
     md5: 6ea2aaffd11fa7fbe16a280140adf5de
   Experiments/Glutathione_System/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Experiments/Glutathione_System
-    md5: 2824b8d7b3036be2e85c8b88a300e547
+    md5: 8f3d9a9f840c7a01372ec4efa1404900
   Experiments/Heat_Shock_Protein/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Experiments/Heat_Shock_Protein
-    md5: 2ea4746302ac1a1e3c21b2b036ce6c28
+    md5: de68f01a7863416792ce69b3b0b81457
   Experiments/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Experiments
-    md5: ff31619ba0cec6132002117e889bd9f8
+    md5: b93b270155492373d10e987174328edb
   Human_Practices/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Human_Practices
-    md5: 8a43eacaef15dfcc0fa6bcb247745022
+    md5: 433670c1871e0b5a295bd8296570caec
   Implementation/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Implementation
-    md5: 4b33cbc6e70db2023bc4902d1bf2dfe1
+    md5: ae5a2415fa1591626547ec8d82d70ba4
   Inclusivity/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Inclusivity
-    md5: 8231c06bfa42c78c10408bb5537f054f
+    md5: 545fd70488f87bb85ea8f3f34020c020
   Judging/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Judging
-    md5: 50f57352499bff24bdce699ea1c5073a
+    md5: 2914cb8d18a638aadef502caf5911fac
   Model/Glutathione_System/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Model/Glutathione_System
-    md5: d9215ec338ad51c78b84e1da580fa43a
+    md5: f7f05f784db7441f090b39fd16d2d2ed
   Model/Heat_Shock_Protein/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Model/Heat_Shock_Protein
-    md5: 2b5ae3a35458eefdda1277ed34801503
+    md5: 5cd2b16c146f44e31dfe0152029f3241
   Model/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Model
-    md5: e267dc6c4e3a18f04e90abdfd997354e
+    md5: 502877bdafa25194c9a39c63f7baf685
   Notebook/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Notebook
-    md5: 1e12cf087c3b496cc6657750cc94bfd8
+    md5: 6127bdcf57640cf22ca16215cd1e7d77
   Parts/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Parts
-    md5: 27b0fc2a28e04061b7669822f8d98396
+    md5: a7920d64d1c9e266ba3303022f2b5d54
   Protocols_Safety/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Protocols_Safety
-    md5: 7ff00a4a19edf31902573036bd74fa44
+    md5: 16ae8cb7b850c9dbb82f6c1fb06dbdea
   Team/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Team
-    md5: 0209cbe371ad49a1524d7f4af4c70396
+    md5: 3a39f1665c63a751443556830126a715
   animations/README/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/animations/README
     md5: 9c9a9eca84042d64cf196165b7f680fd
@@ -1357,7 +1416,7 @@ html:
     md5: e396add6039b707ee46cc552392a1b47
   index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia
-    md5: 7e00b5ef0665be28be49c46c6f358381
+    md5: b7f353c1edf41cf260d02f524e8554b7
 js:
   js/anims/aus_reef_50_gone.js:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/js/anims/aus_reef_50_goneJS?action=raw&ctype=text/javascript

@@ -1,42 +1,286 @@
 ---
 layout: content.liquid
-title: "HSP22E: Structural Modelling"
+title: Modelling
+subtitle: "Structural Modelling of Heat Shock Protein HSP22E"
+headings: 
+- 
+    id: sequence
+    title: Sequence
+    icon: /assets/icon/Model/Heat_Shock_Protein/sequence-min.png
+- 
+    id: monomer
+    title: Monomer
+    icon: /assets/icon/Model/Heat_Shock_Protein/monomer-min.png
+- 
+    id: oligomer
+    title: Oligomer
+    icon: /assets/icon/Model/Heat_Shock_Protein/oligomer-min.png
+- 
+    id: interactions
+    title: Interactions
+    icon: /assets/icon/Model/Heat_Shock_Protein/aggregate_pic-min.png
+- 
+    id: future
+    title: Looking Forward
+    icon: /assets/icon/Model/Heat_Shock_Protein/map-signs-solid.svg
+- 
+    id: references
+    title: References
+    icon: /assets/icon/Model/Heat_Shock_Protein/bars-solid.svg
 ---
-<div class="section" style="background-color: #b3dad9;">
+<head>
+    <link rel="stylesheet" href="/css/model_hsp.css" type="text/css">
+</head>
+
+<div>
+    <h5>Aims</h5>
+    <br />
+
+    <div style="display: flex; justify-content: center; width: 100%;">
+        <img src="/assets/img/Modelling/flow.png" width="80%">
+    </div>
+    <div class="image-caption">Fig. 1: Process of Structural Modelling HSP22E</div>
+</div>
+
+<div id="sequence">
+    <h2>Sequence</h2>
+    <br />
+
+    <h5>Choices, Choices - selecting a sequence</h5>
+    <p>
+        In 2020, the Phase One Team identified the sequence for the small heat-shock proteins HSP22E and HSP22F from <em>C. reinhardtii</em>, our candidates for synthetically alleviating heat stress in coral-symbiont algae. These two HSPs are known to form a heterodimer (Rütgers et al., 2017), but preliminary experiments in the 2020 lab suggested that HSP22E was also able to form a homodimer. This is not uncommon in HSPs since they often have high sequence similarity and are predicted to be found in so many forms due to gene duplication events (de Jong et al., 1998). For example, the oligomeric form of HSP21 (a known chloroplastic HSP) has two distinct geometries, a “T” tetrahedral dodecamer constructed of six homodimers (Yu et al., 2021) and a “D3” dihedral dodecamer of six heterodimers (Rutsdottir et al., 2017), both of which are functional. With this in mind, our Phase Two team chose to work with only HSP22E for simplicity.
+    </p>
+
+    <br />
+    <h5>The First Hurdle - cellular localisation</h5>
+    <p>
+        The Phase One Team also attempted some <a href="https://2020.igem.org/Team:UNSW_Australia/Model/structural">structural modelling</a> of the selected HSPs, but they ran into some significant clashes in their model - there were just too many atoms to fit in the space! In collaboration with them, the Phase Two team took a closer look and found that the protein sequences provided contained a proposed transit peptide motif. This is a “tag” sequence that labels the protein for transport to the chloroplast: the organelle that produces ROS when under heat stress, and where HSP22E acts. Now the question was, does this tag stay attached to the protein, or is it snipped off when it reaches the place it is meant to be? After some research we found that the process of transporting such proteins across a plastid membrane (that is, into a mitochondrion or chloroplast) involves cleaving off the transit peptide motif (Kunze and Berger, 2015). We performed a ClustalOmega Multiple Sequence Alignment (MSA) of the transit peptide motif from HSP22E with other known plastid localisation motifs (Holbrook et al., 2016), and received a good alignment. In addition, performing pBLAST of the full HSP22E sequence against the PDB database produced no more hits than a pBLAST with just the “mature” sequence, as no alignments were produced in the transit peptide motif region. Hence we decided to focus our attention on a mature form of the sequence that does not contain the transit peptide.
+    </p>
+
+    <br />
+    <h5>In Perspective - comparison to known sHSPs</h5>
+    <p>
+        As a quick sanity check, we performed a simple PSI-BLAST search against the PDB database to compare our proposed sequence against homologs with known structure. Below is a T-COFFEE MSA of HSP22E (last row) with the homologs found (preceding rows). As you can see, there are two red sections which are highly conserved - these correspond to the core alpha-crystallin domain that characterises sHSPs. The other parts of the sequence show more variation, and it has been hypothesised that these regions are involved in oligomerisation and substrate binding (Caspers et al., 1995).
+    </p>
+
+    <div style="display: flex; justify-content: center; width: 100%;">
+        <img src="/assets/img/Modelling/big_alignment.jpg" width="85%">
+    </div>
+    <div class="image-caption">Fig. 2: Multiple Sequence Alignment of HSP22E (bottom row)</div>
+    <br />
+</div>
+
+<div id="monomer">
+    <h2>Monomer</h2>
+    <br />
+
+    <p>
+        We provided our mature sequence data to several modelling programs, which either used comparative modelling techniques or deep-learning methods to predict the structure. These included iTASSER, Rosetta Comparative Modelling, RoseTTAFold and AlphaFold, which each produced 5-10 models from the input data.
+    </p>
+
+    <p>
+        All of these different programs predicted the alpha-crystallin domains with a high degree of confidence, but there was a lot of variation in the N- and C-terminal regions and the middle loop. These are the regions with most variation, as seen in the T-COFFEE MSA above. Since the terminal regions are likely to be involved in oligomerisation (Caspers et al., 1995), it seemed reasonable to conclude these regions would be dynamic, and a more confident prediction of their structure would have to wait until the subunits were placed together.
+    </p>
+
+    <p>
+        Nevertheless, to obtain one structure to move forward with we submitted each of them to MolProbity. The most favourable score was obtained from Rosetta Comparative Model 1 (scoring shown below). In addition, this model provided an explicit residue-by-residue score for the certainty of the predicted coordinates, which we felt would be valuable moving forward for the future remodelling of terminal regions once we had an oligomeric scaffold.
+    </p>
+
+
     <br />
     <div style="display: flex; width: 100%; justify-content: center;">
-        <div id="viewer"></div>
+        <div id="monomer_viewer"></div>
     </div>
     <br />
 </div>
 
+<div id="oligomer">
+    <h2>Oligomer</h2>
+    <br />
+
+    <h5>Variations on a Theme - diversity and dynamism of HSPs</h5>
+    <p>
+        Small heat shock proteins are known to form complex higher order structures, in the realm of 12-48mers ​​(Basha et al., 2012). Many of these large structures are known to dissociate into dimers under thermal stress in order to interact with denatured proteins, though there is also evidence of non-dissociative interaction (Yu et al., 2021). The large complexes are also known to regularly perform subunit exchange - new HSP dimers swapping with old ones to ‘refresh’ the large complex. As such, HSP oligomers are highly dynamic, and it is predicted that this dynamic process of interactions is governed by the more variable terminal regions of the sequence (Caspers et al., 1995).
+    </p>
+
+    <br />
+
+    <div style="float: right; width: 45%; padding-left: 2em;">
+        <div style="width: 100%; display: flex; justify-content: center;">
+            <img src="/assets/img/Modelling/Phylogram_coral_colours.jpg" width="85%">
+        </div>
+        <div class="image-caption">Fig. 3: HSP22E Phylogenetic Tree</div>
+    </div>
+    <h5>The Family Tree</h5>
+    <p>
+        For this reason, we generated a phylogenetic tree (Fig. 3) to determine sequence similarity between different HSPs with known structure against HSP22E. Each HSP is colour-coded by the type of oligomer it is known to form. It can be seen that while some clusters have the same order, others with very high sequence similarity do not. This is most noticeable across 4ZJ-A/D/9, which are a 24mer, 18mer and 2mer respectively, but derived from the same sequence with only very minor mutations.
+    </p>
+
+    <br /><br />
+
+    <h5>Diving into Detail</h5>
+    <p></p>
+
+    <br />
+    <h5>Dimer</h5>
+    <p>We pursued several methods to predict the dimeric structure of HSP22E:</p>
+    <table id="dimer_methods" class="table table-striped">
+        <tr>
+            <td><h6>Manual alignment via ChimeraX to the template 1GME</h6></td>
+            <td>
+                <ul>
+                    <li>1GME, as seen above, is a sHSP from wheat which assembles into a dodecamer, and as such was considered a viable template.</li>
+                    <li>ChimeraX provides a Matchmaker tool that allows structural alignment of two models. The HSP22E monomeric structure was duplicated, and then aligned to the A and B chains of 1GME. The resulting dimer appeared reasonable, with few steric clashes between atoms and a large interaction interface.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><h6>Modeller alignment via ChimeraX</h6></td>
+            <td>
+                <ul>
+                    <li>The Modeller tool, accessible as an extension through ChimeraX, matches a target sequence to known structures provided as a MSA to make a protein model. We provided the 12mer MSA alignment generated in the previous step with the HSP22E sequence. From all the dimers produced, this method was the only one to create a beta-6 strand involved in the dimeric interaction, but the terminal regions were highly disordered.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><h6>AlphaFold</h6></td>
+            <td>
+                <ul>
+                    <li>The online AlphaFold server allows the input sequence to be classified as a monomer or dimer before the run. The resulting dimer had a good interaction interface, but the loops and terminal regions were left loose and unmodelled because the software could not predict these regions with high accuracy.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><h6>ROSIE’s Symmetric Docking Tool</h6></td>
+            <td>
+                <ul>
+                    <li>The Rosetta Online Server that Includes Everyone (ROSIE) provides a Symmetric Docking tool which enables the user to specify both the number of subunits and whether cyclic or dihedral symmetry is expected for the resulting homomer, with the input monomeric pdb file.</li>
+                    <li>Ten models were produced with C2 cyclic geometric symmetry.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <p>Comparing each of the models, the second model produced by ROSIE was selected for further work.
+        This model was energetically favourable and aligned well with the homologous 1GME dimer.
+    </p>
+
+    <br />
+    <div style="display: flex; width: 100%; justify-content: center;">
+        <div id="dimer_viewer"></div>
+    </div>
+    <br />
+
+
+    <h5>Dodecamer</h5>
+    <p>
+        We again used several methods to dock our dimeric subunits into a large oligomer, including Rosie’s Symmetric Docking, Galaxy’s Homomer, and Bonvin Lab’s Haddock, as well as some manual alignment methods in Chimera. Each of these programs allows input of different parameters for constraints, and so we explored multiple combinations of these to find a model that was biologically favourable as well as energetically favourable. 
+    </p>
+
+    <table id="dodecamer_methods" class="table table-striped">
+        <tr>
+            <td><h6>Manual</h6></td>
+            <td>
+                <p>Manual alignment to 1GME using ChimeraX was performed as per the dimer method. However, with all 12 chains the model produced contained many unresolvable clashes involving the N-terminal tails, and so was deemed unfeasible. Since 1GME is a hetero-12-mer, in which one of the chains is shorter than the other, it was hypothesised that the full-length N-terminal tail of HSP22E on all chains was not compatible with the template.</p>
+            </td>
+        </tr>
+        <tr>
+            <td><h6>Homomer</h6></td>
+            <td>
+                <h6>Inputs</h6>
+                <ul>
+                    <li>A sequence or monomer structure</li>
+                    <li>An order for oligomer assembly (i.e., dimer, trimer, …, 12mer, etc.)</li>
+                    <li>Disordered termini or loops for refinement (a maximum of 3 regions, each less than 20 residues long).</li>
+                </ul>
+
+                <h6>Drawbacks</h6>
+                <ul>
+                    <li>The fields for loop refinement were not reliably included. For some runs, this information was provided but the server did not process it. In addition, the central loop and terminal tails of HSP22E that would have benefited from refinement during oligomerisation were all considerably longer than 20 residues.</li>
+                    <li>If the input is structural, the subunit must contain only one chain. As such, we were only able to provide our monomeric structure as input, not our dimer.</li>
+                    <li>Out of the 15 models produced during various runs, 13 had cyclic symmetry rather than dihedral symmetry, which is not consistent with the known higher-order structures formed by HSPs.</li>
+                </ul>
+
+                <h6>Results</h6>
+                <ul>
+                    <li>Both the sequence and a monomeric unit were provided as input in different runs, with 12 selected as the desired oligomeric order. This produced a total of 10 models, 9 of which were cyclic, and one dihedral 24-mer based on the template 5ZS3.</li>
+                    <li>The monomeric unit was also provided to predict a tetramer, in the hopes that the resulting tetramer could be re-submitted with order 3 to produce a 12-mer with more complex symmetry. The 5 predicted tetramers did not resemble any known HSP structure.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><h6>Symmetric Docking</h6></td>
+            <td>
+                <h6>Inputs</h6>
+                <ul>
+                    <li>A PDB structure containing the subunit. This subunit can involve multiple chains.</li>
+                    <li>The desired oligomeric order</li>
+                    <li>The type of geometric symmetry to use: a choice of ‘cyclic’ or ‘dihedral’.</li>    
+                </ul>
+
+                <h6>Drawbacks</h6>
+                <ul>
+                    <li>Beyond ‘dihedral’, no further symmetry constraints can be provided (e.g. to select between D3 or T symmetry). In addition, the default symmetry to look for is ‘cyclic’, so you must bear this in mind when submitting your job to the server and make sure you select the correct form of symmetry!</li>
+                    <li>No fields are given for regions of the structure that are disordered</li>
+                </ul>
+
+                <h6>Results</h6>
+                <ul>
+                    <li>We submitted several jobs to ROSIE, using the dimers produced by manual alignment, AlphaFold and the Symm2 dimer. The dihedral models produced from manual alignment and Symm2 looked collectively unusual compared with known sHSP structures, but not unfeasible. The dihedral models produced from the AlphaFold dimer were of poor quality, because the large loop and tails had not been remodelled at all during oligomerisation.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><h6>HADDOCK</h6></td>
+            <td>
+                <h6>Inputs</h6>
+                Haddock is by far the most complex docking tool out of those listed here. It provides a considerable array of modifiable parameters, but those used for this project include:
+                <ul>
+                    <li>Active residues and dynamic residues: these allow you to specify particular amino acids that you know to be involved in interaction interfaces, or that you know to be disordered</li>
+                    <li>Symmetry constraints: these allow you to enforce specific geometric symmetry on the generated models. However, rather than specifying axes of symmetry, this is defined by ‘symmetry pairs’.</li>
+                </ul>
+
+                <h6>Drawbacks</h6>
+                <ul>
+                    <li>Complex, and hence involves a steep learning curve (though the provided tutorials and documentation is very helpful)</li>
+                    <li>Providing symmetry information in the form of C2, C3, C4, C5, C6 and S3 symmetry pairs is not very scalable. A tetrahedral symmetry (T) is composed of 4 C3 axes and 3 C2 axes; for a complex with 12 subunits, this would require the definition of 4x4=16 C3 symmetry triplets and 6x3=18 C2 symmetry pairs. Not only is this arduous, the interface only allows a maximum of 10 symmetry pairs of each type to be defined.</li>
+                </ul>
+
+                <h6>Results</h6>
+                <ul>
+                    <li>While the flexibility of the Haddock server initially seemed suitable, because the geometric symmetry could not be suitably defined it was not able to produce any viable models.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+
+
+
+
+
 <script type='text/javascript' src='/js/bio-pv.min.js'></script>
 <script type='text/javascript'>
-    // override the default options with something less restrictive.
     var options = {
     //   width: 600,
     //   height: 600,
       background: '#dae5e4',
       antialias: true,
       quality : 'medium',
-    //   outline: false
     };
-    // insert the viewer under the Dom element with id 'gl'.
-    var viewer = pv.Viewer(document.getElementById('viewer'), options);
 
-    function loadMethylTransferase() {
+    // Monomer
+    // insert the viewer under the Dom element with id 'gl'.
+    var viewer = pv.Viewer(document.getElementById('monomer_viewer'), options);
+
+    function loadMonomer() {
         // asynchronously load the PDB file for the dengue methyl transferase
         // from the server and display it in the viewer.
-        pv.io.fetchPdb('/assets/1r6a.txt', function(structure) {
+        pv.io.fetchPdb('/assets/Robetta_CM_hsp22e_mature.txt', function(structure) {
             // display the protein as cartoon, coloring the secondary structure
-            // elements in a rainbow gradient.
-            viewer.cartoon('protein', structure, { color : color.uniform('#0a7c80') });
-                // there are two ligands in the structure, the co-factor S-adenosyl
-                // homocysteine and the inhibitor ribavirin-5' triphosphate. They have
-                // the three-letter codes SAH and RVP, respectively. Let's display them
-                // with balls and sticks.
-                // var ligands = structure.select({ rnames : ['SAH', 'RVP'] });
-                // viewer.ballsAndSticks('ligands', ligands);
+            viewer.cartoon('protein', structure, { color : color.uniform('#b0554b'), radius: 0.5 });
             viewer.centerOn(structure);
             // viewer.autoZoom();
             viewer.fitTo(structure);
@@ -46,5 +290,27 @@ title: "HSP22E: Structural Modelling"
 
     // load the methyl transferase once the DOM has finished loading. That's
     // the earliest point the WebGL context is available.
-    document.addEventListener('DOMContentLoaded', loadMethylTransferase);
+    document.addEventListener('DOMContentLoaded', loadMonomer);
+
+
+    // Dimer
+    // insert the viewer under the Dom element with id 'gl'.
+    var dimer_viewer = pv.Viewer(document.getElementById('dimer_viewer'), options);
+
+    function loadDimer() {
+        // asynchronously load the PDB file for the dengue methyl transferase
+        // from the server and display it in the viewer.
+        pv.io.fetchPdb('/assets/hsp22e cm dimer-2.txt', function(structure) {
+            // display the protein as cartoon, coloring the secondary structure
+            dimer_viewer.cartoon('protein', structure, { color : color.uniform('#0a7c80'), radius: 0.5 });
+            dimer_viewer.centerOn(structure);
+            // viewer.autoZoom();
+            dimer_viewer.fitTo(structure);
+            dimer_viewer.spin(false);
+        });
+    }
+    document.addEventListener('DOMContentLoaded', loadDimer);
+
+
+
 </script>

@@ -1,0 +1,14 @@
+#igem-unsw-content .sidenav {
+    top: 33vh;
+    height: 35vh;
+}
+
+#igem-unsw-content h5,
+#igem-unsw-content h6 {
+    font-weight: 700;
+}
+
+#igem-unsw-content .table td:first-child {
+    width: 20%;
+    vertical-align: middle;
+}
