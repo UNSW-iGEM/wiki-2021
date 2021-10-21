@@ -1,0 +1,422 @@
+---
+layout: content.liquid
+title: Modelling
+subtitle: Kinetic Modelling of the Glutathione System
+headings:
+- 
+    id: pathways
+    title: Glutathione Recycling Pathways
+    icon: /assets/icon/Model/Glutathione_System/repeat-svgrepo-com.svg
+- 
+    id: model
+    title: Constructing the Model
+    icon: /assets/icon/Model/Glutathione_System/pencil-ruler-solid.svg
+- 
+    id: ensemble
+    title: Ensemble Modelling
+    icon: /assets/icon/Model/Glutathione_System/chart-bar-solid.svg
+- 
+    id: simulations
+    title: Simulations
+    icon: /assets/icon/Model/Glutathione_System/chart-line-solid.svg
+- 
+    id: discussion
+    title: Discussion
+    icon: /assets/icon/Model/Glutathione_System/cogs-solid.svg
+- 
+    id: references
+    title: References
+    icon: /assets/icon/bars-solid.svg
+---
+<head>
+    <link rel="stylesheet" href="/css/model_gsh.css" type="text/css">
+
+    <style>
+        .MathJax nobr>span.math>span{border-left-width:0 !important};
+    </style>
+    $$\require{mhchem}$$
+</head>
+
+<div>
+    <p>The glutathione system is a three part system consisting of glutathione synthetase, reductase and peroxidase which is involved in antioxidant defense against reactive oxygen and/or nitrogen species (Morrs, G. 2014). The objective for Implementing the glutathione system into <em>Symbiodinium sp.</em> was to increase the capacity of the algae’s antioxidant system against toxic reactive oxygen species (ROS) which is produced from algal photosynthetic machinery (Neilsen, D. 2018). We theorised this would limit the occurrence of algal ejection from coral hosts as the antioxidant system can combat increased levels of toxic ROS due to warming of the coral reef. To do this, we had to investigate optimal enzymatic activities of the glutathione system across a range of species, before generating an ensemble model. Temperature and pH were both considered during the investigation phase of our mathematical models.</p>
+
+    <p>Given that all three genes in the designed plasmid are placed in series after one promoter, they will not be equally expressed. RNA polymerase binds at the promoter region and then transcribes the proceeding gene sequence, but depending on its binding affinity to the sequence, it has some chance of dissociating from the DNA before reaching the end of the third gene. As such, the first gene will be most highly expressed and the third gene comparatively lowly expressed. Our model aimed to determine which of the enzymes would benefit from the highest expression to produce an efficient system.</p>
+</div>
+
+<div id="pathways">
+    <h2>Glutathione System Pathways</h2>
+    <br />
+</div>
+
+<div id="model">
+    <h2>Constructing the Model</h2>
+    <br />
+
+    <p>
+        The ratio between reduced glutathione (GSH) and oxidised glutathione (GSSG) is used by the cell as a signal of oxidative stress, and can drive the cell toward apoptosis if the relative levels of GSSG become very high. As such, our model specifically monitors the relative concentrations of GSH and GSSG in the system under different conditions of H<sub>2</sub>O<sub>2</sub> concentration (the ROS), and/or GSH.
+    </p>
+
+    <br />
+    <h5>System Components</h5>
+    <p>
+        For the sake of simplicity, our model includes relatively few enzymes and substrates, focussing on the dynamics between the coupled activity of glutathione peroxidase (Gpx) and glutathione reductase (GR). This base model is able to provide some insight into the relative rates of these reactions and which substrate concentrations have a greater impact on the system (out of GSH, GSSG, NADPH and H<sub>2</sub>O<sub>2</sub>), but could be extended in future research. 
+    </p>
+    <br />
+
+    <h5>Key Assumptions</h5>
+    <p>
+        Given the complexity of biological systems, simplifications are required when attempting to translate them to an <em>in silico</em> model. Understanding the assumptions made by the model is essential for meaningful interpretation of the data produced.
+    </p>
+
+    <h6>Convenience Kinetics</h6>
+    <p>
+        This assumes that the concentrations of enzyme (E), substrate (S) and enzyme-substrate complex (ES) are in rapid equilibrium, i.e., the time it takes for E to physically bind to any S is negligible compared with the time it takes for ES to chemically react to from E and P. This reduces the complexity of the rate equations.
+    </p>
+
+    <br />
+    <h6>Irreversible Equations</h6>
+    <p>
+        The action of both Gpx and GR was assumed to be unidirectional, from substrate to product only. The forward reaction catalysed by GR has \(K_{eq} = 1.6 × 10^2\), indicating that products are considerably favourable, and for the Gpx catalysed reaction, \(K_{eq} = 1.3 × 10^{54}\). 
+    </p>
+
+    <br />
+    <h6>Quasi-closed system</h6>
+    <p>
+        A system is closed if there is no interaction with the external environment. This means that changes to the concentration of system components can only be derived from the system itself; there are no other enzymes or substrates that can act on, interact with or add to the system. This assumption holds more validity for some aspects of the system than others:
+    </p>
+    <table id="assumptions" class="table table-striped">
+        <tr>
+            <td>Constant Volume</td>
+            <td><p>Given that the model deals with dynamic concentrations, it is important to note this concentration depends not only on the amount of substrate in mols, but also on the volume in which the substrate is dispersed. Our model assumes that this volume remains fixed, which would translate to a cell or cellular compartment that is not actively growing. Given that our system is designed to work in the cytosol rather than in a small subcellular compartment, and the growth of algal cells is significantly reduced during oxidative stress, this was deemed an appropriate assumption.</p></td>
+        </tr>
+
+        <tr>
+            <td>Enzyme Concentration</td>
+            <td><p>Our experimental model involves the introduction of a plasmid to an organism for the express purpose of translating and producing more of each of the enzymes Gpx, GR and GshF. However, the transcription of these genes and translation to proteins is presumed to follow the quasi-steady state assumption (QSSA), meaning that the concentration of each enzyme will reach equilibrium in an insignificant time period compared with the modelled simulation, and hence can be assumed constant.</p></td>
+        </tr>
+
+        <tr>
+            <td>No external redox control</td>
+            <td><p>Our model assumes that the sole method of H<sub>2</sub>O<sub>2</sub> scavenging is through Gpx. In a normal algal cell, several different enzymes and antioxidants are involved in this process, notably, superoxide dismutases and thioredoxins. The team believes that incorporating the thioredoxin pathway would be a valuable addition to the model for future projects. Without this addition, the model is still able to describe the fluctuation of redox potential under oxidative stress, but any absolute conclusions about the speed and magnitude of response would be unwise.</p></td>
+        </tr>
+
+        <tr>
+            <td>Constant glutathione pool</td>
+            <td><p>This system assumes that no new GSH/GSSG is introduced or leaves the system. This is not entirely true, since GSH is also involved in a number of other reactions that occur under oxidative stress, such as S-glutathionylation, and can also be degraded. Unfortunately, data for these rates was comparatively scarce and would require further investigation. The production of GSH via GshF was encapsulated by QSSA. Hence, extra GSH produced by glutathione synthetase was modelled by increasing the initial concentration of GSH present, not by introducing a GSH production rate over the course of the simulation.</p></td>
+        </tr>
+
+        <tr>
+            <td>One-off ROS load</td>
+            <td><p>The system did not model continual H<sub>2</sub>O<sub>2</sub> production, as might occur in chloroplast under heat stress, because there was insufficient data around the rate at which this might occur. Instead, the H<sub>2</sub>O<sub>2</sub> load was simulated by an increased initial concentration of H<sub>2</sub>O<sub>2</sub>, comparable to the concentrations of H<sub>2</sub>O<sub>2</sub> used for in vitro experiments inducing oxidative stre​​ss (Ross et al., 2006).</p></td>
+        </tr>
+
+        <tr>
+            <td>Constant NADPH/NADP+ pool and ratio</td>
+            <td><p>NADPH flux is the only non-closed component of the system. NADPH is involved in a vast array of cellular processes as a reducing agent, and as such assuming NADPH levels would decrease at the rate of GR activity seemed unreasonable, particularly since nothing in the system acted to convert NADP+ back to NADPH, which would occur in a real cell. Some research suggests that cells are able to balance NADPH supply and demand network-wide in response to local fluctuations (Spaans et al., 2015). However, it was also noted by Moreno-Sánchez et. al. (2018) that the NADPH redox potential is altered under oxidative stress. From consultation with Prof. Ian Dawes, it seemed advisable to consider NADPH flux and even the introduction of an NADPH synthesis enzyme to the experimental system, but due to time and lab constraints this was (delegated to) future teams.</p></td>
+        </tr>
+
+    </table>
+
+    <br />
+
+    <h5>Kinetics of Glutathione Peroxidase and Glutathione Reductase</h5>
+    <p>
+        Previous computational models have been constructed to model (mammalian) glutathione redox systems. Aon et al. (2012) modelled a glutathione/thioredoxin system used to modulate mitochondrial H<sub>2</sub>O<sub>2</sub> emissions, and validated the model using data from heart mitochondria from mouse, rat, and guinea pig (Aon et al., 2012). Cortassa et al. modelled a ROS-dependent mitochondrial oscillator, which included modelling the kinetics of glutathione peroxidase and reductase (Cortassa et al., 2004). 
+    </p>
+
+    <p>
+        For our simplified model, we used the velocity expression for glutathione reductase reported in both of the aforementioned models in literature. This expression represents the velocity of GR under a bi-bi (ping-pong) sequential pathway, with Michaelis Menten saturation kinetics:
+        $$V_{GR} = \frac{k_{cat; GR}[GR][GSSG][NADPH]}{[GSSG][NADPH]+K_{M; GR, GSSG}[NADPH]+K_{M; GR, NADPH}[GSSG]+K_{M; GR, GSSG}K_{M; GR, NADPH}}$$
+        <br />
+    </p>
+
+    <p>
+        The kinetics of glutathione peroxidases are dependent on whether the enzyme is selenium or non-selenium containing. Previous kinetic studies have shown that selenium-containing Gpxs, the predominant form in vertebrates, do not follow saturation kinetics and consequently have infinite Michaelis Menten kinetic parameters (Km and kcat) (Toppo et al., 2009). Meanwhile, in non-selenium containing Gpxs, which represent the majority of non-vertebrate Gpxs, the selenocysteine residue at the active site is replaced by a cysteine residue and the enzyme follows Michaelis Menten saturation kinetics (Toppo et al., 2009).
+    </p>
+
+    <p>
+        The mammalian redox systems modelled by Aon et al and Cortassa et al used Gpx velocity expressions corresponding with that of a selenium-containing Gpx. However, as the glutathione peroxidase chosen for the plasmid design was a non-selenium containing Gpx (<em>C. reinhardtii</em> Gpx5), we used a similar expression as in Eq 1, to represent ping-pong kinetics with substrate saturation:
+        
+        $$V_{Gpx} = \frac{k_{cat; Gpx}[Gpx][GSH][H_2O_2]}{[GSH][H_2O_2]+K_{M; Gpx, GSH}[H_2O_2]+K_{M; Gpx, H_2O_2}[GSH]+K_{M; Gpx, GSH}K_{M; Gpx, H_2O_2}}$$
+        <br />
+    </p>
+
+    <h5>Ordinary Differential Equations</h5>
+    <p>
+        The biochemical equations modelled in the system are as follows:
+
+        $$\begin{aligned} \ce{GSH + H2O2 &->[Gpx] GSSG + 2H2O} \\ \ce{GSSG + NADPH &->[GR] 2GSH + NADP^+ + H^+} \end{aligned}$$
+    </p>
+
+    <p>Accordingly, and in line with the aforementioned assumptions, the differential equations used to model the system are then as follows:</p>
+    $$\begin{aligned}
+        \frac{d[GSH]}{dt} &= 2(V_{GR} - V_{Gpx}) \\ 
+        \frac{d[GSSG]}{dt} &= -V_{GR} + V_{Gpx} \\
+        \frac{d[H_2O_2]}{dt} &= -V_{Gpx}
+    \end{aligned}$$
+
+    <p>with the concentrations of GSH, GSSG, and H<sub>2</sub>O<sub>2</sub> for each system stated in Table 2 below.</p>
+</div>
+
+<div id="ensemble">
+    <h2>Ensemble Modelling</h2>
+    <br />
+
+    <p>
+        When we endeavoured to find the Michaelis Menten parameters for use in the kinetic modelling of the glutathione recycling system, we found the literature to be lacking in suitable parameters for the chosen genes (in particular for the glutathione peroxidase). We had initially considered approaching this issue by using the available parameters for the single glutathione reductase and glutathione peroxidase which had the highest similarity to the respective genes from <em>C. reinhardtii</em>, which were chosen for the plasmid design. 
+    </p>
+
+    <p>
+        However, when we consulted Prof. Lars Nielsen about this issue, he advised us that “even when we have more than one measurement for the same organism, the values can vary many fold (Km) to several orders (kcat)”. He referred us to the use of ensemble modelling, which could provide us with a better sense of the system’s behaviour by considering the distributions of the simulations, rather than forming a prediction based on a single set of values. He referred us to the protocol ‘Defining informative priors for ensemble modeling in systems biology’ (Tsigkinopoulou et al., 2018), from which we followed the basic steps to produce log-normal distributions for each of the kcat and Km values.
+    </p>
+
+    <p>
+        The protocol first involved collating various kinetic values from literature, and assigning each value a weight to represent their plausibility, based on the organism, enzyme and conditions under which the kinetic parameter was measured. Most values collected for ensemble modelling were taken from enzyme database BRENDA (Chang et al., 2021).
+    </p>
+
+    <p>The following table lists the values and weights used for ensemble modelling for each kinetic parameter:</p>
+
+    <div>
+        <a class="table-link" data-bs-toggle="modal" data-bs-target="#ensemble_modal">Table 1: Reported values of kinetic parameters for Glutathione Peroxidase and Glutathione Reductase in literature with plausibility weights</a>
+    </div>
+    <br />
+
+    <p>
+        As per the protocol, following the collection of values from literature, we calculated the mode and spread of the values, which were then used to estimate the mean μ and standard deviation σ of the log-normal distribution for each parameter. This was achieved using the Matlab scripts given in the supplementary software of the Tsigkinopoulou et al protocol. Download the scripts with the parameters used to model the glutathione enzyme recycling system <a href="/assets/glutathione_ensemble_modelling.zip" download>here</a>.
+    </p>
+
+    <p>Using the mean and standard deviation of each log-normal distribution, random samples of size n = 10000 were produced for each kinetic parameter of interest:</p>
+
+    <div style="display: flex; width: 100%; justify-content: center;">
+        <img src="/assets/img/Modelling/Glutathione/ensemble_modelling_dists.jpg" width="90%">
+    </div>
+    <div class="image-caption">Fig x: Log-normal distributions for Glutathione Peroxidase (Gpx) and Glutathione Reductase (GR) kinetic constants, n = 10000</div>
+
+    <br />
+
+    <p>When studying the glutathione system, simulations were run 10000 times (iterating through the random sample of kinetic values collected). As can be seen in Fig. x, several of the distributions have very long tails. To observe the central behaviour of the system only, the median substrate concentrations with their interquartile ranges were taken from each simulation run.</p>
+    <br />
+</div>
+
+<div id="simulations">
+    <h2>Simulations</h2>
+    <br />
+
+    <p>
+        Together with the redox states of NADPH and thioredoxin, the half-cell reduction potential (\(E_{hc}\)) of the GSSG/2GSH couple is a key indicator of the cellular redox environment (Schafer and Buettner, 2001). As such, it acts as a cellular signal for oxidative stress and is involved in the regulation of cellular states such as proliferation or apoptosis. Schafer and Buettner (2001) proposed an approximate threshold of \(E_{hc} \geq -170 \text{mV}\)  is correlated with apoptosis, and at the other end of the spectrum, \(E_{hc} \geq -240 \text{mV}\) is indicative of proliferation.
+    </p>
+
+    <p>
+        Hence, each of our simulations measured the changing concentration levels of GSH, GSSG and H<sub>2</sub>O<sub>2</sub> over time, and from these values, the \(E_{hc}\) was calculated using the Nernst equation.
+    </p>
+
+    <br />
+    <p>Our first set of simulations aimed to determine the relative rates of reaction for Gpx and GR, and hence, which of the two enzymes should be more highly expressed. From these initial runs, we determined that GR was significantly more active, and the system was more efficient at scavenging ROS if Gpx concentration was higher than GR concentration. From this process, we decided to work with 2 μM Gpx and 0.05 μM GR in our subsequent simulations.</p>
+
+    <p>Our second set of simulations used the enzyme concentrations obtained above, and instead varied substrate concentrations to model different conditions.</p>
+    <ul>
+        <li>First, the <b>basic system</b> aimed to determine the standard behaviour of our glutathione model.</li>
+        <li>Then the <b>increased ROS load</b> simulated the conditions of heat stress with a higher initial concentration of H<sub>2</sub>O<sub>2</sub>.</li>
+        <li>Next, the <b>increased GSH system</b> modelled how the behaviour of the system might change with more GSH available, produced by GshF introduced via our plasmid.</li>
+        <li>An increased ROS load with <b>unaugmented Gpx/GR ratio</b> was also modelled to demonstrate the behaviour of a system that did not have higher Gpx concentration compared with GR, as would occur without introduction of our plasmid containing the enzymes in series.</li>
+    </ul>
+
+    <br />
+    <table id="concentrations" class="table table-striped">
+        <tr>
+            <th rowspan="2">Component</th>
+            <th colspan="4">Initial Concentration (μM)</th>
+        </tr>
+
+        <tr>
+            <th>Basic System</th>
+            <th>Increased ROS load</th>
+            <th>Increased GSH</th>
+            <th>Unaugmented Gpx/GR ratio</th>
+        </tr>
+
+        <tr style="border-top: 1px solid #003031;">
+            <td>Gpx</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>0.2</td>
+        </tr>
+        <tr>
+            <td>GR</td>
+            <td>0.05</td>
+            <td>0.05</td>
+            <td>0.05</td>
+            <td>0.2</td>
+        </tr>
+        <tr>
+            <td>GSH</td>
+            <td>2940</td>
+            <td>2940</td>
+            <td>4900</td>
+            <td>2940</td>
+        </tr>
+        <tr>
+            <td>GSSG</td>
+            <td>30</td>
+            <td>30</td>
+            <td>50</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>H<sub>2</sub>O<sub>2</sub></td>
+            <td>1</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>NADPH</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+
+    </table>
+    <div class="image-caption"><b>Table 2:</b> Initial concentrations of system components</div>
+
+
+
+    <br />
+
+    <h5>Basic System</h5>
+    <p>We show here the standard behaviour of the glutathione system under our simplified model. 
+        It is worth noting that both GSSG and H<sub>2</sub>O<sub>2</sub> concentrations significantly decrease over time to 0 M. In a cell, equilibrium would be reached before these concentrations reached 0, because reactions with very low substrate concentrations do not follow convenience kinetics as simplified in the model. Hence, GSSG/GSH and E<sub>hc</sub> values significantly beyond 100 seconds (the time of H<sub>2</sub>O<sub>2</sub> depletion) are not to be considered accurate.
+    </p>
+
+    <p>However, we can conclude that the system acts to decrease H<sub>2</sub>O<sub>2</sub> concentration over time as expected. Fig. x and Fig. x are provided as a reference for comparison with variations on the system.</p>
+
+    <div style="display: flex; width: 100%; justify-content: center;">
+        <img src="/assets/img/Modelling/Glutathione/Basic System.jpg" width="80%">
+    </div>
+    <div class="image-caption">Fig. x: GSH, GSSG and H<sub>2</sub>O<sub>2</sub> concentrations over time under the basic system</div>
+
+    <br />
+
+    <div style="display: flex; width: 100%; justify-content: center;">
+        <img src="/assets/img/Modelling/Glutathione/Basic System_GSH_Ehc.jpg" width="40%">
+    </div>
+    <div class="image-caption">Fig. x: Half cell redox potential for the GSH/GSSG couple over time, under the basic system</div>
+
+
+    <br />
+    <h5>Increased H<sub>2</sub>O<sub>2</sub> Load</h5>
+
+    <p>This simulation characterises the behaviour of the system under oxidative stress. We can see that a high concentration of H<sub>2</sub>O<sub>2</sub> has a significant impact on GSH and GSSG levels as the GSH is oxidised to GSSG in order to reduce (‘scavenge’) H<sub>2</sub>O<sub>2</sub>. Once the H<sub>2</sub>O<sub>2</sub> has been scavenged, GSH and GSSG levels behave as they do in the basic system (Fig. x), with GSSG depleting over time without additional formation of ROS.</p>
+    <div style="display: flex; width: 100%; justify-content: center;">
+        <img src="/assets/img/Modelling/Glutathione/Substrate concentration over time, with increased H$_2$O$_2$ load.jpg" width="80%">
+    </div>
+    <div class="image-caption">Fig. x: GSH, GSSG and H<sub>2</sub>O<sub>2</sub> concentrations over time with increased initial H<sub>2</sub>O<sub>2</sub> load</div>
+
+    <br />
+
+    <div style="display: flex; width: 100%; justify-content: center;">
+        <img src="/assets/img/Modelling/Glutathione/System: Increased H$_2$O$_2$ Load_GSH_Ehc.jpg" width="40%">
+    </div>
+    <div class="image-caption">Fig. x: Half cell redox potential for the GSH/GSSG couple over time, with increased initial H<sub>2</sub>O<sub>2</sub> load</div>
+
+    <br />
+    <p>
+        The initial stress on the system causes the E<sub>hc</sub> to rise above the reported threshold for apoptosis of -170 mV, reaching -166 mV, indicating that these conditions could lead to cell death. The length of time for which the cell can survive at this level of stress is not known, but it is clear that levels of H<sub>2</sub>O<sub>2</sub> at or above this concentration are detrimental to the cell. In a system constantly producing new ROS due to heat stress, this redox dyshomeostasis would be prolonged. As such, we aimed to investigate whether a larger glutathione pool could further aid in ensuring the cell’s survival.
+    </p>
+
+
+    <h5>Increased H<sub>2</sub>O<sub>2</sub> and Increased GSH</h5>
+    <p>Accordingly, we repeated the previous simulation (glutathione system with increased initial H<sub>2</sub>O<sub>2</sub> load) with a higher glutathione pool of 5μM. This model follows a very similar pattern in response to oxidative stress as the previous simulation with lower GSH levels (Fig x). However, unlike the system with standard glutathione content, the half cell redox potential under this system (Fig x) remains comfortably below the apoptosis threshold of -170mV.</p>
+    <div style="display: flex; width: 100%; justify-content: center;">
+        <img src="/assets/img/Modelling/Glutathione/Substrate concentration over time, with increased H$_2$O$_2$ load and glutathione content.jpg" width="80%">
+    </div>
+    <div class="image-caption">Fig. x: GSH, GSSG and H<sub>2</sub>O<sub>2</sub> concentrations over time with increased initial H<sub>2</sub>O<sub>2</sub> load and increased glutathione pool</div>
+
+    <br />
+
+    <div style="display: flex; width: 100%; justify-content: center;">
+        <img src="/assets/img/Modelling/Glutathione/System: Increased H$_2$O$_2$ Load and GSH Content_GSH_Ehc.jpg" width="40%">
+    </div>
+    <div class="image-caption">Fig. x: Half cell redox potential for the GSH/GSSG couple over time, with increased initial H<sub>2</sub>O<sub>2</sub> load and increased glutathione pool</div>
+
+    <br />
+
+    <p>This supports the use and intention of including the glutathione synthetase in the plasmid in order to boost the glutathione content in the cell. Provided the gshF gene can successfully induce the production of higher GSH levels in the target organism’s cells, the increased glutathione pool can increase the cell’s buffering capacity for oxidative stress.</p>
+
+    <br />
+    <h5>Unaugmented Gpx/GR Ratio</h5>
+    <p>In previous simulations, the standard model involved a higher concentration of Gpx (2 μM) than that of GR (0.05 μM), following from our proposed order of genes in the plasmid. Here we simulate the scenario where [Gpx] = [GR] = 0.2μM and the system must still scavenge a higher initial concentration of ROS.</p>
+
+    <div style="display: flex; width: 100%; justify-content: center;">
+        <img src="/assets/img/Modelling/Glutathione/Substrate concentration over time, with increased H$_2$O$_2$ load and [Gpx] = [GR].jpg" width="80%">
+    </div>
+    <div class="image-caption">Fig. x: GSH, GSSG and H<sub>2</sub>O<sub>2</sub> concentrations over time with increased initial H<sub>2</sub>O<sub>2</sub> load, where [Gpx] = [GR] = 0.2μM</div>
+
+    <br />
+
+    <div style="display: flex; width: 100%; justify-content: center;">
+        <img src="/assets/img/Modelling/Glutathione/System: Increased H$_2$O$_2$ Load and [Gpx] = [GR]_GSH_Ehc.jpg" width="40%">
+    </div>
+    <div class="image-caption">Fig. x: Half cell redox potential for the GSH/GSSG couple over time, with increased initial H<sub>2</sub>O<sub>2</sub> load, where [Gpx] = [GR] = 0.2μM</div>
+
+    <br />
+    <p>This simulation demonstrated that the glutathione peroxidase was less active than the reductase.</p>
+
+    <p>When the two enzymes’ concentrations were equal, the GSSG levels were depleted more quickly than in the standard model, while the H<sub>2</sub>O<sub>2</sub> concentration decreased far more slowly than in the standard model.</p>
+
+    <p>Consequently we advised Wet Lab, who were designing the plasmid to express the three enzymes involved in the glutathione system, to order the enzymes with glutathione peroxidase first and glutathione reductase last in the plasmid.</p>
+    <br />
+</div>
+
+<div>
+
+
+</div>
+
+
+
+
+
+
+<div class="modal fade" id="ensemble_modal" tabindex="-1" data-bs-backdrop="true"
+  aria-labelledby="ensemble modelling weights modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <div style="padding: 1em;">
+                        <h5 class="modal-title" style="font-weight: bold;">
+                            Table 1: Reported values of kinetic parameters for Glutathione Peroxidase and Glutathione Reductase in literature with plausibility weights
+                        </h5>
+                    </div>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="align-self: flex-start;"></button>
+            </div>
+            <div class="modal-body">
+                {% include ensemble_model_weights.html %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="ensembleModalBackdrop" class="modal-backdrop fade show"></div>
+<script src="https://2021.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script>
+    let modalBackdrop = document.getElementById("ensembleModalBackdrop")
+
+    let modals = document.getElementsByClassName('modal');
+    for (let m of modals) {
+        m.addEventListener('show.bs.modal', function (event) {
+        modalBackdrop.style.visibility = "visible";
+        modalBackdrop.style.opacity = "1";
+        })
+        m.addEventListener('hide.bs.modal', function (event) {
+        modalBackdrop.style.opacity = "0";
+        modalBackdrop.style.visibility = "hidden"
+        })
+    }
+</script>
