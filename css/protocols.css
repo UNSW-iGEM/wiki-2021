@@ -6,3 +6,6 @@
 #igem-unsw-content h6 {
    text-decoration: underline;
 }
+#igem-unsw-content thead {
+    background: #8bb5b3;
+}
