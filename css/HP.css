@@ -1,54 +1,66 @@
 #igem-unsw-content .sidenav {
-    top: 27vh;
-    height: 50vh;
+    top: 20vh;
+    height: 60vh;
 }
 
 /* text */
-#igem-unsw-content h5 {
+#igem-unsw-content h5,
+#igem-unsw-content h6 {
     font-weight: bold;
 }
 
+#igem-unsw-content h6 {
+    text-decoration: underline;
+}
+
 /* TABS */
-#nav-tab-ihp {
+#nav-tab-ihp, #nav-tab-survey {
     border-color: #dae5e4;
 }
 
-#nav-tab-ihp .nav-link {
+#nav-tab-ihp .nav-link,
+#nav-tab-survey .nav-link {
     color: #002d30;
     font-family: Roboto, sans-serif;
     font-weight: 700;
 }
 
-#nav-tab-ihp .nav-link:hover {
+#nav-tab-ihp .nav-link:hover
+#nav-tab-survey .nav-link:hover {
     border-color: #dae5e4;
 }
 
-#nav-tab-ihp .nav-link.active {
+#nav-tab-ihp .nav-link.active
+#nav-tab-survey .nav-link.active {
     background-color: #dae5e4;
     border-color: #dae5e4;
 }
 
 
 /* tabs: color schemes */
-#nav-tab-ihp .nav-link.red.active {
+#nav-tab-ihp .nav-link.red.active,
+#nav-tab-survey .nav-link.red.active {
     background-color: #b0554b;
     border-color: #b0554b;
     color: #dae5e4;
 }
 
-#nav-tab-ihp .nav-link.dark-green.active {
+#nav-tab-ihp .nav-link.dark-green.active,
+#nav-tab-survey .nav-link.dark-green.active {
     background-color: #002d30;
     border-color: #002d30;
     color: #dae5e4;
 }
 
-#nav-tab-ihp .nav-link.blue-green.active {
+#nav-tab-ihp .nav-link.blue-green.active,
+#nav-tab-survey .nav-link.blue-green.active {
     background-color: #0a7c80;
     border-color: #0a7c80;
     color: #dae5e4;
 }
 
-#nav-tab-ihp .nav-link.yellow.active {
+#nav-tab-ihp .nav-link.yellow.active,
+#nav-tab-survey .nav-link.yellow.active {
     background-color: #b48861;
     border-color: #b48861;
     color: #dae5e4;

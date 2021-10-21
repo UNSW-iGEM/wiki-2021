@@ -243,6 +243,26 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/f/f5/T--UNSW_Australia--icon--Inclusivity--palette-solid.svg
     md5: dba9f9f860dff12c75f5b8ca97a373ec
     upload_filename: T--UNSW_Australia--icon--Inclusivity--palette-solid.svg
+  assets/icon/Model/Glutathione_System/chart-bar-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/2/20/T--UNSW_Australia--icon--Model--Glutathione_System--chart-bar-solid.svg
+    md5: 5bd1b45d4c94668852faef191af7f518
+    upload_filename: T--UNSW_Australia--icon--Model--Glutathione_System--chart-bar-solid.svg
+  assets/icon/Model/Glutathione_System/chart-line-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/6/6e/T--UNSW_Australia--icon--Model--Glutathione_System--chart-line-solid.svg
+    md5: 566e8e8f314a5965dfb6bd44f4bc2499
+    upload_filename: T--UNSW_Australia--icon--Model--Glutathione_System--chart-line-solid.svg
+  assets/icon/Model/Glutathione_System/cogs-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/a/a2/T--UNSW_Australia--icon--Model--Glutathione_System--cogs-solid.svg
+    md5: d66d20113b6011db69c78c047b5cdc5d
+    upload_filename: T--UNSW_Australia--icon--Model--Glutathione_System--cogs-solid.svg
+  assets/icon/Model/Glutathione_System/pencil-ruler-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/5/52/T--UNSW_Australia--icon--Model--Glutathione_System--pencil-ruler-solid.svg
+    md5: 3a34ee7378295f2c830fec93a3c56730
+    upload_filename: T--UNSW_Australia--icon--Model--Glutathione_System--pencil-ruler-solid.svg
+  assets/icon/Model/Glutathione_System/repeat-svgrepo-com.svg:
+    link_URL: https://2021.igem.org/wiki/images/e/ec/T--UNSW_Australia--icon--Model--Glutathione_System--repeat-svgrepo-com.svg
+    md5: de9054521c7ff3f9effd12bdf5749b6d
+    upload_filename: T--UNSW_Australia--icon--Model--Glutathione_System--repeat-svgrepo-com.svg
   assets/icon/Model/Heat_Shock_Protein/aggregate_pic-min.png:
     link_URL: https://2021.igem.org/wiki/images/4/44/T--UNSW_Australia--icon--Model--Heat_Shock_Protein--aggregate_pic-min.png
     md5: 1d2710d28a924d9abb3720fd84a0dd5a
@@ -1011,6 +1031,49 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/0/09/T--UNSW_Australia--img--Modelling--12-mer-alignment-annotated.png
     md5: 978b94287cc41c1d24e0116c06a886ba
     upload_filename: T--UNSW_Australia--img--Modelling--12-mer-alignment-annotated.png
+  assets/img/Modelling/Glutathione/Basic System.jpg:
+    link_URL: https://2021.igem.org/wiki/images/8/86/T--UNSW_Australia--img--Modelling--Glutathione--Basic_System.jpg
+    md5: 09605750f1a2acc58679e294b20d0c43
+    upload_filename: T--UNSW_Australia--img--Modelling--Glutathione--Basic System.jpg
+  assets/img/Modelling/Glutathione/Basic System_GSH_Ehc.jpg:
+    link_URL: https://2021.igem.org/wiki/images/2/2f/T--UNSW_Australia--img--Modelling--Glutathione--Basic_System_GSH_Ehc.jpg
+    md5: 6ee649d09d62c87fe80507120bea46c0
+    upload_filename: T--UNSW_Australia--img--Modelling--Glutathione--Basic System_GSH_Ehc.jpg
+  assets/img/Modelling/Glutathione/Substrate concentration over time, with increased H$_2$O$_2$ load and [Gpx] = [GR].jpg:
+    link_URL: https://2021.igem.org/wiki/images/3/38/T--UNSW_Australia--img--Modelling--Glutathione--Substrate_concentration_over_time%2C_with_increased_H%24_2%24O%24_2%24_load_and_-Gpx-_%3D_-GR-.jpg
+    md5: f7f79de3c479f72fc1124181b621bb6f
+    upload_filename: T--UNSW_Australia--img--Modelling--Glutathione--Substrate concentration
+      over time, with increased H$_2$O$_2$ load and [Gpx] = [GR].jpg
+  ? assets/img/Modelling/Glutathione/Substrate concentration over time, with increased
+    H$_2$O$_2$ load and glutathione content.jpg
+  : link_URL: https://2021.igem.org/wiki/images/0/0c/T--UNSW_Australia--img--Modelling--Glutathione--Substrate_concentration_over_time%2C_with_increased_H%24_2%24O%24_2%24_load_and_glutathione_content.jpg
+    md5: 797cf74280d92e2f1da20d7cc7e98b0b
+    upload_filename: T--UNSW_Australia--img--Modelling--Glutathione--Substrate concentration
+      over time, with increased H$_2$O$_2$ load and glutathione content.jpg
+  assets/img/Modelling/Glutathione/Substrate concentration over time, with increased H$_2$O$_2$ load.jpg:
+    link_URL: https://2021.igem.org/wiki/images/4/45/T--UNSW_Australia--img--Modelling--Glutathione--Substrate_concentration_over_time%2C_with_increased_H%24_2%24O%24_2%24_load.jpg
+    md5: d136ae2cbe6aea41c00b9f39ffe2d8e1
+    upload_filename: T--UNSW_Australia--img--Modelling--Glutathione--Substrate concentration
+      over time, with increased H$_2$O$_2$ load.jpg
+  'assets/img/Modelling/Glutathione/System: Increased H$_2$O$_2$ Load and GSH Content_GSH_Ehc.jpg':
+    link_URL: https://2021.igem.org/wiki/images/c/c1/T--UNSW_Australia--img--Modelling--Glutathione--System-_Increased_H%24_2%24O%24_2%24_Load_and_GSH_Content_GSH_Ehc.jpg
+    md5: 4c4571170a1c566f293d561b9e731b78
+    upload_filename: 'T--UNSW_Australia--img--Modelling--Glutathione--System: Increased
+      H$_2$O$_2$ Load and GSH Content_GSH_Ehc.jpg'
+  'assets/img/Modelling/Glutathione/System: Increased H$_2$O$_2$ Load and [Gpx] = [GR]_GSH_Ehc.jpg':
+    link_URL: https://2021.igem.org/wiki/images/9/9e/T--UNSW_Australia--img--Modelling--Glutathione--System-_Increased_H%24_2%24O%24_2%24_Load_and_-Gpx-_%3D_-GR-_GSH_Ehc.jpg
+    md5: ca481665fdfa2249f7bb2b819093ec41
+    upload_filename: 'T--UNSW_Australia--img--Modelling--Glutathione--System: Increased
+      H$_2$O$_2$ Load and [Gpx] = [GR]_GSH_Ehc.jpg'
+  'assets/img/Modelling/Glutathione/System: Increased H$_2$O$_2$ Load_GSH_Ehc.jpg':
+    link_URL: https://2021.igem.org/wiki/images/6/60/T--UNSW_Australia--img--Modelling--Glutathione--System-_Increased_H%24_2%24O%24_2%24_Load_GSH_Ehc.jpg
+    md5: 667af5a6e4a0c80073d3017bbfd49974
+    upload_filename: 'T--UNSW_Australia--img--Modelling--Glutathione--System: Increased
+      H$_2$O$_2$ Load_GSH_Ehc.jpg'
+  assets/img/Modelling/Glutathione/ensemble_modelling_dists.jpg:
+    link_URL: https://2021.igem.org/wiki/images/f/f0/T--UNSW_Australia--img--Modelling--Glutathione--ensemble_modelling_dists.jpg
+    md5: b4f95d96f3b5d020e15781eedbafcdf8
+    upload_filename: T--UNSW_Australia--img--Modelling--Glutathione--ensemble_modelling_dists.jpg
   assets/img/Modelling/Phylogram_coral_colours.jpg:
     link_URL: https://2021.igem.org/wiki/images/d/d6/T--UNSW_Australia--img--Modelling--Phylogram_coral_colours.jpg
     md5: 1ee26b59ba52ff057ee4adcee805b498
@@ -1248,6 +1311,9 @@ css:
   css/main.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/mainCSS?action=raw&ctype=text/css
     md5: aa41793023f2cce3f98e005fa81e21d4
+  css/model_gsh.css:
+    link_URL: https://2021.igem.org/Template:UNSW_Australia/css/model_gshCSS?action=raw&ctype=text/css
+    md5: 772da5491e7b87233d331784d6eccccd
   css/model_hsp.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/model_hspCSS?action=raw&ctype=text/css
     md5: 63c00f9b96083ec3cb5df7f2f1cb2d6c
@@ -1347,10 +1413,10 @@ html:
     md5: 2914cb8d18a638aadef502caf5911fac
   Model/Glutathione_System/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Model/Glutathione_System
-    md5: f7f05f784db7441f090b39fd16d2d2ed
+    md5: d0ee39d9bc5f5b5432b597b6a5d49d30
   Model/Heat_Shock_Protein/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Model/Heat_Shock_Protein
-    md5: 5cd2b16c146f44e31dfe0152029f3241
+    md5: 8316402adcfd3bc110c993a7200be359
   Model/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Model
     md5: 502877bdafa25194c9a39c63f7baf685
