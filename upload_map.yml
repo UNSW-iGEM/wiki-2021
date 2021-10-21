@@ -255,10 +255,46 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/4/4d/T--UNSW_Australia--icon--Human_Practices--user-friends-solid.svg
     md5: 250bc1adef10e4e189673c6ba51c668d
     upload_filename: T--UNSW_Australia--icon--Human_Practices--user-friends-solid.svg
+  assets/icon/Implementation/ellipsis-h-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/e/e3/T--UNSW_Australia--icon--Implementation--ellipsis-h-solid.svg
+    md5: cfaf95c468f106373b29f58787b68f85
+    upload_filename: T--UNSW_Australia--icon--Implementation--ellipsis-h-solid.svg
+  assets/icon/Implementation/globe-asia-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/1/18/T--UNSW_Australia--icon--Implementation--globe-asia-solid.svg
+    md5: 94c724799479dd84b155c4c23c98313b
+    upload_filename: T--UNSW_Australia--icon--Implementation--globe-asia-solid.svg
+  assets/icon/Implementation/route-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/3/31/T--UNSW_Australia--icon--Implementation--route-solid.svg
+    md5: 3e0480d478161736f0f6d8d80b546d06
+    upload_filename: T--UNSW_Australia--icon--Implementation--route-solid.svg
+  assets/icon/Implementation/safety-certificate-svgrepo-com.svg:
+    link_URL: https://2021.igem.org/wiki/images/f/f2/T--UNSW_Australia--icon--Implementation--safety-certificate-svgrepo-com.svg
+    md5: 2ff08cdf2ba0641aef3e31b331f01b90
+    upload_filename: T--UNSW_Australia--icon--Implementation--safety-certificate-svgrepo-com.svg
+  assets/icon/Implementation/users-solid.svg:
+    link_URL: https://2021.igem.org/wiki/images/3/30/T--UNSW_Australia--icon--Implementation--users-solid.svg
+    md5: dac0505791d98fde55a2719bb85b7640
+    upload_filename: T--UNSW_Australia--icon--Implementation--users-solid.svg
   assets/icon/Inclusivity/palette-solid.svg:
     link_URL: https://2021.igem.org/wiki/images/f/f5/T--UNSW_Australia--icon--Inclusivity--palette-solid.svg
     md5: dba9f9f860dff12c75f5b8ca97a373ec
     upload_filename: T--UNSW_Australia--icon--Inclusivity--palette-solid.svg
+  assets/icon/Judging/1st.png:
+    link_URL: https://2021.igem.org/wiki/images/a/a9/T--UNSW_Australia--icon--Judging--1st.png
+    md5: 0c5d3fefe6daa2165c7908205dea6aae
+    upload_filename: T--UNSW_Australia--icon--Judging--1st.png
+  assets/icon/Judging/2nd.png:
+    link_URL: https://2021.igem.org/wiki/images/a/ab/T--UNSW_Australia--icon--Judging--2nd.png
+    md5: 6b1c63d1beb98d622c7e6ab0fc04c453
+    upload_filename: T--UNSW_Australia--icon--Judging--2nd.png
+  assets/icon/Judging/3rd.png:
+    link_URL: https://2021.igem.org/wiki/images/d/de/T--UNSW_Australia--icon--Judging--3rd.png
+    md5: 83a1a150a6358b8a14d4ba1386541881
+    upload_filename: T--UNSW_Australia--icon--Judging--3rd.png
+  assets/icon/Judging/star.png:
+    link_URL: https://2021.igem.org/wiki/images/0/02/T--UNSW_Australia--icon--Judging--star.png
+    md5: d6fa909be7768883d6c19fa97b091745
+    upload_filename: T--UNSW_Australia--icon--Judging--star.png
   assets/icon/Model/Glutathione_System/chart-bar-solid.svg:
     link_URL: https://2021.igem.org/wiki/images/2/20/T--UNSW_Australia--icon--Model--Glutathione_System--chart-bar-solid.svg
     md5: 5bd1b45d4c94668852faef191af7f518
@@ -1441,7 +1477,7 @@ html:
     md5: a16502af6bad42470d0817bf99ff6ef1
   Contribution/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Contribution
-    md5: 7ede8d7cff28cbc9c6f4a3df1a2a5a56
+    md5: a34111ccf486f537ae241633b879fd17
   Description/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Description
     md5: a6825d8e1d2438b4642f5bad72128bbc
@@ -1504,13 +1540,13 @@ html:
     md5: 09dcff21f4388b88e6ef51a0fc9419c1
   Implementation/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Implementation
-    md5: 6a7e04e048a4e37f2635fbe8cabcecdf
+    md5: 8ebe48bf564ea7d06cfa2920d7380800
   Inclusivity/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Inclusivity
     md5: 545fd70488f87bb85ea8f3f34020c020
   Judging/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Judging
-    md5: 2914cb8d18a638aadef502caf5911fac
+    md5: fc87fac9c38057b28b00d2b5a5b8f21c
   Model/Glutathione_System/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Model/Glutathione_System
     md5: d0ee39d9bc5f5b5432b597b6a5d49d30
