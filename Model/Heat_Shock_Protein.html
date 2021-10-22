@@ -127,7 +127,7 @@ headings:
     <br />
     <h5>The Family Tree</h5>
     <p>
-        For this reason, we generated a phylogenetic tree (Fig. 3) to determine sequence similarity between different HSPs with known structure against HSP22E. Each HSP is colour-coded by the type of oligomer it is known to form. It can be seen that while some clusters have the same order, others with very high sequence similarity do not. This is most noticeable across 4ZJ-A/D/9, which are a 24mer, 18mer and 2mer respectively, but derived from the same sequence with only very minor mutations.
+        For this reason, we generated a phylogenetic tree (Fig. 4) to determine sequence similarity between different HSPs with known structure against HSP22E. Each HSP is colour-coded by the type of oligomer it is known to form. It can be seen that while some clusters have the same order, others with very high sequence similarity do not. This is most noticeable across 4ZJ-A/D/9, which are a 24mer, 18mer and 2mer respectively, but derived from the same sequence with only very minor mutations.
     </p>
 
     <br />
@@ -372,10 +372,14 @@ headings:
         We decided to investigate if HSP22E might also function via this mechanism.
     </p>
 
-    <p>
-        HYDROPHOBIC DIMER
-        <div class="image-caption">Fig. x: A surface view of our HSP22E dimer, representing relative hydrophobicity by colour.</div>
-    </p>
+    <div style="display: flex; justify-content: center; width: 100%;">
+        <video width="85%" controls>
+            <source src="/assets/img/Modelling/hydrophobic_surface_sym2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+    </div>
+    <div class="image-caption">Fig. 7: A surface view of our HSP22E dimer, representing relative hydrophobicity by colour.</div>
+
     <br>
     <h5>In Action</h5>
     <p>
@@ -406,10 +410,13 @@ headings:
         </ul>
     </p>
 
-    <p>
-        VIDEO
-    </p>
-    <div class="image-caption">Fig. 7: Molecular dynamics simulation between the HSP22E dimer (yellow and red chains) and the denatured form of citrate synthase (dark chains). Simulation lasted 1.02μs and was performed at 313K.</div>
+    <div style="display: flex; justify-content: center; width: 100%;">
+        <video width="85%" controls>
+            <source src="/assets/img/Modelling/md_interaction.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+    </div>
+    <div class="image-caption">Fig. 8: Molecular dynamics simulation between the HSP22E dimer (yellow and red chains) and the denatured form of citrate synthase (dark chains). Simulation lasted 1.02μs and was performed at 313K.</div>
 
 
 </div>
@@ -503,6 +510,27 @@ headings:
         });
     }
     document.addEventListener('DOMContentLoaded', loadDimer);
+
+    // 24mer
+    // insert the viewer under the Dom element with id '24mer_viewer'
+    var viewer_24 = pv.Viewer(document.getElementById('24mer_viewer'), options);
+
+    function load24mer() {
+        // asynchronously load the PDB file for the 24mer
+        // from assets and display it in the viewer.
+        pv.io.fetchPdb('/assets/Robetta_CM_hsp22e_mature.txt', function(structure) {
+            // display the protein as cartoon, coloring the secondary structure
+            viewer.cartoon('protein', structure, { color : color.uniform('#b0554b'), radius: 0.5 });
+            viewer.centerOn(structure);
+            // viewer.autoZoom();
+            viewer.fitTo(structure);
+            viewer.spin(false);
+        });
+    }
+
+    // load the structure once the DOM has finished loading. That's
+    // the earliest point the WebGL context is available.
+    document.addEventListener('DOMContentLoaded', load24mer);
 
 
 
