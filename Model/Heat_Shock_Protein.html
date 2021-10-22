@@ -15,7 +15,7 @@ headings:
     id: oligomer
     title: Oligomer
     icon: /assets/icon/Model/Heat_Shock_Protein/oligomer-min.png
-- 
+-
     id: interactions
     title: Interactions
     icon: /assets/icon/Model/Heat_Shock_Protein/aggregate_pic-min.png
@@ -35,22 +35,33 @@ headings:
 <div>
     <h5>Aims</h5>
     <br />
-
+    <p>
+        While the general behaviour of heat shock proteins is understood, there is much we don’t know about the structure and physics of the interactions that enable them to dynamically associate and dissociate between oligomers and subunits as they bind to denatured proteins. For this reason, we performed some structural prediction for our heat shock protein of interest, HSP22E, in order to better determine what kind of oligomers it might form and hence provide some insight into its mechanism of action.
+    </p>
+    <p>
+        The structure of HSP22E, which comes from the thermotolerant microalgae C. reinhardtii, has not yet been thoroughly characterised. Hence, our approach involved starting from the gene sequence, using this to predict a monomeric unit or dimeric unit, investigating how these subunits might form a larger oligomer, and then modelling its interaction with denatured proteins.
+    </p>
     <div style="display: flex; justify-content: center; width: 100%;">
         <img src="/assets/img/Modelling/flow.png" width="80%">
     </div>
     <div class="image-caption">Fig. 1: Process of Structural Modelling HSP22E</div>
+    <br>
 </div>
 
 <div id="sequence">
     <h2>Sequence</h2>
     <br />
-
     <h5>Choices, Choices - selecting a sequence</h5>
+    <div style="float: right; width: 45%; padding-left: 2em; padding-top: 4em; padding-bottom: 3em;">
+        <div style="display: flex; justify-content: center; width: 100%;">
+            <img src="/assets/img/Modelling/sequence_HSP22E.png" width="85%">
+        </div>
+        <div class="image-caption" style="padding-left: 2em; width: 85%; text-align: center;">Fig. 2: Gene sequence of HSP22E. The putative transit peptide motif is highlighted in pink.</div>
+    </div>
+    <br>
     <p>
         In 2020, the Phase One Team identified the sequence for the small heat-shock proteins HSP22E and HSP22F from <em>C. reinhardtii</em>, our candidates for synthetically alleviating heat stress in coral-symbiont algae. These two HSPs are known to form a heterodimer (Rütgers et al., 2017), but preliminary experiments in the 2020 lab suggested that HSP22E was also able to form a homodimer. This is not uncommon in HSPs since they often have high sequence similarity and are predicted to be found in so many forms due to gene duplication events (de Jong et al., 1998). For example, the oligomeric form of HSP21 (a known chloroplastic HSP) has two distinct geometries, a “T” tetrahedral dodecamer constructed of six homodimers (Yu et al., 2021) and a “D3” dihedral dodecamer of six heterodimers (Rutsdottir et al., 2017), both of which are functional. With this in mind, our Phase Two team chose to work with only HSP22E for simplicity.
     </p>
-
     <br />
     <h5>The First Hurdle - cellular localisation</h5>
     <p>
@@ -66,7 +77,7 @@ headings:
     <div style="display: flex; justify-content: center; width: 100%;">
         <img src="/assets/img/Modelling/big_alignment.jpg" width="85%">
     </div>
-    <div class="image-caption">Fig. 2: Multiple Sequence Alignment of HSP22E (bottom row)</div>
+    <div class="image-caption">Fig. 3: Multiple Sequence Alignment of HSP22E (bottom row)</div>
     <br />
 </div>
 
@@ -109,20 +120,44 @@ headings:
         <div style="width: 100%; display: flex; justify-content: center;">
             <img src="/assets/img/Modelling/Phylogram_coral_colours.jpg" width="85%">
         </div>
-        <div class="image-caption">Fig. 3: HSP22E Phylogenetic Tree</div>
+        <div class="image-caption">Fig. 4: HSP22E Phylogenetic Tree</div>
     </div>
+
+    <br />
+    <br />
     <h5>The Family Tree</h5>
     <p>
         For this reason, we generated a phylogenetic tree (Fig. 3) to determine sequence similarity between different HSPs with known structure against HSP22E. Each HSP is colour-coded by the type of oligomer it is known to form. It can be seen that while some clusters have the same order, others with very high sequence similarity do not. This is most noticeable across 4ZJ-A/D/9, which are a 24mer, 18mer and 2mer respectively, but derived from the same sequence with only very minor mutations.
     </p>
 
-    <br /><br />
+    <br />
+    <br />
+    <br />
 
     <h5>Diving into Detail</h5>
-    <p></p>
-
+    <p>
+        Given the ambiguity of the sequence information processed in this way, we decided to approach the problem using more structural information.
+    </p>
+    <p>
+        The T-COFFEE Expresso program incorporates structural information to align sequences and produce a Multiple Sequence Alignment. We divided our template HSPs into known 2mers, 4mers, 12mers and 24mers,
+        and constructed a MSA for each of these with HSP22E. These particular oligomeric forms were picked because there was a reasonable number of sequences available.
+        From these comparisons, it was clear that HSP22E aligned most closely to dimers and dodecamers. As such, we aimed to first produce a viable dimer for HSP22E, and then use the dimer structure to form the larger 12-mer.
+    </p>
+    <div style="width: 100%; display: flex; justify-content: center;">
+        <img src="/assets/img/Modelling/oligo_scores.jpg" width="85%">
+    </div>
+    <div class="image-caption">Fig. 5: T-COFFEE MSA scores for alignments by oligomeric order.</div>
+    <br>
+    <p>
+        The dodecamer alignment in particular provided an interesting insight. Most of the other alignments were only able to pick up the generalised alpha-crystallin domains as conserved regions,
+        but the dodecamer alignment showed an extra piece of sequence that was well conserved, in between the two large alpha-crystallin domains. Inspection of this small conserved region revealed that it was the region of sequence corresponding to β6 for the known HSPs.
+    </p>
+    <div style="width: 100%; display: flex; justify-content: center;">
+        <img src="/assets/img/Modelling/12-mer-alignment-annotated.png" width="85%">
+    </div>
+    <div class="image-caption">Fig. 6: Alignment of HSP22E to known dodecamers. The approximate location of β-strands across the known structures are marked by a box.</div>
     <br />
-    <h5>Dimer</h5>
+    <h5 id="dimer">Dimer</h5>
     <p>We pursued several methods to predict the dimeric structure of HSP22E:</p>
     <table id="dimer_methods" class="table table-striped">
         <tr>
@@ -172,20 +207,32 @@ headings:
     <br />
 
 
-    <h5>Dodecamer</h5>
+    <h5 id="dodecamer">Dodecamer</h5>
     <p>
-        We again used several methods to dock our dimeric subunits into a large oligomer, including Rosie’s Symmetric Docking, Galaxy’s Homomer, and Bonvin Lab’s Haddock, as well as some manual alignment methods in Chimera. Each of these programs allows input of different parameters for constraints, and so we explored multiple combinations of these to find a model that was biologically favourable as well as energetically favourable. 
+        We again used several methods to dock our dimeric subunits into a large oligomer, including Rosie’s Symmetric Docking, Galaxy’s Homomer, and Bonvin Lab’s Haddock, as well as some manual alignment methods in Chimera.
+        Each of these programs allows input of different parameters for constraints, and so we explored multiple combinations of these to find a model that was biologically favourable as well as energetically favourable.
+        <br>
+        Each method produced 5-10 models per set of inputs. In the table below, only selected models are shown for each method to illustrate general trends. Any residues coloured in red represent steric clashes in the model.
     </p>
 
     <table id="dodecamer_methods" class="table table-striped">
         <tr>
-            <td><h6>Manual</h6></td>
             <td>
-                <p>Manual alignment to 1GME using ChimeraX was performed as per the dimer method. However, with all 12 chains the model produced contained many unresolvable clashes involving the N-terminal tails, and so was deemed unfeasible. Since 1GME is a hetero-12-mer, in which one of the chains is shorter than the other, it was hypothesised that the full-length N-terminal tail of HSP22E on all chains was not compatible with the template.</p>
+                <h6>Manual alignment via ChimeraX</h6>
+                <img src="/assets/img/Modelling/12mers/manual_12_clashes.png", class="img-in-table">
+                <div class="image-caption"><em>Manually aligned dodecamer; clashing residues in pink</em></div>
+            </td>
+            <td style="vertical-align: middle;">
+                <p>This was performed as per the dimer method. However, with all 12 chains present, the model contained many unresolvable clashes involving the N-terminal tails, and so was deemed unfeasible. Since 1GME is a hetero-12-mer, in which one of the chains is shorter than the other, it was hypothesised that the full-length N-terminal tail of HSP22E on all chains was not compatible with the template.
+                </p>
             </td>
         </tr>
         <tr>
-            <td><h6>Homomer</h6></td>
+            <td>
+                <h6>Homomer</h6>
+                <img src="/assets/img/Modelling/12mers/homomer-cyclic.png", class="img-in-table">
+                <div class="image-caption"><em>Dodecamer with cyclic symmetry</em></div>
+            </td>
             <td>
                 <h6>Inputs</h6>
                 <ul>
@@ -204,12 +251,17 @@ headings:
                 <h6>Results</h6>
                 <ul>
                     <li>Both the sequence and a monomeric unit were provided as input in different runs, with 12 selected as the desired oligomeric order. This produced a total of 10 models, 9 of which were cyclic, and one dihedral 24-mer based on the template 5ZS3.</li>
+                    <li>An example cyclic model is shown adjacent.</li>
                     <li>The monomeric unit was also provided to predict a tetramer, in the hopes that the resulting tetramer could be re-submitted with order 3 to produce a 12-mer with more complex symmetry. The 5 predicted tetramers did not resemble any known HSP structure.</li>
                 </ul>
             </td>
         </tr>
         <tr>
-            <td><h6>Symmetric Docking</h6></td>
+            <td>
+                <h6>Symmetric Docking</h6>
+                <img src="/assets/img/Modelling/12mers/symmdock_dihedral.png", class="img-in-table">
+                <div class="image-caption"><em>Dihedral structure, showing a trimer of tetramers</em></div>
+            </td>
             <td>
                 <h6>Inputs</h6>
                 <ul>
@@ -231,7 +283,11 @@ headings:
             </td>
         </tr>
         <tr>
-            <td><h6>HADDOCK</h6></td>
+            <td>
+                <h6>HADDOCK</h6>
+                <img src="/assets/img/Modelling/12mers/haddock_strange_geom.png", class="img-in-table">
+                <div class="image-caption"><em>Incomplete symmetry restraints, unable to fully define tetrahedral symmetry</em></div>
+            </td>
             <td>
                 <h6>Inputs</h6>
                 Haddock is by far the most complex docking tool out of those listed here. It provides a considerable array of modifiable parameters, but those used for this project include:
@@ -252,7 +308,145 @@ headings:
                 </ul>
             </td>
         </tr>
+        <tr>
+            <td>
+                <h6>Modeller alignment via ChimeraX</h6>
+                <img src="/assets/img/Modelling/12mers/modeller-from-5zul.png", class="img-in-table">
+                <div class="image-caption in-table"><em>From 5ZUL template</em></div>
+                <br>
+                <img src="/assets/img/Modelling/12mers/modeller_1GME_refinement_process.png", class="img-in-table">
+                <div class="image-caption"><em>From 1GME template: refinement of clashes</em></div>
+            </td>
+            <td>
+                <h6>Inputs</h6>
+                <ul>
+                    <li>Performed as per the dimer method</li>
+                    <li>One model was produced using the 1GME dodecamer template (heteromeric with D3 symmetry), and a second model was produced using the 5ZUL dodecamer template (homomeric with T symmetry).</li>
+                </ul>
+                <h6>Results</h6>
+                <ul>
+                    <li>
+                        While the 5ZUL template was expected to produce better results, the nature of the input file proved to be of difficulty for the software, as it only produced a hexamer rather than a dodecamer. Some attempts were made to duplicate the hexamer and rearrange it to a dodecamer, but this was not successful as the particular arrangement of subunits in the hexamer did not prove to be reflectable.
+                    </li>
+                    <li>
+                        The dodecamer produced from the 1GME template had 5191 clashing residues, but the basic arrangement of core domains looked fairly reasonable. As such, this model was submitted to Haddock for refinement using molecular dynamics. Four structures were returned from this simulation, the best of which had reduced clashes down to 16, and the other three reducing clashes to around 70-75. This was a remarkable result. The refined model also appeared to have the C-terminal tails facing out of the oligomer, which would allow them to interact with denatured proteins.
+                    </li>
+                 </ul>
+            </td>
+        </tr>
     </table>
+    <br>
+    <p>
+        From the results above, two models are proposed as the most likely potential high-order structures for HSP22E.
+        <ul>
+            <li>
+                The 24-mer produced by Homomer from alignment to the template 5ZS3. This model had no clashes, and displayed oligomeric domain exchange through β-sheet interactions.
+            </li>
+            <li>
+                The refined 12-mer produced by Modeller with a 1GME template.
+            </li>
+        </ul>
+
+        <p>
+            24 MER VIEW
+            <div class="image-caption">24-mer structure predicted by Homomer from the template 5ZS3</div>
+            12 MER VIEW
+            <div class="image-caption">12-mer structure predicted by Modeller from the template 1GME, refined by Haddock</div>
+        </p>
+
+    </p>
+    <p>
+        Since sHSPs are known to form dynamic complexes, it is quite possible that HSP22E is able to form both a 12-mer and a 24-mer from dimeric subunits. Further analysis of oligomeric order could be performed with laboratory access, by measuring the molecular weight of purified HSP22E on a gel.
+    </p>
+
+</div>
+
+<div id="interactions">
+    <h2>Interactions</h2>
+    <p>
+        The wheat heat shock protein 1GME, a homologous heat shock protein to HSP22E, is believed to form a large dodecamer under normal cell conditions, but dissociates into dimers at elevated temperatures (van Montfort et al., 2001). These dimers become the active units that interact with unfolded proteins. Hydrophobic regions of the dimers are buried in the oligomeric structure, but after dissociation, these regions are available on the surface to interact with the hydrophobic areas of denatured proteins. In this way the dimers bind to denatured proteins, preventing the formation of larger aggregates caused by the hydrophobic regions of denatured proteins binding to each other.
+    </p>
+    <p>
+        We decided to investigate if HSP22E might also function via this mechanism.
+    </p>
+
+    <p>
+        HYDROPHOBIC DIMER
+        CLUSPRO
+    </p>
+
+    <p>
+        To view our modelled dimer in action, we simulated its interaction with a denatured form of citrate synthase (den-CS), commonly used as a model substrate for molecular chaperones. The structure for den-CS was provided to us by the Glover Lab. We first positioned our dimeric unit next to a den-CS unit in Chimera, before submitting this file for molecular dynamics simulation using GROMACS. This was submitted as a job on NCI’s Gadi, a high performance computing cluster in Australia.
+    </p>
+
+    <p>
+        All-atom simulations such as this measure the energy interactions between every single atom in the model, which can be quite time consuming. Molecular dynamics expert Brian Ee introduced us to the concept of coarse-grained simulations which define larger pseudo-atoms to represent the system being simulated. While coarse-grained simulations are a less accurate measure of the dynamics of the system, they significantly reduce the computational load required to run the experiment, and are valuable when simulating larger systems and for longer periods of time. We elected to perform a coarse-grained molecular dynamics experiment due to the relatively large size of our dimer and denatured protein system. 
+    </p>
+
+    <p>
+        We performed the simulation at a temperature of 313K, at which proteins have the potential to denature, and at which the wheat heat shock protein 1GME has been observed to dissociate from its larger oligomeric storage form into active dimers (van Montfort et al., 2001).
+    </p>
+
+    <p>
+        Brian provided us with a tutorial and sample script written by Wunna Kyaw and Stephanie Xu of the Lee Lab, Single Molecule Science, EMBL Australia (2018), which performs coarse-grained simulations. We followed this procedure, with the main steps being as follows:
+        <ul>
+            <li>Convert the PDB structure (which we configured in Chimera) to be used into a coarse-grained structure, defined using the MARTINI22 force field.</li>
+            <li>Define a box around the system, the boundaries of which are at least 1.0nm away from the molecule.</li>
+        <li>Solvate the system with water. A coarse-grained water model was used as input for this.
+        </li>      
+        <li>Add ions to the system to produce an overall neutral charge.
+        </li>           
+        <li>Perform energy minimization on the system to fix poor rotamers and side-chain clashes. Minimization of our system took 7640 steps.
+        </li>               
+        <li>Equilibrate the system to relax side chain rotamers. The equilibration was set at a reference temperature of 313K.
+        </li>                   
+        <li>Perform the molecular dynamics simulation, also set to a reference temperature of 313K. The Boltzmann distribution from which velocities were sampled was also defined using a temperature of 313K. We performed the simulation for 1.02μs.
+        </li>                       
+        <li>Convert the trajectory to an alpha-carbon version and align the molecule so that the simulation can be viewed in VMD (Visual Molecular Dynamics).
+        </li>
+        </ul>
+    </p>
+
+    <p>
+        VIDEO
+    </p>
+    <div class="image-caption">Fig. 7: Molecular dynamics simulation between the HSP22E dimer (yellow and red chains) and the denatured form of citrate synthase (dark chains). Simulation lasted 1.02μs and was performed at 313K.</div>
+
+
+</div>
+
+<div id="future">
+    <h2>Looking Forward</h2>
+    <p>
+        A next step for this project would be to perform a molecular dynamics simulation of the large oligomers at both regular temperatures and under heat stress. This would test whether the oligomers are able to dissociate into dimers when under heat stress, or if further stimulus is required to initiate dissociation. A simulation could also be performed with an HSP22E oligomer in proximity to denatured proteins under heat stress, to determine if the oligomer can associate with denatured proteins without dissociating.
+    </p>
+    <p>
+        The dimer MD model could also be extended. Firstly, the MD simulation could be tested with different starting positions and orientations between the HSP and denatured protein. Then, further modelling could be performed with multiple dimeric units and multiple denatured proteins in the one system. This could provide information on the relative binding affinity of HSP22E to denatured protein compared with the denatured proteins’ binding affinity for each other, and provide an indication of how effectively the HSP22E dimer prevents aggregation. This could also provide insight into the various purposes of different oligomeric forms. It has been observed that some heat shock proteins, including homologous heat shock protein 1GME, have their large oligomeric form function as a storage box to keep HSPs contained until they are needed during heat stress (at which point they dissociate into dimers), while other heat shock proteins use their larger oligomeric form as a core to which unfolded protein attach (Rütgers et. al, 2017).
+    </p>
+</div>
+
+<div id="references">
+    <h2>References</h2>
+
+    <p>Basha, E., O’Neill, H., Vierling, E. (2012). Small heat shock proteins and α-crystallins: dynamic proteins with flexible functions. Trends in Biochemical Sciences. 37(3). doi:10.1016/j.tibs.2011.11.005.</p>
+
+    <p>Caspers, G.-J., Leunissen, J.A.M., De Jong, W.W. (1995). The expanding small heat-shock protein family, and structure predictions of the conserved ‘α-crystallin domain. Journal of Molecular Evolution. 40(3). doi:10.1007/BF00163229.</p>
+
+    <p>De Jong, W.W., Caspers, G.-J., Leunissen, J.A.M. (1998). Genealogy of the α-crystallin—small heat-shock protein superfamily. International Journal of Biological Macromolecules. 22(3–4). doi:10.1016/S0141-8130(98)00013-0.</p>
+
+    <p>Holbrook, K., Subramanian, C., Chotewutmontri, P., Reddick, L.E., Wright, S., Zhang, H., Moncrief, L., Bruce, B.D.(2016). Functional Analysis of Semi-conserved Transit Peptide Motifs and Mechanistic Implications in Precursor Targeting and Recognition. Molecular Plant. 9(9). pg 1286-1301. doi:10.1016/j.molp.2016.06.004.</p>
+
+    <p>Kunze, M., Berger, J. (2015). The similarity between N-terminal targeting signals for protein import into different organelles and its evolutionary relevance. Frontiers in Physiology. 6. doi:10.3389/fphys.2015.00259.</p>
+
+    <p>Rütgers, M., Muranaka, L.S., Mühlhaus, T., Sommer, F., Thomas, S., Schurig, J., Willmund, F., Schulz-Raffelt, M., Schroda, M. (2017). Substrates of the chloroplast small heat shock proteins 22E/F point to thermolability as a regulative switch for heat acclimation in Chlamydomonas reinhardtii. Plant Mol Biol. 95(6). pg 579-591. doi:10.1007/s11103-017-0672-y</p>
+
+    <p>Rutsdottir, G., Hallmark, J., Weide, Y., Hebert, H. (2017). Structural model of dodecameric heat-shock protein Hsp21: Flexible N-terminal arms interact with client proteins while C-terminal tails maintain the dodecamer and chaperone activity. Journal of Biological Chemistry. 292(19). doi:10.1074/jbc.M116.766816.</p>
+
+    <p>Stamler, R. et al. (2005) “Wrapping the α-Crystallin Domain Fold in a Chaperone Assembly,” Journal of Molecular Biology, 353(1). doi:10.1016/j.jmb.2005.08.025.</p>
+
+    <p>Van Montfort, R., Basha, E., Friedrich, K., Slingsby, C., Vierling, E. (2001). Crystal structure and assembly of a eukaryotic small heat shock protein. Nat Struct Mol Biol. 8(12). pg 1025–1030. https://doi.org/10.1038/nsb722 </p>
+
+    <p>Yu, C., Leung, S.K.P., Zhang, W., Lai, L.T.F., Chan, Y.K., Wong, M.C., Benlekbir, S., Cui, Y., Jiang, L., Lau, W.C.Y. (2021). Structural basis of substrate recognition and thermal protection by a small heat shock protein. Nature Communications. 12(1). doi:10.1038/s41467-021-23338-y.</p>
 
 </div>
 
