@@ -1,4 +1,119 @@
 ---
 layout: content.liquid
-title: "Experiments: Glutathione System"
+title: Experiments
+subtitle: Glutathione System
+headings:
+    - 
+        title: Survival Assay
+        id: survival
+        no_icon_subheading: true
+    -
+        id: gsh_glo
+        title: GSH-Glo™ Assay
+        no_icon_subheading: true
+    - 
+        title: Kinetics Experiment
+        id: kinetics
+        no_icon_subheading: true
+    - 
+        title: References
+        id: references
+        no_icon_subheading: true
 ---
+<br />
+<div>
+
+    <p>Rising sea temperatures induce the production and release of reactive oxygen species (ROS) from <em>Symbiodinium</em>, resulting in expulsion from its coral host due to elevated oxidative stress (Downs et al., 2002). As a result, the coral becomes nutrient-deprived from the loss of the symbiotic algae, resulting in coral death and the phenomenon known as coral bleaching. </p>
+    <p>To combat coral bleaching at the molecular level, we proposed to introduce glutathione, an antioxidant, into <em>Symbiodinium</em>, which would neutralise ROS produced, thus preventing it being expelled from corals. To achieve this, we designed an inducible system that upregulates glutathione production by expressing glutathione synthetase, glutathione reductase and glutathione peroxidase in the presence of ROS. GSH is oxidised when it donates an electron to neutralise ROS, creating glutathione disulfide (GSSG). This process is catalysed by glutathione peroxidase by reducing hydrogen peroxide (H2O2) to water. Glutathione reductase was included to recycle GSH from GSSG and to avoid the accumulation of GSSG in the organism (Forman et al., 2009). </p>
+
+
+    <img src="/assets/img/Engineering/gsh_pathway.png" width="100%">
+    <div class="image-caption"><b>Figure 1.</b> Pathways involved in glutathione synthesis, neutralisation of ROS, and recycling of glutathione disulfide (GSSG) into the reduced form (GSH) featuring the role of glutathione synthetase, peroxidase and reductase.</div>
+    <br />
+
+    <p>We chose to express the bifunctional glutathione synthetase gshF gene from Streptococcus thermophilus, which encodes for glutamate cysteine ligase (GCL) and glutathione synthetase (GS) to synthesise GSH, as well as cytosolic isoforms of glutathione peroxidase (GPX5) and glutathione reductase (GSHR1) from <em>Chlamydomonas reinhardtii</em>. We will co-transform two plasmids into an <em>E. coli</em> chassis: a pRSF-1 plasmid expressing a ROS-inducible transcription factor OxyR with kanamycin resistance and a pET-19b plasmid expressing a ROS-inducible promoter TrxCp, bifunctional glutathione synthetase, glutathione reductase and glutathione synthetase with ampicillin resistance.</p>
+
+    <p>The ability of our glutathione system to respond to ROS and have antioxidative effects will be tested through a series of experiments. We will first conduct a survival assay to investigate whether enhanced antioxidant capacity would demonstrate enhanced survival at elevated H2O2 levels. Next, to verify if our system is functioning as intended, we will conduct a GSH-Glo™ Glutathione assay to detect and quantify the concentration of glutathione (GSH) produced. We will also perform Bugbuster protein extraction followed by SDS-PAGE to assess the level of expression for the three glutathione enzymes. In addition, we will conduct experiments to measure kinetic parameters - Km and Vmax of the three glutathione enzymes to facilitate dry lab with the modelling of the glutathione enzymes.</p>
+
+    <p>The following is a series of experiments the wet lab team has designed to test our glutathione system. However, due to COVID-19 restrictions, we have not been able to carry out experiments to test the glutathione system</p>
+
+</div>
+
+<div id="survival">
+
+    <h2>Survival Assay</h2>
+
+    <p>To perform the survival assay, <em>E. coli</em> expressing glutathione system or fluorescent protein will be incubated at 37 ℃ until an OD600 of 0.6 is reached before being subjected to H2O2 of varying concentrations. <em>E. coli</em> will then be spread plated and incubated overnight. The number of colony forming units (CFUs) will be counted and converted to absolute units in cells/mL.</p>
+
+    <p>Transformed <em>E. coli</em> with the first plasmid expressing OxyR in pRSF and the second plasmid expressing TrxCp and a fluorescent protein in pET-19b will be included as a control to demonstrate the function of the glutathione enzymes introduced. A sample with milli Q water added instead of H2O2 will be included as a negative control. In addition, we will make sure that <em>E. coli</em> are in the log phase of growth curve by taking OD600 measurements before subjecting them to different concentrations of H2O2. Bugbuster protein extraction and SDS-PAGE will be performed to confirm the expression of the three glutathione enzymes.</p>
+    <p>Expected results from the survival assay would be <em>E. coli</em> expressing the glutathione system having a greater number of CFUs compared to control that was subjected to the same H2O2 concentration. <em>E. coli</em> expressing the glutathione system and control <em>E. coli</em> expressing fluorescent protein subjected to milli Q water are expected to have a similar number of colony forming units.</p>
+
+
+
+    <br />
+
+</div>
+
+
+<div id="gsh_glo">
+    <h2>GSH-Glo™ Glutathione Assay</h2>
+    <br />
+
+    <p>The GSH-Glo™ assay (Promega) is a luminescent-based assay used to detect and quantify glutathione in biological samples. We will use this assay to estimate the concentration of glutathione produced by the glutathione system we designed. This assay would be carried out using an <em>E. coli</em> chassis that expresses our glutathione system and control (fluorescent protein). </p>
+    <p>The GSH-Glo™ assay is performed in two steps. First, the cells are lysed while in the presence of luciferinNT substrate and glutathione S-transferase. The glutathione in the lysed cells interacts with the luciferinNT to form luciferin. Once the luciferin is formed, the Luciferin Detection reagent is added, and light is produced. The amount of light produced is directly proportional to the amount of GSH involved in the reaction (Promega, 2015). </p>
+    <p>Expected results from this assay would be more luminescence produced in the sample expressing our glutathione system, indicating the elevated level of GSH, compared to the control.</p>
+
+
+</div>
+
+
+<div id="kinetics">
+    <h2>Kinetics Experiment</h2>
+    <br />
+
+    <p>Kinetics experiment will be performed to obtain the Michaelis-Menten constant (Km) and maximum velocity (Vmax) of the enzymes in the glutathione enzymes. This will help us verify the enzymatic activity of glutathione synthetase, glutathione reductase and glutathione peroxidase. The obtained data will be analysed along with the dry lab team to determine the ordering of the enzymes in our plasmid for optimal functioning of our system. </p>
+    <p>Km values of enzymes are important in determining whether product formation rates are affected by the availability of substrates under normal physiological conditions. Vmax values help understand the maximum rate that enzymes are able to saturate their substrates (Berg et al., 2002). Together, these principles can be utilised to help determine when and how enzymes are able to work at their maximum rate so that the most efficient rate of catalysis can be carried out. Determining Km and Vmax  values are particularly useful for our project to establish the enzymatic activities of glutathione synthetase, peroxidase and reductase that make up the glutathione system to effectively maximise the glutathione pool for the removal of reactive oxygen species (ROS). </p>
+    
+    
+    
+    <p>To study enzyme kinetics, stopped enzyme assays will be employed to determine the effect of substrate concentration on the initial reaction velocity. Relevant enzymes of the glutathione system can be added to its complementary substrate using different substrate concentrations.</p>
+
+
+    <div style="float: right; width: 40%; padding-left: 1em;">
+        <img src="/assets/img/Engineering/gsh_pathway.png" width="100%">
+
+    </div>
+    <br /><br />
+    <ol>
+        <li>Glutathione peroxidase using H2O2 as a substrate</li>
+        <li>Glutathione reductase using NADPH as a substrate</li>
+        <li>Glutathione synthetase using ATP as a substrate</li>
+    </ol>
+    <br /><br />
+    
+
+    <p>
+        Enzyme catalysis occurs over a certain amount of time before the reactions are stopped by the addition of denaturing agents. The absorbance at 340 nm will be determined through spectrophotometry, measuring the oxidation of NADPH to NADP+ for glutathione peroxidase and glutathione reductase. It must be noted that for glutathione peroxidase, two subsequent reactions are required. Oxidised glutathione (GSSG) produced, from the first reaction with H2O2 and glutathione (GSH), is immediately reduced in the presence of NADPH (Cichoski et al., 2012). For glutathione synthetase, the absorbance at 340 nm is determined by measuring the hydrolysis of ATP to ADP (Kim et al., 2005). The absorbance data produced can be compared to a standard curve to determine the initial reaction velocity (production formation rate) and used to construct a Lineweaver-Burk Plot to calculate the Km and Vmax values for each respective enzyme reaction.
+    </p>
+
+
+
+</div>
+
+
+<div id="references">
+
+    <h2>References</h2>
+    <br />
+    
+    <p>BERG, J.M., TYMOCZKO, J.L. & STRYER, L., 2002. The Michaelis-Menten Model Accounts for the Kinetic Properties of Many Enzymes. Biochemistry. 5th edition.</p>
+    <p>
+        CICHOSKI, A.J., ROTTA, R.B., SCHEUERMANN, G., CUNHA JUNIOR, A., BARIN, J.S., 2012. Investigation of glutathione peroxidase activity in chicken meat under different experimental conditions. Food Sci. Technol, 32, 661–667.</p>
+    
+
+    <p>DOWNS, C., FAUTH, J. E., HALAS, J. C., DUSTAN, P., BEMISS, J. & WOODLEY, C. M. 2002. Oxidative stress and seasonal coral bleaching. Free Radical Biology and Medicine, 33, 533-543.</p>
+    <p>FORMAN, H. J., ZHANG, H. & RINNA, A. 2009. Glutathione: Overview of its protective roles, measurement, and biosynthesis. Molecular Aspects of Medicine, 30, 1-12.</p>
+    <p>KIM, S.-J., KIM, H.-G., LIM, H.-W., PARK, E.-H., LIM, C.-J., 2005. Up-regulation of glutathione biosynthesis in NIH3T3 cells transformed with the ETV6-NTRK3 gene fusion. Molecules and cells, 19, 131–6.</p>
+    <p>PROMEGA 2015. GSH-Glo™ Glutathione Assay, Instructions for Use of Products.</p>
+
+</div>

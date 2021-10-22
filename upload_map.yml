@@ -547,10 +547,18 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/b/b0/T--UNSW_Australia--img--Engineering--Flow-Chart2.jpg
     md5: 3e6d576f82bdbbcca39c6ab752c548e9
     upload_filename: T--UNSW_Australia--img--Engineering--Flow-Chart2.jpg
+  assets/img/Engineering/glute enzymes.png:
+    link_URL: https://2021.igem.org/wiki/images/a/ac/T--UNSW_Australia--img--Engineering--glute_enzymes.png
+    md5: 14ce3d739e2fc4ae6feb11ad9e6d9abd
+    upload_filename: T--UNSW_Australia--img--Engineering--glute enzymes.png
   assets/img/Engineering/gsh_pathway.png:
     link_URL: https://2021.igem.org/wiki/images/a/ae/T--UNSW_Australia--img--Engineering--gsh_pathway.png
     md5: fc7e0578753786f0922bb8e7b5054887
     upload_filename: T--UNSW_Australia--img--Engineering--gsh_pathway.png
+  assets/img/Engineering/oxyR.png:
+    link_URL: https://2021.igem.org/wiki/images/2/21/T--UNSW_Australia--img--Engineering--oxyR.png
+    md5: d702f6cae99c8ae2bbd50fde98d709bf
+    upload_filename: T--UNSW_Australia--img--Engineering--oxyR.png
   assets/img/Exhibition/Betty Sykes/Karrangkal - Coral Reef.jpg:
     link_URL: https://2021.igem.org/wiki/images/a/a3/T--UNSW_Australia--img--Exhibition--Betty_Sykes--Karrangkal_-_Coral_Reef.jpg
     md5: 719a0a58c70c61b39247d7e0e3150856
@@ -1386,6 +1394,10 @@ assets:
     link_URL: https://2021.igem.org/wiki/images/2/2c/T--UNSW_Australia--img--working_header.png
     md5: 6305461b429876a53a60ef42b2b2ca38
     upload_filename: T--UNSW_Australia--img--working_header.png
+  assets/structural_modelling_files.zip:
+    link_URL: https://2021.igem.org/wiki/images/a/a3/T--UNSW_Australia--structural_modelling_files.zip
+    md5: ef10074cf770e1b8d1d4135c6f3b9f80
+    upload_filename: T--UNSW_Australia--structural_modelling_files.zip
 css:
   css/Exhibition.css:
     link_URL: https://2021.igem.org/Template:UNSW_Australia/css/ExhibitionCSS?action=raw&ctype=text/css
@@ -1489,7 +1501,7 @@ html:
     md5: b76840742934e1ed346372547fa11b4e
   Engineering/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Engineering
-    md5: a08f6c38289f2bb13eb72463c37b7854
+    md5: 9e73da3a97518fd1653d953121673d00
   Exhibition/Betty_Sykes/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Exhibition/Betty_Sykes
     md5: d0e6c4cb22920fa55494fc2c545c2cd7
@@ -1528,13 +1540,13 @@ html:
     md5: 6ea2aaffd11fa7fbe16a280140adf5de
   Experiments/Glutathione_System/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Experiments/Glutathione_System
-    md5: 8f3d9a9f840c7a01372ec4efa1404900
+    md5: 173071f57d62341fabb168146ae1c901
   Experiments/Heat_Shock_Protein/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Experiments/Heat_Shock_Protein
     md5: de68f01a7863416792ce69b3b0b81457
   Experiments/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Experiments
-    md5: b93b270155492373d10e987174328edb
+    md5: 69c833259d0b16faeecb39128f41b507
   Human_Practices/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Human_Practices
     md5: 09dcff21f4388b88e6ef51a0fc9419c1
@@ -1546,7 +1558,7 @@ html:
     md5: 545fd70488f87bb85ea8f3f34020c020
   Judging/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Judging
-    md5: fc87fac9c38057b28b00d2b5a5b8f21c
+    md5: d13254ce7909c81efdc3b3866b5e1060
   Model/Glutathione_System/index.html:
     link_URL: https://2021.igem.org/Team:UNSW_Australia/Model/Glutathione_System
     md5: d0ee39d9bc5f5b5432b597b6a5d49d30

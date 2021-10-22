@@ -1,4 +1,183 @@
 ---
 layout: content.liquid
-title: "Experiments: Heat Shock Protein"
+title: Experiments
+subtitle: Heat Shock Proteins
+headings:
+- 
+    title: Introduction
+    id: introduction
+    no_icon_subheading: true
+-
+    id: growth
+    title: "Experiment 1: Growth Assay"
+    no_icon_subheading: true
+- 
+    title: "Experiment 2: Survival Assay"
+    id: survival
+    no_icon_subheading: true
+- 
+    title: Future Directions
+    id: future
+    no_icon_subheading: true
+- 
+    title: References
+    id: references
+    no_icon_subheading: true
 ---
+
+<head>
+    <style>
+        #igem-unsw-content h5 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<div id="introduction">
+
+    <h2>Introduction</h2>
+    <br />
+
+    <p>Small heat shock proteins (HSPs) are a class of highly conserved molecular chaperones that aid in preventing irreversible changes to protein structures due to stressed conditions. The mechanism of action by which HSPs operate is to maintain protein homeostasis by binding to and sequestering non-native and denatured proteins to prevent irreversible aggregation. Their holdase mechanism allows other proteins to refold the denatured protein, restoring its normal functionality. This makes HSPs essential housekeeping proteins, with research indicating HSP concentrations reaching up to 1% of total cellular proteins when responding to cellular heat shock, emphasising their role in cellular stress response (Yu et al., 2021). Thus, the ability of HSPs to prevent the degradation of proteins under heat stress was sought after during the initial design stages of our solution. Our team believed implementing HSPs into the common algal <em>Symbiodinium sp.</em> would be useful for increasing its thermotolerance, and subsequent resilience against coral bleaching.</p>
+
+    <p>Our chosen small heat shock protein, HSP22E, is derived from the algal species <em>Chlamydomonas reinhardtii</em> which has an optimal growth temperature of 42ᵒC (Lee and Vierling, 2000). We proposed that the expression of this HSP would confer the natural thermotolerance of <em>Chlamydomonas reinhardtii</em> onto <em>Symbiodinium sp.</em> whilst ensuring a higher degree of genetic compatibility as they are both microalgal species. </p>
+
+    <p>The initial stages of the project were focused on testing whether the HSP22E would increase the thermotolerance of an organism to heat shock conditions. Heat shock conditions were defined as temperatures above the expected growth conditions for an organism. However, given the cellular complexity of eukaryotic organisms like our algal symbiont and the difficulties in procuring it, the hypothesis was tested on simpler prokaryotic organisms. <em>E. coli</em> was deemed as the target model organism as these cells are easy to genetically modify. In light of this consideration, the 2020 UNSW Phase 1 team successfully transformed and expressed HSP22E in <em>E. coli</em> BL21 (DE3). To continue this effort, our team designed assays to test the growth and survival of <em>E. coli</em> BL21 expressing the HSP22E protein.</p>
+    <p>Our wet lab goal for this year was to ascertain whether expression of heat shock protein HSP22E would increase thermotolerance of <em>E. coli</em>. To do this, we tested the effects of <em>E. coli</em> survival at extreme temperatures using a survival assay, and its growth at elevated temperatures using a growth assay. For the growth assay, it was hypothesised that the presence of HSP22E would allow for improved growth at high temperatures compared to the optimal growth temperature. Whilst for the survival assay, it was hypothesised that the presence of HSP22E would result in increased survivability of <em>E. coli</em> at higher temperatures.</p>
+    <p>Our assays used 37ᵒC, the optimal growth temperature for <em>E. coli</em>, as the control temperature for testing against elevated temperatures (Doyle and Schoeni, 1984). We used <em>E. coli</em> expressing mCerulean3, a fluorescent protein which should not confer thermotolerance, as a control for our testing since it has a molecular weight of 26.8kDa, similar to that of HSP22E (25.2kDa) (Markwardt et al., 2011; Watkins et al., 2013). As protein overexpression would create stress for cells and affect cell growth, including a control that over-expresses a non-chaperone protein, such as mCerulean3, was important to ensure that fair comparison was made.</p>
+    <p>Another critical aspect was the molecule IPTG for inducing protein expression. The control - mCerulean3 and HSP22E samples were expressed from the pET19 plasmid which uses IPTG to induce protein expression. Included in both assays were <em>E. coli</em> strains that contain the  HSP22E and mCerulean3 expression plasmid but did not have IPTG added, and therefore should not express the protein encoded on the plasmid. As an additional control, we included these strains without IPTG added to ensure that affected thermotolerance in the growth and survival assays were due to the expression of HSP22E</p>
+    <p>Unfortunately, due to COVID-19 restrictions our wet lab team only completed preliminary testing of our assays. However, we have used this initial data to refine the assay design for future testing. Additional optimisation will be needed in future experiments to finalise more accurate and robust assay designs for growth and survival. </p>
+
+    <br />
+
+
+</div>
+
+
+<div id="growth">
+
+    <h2>Experiment 1: Growth Assay</h2>
+    <br />
+
+    <p>The Growth assay aimed to test if the presence of HSP22E increased the thermotolerance of <em>E. coli</em> and allowed for growth at temperatures higher than optimal. Unfortunately, due to limited laboratory access resulting from COVID-19 restrictions, this assay was performed once with no repeat experiments. </p>
+    <h5>Method</h5>
+    <p>A total of four samples were tested: HSP22E with IPTG, HSP22E without IPTG, mCerulean3 with IPTG, and mCerulean3 without IPTG as seen in Figure 1.</p>
+
+
+    <div style="width: 100%; display: flex; justify-content: center;">
+    <img src="/assets/img/Experiments_HSP/growth assay.png" width="100%"></div>
+        <div class="image-caption"><b>Figure 1.</b> Flow diagram of heat shock protein growth assay method (created in BioRender).</div>
+    <br />
+
+    <p>Overnight cultures of <em>E. coli</em> containing mCerulean3 (control) and HSP22E genes were prepared. Day cultures were then inoculated using the overnight cultures and were allowed to grow to an optical density (OD600) of 0.6. IPTG was added to induce recombinant protein expression. All sample cultures were subsequently diluted to an OD600  of 0.1 with Luria-Bertani (LB) broth containing ampicillin. The samples were incubated in shaking incubators of 37° C and 45° C. The OD600 of the cultures was measured using a spectrophotometer every hour for six hours. </p>
+    <p>The OD600 measurements were adjusted to <em>E. coli</em> cells per mL using the standard of 1.0 OD600 unit is equal to 8x108 cells per mL. </p>
+
+    <br />
+    <h5>Results</h5>
+    <p>Results of the growth assay are presented in Figure 2.</p>
+
+
+    <div style="display: flex; justify-content: space-evenly; width: 100%;">
+        <div style="width: 45%;">
+            <b>(A)</b>
+            <img src="/assets/img/Experiments_HSP/Growth assay figure 1 (A) 37.png" width="100%">
+        </div>
+        <div style="width: 45%;">
+            <b>(B)</b>
+            <img src="/assets/img/Experiments_HSP/Growth Assay figure 1 (B) 45.png" width="100%">
+        </div>
+    </div>
+    <div class="image-caption"><b>Figure 2.</b> Growth curve of <em>E. coli</em> cells per mL at 37ᵒC (A) and 45ᵒC (B) over approximately six hours. Y-axis represents the time measured in minutes, while x-axis represents the number of cells per mL.</div>
+
+    <br />
+
+    <p>Minimal differences were observed among the four samples incubated at 37ᵒC and 45ᵒC. Interestingly, samples at 45ᵒC had greater cell numbers than samples at  37ᵒC at time point 70 minutes. Overall, <em>E. coli</em> incubated at 45ᵒC had lower cell counts compared to the samples incubated at 37ᵒC throughout the experiment. </p>
+    <br />
+
+    <h5>Discussion</h5>
+
+    <p>Our experiment made several discoveries that were subsequently used to improve the assay design.</p>
+
+    <p>It was hypothesised that the samples expressing HSP22E would grow more efficiently and faster at 45ᵒC than the control samples that lack HSP22E. However, this effect was not observed. At 45ᵒC, strains that express mCerulean3 or HSP22E had minimal differences in growth rates. The presence of IPTG had no observable impact on the growth of the samples. The lack of differences between the “with” and “without” IPTG samples suggests IPTG may have not induced expression in the “with IPTG” samples. Without confirmation of our target, HSP22E, being present, the assay could not successfully assess if HSP22E impacted growth at elevated temperatures. To continue the assay in future it will be necessary to perform a protein extraction of the samples to ensure that both the target and control proteins are being successfully induced by the addition of IPTG. Although our hypothesis was not confirmed, we gained valuable insight into the design of thermotolerance assays that can be applied for improvement in future experiments.</p>
+    <p>The aim of the assay was to assess if HSP22E could support growth under heat stress at elevated temperatures, however the temperatures tested did not indicate heat stress was occuring. It was hypothesised that the enhanced thermotolerant sample expressing HSP22E would have greater growth rates than samples not producing HSP22E would have minimal to no growth at 45ᵒC. This did not occur, and at 45ᵒC all samples had the same growth curve and minimally reduced cell counts, compared to the control temperature.</p>
+    <p>To develop a robust assay that assessed the effect of HSP22E on thermotolerance, potential causes for the previously discussed results were investigated. In addition, the team consulted our lab mentors to aid in troubleshooting our design. Through our investigation two potential issues were identified in the assay design. Firstly, there was no calibration or additional temperature readings taken for the incubator used in the 45ᵒC test, this indicated that there was potentially ineffective heating of the samples during the assay. In addition to ineffective heating, 45ᵒC was found to not be a sufficiently high temperature to test the thermotolerance in <em>E. coli</em>. Research has found that <em>E. coli</em> can grow effectively at 45ᵒC and in some cases, growth can be consistent up to 49ᵒC (Fotadar et al., 2005). We subsequently altered our design to assess growth at 51ᵒC to test more effectively test normal and heat-stressed growth of the samples. Additionally, the team sought access to a metal heat block, as it would be a more effective instrument for heat transfer and can reach temperatures for above 45ᵒC. By identifying issues in our assay we adjusted the design to more effectively assess the effects of HSP22E on thermotolerance in <em>E. coli</em>. </p>
+
+    <br />
+</div>
+
+
+<div id="survival">
+
+    <h2>Experiment 2: Survival Assay</h2>
+    <br />
+
+    <p>We conducted a survival assay to determine the effect of high temperatures on the survival of <em>E. coli</em>. We hypothesised that <em>E. coli</em> expressing HSP22E would have an enhanced survival rate compared to control samples when subjected to heat shock.</p>
+   
+    <h5>Method</h5>
+
+    <p>A total of four samples were tested in our survival assay: <em>E. coli</em> expressing HSP22E with IPTG, HSP22E without IPTG, mCerulean3 with IPTG, and mCerulean3 without IPTG. The samples were incubated at 37℃ and allowed to grow until the culture reached an optical density (OD600) of 0.4. IPTG was then added to the “with IPTG” samples and an additional 1-hour incubation was allowed until the culture reached an optical density (OD600) of 0.6. Each sample was separated into aliquots and exposed to heat shock for ten minutes across a temperature gradient between 37℃ to 61℃. A PCR machine was programmed to carry out the heat shock and hold the samples until plating. The heat-shocked samples were diluted to 10-5  and 10-6  to prepare for spread plating. Each sample dilution was plated on LB agar plates containing ampicillin and incubated at 37℃ overnight. Colony counting was performed the following day. Colony counting was performed using the software OpenCFU, and the results were tabulated, analysed, and graphed using Microsoft Excel.</p>
+
+    <div style="width: 100%; display: flex; justify-content: center;">
+    <img src="/assets/img/Experiments_HSP/survival assay.png" width="80%"></div>
+    <div class="image-caption"><b>Figure 3.</b> Flow diagram of heat shock protein survival assay (created in BioRender).</div>
+    <br />
+
+    <p>Overnight cultures of <em>E. coli</em> containing mCerulean3 (control) and HSP22E genes were prepared. Day cultures were then inoculated using the overnight cultures and were allowed to grow to an optical density (OD600) of 0.6. IPTG was added to induce recombinant protein expression. All sample cultures were subsequently diluted to an OD600  of 0.1 with Luria-Bertani (LB) broth containing ampicillin. The samples were incubated in shaking incubators of 37° C and 45° C. The OD600 of the cultures was measured using a spectrophotometer every hour for six hours. </p>
+    <p>The OD600 measurements were adjusted to <em>E. coli</em> cells per mL using the standard of 1.0 OD600 unit is equal to 8x108 cells per mL. </p>
+    <p>In addition to the survival assay, the samples were also tested for protein expression. Aliquots from each sample were collected after the 1 hour IPTG induction time. Bugbuster was used to extract the proteins from the aliquots, and SDS-PAGE was performed to subsequently assess protein expression (Millipore, 2008, ThermoFisher SCIENTIFIC).</p>
+
+
+    <br />
+    <h5>Results</h5>
+    <p>There was no colony formation observed for the samples that underwent heat shock at 55.9℃  and 61℃. The samples exposed to 37 ℃ and 47℃ did demonstrate growth and, therefore, colony counts were performed on these plates only. The results from those plates are shown below in Figure 4. </p>
+
+    <div style="display: flex; width: 100%; justify-content: center;">
+        <img src="/assets/img/Experiments_HSP/Survival assay graph figure 2.JPG" width="50%">
+    </div>
+    <div class="image-caption"><b>Figure 4.</b> Survival assay cell concentration at 37℃ and 46.4℃. HSP22E w IPTG stands for <em>E. coli</em> containing HSP22E gene induced to express the gene with IPTG. Similarly, HSP22E w/o IPTG stands for <em>E. coli</em> containing HSP22E gene without IPTG induction. mC3 w IPTG and mC3 w/o IPTG represent the <em>E. coli</em> samples with the gene for mCerulean3 with and without IPTG induction, respectively. </div>
+
+    <br />
+
+    <p>In Figure 4, it can be seen that as the temperature increased, three samples of E.coli grown at 46.4℃ decreased below that of its 37℃ counterpart. The HSP22E with IPTG, mCerulean3 with IPTG, and mCerulean3 without IPTG decreased by 2.85 ×104, 1.31105, and 3.43105 CFUs/ μL, respectively. The sample HSP22E without IPTG was the only sample that showed an increase in concentration as temperature increases, with an increase of 2.10105 CFUs/ μL.</p>
+    
+    <p>Results from SDS-PAGE following Bugbuster protein extraction are shown below in Figure 5. </p>
+    <div style="display: flex; width: 100%; justify-content: center;">
+        <img src="/assets/img/Experiments_HSP/Slide1.PNG" width="50%">
+    </div>
+    <div class="image-caption"><b>Figure 5.</b> SDS-PAGE of samples after Bugbuster protein expression. The samples were collected prior to heat shock after a 1 hour induction with IPTG.  </div>
+
+    <br />
+    <p>Figure 5 did not show clear bands for the HSP22E and mCerulean3 proteins induced by IPTG for 1 hour.</p>
+    <br />
+    <h5>Discussion</h5>
+    <p>It was hypothesised that <em>E. coli</em> expressing HSP22E would have enhanced survival rate compared to control samples at elevated temperatures. However, this was not observed in our experiments. From Figure 4, as temperature increased from 37℃ to 46.4℃, all samples showed a decrease in their respective concentration, except the <em>E. coli</em> with HSP22E not induced by IPTG. The sample that did have some increase was not induced, therefore HSP22E could not have been the cause of the improved thermotolerance. Taking into consideration the issues experienced with visualising the plates, irregular colonies were formed, and the other samples were not counted correctly. Therefore, it cannot be discerned if the HSP22E without IPTG sample experienced increased thermotolerance when heat shocked. </p>
+    <p>Another observation was that the samples with IPTG induction displayed lower cell concentrations than their respective uninduced samples. To be specific, <em>E. coli</em> containing the HSP22E gene with IPTG induction had lower cell concentration than the <em>E. coli</em> containing the HSP22E gene without IPTG induction (negative control). The same observation is true for the <em>E. coli</em> containing the mCerulean3 gene. </p>
+    <p>Taking into account that our HSP22E and mCerulean3 were not expressed after 1 hour of IPTG induction (Figure 5), it is not surprising that the expected results of <em>E. coli</em> with HSP22E having better survival was not observed. To account for the lack of protein expression   observed in the SDS-PAGE (Figure 5) the assay design was modified. A longer IPTG induction time was incorporated into the survival assay to allow the induced genes time to express and produce sufficient amounts of protein in the cell before exposure to heat shock. Considering that proteins were not properly expressed, our experiment should be repeated with optimised IPTG induction time.</p>
+    <p>To conclude, considering the unexpected nature of our results, further assays would need to be performed. The implementation of changes in the protocol is vital in order to ensure the reproducibility and validity of our results.</p>
+    <br />
+</div>
+
+
+<div id="future">
+    <h2>Future Directions</h2>
+    <br />
+
+    <p>To continue the assessment of HSP22E’s effect on thermotolerance both the growth and survival assays should be repeated using the revised designs. Each assay should be repeated using the new designs to overcome the issues of the original experiments and yield useful data for the analysis of the target protein HSP22E.</p>
+</div>
+
+<br />
+<div id="references">
+    <h2>References</h2>
+    <br />
+    <p>Doyle, M. P. & Schoeni, J. L. 1984. Survival and growth characteristics of Escherichia coli associated with hemorrhagic colitis. Applied and Environmental Microbiology, 48, 855-856.</p>
+    <p>Fotadar, U., Zaveloff, P. & Terracio, L. 2005. Growth of Escherichia coli at elevated temperatures. J Basic Microbiol, 45, 403-4.</p>
+    <p>Lee, G. J. & Vierling, E. 2000. A small heat shock protein cooperates with heat shock protein 70 systems to reactivate a heat-denatured protein. Plant Physiol, 122, 189-98.</p>
+    <p>MARKWARDT, M. L., KREMERS, G. J., KRAFT, C. A., RAY, K., CRANFILL, P. J., WILSON, K. A., DAY, R. N., WACHTER, R. M., DAVIDSON, M. W. & RIZZO, M. A. 2011. An improved cerulean fluorescent protein with enhanced brightness and reduced reversible photoswitching. PLoS One, 6, e17896.</p>
+    <p>Millipore (2008) BugBuster Extraction Reagent. Available at: https://www.merckmillipore.com/AU/en/product/BugBuster-Master-Mix,EMD_BIO-71456?bd=1&fbclid=IwAR2R7M-_6s_rzlckiW0sYKwYnyVpUBUm-lhbaBrXmCpZ05z4g_7pVj_rJcs#anchor_USP (Accessed: 17 June 2021).</p>
+    <p>Pletnev, P., Osterman, I., Sergiev, P., Bogdanov, A. & Dontsova, O. 2015. Survival guide: Escherichia coli in the stationary phase. Acta naturae, 7, 22-33.</p>
+    <p>Schroda, M., Hemme, D. & Muhlhaus, T. 2015. The Chlamydomonas heat stress response. The Plant Journal, 82, 466-480.</p>
+    <p>Thermofisher Scientific. Protein Gels. Available at: https://www.thermofisher.com/au/en/home/life-science/protein-biology/protein-gel-electrophoresis/protein-gels.html (Accessed: 17 June 2021).</p>
+    <p>Watkins, J. L., Kim, H., Markwardt, M. L., Chen, L., Fromme, R., Rizzo, M. A. & Wachter, R. M. 2013. The 1.6 Å resolution structure of a FRET-optimized Cerulean fluorescent protein. Acta Crystallogr D Biol Crystallogr, 69, 767-73.</p>
+    <p>Yu, C., Leung, S. K. P., Zhang, W., Lai, L. T. F., Chan, Y. K., Wong, M. C., Benlekbir, S., CUI, Y., Jiang, L. & Lau, W. C. Y. 2021. Structural basis of substrate recognition and thermal protection by a small heat shock protein. Nature communications, 12, 3007-3007.</p>
+
+</div>
