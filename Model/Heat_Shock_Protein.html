@@ -349,9 +349,9 @@ headings:
 
         <p>
             24 MER VIEW
-            <div class="image-caption">24-mer structure predicted by Homomer from the template 5ZS3</div>
+            <div class="image-caption">Fig x: 24-mer structure predicted by Homomer from the template 5ZS3</div>
             12 MER VIEW
-            <div class="image-caption">12-mer structure predicted by Modeller from the template 1GME, refined by Haddock</div>
+            <div class="image-caption">Fig x: 12-mer structure predicted by Modeller from the template 1GME, refined by Haddock</div>
         </p>
 
     </p>
@@ -363,6 +363,8 @@ headings:
 
 <div id="interactions">
     <h2>Interactions</h2>
+    <br>
+    <h5>The Scaffold</h5>
     <p>
         The wheat heat shock protein 1GME, a homologous heat shock protein to HSP22E, is believed to form a large dodecamer under normal cell conditions, but dissociates into dimers at elevated temperatures (van Montfort et al., 2001). These dimers become the active units that interact with unfolded proteins. Hydrophobic regions of the dimers are buried in the oligomeric structure, but after dissociation, these regions are available on the surface to interact with the hydrophobic areas of denatured proteins. In this way the dimers bind to denatured proteins, preventing the formation of larger aggregates caused by the hydrophobic regions of denatured proteins binding to each other.
     </p>
@@ -372,9 +374,10 @@ headings:
 
     <p>
         HYDROPHOBIC DIMER
-        CLUSPRO
+        <div class="image-caption">Fig. x: A surface view of our HSP22E dimer, representing relative hydrophobicity by colour.</div>
     </p>
-
+    <br>
+    <h5>In Action</h5>
     <p>
         To view our modelled dimer in action, we simulated its interaction with a denatured form of citrate synthase (den-CS), commonly used as a model substrate for molecular chaperones. The structure for den-CS was provided to us by the Glover Lab. We first positioned our dimeric unit next to a den-CS unit in Chimera, before submitting this file for molecular dynamics simulation using GROMACS. This was submitted as a job on NCI’s Gadi, a high performance computing cluster in Australia.
     </p>
@@ -382,14 +385,10 @@ headings:
     <p>
         All-atom simulations such as this measure the energy interactions between every single atom in the model, which can be quite time consuming. Molecular dynamics expert Brian Ee introduced us to the concept of coarse-grained simulations which define larger pseudo-atoms to represent the system being simulated. While coarse-grained simulations are a less accurate measure of the dynamics of the system, they significantly reduce the computational load required to run the experiment, and are valuable when simulating larger systems and for longer periods of time. We elected to perform a coarse-grained molecular dynamics experiment due to the relatively large size of our dimer and denatured protein system. 
     </p>
-
+ 
     <p>
         We performed the simulation at a temperature of 313K, at which proteins have the potential to denature, and at which the wheat heat shock protein 1GME has been observed to dissociate from its larger oligomeric storage form into active dimers (van Montfort et al., 2001).
-    </p>
-
-    <p>
-        Brian provided us with a tutorial and sample script written by Wunna Kyaw and Stephanie Xu of the Lee Lab, Single Molecule Science, EMBL Australia (2018), which performs coarse-grained simulations. We followed this procedure, with the main steps being as follows:
-        <ul>
+        Our procedure based on a tutorial and sample script written by Wunna Kyaw and Stephanie Xu of the Lee Lab, Single Molecule Science, EMBL Australia (2018), which Brian provided. The mains steps involved were:
             <li>Convert the PDB structure (which we configured in Chimera) to be used into a coarse-grained structure, defined using the MARTINI22 force field.</li>
             <li>Define a box around the system, the boundaries of which are at least 1.0nm away from the molecule.</li>
         <li>Solvate the system with water. A coarse-grained water model was used as input for this.
