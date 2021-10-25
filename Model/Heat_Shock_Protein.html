@@ -562,7 +562,7 @@ headings:
     function loadMonomer() {
         // asynchronously load the PDB file for the dengue methyl transferase
         // from the server and display it in the viewer.
-        pv.io.fetchPdb('https://2021.igem.org/File:T--UNSW_Australia--Robetta_CM_hsp22e_mature.txt', function(structure) {
+        pv.io.fetchPdb('/assets/Robetta_CM_hsp22e_mature.txt', function(structure) {
             // display the protein as cartoon, coloring the secondary structure
             viewer.cartoon('protein', structure, { color : color.uniform('#b0554b'), radius: 0.5 });
             viewer.centerOn(structure);
@@ -584,7 +584,7 @@ headings:
     function loadDimer() {
         // asynchronously load the PDB file for the dengue methyl transferase
         // from the server and display it in the viewer.
-        pv.io.fetchPdb('https://2021.igem.org/File:T--UNSW_Australia--hsp22e_cm_dimer-2.txt', function(structure) {
+        pv.io.fetchPdb('/assets/hsp22e_cm_dimer-2.txt', function(structure) {
             // display the protein as cartoon, coloring the secondary structure
             dimer_viewer.cartoon('protein', structure, { color : color.uniform('#0a7c80'), radius: 0.5 });
             dimer_viewer.centerOn(structure);
@@ -602,7 +602,7 @@ headings:
     function load24mer() {
         // asynchronously load the PDB file for the 24mer
         // from assets and display it in the viewer.
-        pv.io.fetchPdb('https://2021.igem.org/File:T--UNSW_Australia--Homomer-24mer.txt', function(structure) {
+        pv.io.fetchPdb('/assets/Homomer-24mer.txt', function(structure) {
             // display the protein as cartoon, coloring the secondary structure
             viewer_24.cartoon('protein', structure, { color : color.byChain(), radius: 0.5 });
             viewer_24.centerOn(structure);
