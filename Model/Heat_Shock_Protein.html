@@ -30,6 +30,9 @@ headings:
 ---
 <head>
     <link rel="stylesheet" href="/css/model_hsp.css" type="text/css">
+    <style>
+        .MathJax nobr>span.math>span{border-left-width:0 !important};
+    </style>
 </head>
 
 <div>
@@ -113,7 +116,12 @@ headings:
     <p>
         Small heat shock proteins are known to form complex higher order structures, in the realm of 12-48mers ​​(Basha et al., 2012). Many of these large structures are known to dissociate into dimers under thermal stress in order to interact with denatured proteins, though there is also evidence of non-dissociative interaction (Yu et al., 2021). The large complexes are also known to regularly perform subunit exchange - new HSP dimers swapping with old ones to ‘refresh’ the large complex. As such, HSP oligomers are highly dynamic, and it is predicted that this dynamic process of interactions is governed by the more variable terminal regions of the sequence (Caspers et al., 1995).
     </p>
+    <p>The table linked below shows the variety of oligomeric structures formed by homologs of HSP22E:</p>
 
+    <div style="text-align: center;">
+        <a class="table-link" data-bs-toggle="modal" data-bs-target="#oligo_modal">Table 1: Oligomerization and geometric symmetry of experimentally derived sHSP structures.</a>
+    </div>
+    <br />
     <br />
 
     <div style="float: right; width: 45%; padding-left: 2em;">
@@ -542,8 +550,45 @@ headings:
 
 
 
+<div class="modal fade" id="oligo_modal" tabindex="-1" data-bs-backdrop="true"
+  aria-labelledby="hsp oligomerization modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <div style="padding: 1em;">
+                        <h5 class="modal-title" style="font-weight: bold;">
+                            Table 1: Oligomerization and geometric symmetry of experimentally derived sHSP structures.
+                        </h5>
+                    </div>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="align-self: flex-start;"></button>
+            </div>
+            <div class="modal-body">
+                {% include hsp_structure_comparison.html %}
+            </div>
+        </div>
+    </div>
+</div>
 
+<div id="ensembleModalBackdrop" class="modal-backdrop fade show"></div>
+<script src="https://2021.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script>
+    let modalBackdrop = document.getElementById("ensembleModalBackdrop")
 
+    let modals = document.getElementsByClassName('modal');
+    for (let m of modals) {
+        m.addEventListener('show.bs.modal', function (event) {
+        modalBackdrop.style.visibility = "visible";
+        modalBackdrop.style.opacity = "1";
+        })
+        m.addEventListener('hide.bs.modal', function (event) {
+        modalBackdrop.style.opacity = "0";
+        modalBackdrop.style.visibility = "hidden"
+        })
+    }
+</script>
 
 <script type='text/javascript' src='/js/bio-pv.min.js'></script>
 <script type='text/javascript'>
