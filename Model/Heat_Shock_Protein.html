@@ -30,9 +30,6 @@ headings:
 ---
 <head>
     <link rel="stylesheet" href="/css/model_hsp.css" type="text/css">
-    <style>
-        .MathJax nobr>span.math>span{border-left-width:0 !important};
-    </style>
 </head>
 
 <div>
@@ -106,6 +103,11 @@ headings:
         <div id="monomer_viewer"></div>
     </div>
     <br />
+    <div style="display: flex; width: 100%; justify-content: center;">
+        <img src="/assets/img/Modelling/validation.png" width="80%">
+    </div>
+    <div class="image-caption">Fig. 4: Structural Validation of the Rosetta Comparative Model 1 (from MolProbity)</div>
+    <br />
 </div>
 
 <div id="oligomer">
@@ -128,7 +130,7 @@ headings:
         <div style="width: 100%; display: flex; justify-content: center;">
             <img src="/assets/img/Modelling/Phylogram_coral_colours.jpg" width="85%">
         </div>
-        <div class="image-caption">Fig. 4: HSP22E Phylogenetic Tree</div>
+        <div class="image-caption">Fig. 5: HSP22E Phylogenetic Tree</div>
     </div>
 
     <br />
@@ -154,7 +156,7 @@ headings:
     <div style="width: 100%; display: flex; justify-content: center;">
         <img src="/assets/img/Modelling/oligo_scores.jpg" width="85%">
     </div>
-    <div class="image-caption">Fig. 5: T-COFFEE MSA scores for alignments by oligomeric order.</div>
+    <div class="image-caption">Fig. 6: T-COFFEE MSA scores for alignments by oligomeric order.</div>
     <br>
     <p>
         The dodecamer alignment in particular provided an interesting insight. Most of the other alignments were only able to pick up the generalised alpha-crystallin domains as conserved regions,
@@ -163,7 +165,7 @@ headings:
     <div style="width: 100%; display: flex; justify-content: center;">
         <img src="/assets/img/Modelling/12-mer-alignment-annotated.png" width="85%">
     </div>
-    <div class="image-caption">Fig. 6: Alignment of HSP22E to known dodecamers. The approximate location of β-strands across the known structures are marked by a box.</div>
+    <div class="image-caption">Fig. 7: Alignment of HSP22E to known dodecamers. The approximate location of β-strands across the known structures are marked by a box.</div>
     <br />
     <h5 id="dimer">Dimer</h5>
     <p>We pursued several methods to predict the dimeric structure of HSP22E:</p>
@@ -225,7 +227,7 @@ headings:
 
     <table id="dodecamer_methods" class="table table-striped">
         <tr>
-            <td>
+            <td style="width: 30%;">
                 <h6>Manual alignment via ChimeraX</h6>
                 <img src="/assets/img/Modelling/12mers/manual_12_clashes.png", class="img-in-table">
                 <div class="image-caption"><em>Manually aligned dodecamer; clashing residues in pink</em></div>
@@ -359,21 +361,28 @@ headings:
         </ul>
 
         <p>
-            24 MER VIEW
+        <div style="display: flex; width: 100%; justify-content: space-evenly;">
+            <div style="width: 40%;">
+                <!-- 24 MER VIEW -->
 
-            <div style="display: flex; width: 100%; justify-content: center;">
-            <div id="24mer_viewer"></div>
+                <div style="display: flex; width: 100%; justify-content: center;">
+                    <div id="24mer_viewer"></div>
+                </div>
+
+                <div class="image-caption">24-mer structure predicted by Homomer from the template 5ZS3</div>
+
             </div>
+            <div style="width: 40%;">
+                <!-- 12 MER VIEW -->
 
-            <div class="image-caption">24-mer structure predicted by Homomer from the template 5ZS3</div>
-            12 MER VIEW
-
-    <div style="display: flex; width: 100%; justify-content: center;">
-            <div id="12mer_viewer"></div>
+                <div style="display: flex; width: 100%; justify-content: center;">
+                    <div id="12mer_viewer"></div>
+                </div>
+                <div class="image-caption">12-mer structure predicted by Modeller from the template 1GME, refined by Haddock</div>
             </div>
-            <div class="image-caption">12-mer structure predicted by Modeller from the template 1GME, refined by Haddock</div>
+        </div>
         </p>
-
+        <!-- <br /> -->
     </p>
     <p>
         Since sHSPs are known to form dynamic complexes, it is quite possible that HSP22E is able to form both a 12-mer and a 24-mer from dimeric subunits. Further analysis of oligomeric order could be performed with laboratory access, by measuring the molecular weight of purified HSP22E on a gel.
@@ -398,7 +407,7 @@ headings:
           Your browser does not support the video tag.
           </video>
     </div>
-    <div class="image-caption">Fig. 7: A surface view of our HSP22E dimer, representing relative hydrophobicity by colour.</div>
+    <div class="image-caption">Fig. 8: A surface view of our HSP22E dimer, representing relative hydrophobicity by colour.</div>
 
     <br>
     <h5>In Action</h5>
@@ -437,7 +446,7 @@ headings:
           Your browser does not support the video tag.
           </video>
     </div>
-    <div class="image-caption">Fig. 8: Molecular dynamics simulation between the HSP22E dimer (yellow and red chains) and the denatured form of citrate synthase (dark chains). Simulation lasted 1.02μs and was performed at 313K.</div>
+    <div class="image-caption">Fig. 9: Molecular dynamics simulation between the HSP22E dimer (yellow and red chains) and the denatured form of citrate synthase (dark chains). Simulation lasted 1.02μs and was performed at 313K.</div>
 
     <br />
 
@@ -575,7 +584,6 @@ headings:
 </div>
 
 <div id="ensembleModalBackdrop" class="modal-backdrop fade show"></div>
-<script src="https://2021.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
 <script>
     let modalBackdrop = document.getElementById("ensembleModalBackdrop")
@@ -632,7 +640,7 @@ headings:
     function loadDimer() {
         // asynchronously load the PDB file for the dengue methyl transferase
         // from the server and display it in the viewer.
-        pv.io.fetchPdb('/assets/hsp22e_cm_dimer-2.txt', function(structure) {
+        pv.io.fetchPdb('/assets/hsp22e cm dimer-2.txt', function(structure) {
             // display the protein as cartoon, coloring the secondary structure
             dimer_viewer.cartoon('protein', structure, { color : color.uniform('#0a7c80'), radius: 0.5 });
             dimer_viewer.centerOn(structure);
@@ -643,9 +651,17 @@ headings:
     }
     document.addEventListener('DOMContentLoaded', loadDimer);
 
+
+    var options_oligomers = {
+      width: 400,
+      height: 400,
+      background: '#dae5e4',
+      antialias: true,
+      quality : 'medium',
+    };
     // 24mer
     // insert the viewer under the Dom element with id '24mer_viewer'
-    var viewer_24 = pv.Viewer(document.getElementById('24mer_viewer'), options);
+    var viewer_24 = pv.Viewer(document.getElementById('24mer_viewer'), options_oligomers);
 
     function load24mer() {
         // asynchronously load the PDB file for the 24mer
@@ -667,12 +683,12 @@ headings:
 
      // 24mer
     // insert the viewer under the Dom element with id '24mer_viewer'
-    var viewer_12 = pv.Viewer(document.getElementById('12mer_viewer'), options);
+    var viewer_12 = pv.Viewer(document.getElementById('12mer_viewer'), options_oligomers);
 
     function load12mer() {
         // asynchronously load the PDB file for the 24mer
         // from assets and display it in the viewer.
-        pv.io.fetchPdb('https://2021.igem.org/File:T--UNSW_Australia--Modeller-dodecamer.txt', function(structure) {
+        pv.io.fetchPdb('/assets/Modeller-dodecamer.txt', function(structure) {
             // display the protein as cartoon, coloring the secondary structure
             viewer_12.cartoon('protein', structure, { color : color.byChain(), radius: 0.5 });
             viewer_12.centerOn(structure);
