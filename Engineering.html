@@ -65,15 +65,21 @@ headings:
 <br />
 
 <div>
-    <p>The purpose of the small heat shock protein (HSP) system is to prevent irreversible denaturation of proteins caused by increased thermal stress. Our target heat shock protein, HSP22E, is originally expressed in the microalgal species <em>Chlamydomonas reinhardtii</em> and is known to bind to denatured proteins before aggregation, and assists protein refolding with its holdase activity (Haslbeck et al, 2005).</p>
+    <p>The purpose of the small heat shock protein (HSP) system is to prevent irreversible denaturation of proteins caused by increased thermal stress. Our target heat shock protein, HSP22E, is naturally expressed in the microalgal species <em>Chlamydomonas reinhardtii</em> and is known to bind to denatured proteins before aggregation, and assists protein refolding with its holdase activity (Haslbeck et al, 2005).</p>
 </div>
 
 <div id="hsp_design">
     <h2>Design</h2>
+    <div style="width: 40%; float: right; padding-left: 1em;">
+        <div style="display: flex; justify-content: center; ">
+            <img src="/assets/img/Engineering/hsp22e_plasmid.png" width="100%">
+        </div>
+        <div class="image-caption"><b>Figure 1.</b> HSP22E plasmid (pET-19b)</div>
+    </div>
     <br />
 
     <p>
-        Last year, the 2020 Phase I PROTECC Coral team designed and assembled a plasmid to introduce the HSP22E gene into <em>E. coli</em> using a pET-19b plasmid. Their experiments demonstrated a successful expression of HSP22E in E.coli. During Phase II this year we aimed to design several assays to assess the effect of HSP22E expression on thermotolerance of <em>E. coli</em> cells. 
+        Last year, the <a href="https://2020.igem.org/Team:UNSW_Australia" target="_blank">2020 Phase I PROTECC Coral team</a> designed and assembled a plasmid to introduce the HSP22E gene into <em>E. coli</em> using a pET-19b plasmid. Their experiments demonstrated a successful expression of HSP22E in E.coli. During Phase II this year we aimed to design several assays to assess the effect of HSP22E expression on thermotolerance of <em>E. coli</em> cells. 
         
     </p>
 
@@ -88,16 +94,11 @@ headings:
     <h2>Build</h2>
     <br />
 
-    <p>The HSP22E system was built by the Phase I team and successfully established in <em>E. coli</em>. They carried out the initial testing for successful expression of the plasmid in the cell. Phase II took this pre-built system and built assays to test the effect of HSP22E on thermotolerance. </p>
-    <p>We built up our assays through research and support of our mentors. For both assays we incorporated several controls to aid in establishing a robust protocol and considered the parameters for which we should define our experiments in. For both the survival and growth assays, we considered 37°C as the best suited temperature for the control, as it is the optimal temperature for E coli growth (Doyle and Schoeni, 1984). This ensured a benchmark for comparing normal optimal growth conditions to our tested heat stress conditions. 
-        For both assays we also needed a control to compare the HSP22E expressing <em>E. coli</em>. An un-modified <em>E. coli</em> would not be suitable, due to when a cell expresses a plasmid it is under abnormal strain, therefore an unmodified control would perform better in optimal conditions, providing a skewed comparison. Therefore, we used an <em>E. coli</em> that expressed mCerulean3, a fluorescent protein as our control for testing to ensure both underwent equal strain (Markwardt et al., 2011, Watkins et al., 2013). 
-        </p>
-
+    <p>The HSP22E system was built by the Phase I team and successfully established in <em>E. coli</em>. The Phase 1 team carried out the initial testing for successful expression of the plasmid in the cell. Our team this year, as a Phase II project, took this pre-built system and built assays to test the effect of HSP22E expression on thermotolerance in <em>E. coli</em>. </p>
+    <p>We built assays to measure changes in thermotolerance  through research and support of our mentors. For both assays we incorporated several controls to aid in establishing a robust protocol and considered the parameters for which we should define our experiments. For both the survival and growth assays, we considered 37°C as the best suited temperature for the control, as it is the optimal temperature for <em>E. coli</em> growth (Doyle and Schoeni, 1984). This ensured a benchmark for comparing normal optimal growth conditions to our tested heat stress conditions. </p>
+    <p>For both assays we also needed a control to compare the HSP22E expressing <em>E. coli</em>. An un-modified <em>E. coli</em> would not be suitable, due to when a cell expresses a plasmid it is under abnormal strain, therefore an unmodified control would perform better in optimal conditions, providing a skewed comparison. Therefore, we used an <em>E. coli</em> that expressed mCerulean3, a fluorescent protein as our control for testing to ensure both underwent equal strain (Markwardt et al., 2011, Watkins et al., 2013). </p>
     <p>Another key aspect built into our assays was the inducing molecule IPTG. Both the mCerulean and HSP22E used the pET19 plasmid, which uses the lac operon to induce gene expression. IPTG is a molecule that mimics allolactose and acts to remove the lac operon repressor and induce gene expression (Kroemer, n.d). In all our testing we included a sample of HSP22E and mCerulean3 without IPTG as an additional control measure to ensure we could observe the effects of heat stress without the proteins being expressed.</p>
-
     <p>Once the team had successfully selected and built controls into our assay design for the system achieved by the 2020 Phase 1 team, it was time to begin preliminary testing. </p>
-
-
     <br />
 </div>
 
@@ -158,8 +159,10 @@ headings:
     
     <p>We have designed an inducible system that is activated by the presence of ROS, and drives the expression of glutathione synthetase, glutathione reductase and glutathione peroxidase for glutathione synthesis, neutralisation of ROS, and recycling of glutathione disulfide (GSSG) into its reduced form (GSH). </p>
 
-    <img src="/assets/img/Engineering/gsh_pathway.png" width="100%">
-    <div class="image-caption"><b>Figure 1.</b> Pathways involved in glutathione synthesis, neutralisation of ROS, and recycling of glutathione disulfide (GSSG) into the reduced form (GSH) featuring the role of glutathione synthetase, peroxidase and reductase.</div>
+    <div style="display: flex; justify-content: center; width: 100%;">
+        <img src="/assets/img/Engineering/gsh_pathway.png" width="90%">
+    </div>
+    <div class="image-caption"><b>Figure 2.</b> Pathways involved in glutathione synthesis, neutralisation of ROS, and recycling of glutathione disulfide (GSSG) into the reduced form (GSH) featuring the role of glutathione synthetase, peroxidase and reductase.</div>
     <br />
 
     <p>We chose a bifunctional glutathione synthetase (gshF) from Streptococcus thermophilus (<a href="http://parts.igem.org/Part:BBa_K2571001" target="_blank">Part:BBa_K2571001</a>) as part of our design to catalyse a two-step reaction in the production of glutathione (GSH) (Li et al., 2011), hence simplifying our system. The gshF will be responsible for converting substrates glutamate and cysteine into γ-L-glutamyl-L-cysteine which reacts with glycine to produce glutathione. In addition, gshF is not susceptible to product inhibition, which allows a higher level of GSH to be produced (Li et al., 2011). We chose to express glutathione peroxidase (GPX5) (<a href="http://parts.igem.org/Part:BBa_K3750001" target="_blank">Part:BBa_K3750001</a>) and glutathione reductase (GSHR1)  (<a href="http://parts.igem.org/Part:BBa_K3750000" target="_blank">Part:BBa_K3750000</a>) from <em>Chlamydomonas reinhardtii</em> (<em>C. reinhardtii</em>), which are genes that encode for enzymes that are localised in the cytosol (as opposed to mitochondria or chloroplast) (Dayer et al., 2008, Merchant et al., 2007). The two enzymes, GPX5 and GSHR1 will be responsible for recycling GSH from GSSG by catalysing the reaction of glutathione with ROS. The design idea is for our glutathione system to be present in the cytosol of <em>Symbiodinium</em> to neutralise ROS produced from both mitochondria and chloroplast, preventing ROS leakage into the coral. Among the five glutathione peroxidases present in <em>C. reinhardtii</em>, GPX4 and GPX5 were predicted to be located in the cytosol based on their N-terminal protein sequence (​​Dayer et al., 2008). GPX5 was chosen over GPX4 as it is more well researched and its location in the cytosol is supported by experimental data (Miao et al., 2019). </p>
@@ -180,7 +183,7 @@ headings:
             <img src="/assets/img/Engineering/glute enzymes.png" width="100%">
         </div>
     </div>
-    <div class="image-caption"><b>Figure 2. (A)</b> Constitutive promoter with OxyR in pRSF-1 vector which includes a Kanamycin resistant gene. <b>(B)</b> TrxCp promoter preceding glutathione peroxidase, synthetase and reductase in pET-19b vector which includes an Ampicillin resistant gene.</div>
+    <div class="image-caption"><b>Figure 3. (A)</b> Constitutive promoter with OxyR in pRSF-1 vector which includes a Kanamycin resistant gene. <b>(B)</b> TrxCp promoter preceding glutathione peroxidase, synthetase and reductase in pET-19b vector which includes an Ampicillin resistant gene.</div>
 
     <br />
 
