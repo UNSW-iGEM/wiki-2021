@@ -1,14 +1,17 @@
 <head>
     <link rel="stylesheet" href="/css/header.css">
 </head>
-<div class="navbar sticky-top navbar-expand" id="header">
+<div class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id="header">
     <a class="navbar-brand" href="/" id="home_button">
         <img src="/assets/img/UNSW_iGEM_logo.png" alt="UNSW iGEM Logo" height="100%">
     </a>
-    <div class="navbar-collapse">
-        <ul class="navbar-nav" style="align-items: center;">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
-                <a class="nav-link nav-header">Project</a>
+                <a class="nav-link dropdown-toggle nav-header" role="button" data-bs-toggle="dropdown">Project</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/Description">Description</a></li>
                     <li><a class="dropdown-item" href="/Engineering">Engineering</a></li>
@@ -17,7 +20,7 @@
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link nav-header">Experiments</a>
+                <a class="nav-link dropdown-toggle nav-header" role="button" data-bs-toggle="dropdown">Experiments</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/Experiments">Overview</a></li>
                     <li><a class="dropdown-item" href="/Experiments/Heat_Shock_Protein">Heat Shock Protein</a></li>
@@ -28,7 +31,7 @@
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link nav-header">Modelling</a>
+                <a class="nav-link dropdown-toggle nav-header" role="button" data-bs-toggle="dropdown">Modelling</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/Model">Our Approach</a></li>
                     <li><hr class="dropdown-divider"></li>
@@ -37,7 +40,7 @@
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link nav-header">Human Practices</a>
+                <a class="nav-link dropdown-toggle nav-header" role="button" data-bs-toggle="dropdown">Human Practices</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/Human_Practices">Our Approach</a></li>
                     <li><hr class="dropdown-divider"></li>
@@ -46,7 +49,7 @@
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link nav-header">Science Communication</a>
+                <a class="nav-link dropdown-toggle nav-header" role="button" data-bs-toggle="dropdown">Science Communication</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/Communication">Communication</a></li>
                     <li><a class="dropdown-item" href="/Education">Educational Package</a></li>
@@ -56,17 +59,15 @@
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link nav-header">Team</a>
+                <a class="nav-link dropdown-toggle nav-header" role="button" data-bs-toggle="dropdown">Team</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/Team/">Members</a></li>
                     <li><a class="dropdown-item" href="/Attributions/">Attributions</a></li>
                 </ul>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="/Judging">Judging</a>
-            </li>
         </ul>
+        <a class="nav-link outside" href="/Judging">Judging</a>
+        <a class="nav-link outside" href="/Exhibition/">Virtual Exhibition</a>
     </div>
-    <a class="nav-link" href="/Exhibition/">Virtual Exhibition</a>
 </div>
