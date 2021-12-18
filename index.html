@@ -152,15 +152,15 @@ layout: page.liquid
     <br />
     <br />
     <div style="display: flex; justify-content: center; width: 100%;">
-        <div style="display: flex; justify-content: space-around; vertical-align: flex-start; width: 80%; height: 15em;">
-            <div style="width: 50%;">
-                <img src="/assets/img/Home/Solution1.png" width="60%">
+        <div id="solutionContainer">
+            <div>
+                <img src="/assets/img/Home/Solution1.png">
                 <div style="display: flex; width: 100%; justify-content: center;">
                     <div class="solution-text">Introduce enzymes that produce and recycle glutathione, a molecule that neutralises ROS</div>
                 </div>
             </div>
-            <div style="width: 50%;">
-                <img src="/assets/img/Home/Solution2.png" width="60%">
+            <div>
+                <img src="/assets/img/Home/Solution2.png">
                 <div style="display: flex; width: 100%; justify-content: center;">
                     <div class="solution-text">Introduce small heat shock proteins originally found in a different heat-loving algae to mitigate protein unfolding</div>
                 </div>
@@ -223,7 +223,7 @@ layout: page.liquid
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        animationData: aus_reef_50_gone
+        animationData: aus_reef_50_gone,
         // path: '/js/australia-reef-50-gone.json',
     })
 

@@ -89,3 +89,30 @@
 h3.modal-title {
     font-weight: 700;
 }
+
+#teamPhoto { 
+    display: flex; 
+    justify-content: center; 
+    height: 23em; 
+    align-items: center; 
+    padding-top: 1em;
+}
+
+#teamPhoto > img {
+    height: 100%;
+}
+
+@media (max-width: 992px) {
+    .col {
+        min-width: calc(100% - 2em);
+    }
+
+    #teamPhoto {
+        width: 100%;
+    }
+
+    #teamPhoto > img {
+        height: auto;
+        width: 100%;
+    }
+}

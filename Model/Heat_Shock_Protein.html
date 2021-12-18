@@ -372,6 +372,9 @@ headings:
                 <div class="image-caption">24-mer structure predicted by Homomer from the template 5ZS3</div>
 
             </div>
+        </div>
+        <br />
+        <div style="display: flex; width: 100%; justify-content: space-evenly;">
             <div style="width: 40%;">
                 <!-- 12 MER VIEW -->
 
@@ -584,7 +587,7 @@ headings:
 </div>
 
 <div id="ensembleModalBackdrop" class="modal-backdrop fade show"></div>
-<script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
+<!-- <script src="/js/bootstrap/bootstrap.bundle.min.js"></script> -->
 <script>
     let modalBackdrop = document.getElementById("ensembleModalBackdrop")
 
@@ -618,7 +621,10 @@ headings:
     function loadMonomer() {
         // asynchronously load the PDB file for the dengue methyl transferase
         // from the server and display it in the viewer.
-        pv.io.fetchPdb('/assets/Robetta_CM_hsp22e_mature.txt', function(structure) {
+
+        // uncomment first line/comment out second to work locally
+        // pv.io.fetchPdb('/assets/Robetta_CM_hsp22e_mature.txt', function(structure) {
+        pv.io.fetchPdb('https://2021.igem.org/wiki/images/3/34/T--UNSW_Australia--Robetta_CM_hsp22e_mature.txt', function(structure) {
             // display the protein as cartoon, coloring the secondary structure
             viewer.cartoon('protein', structure, { color : color.uniform('#b0554b'), radius: 0.5 });
             viewer.centerOn(structure);
@@ -640,7 +646,10 @@ headings:
     function loadDimer() {
         // asynchronously load the PDB file for the dengue methyl transferase
         // from the server and display it in the viewer.
-        pv.io.fetchPdb('/assets/hsp22e cm dimer-2.txt', function(structure) {
+
+        // uncomment first line/comment out second to work locally
+        // pv.io.fetchPdb('/assets/hsp22e cm dimer-2.txt', function(structure) {
+        pv.io.fetchPdb('https://2021.igem.org/wiki/images/c/c9/T--UNSW_Australia--hsp22e_cm_dimer-2.txt', function(structure) {
             // display the protein as cartoon, coloring the secondary structure
             dimer_viewer.cartoon('protein', structure, { color : color.uniform('#0a7c80'), radius: 0.5 });
             dimer_viewer.centerOn(structure);
@@ -666,7 +675,10 @@ headings:
     function load24mer() {
         // asynchronously load the PDB file for the 24mer
         // from assets and display it in the viewer.
-        pv.io.fetchPdb('/assets/Homomer-24mer.txt', function(structure) {
+
+        // uncomment first line/comment out second to work locally
+        // pv.io.fetchPdb('/assets/Homomer-24mer.txt', function(structure) {
+        pv.io.fetchPdb('https://2021.igem.org/wiki/images/2/24/T--UNSW_Australia--Homomer-24mer.txt', function(structure) {
             // display the protein as cartoon, coloring the secondary structure
             viewer_24.cartoon('protein', structure, { color : color.byChain(), radius: 0.5 });
             viewer_24.centerOn(structure);
@@ -688,7 +700,10 @@ headings:
     function load12mer() {
         // asynchronously load the PDB file for the 24mer
         // from assets and display it in the viewer.
-        pv.io.fetchPdb('/assets/Modeller-dodecamer.txt', function(structure) {
+
+        // uncomment first line/comment out second to work locally
+        // pv.io.fetchPdb('/assets/Modeller-dodecamer.txt', function(structure) {
+        pv.io.fetchPdb('https://2021.igem.org/wiki/images/e/e7/T--UNSW_Australia--Modeller-dodecamer.txt', function(structure) {
             // display the protein as cartoon, coloring the secondary structure
             viewer_12.cartoon('protein', structure, { color : color.byChain(), radius: 0.5 });
             viewer_12.centerOn(structure);

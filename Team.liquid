@@ -12,14 +12,14 @@ title: Team
   <br />
   The team is supported by Dr. Dominic Glover (PI), and mentors Joshua McCluskey, Gustave Severin and Sakthirupini Ramamurthy.
 </div>
-<div style="display: flex; justify-content: center; height: 23em; align-items: center; padding-top: 1em;">
-    <img src="/assets/img/Team/team.jpg" height="100%">
+<div id="teamPhoto">
+    <img src="/assets/img/Team/team.jpg">
 </div>
 
 
 <br /><br />
 <h2 style="text-align: center;">Members</h2>
-<div class="row row-cols-6">
+<div class="row row-cols-lg-6">
     {% assign sortedMembers = collections.team | sortByName %}
     {% for person in sortedMembers %}
       <div class="col">
@@ -68,7 +68,7 @@ title: Team
 <br />
 <div id="teamModalBackdrop" class="modal-backdrop fade show"></div>
 
-<script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
+<!-- <script src="/js/bootstrap/bootstrap.bundle.min.js"></script> -->
 <script>
   let modalBackdrop = document.getElementById("teamModalBackdrop")
 

@@ -73,3 +73,17 @@
 .contact a {
     padding-left: 0.4em; 
 }
+
+#sponsors {
+    justify-content: space-around; 
+    width: 90%; 
+    align-items: flex-end; 
+    margin-right: 1.2vw;
+}
+
+@media (max-width: 992px) {
+    #sponsors .col-lg {
+        height: 5vh !important;
+        padding: 2vh 0vh;
+    }
+}

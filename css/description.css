@@ -52,3 +52,33 @@
     height: 100%;
     object-fit: contain;
 }
+
+#igem-unsw-content .project-goal > .smallScreen {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .project-goal {
+        display: block; 
+    }
+
+    .project-goal > p {
+        padding: 0em;
+    }
+    
+    .project-icon {
+        height: 30vw;
+        width: 30vw;
+    }
+
+    #igem-unsw-content .project-goal > div {
+        font-size: 1.2em;
+    }
+
+    #igem-unsw-content .project-goal > .largeScreen {
+        display: none;
+    }
+    #igem-unsw-content .project-goal > .smallScreen {
+        display: flex;
+    }
+}

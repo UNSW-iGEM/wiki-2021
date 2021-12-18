@@ -12,47 +12,60 @@ layout: content_no_sidenav.liquid
     <!-- Fill color of icons were changed -->
     
     <div class="row" style="padding: 2em; width: calc(100% - 4em);">
-        <div class="col-3 sidenav" style="width: 23%;">
-            <nav id="sidenav" class="navbar navbar-light flex-column align-items-stretch">
-                <a class="nav-link" href="#"><h5>{{ title }}</h5></a>
+        <div class="col-lg-3 sidenav">
+            <nav id="sidenav" class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" id="expandContent" data-bs-toggle="collapse" data-bs-target="#sidenavContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    Contents
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="sidenavContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a class="nav-link" href="#"><h5>{{ title }}</h5></a>
 
-                {% for heading in headings %}
+                        {% for heading in headings %}
 
-                    {% if heading.icon or heading.no_icon_subheading %}
-                        <a class="nav-link" href={{ "#" | append: heading.id }} style="display: flex; align-items: center;">
+                            {% if heading.icon or heading.no_icon_subheading %}
+                                <a class="nav-link" href={{ "#" | append: heading.id }} style="display: flex; align-items: center;">
 
-                            {% if heading.icon %}
-                                {% assign type = heading.icon | slice: -3, 2 %}
-                                <!-- {{ type }} -->
-                                {% if type == 'sv' %}
-                                    <img src={{ heading.icon }} class="icon">
-                                {% else %}
-                                    <img src={{ heading.icon }} class="icon rounded-icon">
-                                {% endif %}
-                                <span style="padding-left: 0.4vw;">
-                                    {{ heading.title }}
-                                </span>
+                                    {% if heading.icon %}
+                                        {% assign type = heading.icon | slice: -3, 2 %}
+                                        <!-- {{ type }} -->
+                                        {% if type == 'sv' %}
+                                            <img src={{ heading.icon }} class="icon">
+                                        {% else %}
+                                            <img src={{ heading.icon }} class="icon rounded-icon">
+                                        {% endif %}
+                                        <span style="padding-left: 0.4vw;">
+                                            {{ heading.title }}
+                                        </span>
+                                    {% else %}
+                                        <span>
+                                            {{ heading.title }}
+                                        </span>
+                                    {% endif %}
+                                </a>
+                                
                             {% else %}
-                                <span>
-                                    {{ heading.title }}
-                                </span>
+                                <a class="nav-link"  href={{ "#" | append: heading.id }}><h5>{{ heading.title }}</h5></a>
                             {% endif %}
-                        </a>
-                        
-                    {% else %}
-                        <a class="nav-link"  href={{ "#" | append: heading.id }}><h5>{{ heading.title }}</h5></a>
-                    {% endif %}
 
-                {% endfor %}
+                        {% endfor %}
+
+                    </ul>
+                </div>
             </nav>
         </div>
 
         
-        <div class="col content">
+        <div class="col-lg content">
             {{ content }}
         </div>
 
     </div>
     
 </body>
-<script src="/js/bootstrap/bootstrap.bundle.min.js"></script>

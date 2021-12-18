@@ -42,3 +42,17 @@
 .carousel-control-prev-con, .carousel-control-next-icon {
     color: #dae5e4;
 }
+
+@media (max-width: 992px) {
+    #book_carousel_container {
+        float: initial;
+    }
+
+    #book_carousel {
+        width: 100%;
+    }
+
+    .carousel-item {
+        height: 40vh;
+    }
+}

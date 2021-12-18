@@ -1,6 +1,6 @@
 /* content banner */
 .banner {
-    background-color: #b3dad9;
+    background-color: #b5dddb;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -41,4 +41,22 @@
     text-decoration: underline;
     opacity: 1;
     /* color: #1f8c8c; */
+}
+
+@media (max-width: 992px) {
+    .banner {
+        display: block;
+        position: initial;
+    }
+
+    .banner_title {
+        position: initial;
+        transform: none;
+    }
+
+    .banner_subtitle {
+        position: initial;
+        transform: none;
+        text-align: center;
+    }
 }
